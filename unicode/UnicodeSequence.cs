@@ -5,6 +5,9 @@ using System.Text;
 
 namespace NeoSmart.Unicode
 {
+    /// <summary>
+    /// A UnicodeSequence is a combination of one or more codepoints.
+    /// </summary>
     public class UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>
     {
         Codepoint[] Codepoints;

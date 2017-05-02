@@ -27,7 +27,7 @@ namespace NeoSmart.Unicode
 
         public bool Contains(Codepoint codepoint)
         {
-            if (codepoint == null)
+            if (codepoint is null)
             {
                 return false;
             }

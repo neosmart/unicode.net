@@ -1,22 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace NeoSmart.Unicode
 {
     public class Range
     {
-        public Codepoint Begin;
-        public Codepoint End;
+        public readonly Codepoint Begin;
+        public readonly Codepoint End;
 
         public Range(Codepoint begin, Codepoint end)
         {
+            if (begin is null)
+            {
+                throw new ArgumentNullException("begin");
+            }
+            if (end is null)
+            {
+                throw new ArgumentNullException("end");
+            }
             Begin = begin;
             End = end;
         }
                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         public Range(Codepoint value)
         {
+            if (value is null)
+            {
+                throw new ArgumentNullException("value");
+            }
             Begin = value;
             End = value;
         }
@@ -29,15 +42,18 @@ namespace NeoSmart.Unicode
         //either a single hex codepoint or two separated by a hyphen
         public Range(string range)
         {
-            var values = range.Split('-', '–', '—'); //these are all different hyphens used on Wikipedia
+            var values = range.Split(new [] { "-", "–", "—", ".." }, StringSplitOptions.RemoveEmptyEntries); //these are all different hyphens used on Wikipedia and in the UTR
             Begin = UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber);
 
-            if (values.Length == 2)
+            if (values.Length == 1)
+            {
+                End = Begin;
+            }
+            else if (values.Length == 2)
             {
                 End = UInt32.Parse(values[1], System.Globalization.NumberStyles.HexNumber);
             }
-
-            if (values.Length> 2)
+            else
             {
                 throw new InvalidRangeException();
             }

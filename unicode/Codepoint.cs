@@ -5,7 +5,8 @@ using System.Linq;
 
 namespace NeoSmart.Unicode
 {
-    public class Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>
+    public class Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>, 
+        IEquatable<string>, IComparable<string>, IEquatable<char>
     {
         public readonly UInt32 Value;
 
@@ -90,7 +91,7 @@ namespace NeoSmart.Unicode
                 }
 
                 //up to 21 bits
-                if (Value <= 0x0FFFF)
+                if (Value <= 0x1FFFFF)
                 {
                     yield return (byte)(0b11110000 | (0b00000111 & (Value >> 18))); //tag + upper 3 bits
                     yield return (byte)(0b10000000 | (0x3F & (Value >> 12))); //tag + next 6 bits
@@ -185,6 +186,42 @@ namespace NeoSmart.Unicode
         public bool IsIn(MultiRange multirange)
         {
             return multirange.Contains(this);
+        }
+
+        public bool Equals(string other)
+        {
+            return AsString() == other;
+        }
+
+        public int CompareTo(string other)
+        {
+            return AsString().CompareTo(other);
+        }
+
+        public bool Equals(char other)
+        {
+            var s = AsString();
+            return s.Count() == 1 && s[0] == other;
+        }
+
+        public static bool operator ==(Codepoint a, string b)
+        {
+            return a.Equals(b);
+        }
+
+        public static bool operator !=(Codepoint a, string b)
+        {
+            return !a.Equals(b);
+        }
+
+        public static bool operator ==(Codepoint a, char b)
+        {
+            return a.Equals(b);
+        }
+
+        public static bool operator !=(Codepoint a, char b)
+        {
+            return !a.Equals(b);
         }
     }
 }
