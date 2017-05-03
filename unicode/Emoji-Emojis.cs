@@ -4,6 +4,8 @@ using System.Text;
 
 namespace NeoSmart.Unicode
 {
+    //this file is machine-generated from the official Unicode Consortium UTR51 publication
+    //see importers/emoji-importer.html for the generator
     public static partial class Emoji
     {
         public static readonly SingleEmoji GrinningFace = new SingleEmoji(
