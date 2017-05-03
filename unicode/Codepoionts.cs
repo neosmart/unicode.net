@@ -32,6 +32,11 @@ namespace NeoSmart.Unicode
         public static readonly Codepoint ORC = ObjectReplacementCharacter;
 
         /// <summary>
+        /// The "combined enclosing keycap" is used by emoji to box icons
+        /// </summary>
+        public static readonly Codepoint Keycap = new Codepoint("U+20E3");
+
+        /// <summary>
         /// Variation selectors come after a unicode codepoint to indicate that it should be represented in a particular format.
         /// </summary>
         public static class VariationSelectors

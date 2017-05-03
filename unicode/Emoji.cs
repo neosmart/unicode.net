@@ -15,6 +15,8 @@ namespace NeoSmart.Unicode
 
         public static readonly Codepoint ObjectReplacementCharacter = Codepoints.ORC;
 
+        public static readonly Codepoint Keycap = Codepoints.Keycap;
+
         /// <summary>
         /// The Emoji VS indicates that the preceding (non-emoji) unicode codepoint should be represented as an emoji.
         /// </summary>
@@ -98,6 +100,13 @@ namespace NeoSmart.Unicode
                     return false;
                 }
 
+                if (cp == Keycap)
+                {
+                    //this is not in the UTR, but is used to box symbols in an icon
+                    //do not consider it part of the length
+                    continue;
+                }
+
                 if (!ignoreNext)
                 {
                     ++count;
@@ -105,7 +114,13 @@ namespace NeoSmart.Unicode
                     {
                         return false;
                     }
-                    if (Languages.Emoji.Contains(cp))
+                    //by default, the UTR lists numbers, the asterisk, and the number sign as emoji, but we won't consider them as such unless they are followed by a VS
+                    if (Languages.ArabicNumerals.Contains(cp) || cp == "#" || cp == "*")
+                    {
+                        nextMustBeVS = true;
+                        continue;
+                    }
+                    else if (Languages.Emoji.Contains(cp))
                     {
                         continue;
                     }
