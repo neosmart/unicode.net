@@ -1,0 +1,91 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.0.3/sprintf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazy.js/0.5.0/lazy.min.js"></script>
+<script type="text/javascript">
+    function CamelCase(string, withSpaces = false) {
+        if (string == null) {
+            return "";
+        }
+        string = string.replace("&", "and").replace(/[,.'’“”!]/g, "")
+        .replace(/[()]/g, " ")
+        .replace(/\b1st/, "First")
+        .replace(/\b2nd/, "Second")
+        .replace(/\b3rd/, "Third")
+        .replace("#", "Hash")
+        .replace("*", "Asterisk");
+
+        var result = [];
+        var capitalize = true;
+        for (var i = 0; i < string.length; ++i) {
+            if (string[i] == " " || string[i] == "-" || string[i] == "_" || string[i] == ':') {
+                capitalize = true;
+                if (withSpaces) {
+                    result.push(' ');
+                }
+                continue;
+            }
+            if (capitalize) {
+                result.push(string[i].toUpperCase());
+                capitalize = false;
+            }
+            else {
+                result.push(string[i].toLowerCase());
+            }
+        }
+
+        return result.join("");
+    }
+
+    function makeStringArray(keywords) {
+        return Enumerable.From(keywords.split(" ")).Where(x => x != "").SelectMany(x => x.split("_")).SelectMany(x => x.split("-")).SelectMany(x => x.split(":")).Select(x => x.trim().toLowerCase())
+        .Where(x => !(["", "of", "with", "without", "and", "or", "&", "on", "the", "in"].includes(x))).Select(x => sprintf('"%s"', x)).Distinct().ToArray().join(", ");
+    }
+
+    function makeSortedSet(data) {
+        var emoji = parseEmoji(data);
+
+        result = 'public static readonly SortedSet<SingleEmoji> All = new SortedSet<SingleEmoji>() {\n';
+        emoji.each(e => result += sprintf('\t%s,\n', CamelCase(e.name)));
+        result += '};';
+
+        $("#results").append(document.createTextNode(result))
+    }
+
+    function emojiToCSharp(emoji) {
+        return sprintf(
+"public static readonly SingleEmoji %s = new SingleEmoji( \n\
+    sequence: new UnicodeSequence(\"%s\"),\n\
+    name: \"%s\",\n\
+    searchTerms: new [] { %s },\n\
+    sortOrder: %d\n\
+);\n\
+", CamelCase(emoji.name), emoji.sequence, emoji.name, makeStringArray(emoji.name), emoji.index);
+    }
+
+    function parseEmoji(data) {
+        var lines = data.split("\n");
+        var i = 0;
+        return Lazy(lines).filter(l => !l.startsWith("#") && l.includes("fully-qualified")).map(function(l) {
+            var results = l.match(/(.*?)\s+;.*# \S+ (.*)/);
+            var emoji = {
+                "sequence": results[1],
+                "name": results[2],
+                "index": i++
+            };
+            //console.log(emoji);
+            return emoji;
+        }).uniq(x => CamelCase(x.name));
+    }
+
+    //emoji-test.txt from http://unicode.org/Public/emoji/5.0/emoji-test.txt
+    //$.get("emoji-test.txt", x => parseEmoji(x).each(e => $("#results").append(document.createTextNode(emojiToCSharp(e)))));
+    $.get("emoji-test.txt", makeSortedSet);
+</script>
+</head>
+<body>
+    <pre id="results"></pre>
+</body>
+</html>
