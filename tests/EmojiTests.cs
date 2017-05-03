@@ -9,6 +9,13 @@ namespace UnicodeTests
     public class EmojiTests
     {
         [TestMethod]
+        public void TestEmojiGeneration()
+        {
+            Assert.AreEqual("😀", Emoji.GrinningFace.ToString(), $"Emoji comparison failed. Expected 😀, but found {Emoji.GrinningFace.ToString()}");
+            Assert.AreEqual("👩‍🔧", Emoji.Combine(Emoji.Woman, Emoji.Wrench), $"Emoji comparison failed. Expected 👩‍🔧, but found {Emoji.Combine(Emoji.Woman, Emoji.Wrench)}");
+        }
+
+        [TestMethod]
         public void TestEmojiDetection()
         {
             string[] singularEmoji = new []

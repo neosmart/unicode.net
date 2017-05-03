@@ -44,9 +44,14 @@ namespace NeoSmart.Unicode
             }
             else
             {
-                var values = range.Split(',');
+                var values = range.Split(',', ' ');
                 Codepoints = values.Select(x => new Codepoint(UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber))).ToArray();
             }
+        }
+
+        public bool Contains(Codepoint codepoint)
+        {
+            return codepoint.In(Codepoints);
         }
 
         public IEnumerable<UInt32> AsUtf32

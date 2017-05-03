@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace NeoSmart.Unicode
 {
     //We hereby declare emoji to be plurale tantum (in short, "emoji" is both the singular and the plural form)
     //this class refers to emoji in the plural
-    public static class Emoji
+    public static partial class Emoji
     {
         /// <summary>
         /// ZWJ is used to combine multiple emoji codepoints into a single emoji symbol.
@@ -39,6 +40,26 @@ namespace NeoSmart.Unicode
             /// Helper object, most useful for checking if a codepoint is a skin tone quickly.
             /// </summary>
             public static readonly SortedSet<Codepoint> All = new SortedSet<Codepoint>() { Light, MediumLight, Medium, MediumDark, Dark };
+        }
+
+        /// <summary>
+        /// Combines multiple emoji with a zero-width-joiner to (potentially) create a new symbol
+        /// </summary>
+        /// <param name="emoji"></param>
+        /// <returns></returns>
+        public static string Combine(IEnumerable<SingleEmoji> emoji)
+        {
+            return string.Join(ZeroWidthJoiner.AsString(), emoji);
+        }
+
+        /// <summary>
+        /// Combines multiple emoji with a zero-width-joiner to (potentially) create a new symbol
+        /// </summary>
+        /// <param name="emoji"></param>
+        /// <returns></returns>
+        public static string Combine(params SingleEmoji[] emoji)
+        {
+            return Combine((IEnumerable<SingleEmoji>)emoji);
         }
 
         /// <summary>
