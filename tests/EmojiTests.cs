@@ -9,6 +9,34 @@ namespace UnicodeTests
     public class EmojiTests
     {
         [TestMethod]
+        public void TestEmojiCreation()
+        {
+            SingleEmoji FaceWithTearsOfJoy = new SingleEmoji(
+           sequence: new UnicodeSequence("1F602"),
+           name: "face with tears of joy",
+           searchTerms: new[] { "face", "tears", "joy" },
+           sortOrder: 2
+            );
+
+            Assert.IsTrue(!(FaceWithTearsOfJoy is null));
+            Assert.IsFalse(Emoji.FaceWithTearsOfJoy is null);
+        }
+
+        [TestMethod]
+        public void TestEmojiCount()
+        {
+            Assert.IsTrue(Emoji.All.Count() > 0);
+            Assert.IsTrue(Emoji.Basic.Count() != Emoji.All.Count());
+        }
+
+        [TestMethod]
+        public void VerifyNoNullEmoji()
+        {
+            Assert.IsTrue(Emoji.All.All(e => !(e is null)));
+            Assert.IsTrue(Emoji.Basic.All(e => !(e is null)));
+        }
+
+        [TestMethod]
         public void TestEmojiGeneration()
         {
             Assert.AreEqual("😀", Emoji.GrinningFace.ToString(), $"Emoji comparison failed. Expected 😀, but found {Emoji.GrinningFace.ToString()}");

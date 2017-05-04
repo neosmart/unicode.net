@@ -9,6 +9,12 @@ namespace NeoSmart.Unicode
     //this class refers to emoji in the plural
     public static partial class Emoji
     {
+        static Emoji()
+        {
+            //populate the list of available emoji in the system font
+            //for now, the font is hard-coded to Segoe UI Emoji
+        }
+
         /// <summary>
         /// ZWJ is used to combine multiple emoji codepoints into a single emoji symbol.
         /// </summary>
