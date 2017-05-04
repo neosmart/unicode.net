@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Globalization;
 
 namespace NeoSmart.Unicode
 {
@@ -25,12 +26,14 @@ namespace NeoSmart.Unicode
         /// <param name="hexValue"></param>
         public Codepoint(string hexValue)
         {
-            if (!(hexValue.StartsWith("0x") || hexValue.StartsWith("U+") || hexValue.StartsWith("u+")))
+            if ((hexValue.StartsWith("0x") || hexValue.StartsWith("U+") || hexValue.StartsWith("u+")))
             {
-                throw new ArgumentException("Only U+xxxx or 0xYYYY notation is supported!");
+                hexValue = hexValue.Substring(2);
             }
-            hexValue = hexValue.Substring(2);
-            Value = uint.Parse(hexValue, System.Globalization.NumberStyles.HexNumber);
+            if (!uint.TryParse(hexValue, NumberStyles.HexNumber, CultureInfo.CurrentCulture.NumberFormat, out Value))
+            {
+                throw new UnsupportedCodepointException();
+            }
         }
 
         public UInt32 AsUtf32 => Value;

@@ -8,33 +8,34 @@ namespace NeoSmart.Unicode
     /// <summary>
     /// A UnicodeSequence is a combination of one or more codepoints.
     /// </summary>
-    public class UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>
+    public class UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>
     {
-        Codepoint[] Codepoints;
+        Codepoint[] _codepoints;
+        public IEnumerable<Codepoint> Codepoints => _codepoints;
         
         private UnicodeSequence()
         {
 
         }
 
-        public UnicodeSequence(string range)
+        public UnicodeSequence(string sequence)
         {
-            if (range.Contains("-"))
+            if (sequence.Contains("-"))
             {
-                var values = range.Split('-');
-                Codepoint begin = UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber);
+                var values = sequence.Split('-');
 
-                if (values.Length == 1)
+                if (values.Length == 2)
                 {
-                    Codepoints = new Codepoint[1] { begin };
-                }
-                else if (values.Length == 2)
-                {
-                    UInt32 end = UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber);
-                    Codepoints = new Codepoint[end - begin + 1];
-                    for (int i = 0; begin + i <= end; ++i)
+                    Codepoint begin = new Codepoint(values[0]);
+                    Codepoint end = new Codepoint(values[1]);
+                    if (end.Value < begin.Value)
                     {
-                        Codepoints[i] = new Codepoint(begin + i);
+                        throw new InvalidRangeException();
+                    }
+                    _codepoints = new Codepoint[end.Value - begin.Value + 1];
+                    for (int i = 0; begin.Value + i <= end.Value; ++i)
+                    {
+                        _codepoints[i] = new Codepoint(begin.Value + i);
                     }
                 }
                 else
@@ -44,21 +45,21 @@ namespace NeoSmart.Unicode
             }
             else
             {
-                var values = range.Split(',', ' ');
-                Codepoints = values.Select(x => new Codepoint(UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber))).ToArray();
+                var values = sequence.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                _codepoints = values.Select(x => new Codepoint(x)).ToArray();
             }
         }
 
         public bool Contains(Codepoint codepoint)
         {
-            return codepoint.In(Codepoints);
+            return codepoint.In(_codepoints);
         }
 
         public IEnumerable<UInt32> AsUtf32
         {
             get
             {
-                foreach (var cp in Codepoints)
+                foreach (var cp in _codepoints)
                 {
                     yield return cp.AsUtf32;
                 }
@@ -84,7 +85,7 @@ namespace NeoSmart.Unicode
         {
             get
             {
-                foreach (var cp in Codepoints)
+                foreach (var cp in _codepoints)
                 {
                     foreach (var us in cp.AsUtf16)
                     {
@@ -111,7 +112,7 @@ namespace NeoSmart.Unicode
         {
             get
             {
-                foreach (var cp in Codepoints)
+                foreach (var cp in _codepoints)
                 {
                     foreach (var b in cp.AsUtf8)
                     {
@@ -121,25 +122,27 @@ namespace NeoSmart.Unicode
             }
         }
 
+        public string AsString => Encoding.Unicode.GetString(AsUtf16Bytes.ToArray());
+
         public int CompareTo(UnicodeSequence other)
         {
-            for (int i = 0; i < Math.Min(Codepoints.Length, other.Codepoints.Length); ++i)
+            for (int i = 0; i < Math.Min(_codepoints.Length, other._codepoints.Length); ++i)
             {
-                if (Codepoints[i] != other.Codepoints[i])
+                if (_codepoints[i] != other._codepoints[i])
                 {
-                    return Codepoints[i].CompareTo(other.Codepoints[i]);
+                    return _codepoints[i].CompareTo(other._codepoints[i]);
                 }
             }
-            if (Codepoints.Length == other.Codepoints.Length)
+            if (_codepoints.Length == other._codepoints.Length)
             {
                 //same codepoint sequence
                 return 0;
             }
-            if (Codepoints.Length < other.Codepoints.Length)
+            if (_codepoints.Length < other._codepoints.Length)
             {
-                return -(int)other.Codepoints[Codepoints.Length].AsUtf32;
+                return -(int)other._codepoints[_codepoints.Length].AsUtf32;
             }
-            return (int)Codepoints[other.Codepoints.Length].AsUtf32;
+            return (int)_codepoints[other._codepoints.Length].AsUtf32;
         }
 
         public bool Equals(UnicodeSequence other)
@@ -149,14 +152,14 @@ namespace NeoSmart.Unicode
                 return true;
             }
 
-            if (Codepoints.Length != other.Codepoints.Length)
+            if (_codepoints.Length != other._codepoints.Length)
             {
                 return false;
             }
 
-            for (int i = 0; i < Codepoints.Length; ++i)
+            for (int i = 0; i < _codepoints.Length; ++i)
             {
-                if (Codepoints[i] != other.Codepoints[i])
+                if (_codepoints[i] != other._codepoints[i])
                 {
                     return false;
                 }
@@ -186,7 +189,12 @@ namespace NeoSmart.Unicode
 
         public override int GetHashCode()
         {
-            return Codepoints.GetHashCode();
+            return _codepoints.GetHashCode();
+        }
+
+        public bool Equals(string other)
+        {
+            return other.Codepoints().SequenceEqual(_codepoints);
         }
     }
 }
