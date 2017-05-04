@@ -44,14 +44,23 @@
         .Where(x => !(["", "of", "with", "without", "and", "or", "&", "on", "the", "in"].includes(x))).Select(x => sprintf('"%s"', x)).Distinct().ToArray().join(", ");
     }
 
-    function makeSortedSet(data) {
+    function makeFullSortedSet(data) {
         var emoji = parseEmoji(data);
+    }
 
+    function makeSortedSet(emoji) {
         result = 'public static readonly SortedSet<SingleEmoji> All = new SortedSet<SingleEmoji>() {\n';
-        emoji.each(e => result += sprintf('\t%s,\n', CamelCase(e.name)));
+        emoji.each(e => result += sprintf('\t/* %s */ %s,\n', e.symbol, CamelCase(e.name)));
         result += '};';
 
         $("#results").append(document.createTextNode(result))
+    }
+
+    function makeBasicSortedSet(data) {
+        var emoji = parseEmoji(data).filter(e => !e.name.startsWith("person"))
+        .filter(e => !e.name.match(/skin tone|keycap/i));
+
+        return makeSortedSet(emoji);
     }
 
     function emojiToCSharp(emoji) {
@@ -69,10 +78,11 @@
         var lines = data.split("\n");
         var i = 0;
         return Lazy(lines).filter(l => !l.startsWith("#") && l.includes("fully-qualified")).map(function(l) {
-            var results = l.match(/(.*?)\s+;.*# \S+ (.*)/);
+            var results = l.match(/(.*?)\s+;.*# (\S+) (.*)/);
             var emoji = {
                 "sequence": results[1],
-                "name": results[2],
+                "symbol": results[2],
+                "name": results[3],
                 "index": i++
             };
             //console.log(emoji);
@@ -82,7 +92,7 @@
 
     //emoji-test.txt from http://unicode.org/Public/emoji/5.0/emoji-test.txt
     //$.get("emoji-test.txt", x => parseEmoji(x).each(e => $("#results").append(document.createTextNode(emojiToCSharp(e)))));
-    $.get("emoji-test.txt", makeSortedSet);
+    $.get("emoji-test.txt", makeBasicSortedSet);
 </script>
 </head>
 <body>
