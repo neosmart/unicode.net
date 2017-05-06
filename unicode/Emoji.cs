@@ -166,7 +166,7 @@ namespace NeoSmart.Unicode
                 return false;
             }
 
-            return count <= maxSymbolCount;
+            return count > 0 && count <= maxSymbolCount;
         }
     }
 }
