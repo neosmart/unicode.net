@@ -132,6 +132,14 @@
         }).uniq(x => CamelCase(x.name));
     }
 
+    function ungenderedEmoji(emoji) {
+        //yes, this is insanely slow and could be optimized by making a trimmed & sorted second/third list and taking the distinct union, but who cares?
+        return emoji.filter(e => !e.name.match(/^(man|woman)/i) || !emoji.some(e2 => 
+                                                (e2.name.toLowerCase() == e.name.replace(/^(man|woman)/i, "person").toLowerCase() ||
+                                                    e2.name.toLowerCase() == e.name.replace(/^(man|woman) */i, "").toLowerCase())
+            ));
+    }
+
     loadFont("./seguiemj.ttf", font => {
         //emoji-test.txt from http://unicode.org/Public/emoji/5.0/emoji-test.txt
         $.get("emoji-test.txt", data => {
@@ -139,7 +147,7 @@
             var supoprtedEmoji = emoji.filter(e => isSupportedEmoji(font, e)); //emoji supported by Segoe UI Emoji
             var basicEmoji = supoprtedEmoji.filter(isBasicEmoji); //emoji suitable for display
             var basicGenderedEmoji = basicEmoji.filter(isGeneredEmoji);
-            var basicUngenderedEmoji = basicEmoji.filter(isUngenderedEmoji);
+            var basicUngenderedEmoji = ungenderedEmoji(basicEmoji);
 
             //dump basic emoji structures
             //emoji.each(e => $("#results").append(document.createTextNode(emojiToCSharp(e))));
