@@ -45,7 +45,7 @@ namespace NeoSmart.Unicode
             /// <summary>
             /// Helper object, most useful for checking if a codepoint is a skin tone quickly.
             /// </summary>
-            public static readonly SortedSet<Codepoint> All = new SortedSet<Codepoint>() { Light, MediumLight, Medium, MediumDark, Dark };
+            public static readonly List<Codepoint> All = new List<Codepoint>() { Light, MediumLight, Medium, MediumDark, Dark };
         }
 
         /// <summary>
@@ -55,7 +55,9 @@ namespace NeoSmart.Unicode
         /// <returns></returns>
         public static string Combine(IEnumerable<SingleEmoji> emoji)
         {
-            return string.Join(ZeroWidthJoiner.AsString(), emoji);
+            //does not work on .NET 2.0
+            //return string.Join(ZeroWidthJoiner.AsString(), emoji);
+            return string.Join(ZeroWidthJoiner.AsString(), emoji.Select(e => e.ToString()).ToArray());
         }
 
         /// <summary>
