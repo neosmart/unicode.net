@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace NeoSmart.Unicode
 {
-    //We hereby declare emoji to be plurale tantum (in short, "emoji" is both the singular and the plural form)
+    //We hereby declare emoji to be a zero plural marker noun (in short, "emoji" is both the singular and the plural form)
     //this class refers to emoji in the plural
     public static partial class Emoji
     {
