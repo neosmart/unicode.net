@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace NeoSmart.Unicode
 {
-    public static class LinqExtensions
+    internal static class LinqExtensions
     {
         public static bool In<T>(this T t, IEnumerable<T> collection)
         {
