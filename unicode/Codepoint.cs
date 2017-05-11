@@ -189,6 +189,11 @@ namespace NeoSmart.Unicode
             return Encoding.UTF8.GetString(AsUtf8.ToArray());
         }
 
+        public bool IsIn(Range range)
+        {
+            return range.Contains(this);
+        }
+
         public bool IsIn(MultiRange multirange)
         {
             return multirange.Contains(this);
