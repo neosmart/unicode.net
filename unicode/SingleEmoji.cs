@@ -63,7 +63,7 @@ namespace NeoSmart.Unicode
 
         public override string ToString()
         {
-            return Encoding.Unicode.GetString(Sequence.AsUtf16Bytes.ToArray());
+            return Encoding.Unicode.GetString(Sequence.AsUtf16Bytes().ToArray());
         }
     }
 }

@@ -60,74 +60,59 @@ namespace NeoSmart.Unicode
             return codepoint.In(_codepoints);
         }
 
-        public IEnumerable<UInt32> AsUtf32
+        public IEnumerable<uint> AsUtf32()
         {
-            get
+            foreach (var cp in _codepoints)
             {
-                foreach (var cp in _codepoints)
+                yield return cp.AsUtf32();
+            }
+        }
+
+        public IEnumerable<byte> AsUtf32Bytes()
+        {
+            foreach (var u32 in AsUtf32())
+            {
+                //little endian byte order
+                yield return (byte) (u32 & 0xFF);
+                yield return (byte) ((u32 >> 8) & 0xFF);
+                yield return (byte) ((u32 >> 16) & 0xFF);
+                yield return (byte) (u32 >> 24);
+            }
+        }
+
+        public IEnumerable<ushort> AsUtf16()
+        {
+            foreach (var cp in _codepoints)
+            {
+                foreach (var us in cp.AsUtf16())
                 {
-                    yield return cp.AsUtf32;
+                    yield return us;
                 }
             }
         }
 
-        public IEnumerable<byte> AsUtf32Bytes
+        public IEnumerable<byte> AsUtf16Bytes()
         {
-            get
+            foreach (var us in AsUtf16())
             {
-                foreach (var u32 in AsUtf32)
+                //little endian byte order
+                yield return (byte) (us & 0xFF);
+                yield return (byte) (us >> 8);
+            }
+        }
+
+        public IEnumerable<byte> AsUtf8()
+        {
+            foreach (var cp in _codepoints)
+            {
+                foreach (var b in cp.AsUtf8())
                 {
-                    //little endian byte order
-                    yield return (byte)(u32 & 0xFF);
-                    yield return (byte)((u32 >> 8) & 0xFF);
-                    yield return (byte)((u32 >> 16) & 0xFF);
-                    yield return (byte)(u32 >> 24);
+                    yield return b;
                 }
             }
         }
 
-        public IEnumerable<UInt16> AsUtf16
-        {
-            get
-            {
-                foreach (var cp in _codepoints)
-                {
-                    foreach (var us in cp.AsUtf16)
-                    {
-                        yield return us;
-                    }
-                }
-            }
-        }
-
-        public IEnumerable<byte> AsUtf16Bytes
-        {
-            get
-            {
-                foreach (var us in AsUtf16)
-                {
-                    //little endian byte order
-                    yield return (byte)(us & 0xFF);
-                    yield return (byte)(us >> 8);
-                }
-            }
-        }
-
-        public IEnumerable<byte> AsUtf8
-        {
-            get
-            {
-                foreach (var cp in _codepoints)
-                {
-                    foreach (var b in cp.AsUtf8)
-                    {
-                        yield return b;
-                    }
-                }
-            }
-        }
-
-        public string AsString => Encoding.Unicode.GetString(AsUtf16Bytes.ToArray());
+        public string AsString => Encoding.Unicode.GetString(AsUtf16Bytes().ToArray());
 
         public int CompareTo(UnicodeSequence other)
         {
@@ -145,9 +130,9 @@ namespace NeoSmart.Unicode
             }
             if (_codepoints.Length < other._codepoints.Length)
             {
-                return -(int)other._codepoints[_codepoints.Length].AsUtf32;
+                return -(int)other._codepoints[_codepoints.Length].AsUtf32();
             }
-            return (int)_codepoints[other._codepoints.Length].AsUtf32;
+            return (int)_codepoints[other._codepoints.Length].AsUtf32();
         }
 
         public bool Equals(UnicodeSequence other)

@@ -36,7 +36,7 @@ namespace UnicodeTests
             foreach (var test in _tests)
             {
                 var sequence = test.AsUnicodeSequence();
-                var utf32 = sequence.AsUtf32Bytes;
+                var utf32 = sequence.AsUtf32Bytes();
 
                 Assert.AreEqual(test, Encoding.UTF32.GetString(utf32.ToArray()));
             }
@@ -48,7 +48,7 @@ namespace UnicodeTests
             foreach (var test in _tests)
             {
                 var sequence = test.AsUnicodeSequence();
-                var utf16 = sequence.AsUtf16Bytes;
+                var utf16 = sequence.AsUtf16Bytes();
 
                 Assert.AreEqual(test, Encoding.Unicode.GetString(utf16.ToArray()));
             }
@@ -60,7 +60,7 @@ namespace UnicodeTests
             foreach (var test in _tests)
             {
                 var sequence = test.AsUnicodeSequence();
-                var utf8 = sequence.AsUtf8;
+                var utf8 = sequence.AsUtf8();
 
                 var encoding = new UTF8Encoding(false);
                 Assert.AreEqual(test, encoding.GetString(utf8.ToArray()));

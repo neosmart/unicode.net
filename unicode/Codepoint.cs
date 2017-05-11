@@ -36,116 +36,104 @@ namespace NeoSmart.Unicode
             }
         }
 
-        public UInt32 AsUtf32 => Value;
+        public uint AsUtf32() => Value;
 
         /// <summary>
         /// Returns an iterator that will enumerate over the big endian bytes in the UTF32 encoding of this codepoint.
         /// </summary>
-        public IEnumerable<byte> AsUtf32Bytes
+        public IEnumerable<byte> AsUtf32Bytes()
         {
-            get
-            {
-                //from highest to lowest
-                var utf32 = AsUtf32;
-                var b1 = (byte) (utf32 >> 24);
-                yield return b1;
-                var b2 = (byte) ((utf32 & 0x00FFFFFF) >> 16);
-                yield return b2;
-                var b3 = (byte) (((UInt16) utf32) >> 8);
-                yield return b3;
-                var b4 = (byte) utf32;
-                yield return b4;
-            }
+            //from highest to lowest
+            var utf32 = AsUtf32();
+            var b1 = (byte) (utf32 >> 24);
+            yield return b1;
+            var b2 = (byte) ((utf32 & 0x00FFFFFF) >> 16);
+            yield return b2;
+            var b3 = (byte) (((UInt16) utf32) >> 8);
+            yield return b3;
+            var b4 = (byte) utf32;
+            yield return b4;
         }
 
         //https://en.wikipedia.org/wiki/UTF-16
-        public IEnumerable<UInt16> AsUtf16
+        public IEnumerable<ushort> AsUtf16()
         {
-           get
+            //U+0000 to U+D7FF and U+E000 to U+FFFF
+            if (Value <= 0xFFFF)
             {
-                //U+0000 to U+D7FF and U+E000 to U+FFFF
-                if (Value <= 0xFFFF)
-                {
-                    yield return (UInt16)Value;
-                }
-                //U+10000 to U+10FFFF
-                else if (Value >= 0x10000 && Value <= 0x10FFFF)
-                {
-                    UInt32 newVal = Value - 0x010000; //leaving 20 bits
-                    UInt16 high = (UInt16) ((newVal >> 10) + 0xD800);
-                    System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
-                    yield return high;
+                yield return (UInt16) Value;
+            }
+            //U+10000 to U+10FFFF
+            else if (Value >= 0x10000 && Value <= 0x10FFFF)
+            {
+                UInt32 newVal = Value - 0x010000; //leaving 20 bits
+                UInt16 high = (UInt16) ((newVal >> 10) + 0xD800);
+                System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
+                yield return high;
 
-                    UInt16 low = (UInt16) ((newVal & 0x03FF) + 0xDC00);
-                    System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
-                    yield return low;
-                }
-                else
-                {
-                    throw new UnsupportedCodepointException();
-                }
+                UInt16 low = (UInt16) ((newVal & 0x03FF) + 0xDC00);
+                System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
+                yield return low;
+            }
+            else
+            {
+                throw new UnsupportedCodepointException();
             }
         }
 
         /// <summary>
         /// Returns an iterator that will enumerate over the big endian bytes in the UTF16 encoding of this codepoint.
         /// </summary>
-        public IEnumerable<byte> AsUtf16Bytes
+        public IEnumerable<byte> AsUtf16Bytes()
         {
-            get
+            var utf16 = AsUtf16();
+            foreach (var u16 in utf16)
             {
-                var utf16 = AsUtf16;
-                foreach (var u16 in utf16)
-                {
-                    var high = (byte) (u16 >> 8);
-                    yield return high;
-                    var low = (byte) u16;
-                    yield return low;
-                }
+                var high = (byte) (u16 >> 8);
+                yield return high;
+                var low = (byte) u16;
+                yield return low;
             }
         }
 
         //https://en.wikipedia.org/wiki/UTF-8
-        public IEnumerable<byte> AsUtf8
+        public IEnumerable<byte> AsUtf8()
         {
-            get
+            //up to 7 bits
+            if (Value <= 0x007F)
             {
-                //up to 7 bits
-                if (Value <= 0x007F)
-                {
-                    yield return (byte)Value;
-                    yield break;
-                }
-
-                //up to 11 bits
-                if (Value <= 0x07FF)
-                {
-                    yield return (byte)(0b11000000 | (0b00011111 & (Value >> 6))); //tag + upper 5 bits
-                    yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + lower 6 bits
-                    yield break;
-                }
-
-                //up to 16 bits
-                if (Value <= 0x0FFFF)
-                {
-                    yield return (byte)(0b11100000 | (0b00001111 & (Value >> 12))); //tag + upper 4 bits
-                    yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
-                    yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
-                    yield break;
-                }
-
-                //up to 21 bits
-                if (Value <= 0x1FFFFF)
-                {
-                    yield return (byte)(0b11110000 | (0b00000111 & (Value >> 18))); //tag + upper 3 bits
-                    yield return (byte)(0b10000000 | (0b00111111 & (Value >> 12))); //tag + next 6 bits
-                    yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
-                    yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
-                    yield break;
-                }
-
-                throw new UnsupportedCodepointException();
+                yield return (byte) Value;
+                yield break;
             }
+
+            //up to 11 bits
+            if (Value <= 0x07FF)
+            {
+                yield return (byte) (0b11000000 | (0b00011111 & (Value >> 6))); //tag + upper 5 bits
+                yield return (byte) (0b10000000 | (0b00111111 & Value)); //tag + lower 6 bits
+                yield break;
+            }
+
+            //up to 16 bits
+            if (Value <= 0x0FFFF)
+            {
+                yield return (byte) (0b11100000 | (0b00001111 & (Value >> 12))); //tag + upper 4 bits
+                yield return (byte) (0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
+                yield return (byte) (0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
+                yield break;
+            }
+
+            //up to 21 bits
+            if (Value <= 0x1FFFFF)
+            {
+                yield return (byte) (0b11110000 | (0b00000111 & (Value >> 18))); //tag + upper 3 bits
+                yield return (byte) (0b10000000 | (0b00111111 & (Value >> 12))); //tag + next 6 bits
+                yield return (byte) (0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
+                yield return (byte) (0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
+                yield break;
+            }
+
+            throw new UnsupportedCodepointException();
         }
 
         public int CompareTo(Codepoint other)
@@ -224,7 +212,7 @@ namespace NeoSmart.Unicode
 
         public string AsString()
         {
-            return Encoding.UTF8.GetString(AsUtf8.ToArray());
+            return Encoding.UTF8.GetString(AsUtf8().ToArray());
         }
 
         public bool IsIn(Range range)
