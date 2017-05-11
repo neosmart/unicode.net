@@ -9,4 +9,7 @@ namespace NeoSmart.Unicode
 
     public class InvalidRangeException : Exception
     { }
+
+    public class InvalidEncodingException : Exception
+    { }
 }

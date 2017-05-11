@@ -6,9 +6,6 @@ namespace NeoSmart.Unicode
 {
     public static class StringExtension
     {
-        public class InvalidEncodingException : System.Exception
-        { }
-
         public static IEnumerable<Codepoint> Codepoints(this string s)
         {
             for (int i = 0; i < s.Length; ++i)
