@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace NeoSmart.Unicode
 {
-    public class Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>, 
+    public struct Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>, 
         IEquatable<string>, IComparable<string>, IEquatable<char>
     {
         public readonly UInt32 Value;
@@ -126,7 +126,7 @@ namespace NeoSmart.Unicode
         {
             if (obj is Codepoint)
             {
-                return Value == (obj as Codepoint).Value;
+                return Value == ((Codepoint)obj).Value;
             }
             return base.Equals(obj);
         }
@@ -138,7 +138,7 @@ namespace NeoSmart.Unicode
 
         public static bool operator== (Codepoint a, Codepoint b)
         {
-            return a?.Value == b?.Value;
+            return a.Value == b.Value;
         }
 
         public static bool operator!= (Codepoint a, Codepoint b)

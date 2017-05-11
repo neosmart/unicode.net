@@ -27,11 +27,6 @@ namespace NeoSmart.Unicode
 
         public bool Contains(Codepoint codepoint)
         {
-            if (codepoint is null)
-            {
-                return false;
-            }
-
             return _ranges.Any(r => r.Contains(codepoint));
         }
     }

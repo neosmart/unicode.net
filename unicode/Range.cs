@@ -12,24 +12,12 @@ namespace NeoSmart.Unicode
 
         public Range(Codepoint begin, Codepoint end)
         {
-            if (begin is null)
-            {
-                throw new ArgumentNullException("begin");
-            }
-            if (end is null)
-            {
-                throw new ArgumentNullException("end");
-            }
             Begin = begin;
             End = end;
         }
                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         public Range(Codepoint value)
         {
-            if (value is null)
-            {
-                throw new ArgumentNullException("value");
-            }
             Begin = value;
             End = value;
         }
