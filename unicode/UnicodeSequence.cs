@@ -10,7 +10,7 @@ namespace NeoSmart.Unicode
     /// </summary>
     public class UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>
     {
-        Codepoint[] _codepoints;
+        readonly Codepoint[] _codepoints;
         public IEnumerable<Codepoint> Codepoints => _codepoints;
         
         private UnicodeSequence()
@@ -48,6 +48,11 @@ namespace NeoSmart.Unicode
                 var values = sequence.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 _codepoints = values.Select(x => new Codepoint(x)).ToArray();
             }
+        }
+
+        public UnicodeSequence(IEnumerable<Codepoint> codepoints)
+        {
+            _codepoints = codepoints.ToArray();
         }
 
         public bool Contains(Codepoint codepoint)
