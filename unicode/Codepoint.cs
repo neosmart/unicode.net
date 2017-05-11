@@ -38,6 +38,26 @@ namespace NeoSmart.Unicode
 
         public UInt32 AsUtf32 => Value;
 
+        /// <summary>
+        /// Returns an iterator that will enumerate over the big endian bytes in the UTF32 encoding of this codepoint.
+        /// </summary>
+        public IEnumerable<byte> AsUtf32Bytes
+        {
+            get
+            {
+                //from highest to lowest
+                var utf32 = AsUtf32;
+                var b1 = (byte) (utf32 >> 24);
+                yield return b1;
+                var b2 = (byte) ((utf32 & 0x00FFFFFF) >> 16);
+                yield return b2;
+                var b3 = (byte) (((UInt16) utf32) >> 8);
+                yield return b3;
+                var b4 = (byte) utf32;
+                yield return b4;
+            }
+        }
+
         //https://en.wikipedia.org/wiki/UTF-16
         public IEnumerable<UInt16> AsUtf16
         {
@@ -63,6 +83,24 @@ namespace NeoSmart.Unicode
                 else
                 {
                     throw new UnsupportedCodepointException();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Returns an iterator that will enumerate over the big endian bytes in the UTF16 encoding of this codepoint.
+        /// </summary>
+        public IEnumerable<byte> AsUtf16Bytes
+        {
+            get
+            {
+                var utf16 = AsUtf16;
+                foreach (var u16 in utf16)
+                {
+                    var high = (byte) (u16 >> 8);
+                    yield return high;
+                    var low = (byte) u16;
+                    yield return low;
                 }
             }
         }
