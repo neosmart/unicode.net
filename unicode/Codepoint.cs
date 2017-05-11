@@ -39,28 +39,31 @@ namespace NeoSmart.Unicode
         public UInt32 AsUtf32 => Value;
 
         //https://en.wikipedia.org/wiki/UTF-16
-        public UInt16[] AsUtf16
+        public IEnumerable<UInt16> AsUtf16
         {
            get
             {
                 //U+0000 to U+D7FF and U+E000 to U+FFFF
                 if (Value <= 0xFFFF)
                 {
-                    return new UInt16[1] { (UInt16)Value };
+                    yield return (UInt16)Value;
                 }
-
                 //U+10000 to U+10FFFF
-                if (Value >= 0x10000 && Value <= 0x10FFFF)
+                else if (Value >= 0x10000 && Value <= 0x10FFFF)
                 {
                     UInt32 newVal = Value - 0x010000; //leaving 20 bits
-                    UInt16 high = (UInt16)((newVal >> 10) + 0xD800);
+                    UInt16 high = (UInt16) ((newVal >> 10) + 0xD800);
                     System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
-                    UInt16 low = (UInt16)((newVal & 0x03FF) + 0xDC00);
-                    System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
-                    return new[] { high, low };
-                }
+                    yield return high;
 
-                throw new UnsupportedCodepointException();
+                    UInt16 low = (UInt16) ((newVal & 0x03FF) + 0xDC00);
+                    System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
+                    yield return low;
+                }
+                else
+                {
+                    throw new UnsupportedCodepointException();
+                }
             }
         }
 
