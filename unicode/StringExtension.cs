@@ -51,5 +51,10 @@ namespace NeoSmart.Unicode
                 }
             }
         }
+
+        public static UnicodeSequence AsUnicodeSequence(this string s)
+        {
+            return new UnicodeSequence(s.Codepoints());
+        }
     }
 }
