@@ -1,9 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net20;net30;net35;net40;net45;netstandard1.4</TargetFrameworks>
+    <TargetFrameworks>net20;net30;net35;net40;net45;netstandard1.3</TargetFrameworks>
     <AssemblyName>NeoSmart.Unicode</AssemblyName>
     <RootNamespace>NeoSmart.Unicode</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Unicode.net</PackageId>
+    <Version>0.1.1</Version>
+    <Authors>NeoSmart Technologies, Mahmoud Al-Qudsi</Authors>
+    <Company>NeoSmart Technologies</Company>
+    <Description>A Unicode and emoji text-processing library for .NET, supporting UTF-8, UTF-16, and UTF-32 on .NET 2.0+ and .NET Standard (Core/UWP), with emoji support! 🔥🌶️😁🎉</Description>
+    <Copyright>Copyright NeoSmart Technologies 2017</Copyright>
+    <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/unicode.net/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/neosmart/unicode.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/neosmart/unicode.net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>unicode, text processing, encoding, utf8, utf-8, utf-16, utf16, utf-32, utf32, emoji. emojis</PackageTags>
+    <PackageReleaseNotes>Initial release, including emoji support 🔥🌶️😁🎉!</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net20'">
