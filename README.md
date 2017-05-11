@@ -22,13 +22,13 @@ A *Unicode sequence* is a, well, sequence of one or more Unicode codepoints (in 
 
 The main classes of Unicode.net have actually already been covered, and they are `Codepoint` and  `UnicodeSequence`. Here's how `Codepoint`, `UnicodeSequence`, and `System.String` fit together:
 
-<img src="https://i.imgur.com/drzRLum.png" />
+<img src="https://i.imgur.com/drzRLum.png" width=450/>
 
 
 
 And here's how the Unicode `Codepoint` object can be represented in the various UTF-8, UTF-16, and UTF-32 encodings:
 
-<img src="https://i.imgur.com/zAMtCjb.png" />
+<img src="https://i.imgur.com/zAMtCjb.png" width=450/>
 
 
 
