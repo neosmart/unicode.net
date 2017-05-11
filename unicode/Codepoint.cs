@@ -120,7 +120,7 @@ namespace NeoSmart.Unicode
                 //up to 11 bits
                 if (Value <= 0x07FF)
                 {
-                    yield return (byte)(0b11000000 | (0b11111000 & (Value >> 6))); //tag + upper 5 bits
+                    yield return (byte)(0b11000000 | (0b00011111 & (Value >> 6))); //tag + upper 5 bits
                     yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + lower 6 bits
                     yield break;
                 }
@@ -129,8 +129,8 @@ namespace NeoSmart.Unicode
                 if (Value <= 0x0FFFF)
                 {
                     yield return (byte)(0b11100000 | (0b00001111 & (Value >> 12))); //tag + upper 4 bits
-                    yield return (byte)(0b10000000 | (0x3F & (Value >> 6))); //tag + next 6 bits
-                    yield return (byte)(0b10000000 | (0x3F & Value)); //tag + last 6 bits
+                    yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
+                    yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
                     yield break;
                 }
 
@@ -138,9 +138,9 @@ namespace NeoSmart.Unicode
                 if (Value <= 0x1FFFFF)
                 {
                     yield return (byte)(0b11110000 | (0b00000111 & (Value >> 18))); //tag + upper 3 bits
-                    yield return (byte)(0b10000000 | (0x3F & (Value >> 12))); //tag + next 6 bits
-                    yield return (byte)(0b10000000 | (0x3F & (Value >> 6))); //tag + next 6 bits
-                    yield return (byte)(0b10000000 | (0x3F & Value)); //tag + last 6 bits
+                    yield return (byte)(0b10000000 | (0b00111111 & (Value >> 12))); //tag + next 6 bits
+                    yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
+                    yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
                     yield break;
                 }
 
