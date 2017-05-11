@@ -51,12 +51,10 @@ namespace NeoSmart.Unicode
         {
             get
             {
-                UInt32[] range = new UInt32[End - Begin + 1];
                 for (UInt32 i = 0; Begin + i <= End; ++i)
                 {
-                    range[i] = new Codepoint(Begin + i).AsUtf32;
+                    yield return new Codepoint(Begin + i).AsUtf32;
                 }
-                return range;
             }
         }
 
@@ -64,12 +62,13 @@ namespace NeoSmart.Unicode
         {
             get
             {
-                List<UInt16> range = new List<UInt16>();
                 for (var i = 0; Begin + i <= End; ++i)
                 {
-                    range.AddRange(new Codepoint(Begin + i).AsUtf16);
+                    foreach (var utf16 in new Codepoint(Begin + i).AsUtf16)
+                    {
+                        yield return utf16;
+                    }
                 }
-                return range;
             }
         }
 
@@ -77,12 +76,13 @@ namespace NeoSmart.Unicode
         {
             get
             {
-                List<byte> range = new List<byte>();
                 for (var i = 0; Begin + i <= End; ++i)
                 {
-                    range.AddRange(new Codepoint(Begin + i).AsUtf8);
+                    foreach (var utf8 in new Codepoint(Begin + i).AsUtf8)
+                    {
+                        yield return utf8;
+                    }
                 }
-                return range;
             }
         }
     }
