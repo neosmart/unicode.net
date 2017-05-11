@@ -2,6 +2,8 @@
 
 `Unicode.net` is an easy-to-use Unicode text-processing library for dot net, designed to complement the BCL and the `System.String` class, useable on both .NET Framework and .NET Core/UWP (.NET Standard) targets. As an added bonus, `Unicode.net` includes an extra helping of emoji awesomeness 🎉 😊 😄.
 
+Unicode.net is [available on NuGet](https://www.nuget.org/packages/Unicode.net) for all .NET platforms and versions, and is made open source by NeoSmart Technologies under the terms of the MIT License. Contributions are welcomed and appreciated.
+
 .NET is not natively Unicode-aware, while the API has full support for internationalization by using UTF-16 strings aware, capable of passing Unicode-encoded text and carrying out operations involving non-English/non-ASCII text data, the interface is almost exclusively a black box, and the abstraction fails once attempts are made to actually access the underlying string data (i.e. indexing a Unicode string containing non-ASCII data returns individual 16-bit values rather than complete Unicode sequences referring to letters or symbols).
 
 ### The `Unicode.net` puzzle pieces
