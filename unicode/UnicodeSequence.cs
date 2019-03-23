@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace NeoSmart.Unicode
@@ -10,9 +10,9 @@ namespace NeoSmart.Unicode
     /// </summary>
     public class UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>
     {
-        readonly Codepoint[] _codepoints;
+        private readonly Codepoint[] _codepoints;
         public IEnumerable<Codepoint> Codepoints => _codepoints;
-        
+
         private UnicodeSequence()
         {
 
@@ -73,10 +73,10 @@ namespace NeoSmart.Unicode
             foreach (var u32 in AsUtf32())
             {
                 //little endian byte order
-                yield return (byte) (u32 & 0xFF);
-                yield return (byte) ((u32 >> 8) & 0xFF);
-                yield return (byte) ((u32 >> 16) & 0xFF);
-                yield return (byte) (u32 >> 24);
+                yield return (byte)(u32 & 0xFF);
+                yield return (byte)((u32 >> 8) & 0xFF);
+                yield return (byte)((u32 >> 16) & 0xFF);
+                yield return (byte)(u32 >> 24);
             }
         }
 
@@ -96,8 +96,8 @@ namespace NeoSmart.Unicode
             foreach (var us in AsUtf16())
             {
                 //little endian byte order
-                yield return (byte) (us & 0xFF);
-                yield return (byte) (us >> 8);
+                yield return (byte)(us & 0xFF);
+                yield return (byte)(us >> 8);
             }
         }
 
@@ -142,7 +142,7 @@ namespace NeoSmart.Unicode
                 return true;
             }
 
-            if (_codepoints.Length != other._codepoints.Length)
+            if (other is null || _codepoints.Length != other._codepoints.Length)
             {
                 return false;
             }
@@ -158,14 +158,14 @@ namespace NeoSmart.Unicode
             return true;
         }
 
-        public static bool operator== (UnicodeSequence a, UnicodeSequence b)
+        public static bool operator ==(UnicodeSequence x, UnicodeSequence y)
         {
-            return a.Equals(b);
+            return (x is null && y is null) || (!(x is null || y is null) && x.Equals(y));
         }
-        
-        public static bool operator!= (UnicodeSequence a, UnicodeSequence b)
+
+        public static bool operator !=(UnicodeSequence a, UnicodeSequence b)
         {
-            return !a.Equals(b);
+            return !(a == b);
         }
 
         public override bool Equals(object b)
@@ -177,6 +177,11 @@ namespace NeoSmart.Unicode
             return base.Equals(b);
         }
 
+        public bool Equals(UnicodeSequence x, UnicodeSequence y)
+        {
+            return (x is null && y is null) || (!(x is null || y is null) && x.Equals(y));
+        }
+
         public override int GetHashCode()
         {
             return _codepoints.GetHashCode();
@@ -184,7 +189,7 @@ namespace NeoSmart.Unicode
 
         public bool Equals(string other)
         {
-            return other.Codepoints().SequenceEqual(_codepoints);
+            return !(other is null) && other.Codepoints().SequenceEqual(_codepoints);
         }
     }
 }
