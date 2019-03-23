@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
 
 namespace NeoSmart.Unicode
 {
@@ -15,7 +13,7 @@ namespace NeoSmart.Unicode
             Begin = begin;
             End = end;
         }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
         public Range(Codepoint value)
         {
             Begin = value;
@@ -30,7 +28,7 @@ namespace NeoSmart.Unicode
         //either a single hex codepoint or two separated by a hyphen
         public Range(string range)
         {
-            var values = range.Split(new [] { "-", "–", "—", ".." }, StringSplitOptions.RemoveEmptyEntries); //these are all different hyphens used on Wikipedia and in the UTR
+            var values = range.Split(new[] { "-", "–", "—", ".." }, StringSplitOptions.RemoveEmptyEntries); //these are all different hyphens used on Wikipedia and in the UTR
             Begin = UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber);
 
             if (values.Length == 1)
