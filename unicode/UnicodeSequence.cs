@@ -174,7 +174,7 @@ namespace NeoSmart.Unicode
             return true;
         }
 
-        public static bool operator ==(UnicodeSequence x, UnicodeSequence y)
+        public static bool operator ==(UnicodeSequence a, UnicodeSequence b)
         {
             return a.Equals(b);
         }
@@ -193,9 +193,9 @@ namespace NeoSmart.Unicode
             return base.Equals(b);
         }
 
-        public bool Equals(UnicodeSequence x, UnicodeSequence y)
+        public bool Equals(UnicodeSequence a, UnicodeSequence b)
         {
-            return (x is null && y is null) || (!(x is null || y is null) && x.Equals(y));
+            return (a is null && b is null) || (!(a is null || b is null) && a.Equals(b));
         }
 
         public override int GetHashCode()

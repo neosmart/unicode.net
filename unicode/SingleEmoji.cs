@@ -31,7 +31,7 @@ namespace NeoSmart.Unicode
         {
             return Sequence.CompareTo(other.Sequence);
         }
-
+        
         public static bool operator ==(SingleEmoji a, SingleEmoji b)
         {
             return a.Sequence == b.Sequence;
