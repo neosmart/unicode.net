@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace NeoSmart.Unicode
@@ -10,9 +10,9 @@ namespace NeoSmart.Unicode
     /// </summary>
     public class UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>
     {
-        readonly Codepoint[] _codepoints;
+        private readonly Codepoint[] _codepoints;
         public IEnumerable<Codepoint> Codepoints => _codepoints;
-        
+
         private UnicodeSequence()
         {
 
@@ -73,10 +73,10 @@ namespace NeoSmart.Unicode
             foreach (var u32 in AsUtf32())
             {
                 //little endian byte order
-                yield return (byte) (u32 & 0xFF);
-                yield return (byte) ((u32 >> 8) & 0xFF);
-                yield return (byte) ((u32 >> 16) & 0xFF);
-                yield return (byte) (u32 >> 24);
+                yield return (byte)(u32 & 0xFF);
+                yield return (byte)((u32 >> 8) & 0xFF);
+                yield return (byte)((u32 >> 16) & 0xFF);
+                yield return (byte)(u32 >> 24);
             }
         }
 
@@ -96,8 +96,8 @@ namespace NeoSmart.Unicode
             foreach (var us in AsUtf16())
             {
                 //little endian byte order
-                yield return (byte) (us & 0xFF);
-                yield return (byte) (us >> 8);
+                yield return (byte)(us & 0xFF);
+                yield return (byte)(us >> 8);
             }
         }
 
@@ -158,14 +158,21 @@ namespace NeoSmart.Unicode
             return true;
         }
 
-        public static bool operator== (UnicodeSequence a, UnicodeSequence b)
+        public static bool operator ==(UnicodeSequence a, UnicodeSequence b)
         {
-            return a.Equals(b);
+            if (a is null)
+            {
+                return a == b || b.Equals(a);
+            }
+            else
+            {
+                return a.Equals(b);
+            }
         }
-        
-        public static bool operator!= (UnicodeSequence a, UnicodeSequence b)
+
+        public static bool operator !=(UnicodeSequence a, UnicodeSequence b)
         {
-            return !a.Equals(b);
+            return !(a == b);
         }
 
         public override bool Equals(object b)

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using System.Text;
 
 namespace NeoSmart.Unicode
 {
@@ -29,29 +29,29 @@ namespace NeoSmart.Unicode
 
         public bool Equals(SingleEmoji x, SingleEmoji y)
         {
-            return Sequence == y.Sequence;
+            return (x is null && y is null) || (!(x is null || y is null) && x.Sequence.Equals(y.Sequence));
         }
 
         public int GetHashCode(SingleEmoji obj)
         {
-            return Sequence.GetHashCode();
+            return obj.GetHashCode();
         }
 
-        public static bool operator==(SingleEmoji a, SingleEmoji b)
+        public static bool operator ==(SingleEmoji x, SingleEmoji y)
         {
-            return a.Sequence == b.Sequence;
+            return (x is null && y is null) || (!(x is null || y is null) && x.Sequence == y.Sequence);
         }
 
-        public static bool operator !=(SingleEmoji a, SingleEmoji b)
+        public static bool operator !=(SingleEmoji x, SingleEmoji y)
         {
-            return a.Sequence != b.Sequence;
+            return !(x == y);
         }
 
         public override bool Equals(object obj)
         {
-            if (obj is SingleEmoji)
+            if (obj is SingleEmoji emoji)
             {
-                return Equals(this, obj as SingleEmoji);
+                return Equals(this, emoji);
             }
             return base.Equals(obj);
         }
