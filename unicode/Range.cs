@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
 
 namespace NeoSmart.Unicode
 {
@@ -15,7 +13,7 @@ namespace NeoSmart.Unicode
             Begin = begin;
             End = end;
         }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
         public Range(Codepoint value)
         {
             Begin = value;
@@ -30,8 +28,8 @@ namespace NeoSmart.Unicode
         //either a single hex codepoint or two separated by a hyphen
         public Range(string range)
         {
-            var values = range.Split(new [] { "-", "–", "—", ".." }, StringSplitOptions.RemoveEmptyEntries); //these are all different hyphens used on Wikipedia and in the UTR
-            Begin = UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber);
+            var values = range.Split(new[] { "-", "–", "—", ".." }, StringSplitOptions.RemoveEmptyEntries); //these are all different hyphens used on Wikipedia and in the UTR
+            Begin = uint.Parse(values[0], System.Globalization.NumberStyles.HexNumber);
 
             if (values.Length == 1)
             {
@@ -39,7 +37,7 @@ namespace NeoSmart.Unicode
             }
             else if (values.Length == 2)
             {
-                End = UInt32.Parse(values[1], System.Globalization.NumberStyles.HexNumber);
+                End = uint.Parse(values[1], System.Globalization.NumberStyles.HexNumber);
             }
             else
             {
@@ -47,18 +45,18 @@ namespace NeoSmart.Unicode
             }
         }
 
-        public IEnumerable<UInt32> AsUtf32Sequence
+        public IEnumerable<uint> AsUtf32Sequence
         {
             get
             {
-                for (UInt32 i = 0; Begin + i <= End; ++i)
+                for (uint i = 0; Begin + i <= End; ++i)
                 {
                     yield return new Codepoint(Begin + i).AsUtf32();
                 }
             }
         }
 
-        public IEnumerable<UInt16> AsUtf16Sequence
+        public IEnumerable<ushort> AsUtf16Sequence
         {
             get
             {

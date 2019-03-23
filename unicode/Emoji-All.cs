@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+﻿using System.Collections.Generic;
 
 namespace NeoSmart.Unicode
 {
@@ -9,7 +6,7 @@ namespace NeoSmart.Unicode
     //see importers/emoji-importer.html for the generator
     public static partial class Emoji
     {
-        public static IEnumerable<SingleEmoji> All => new [] {
+        public static IEnumerable<SingleEmoji> All => new[] {
 	        /* 😀 */ GrinningFace,
 	        /* 😁 */ GrinningFaceWithSmilingEyes,
 	        /* 😂 */ FaceWithTearsOfJoy,

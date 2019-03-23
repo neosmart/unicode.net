@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Linq;
 using System.Globalization;
+using System.Linq;
+using System.Text;
 
 namespace NeoSmart.Unicode
 {
-    public struct Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>, 
+    public struct Codepoint : IComparable<Codepoint>, IComparable<uint>, IEquatable<Codepoint>,
         IEquatable<string>, IComparable<string>, IEquatable<char>
     {
-        public readonly UInt32 Value;
+        public readonly uint Value;
 
-        public Codepoint(UInt32 value)
+        public Codepoint(uint value)
         {
             Value = value;
         }
 
         public Codepoint(long value)
-            : this ((UInt32) value)
+            : this((uint)value)
         { }
 
         /// <summary>
@@ -45,13 +45,13 @@ namespace NeoSmart.Unicode
         {
             //from highest to lowest
             var utf32 = AsUtf32();
-            var b1 = (byte) (utf32 >> 24);
+            var b1 = (byte)(utf32 >> 24);
             yield return b1;
-            var b2 = (byte) ((utf32 & 0x00FFFFFF) >> 16);
+            var b2 = (byte)((utf32 & 0x00FFFFFF) >> 16);
             yield return b2;
-            var b3 = (byte) (((UInt16) utf32) >> 8);
+            var b3 = (byte)(((ushort)utf32) >> 8);
             yield return b3;
-            var b4 = (byte) utf32;
+            var b4 = (byte)utf32;
             yield return b4;
         }
 
@@ -61,17 +61,17 @@ namespace NeoSmart.Unicode
             //U+0000 to U+D7FF and U+E000 to U+FFFF
             if (Value <= 0xFFFF)
             {
-                yield return (UInt16) Value;
+                yield return (ushort)Value;
             }
             //U+10000 to U+10FFFF
             else if (Value >= 0x10000 && Value <= 0x10FFFF)
             {
-                UInt32 newVal = Value - 0x010000; //leaving 20 bits
-                UInt16 high = (UInt16) ((newVal >> 10) + 0xD800);
+                uint newVal = Value - 0x010000; //leaving 20 bits
+                ushort high = (ushort)((newVal >> 10) + 0xD800);
                 System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
                 yield return high;
 
-                UInt16 low = (UInt16) ((newVal & 0x03FF) + 0xDC00);
+                ushort low = (ushort)((newVal & 0x03FF) + 0xDC00);
                 System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
                 yield return low;
             }
@@ -89,9 +89,9 @@ namespace NeoSmart.Unicode
             var utf16 = AsUtf16();
             foreach (var u16 in utf16)
             {
-                var high = (byte) (u16 >> 8);
+                var high = (byte)(u16 >> 8);
                 yield return high;
-                var low = (byte) u16;
+                var low = (byte)u16;
                 yield return low;
             }
         }
@@ -102,34 +102,34 @@ namespace NeoSmart.Unicode
             //up to 7 bits
             if (Value <= 0x007F)
             {
-                yield return (byte) Value;
+                yield return (byte)Value;
                 yield break;
             }
 
             //up to 11 bits
             if (Value <= 0x07FF)
             {
-                yield return (byte) (0b11000000 | (0b00011111 & (Value >> 6))); //tag + upper 5 bits
-                yield return (byte) (0b10000000 | (0b00111111 & Value)); //tag + lower 6 bits
+                yield return (byte)(0b11000000 | (0b00011111 & (Value >> 6))); //tag + upper 5 bits
+                yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + lower 6 bits
                 yield break;
             }
 
             //up to 16 bits
             if (Value <= 0x0FFFF)
             {
-                yield return (byte) (0b11100000 | (0b00001111 & (Value >> 12))); //tag + upper 4 bits
-                yield return (byte) (0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
-                yield return (byte) (0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
+                yield return (byte)(0b11100000 | (0b00001111 & (Value >> 12))); //tag + upper 4 bits
+                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
+                yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
                 yield break;
             }
 
             //up to 21 bits
             if (Value <= 0x1FFFFF)
             {
-                yield return (byte) (0b11110000 | (0b00000111 & (Value >> 18))); //tag + upper 3 bits
-                yield return (byte) (0b10000000 | (0b00111111 & (Value >> 12))); //tag + next 6 bits
-                yield return (byte) (0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
-                yield return (byte) (0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
+                yield return (byte)(0b11110000 | (0b00000111 & (Value >> 18))); //tag + upper 3 bits
+                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 12))); //tag + next 6 bits
+                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
+                yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
                 yield break;
             }
 
@@ -141,7 +141,7 @@ namespace NeoSmart.Unicode
             return Value.CompareTo(other.Value);
         }
 
-        public int CompareTo(UInt32 other)
+        public int CompareTo(uint other)
         {
             return Value.CompareTo(other);
         }
@@ -165,12 +165,12 @@ namespace NeoSmart.Unicode
             return Value.GetHashCode();
         }
 
-        public static bool operator== (Codepoint a, Codepoint b)
+        public static bool operator ==(Codepoint a, Codepoint b)
         {
             return a.Value == b.Value;
         }
 
-        public static bool operator!= (Codepoint a, Codepoint b)
+        public static bool operator !=(Codepoint a, Codepoint b)
         {
             return a.Value != b.Value;
         }
@@ -195,12 +195,12 @@ namespace NeoSmart.Unicode
             return a.Value <= b.Value;
         }
 
-        public static implicit operator UInt32(Codepoint codepoint)
+        public static implicit operator uint(Codepoint codepoint)
         {
             return codepoint.Value;
         }
 
-        public static implicit operator Codepoint(UInt32 value)
+        public static implicit operator Codepoint(uint value)
         {
             return new Codepoint(value);
         }

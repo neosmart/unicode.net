@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+﻿using System.Collections.Generic;
 
 namespace NeoSmart.Unicode
 {
@@ -11,7 +8,7 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji without skin variations and no duplicate gendered vs gender-neutral emoji, ideal for displaying.
         /// Emoji without supported glyphs in Segoe UI Emoji are also omitted from this list.
         /// </summary>
-        public static IEnumerable<SingleEmoji> Basic => new [] {
+        public static IEnumerable<SingleEmoji> Basic => new[] {
 	        /* 😀 */ GrinningFace,
 	        /* 😁 */ GrinningFaceWithSmilingEyes,
 	        /* 😂 */ FaceWithTearsOfJoy,

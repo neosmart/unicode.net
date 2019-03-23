@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NeoSmart.Unicode;
+using System.Linq;
 
 namespace UnicodeTests
 {
@@ -46,20 +45,20 @@ namespace UnicodeTests
         [TestMethod]
         public void TestEmojiDetection()
         {
-            string[] singularEmoji = new []
+            string[] singularEmoji = new[]
             {
                 "😀",
                 "👺",
                 "😶"
             };
 
-            string[] combinedEmoji = new []
+            string[] combinedEmoji = new[]
             {
                 "👩‍🔧",
                 "👩‍🔬"
             };
 
-            string[] threeEmojiSymbols = new []
+            string[] threeEmojiSymbols = new[]
             {
                 "😀😀😀",
                 "👩‍🔧😀😀",
@@ -67,7 +66,7 @@ namespace UnicodeTests
                 "👩‍🔧👩‍🔧👩‍🔧"
             };
 
-            string[] mixedEmojiDigits = new []
+            string[] mixedEmojiDigits = new[]
             {
                 "😀12",
                 "1😀2",
@@ -81,7 +80,7 @@ namespace UnicodeTests
                 "ab😀"
             };
 
-            string[] nonEmojiText = new []
+            string[] nonEmojiText = new[]
             {
                 "123",
                 "abc",

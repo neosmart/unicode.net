@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace NeoSmart.Unicode
@@ -10,7 +8,7 @@ namespace NeoSmart.Unicode
         private List<Range> _ranges = new List<Range>();
         public IEnumerable<Range> Ranges => _ranges;
 
-        public MultiRange(params string[]  ranges)
+        public MultiRange(params string[] ranges)
         {
             _ranges.AddRange(ranges.Select(r => new Range(r)));
         }

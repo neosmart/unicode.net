@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NeoSmart.Unicode
+﻿namespace NeoSmart.Unicode
 {
     //this file is machine-generated from the official Unicode Consortium UTR51 publication
     //see importers/emoji-importer.html for the generator

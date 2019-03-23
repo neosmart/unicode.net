@@ -1,8 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NeoSmart.Unicode;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace UnicodeTests
 {

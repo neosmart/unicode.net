@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NeoSmart.Unicode
+﻿namespace NeoSmart.Unicode
 {
     /// <summary>
     /// Helpful definitions for commonly- and not-so-commonly-used codepoints.

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace NeoSmart.Unicode
 {
@@ -16,7 +15,7 @@ namespace NeoSmart.Unicode
                     {
                         throw new InvalidEncodingException();
                     }
-                    if (!char.IsLowSurrogate(s[i+1]))
+                    if (!char.IsLowSurrogate(s[i + 1]))
                     {
                         throw new InvalidEncodingException();
                     }
