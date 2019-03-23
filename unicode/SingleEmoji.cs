@@ -27,9 +27,9 @@ namespace NeoSmart.Unicode
             return SortOrder.CompareTo(other.SortOrder);
         }
 
-        public bool Equals(SingleEmoji x, SingleEmoji y)
+        public bool Equals(SingleEmoji a, SingleEmoji b)
         {
-            return (x is null && y is null) || (!(x is null || y is null) && x.Sequence.Equals(y.Sequence));
+            return (a is null && b is null) || (!(a is null || b is null) && a.Sequence.Equals(b.Sequence));
         }
 
         public int GetHashCode(SingleEmoji obj)
@@ -37,14 +37,14 @@ namespace NeoSmart.Unicode
             return obj.GetHashCode();
         }
 
-        public static bool operator ==(SingleEmoji x, SingleEmoji y)
+        public static bool operator ==(SingleEmoji a, SingleEmoji b)
         {
-            return (x is null && y is null) || (!(x is null || y is null) && x.Sequence == y.Sequence);
+            return (a is null && b is null) || (!(a is null || b is null) && a.Sequence == b.Sequence);
         }
 
-        public static bool operator !=(SingleEmoji x, SingleEmoji y)
+        public static bool operator !=(SingleEmoji a, SingleEmoji b)
         {
-            return !(x == y);
+            return !(a == b);
         }
 
         public override bool Equals(object obj)
