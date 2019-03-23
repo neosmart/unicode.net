@@ -176,7 +176,14 @@ namespace NeoSmart.Unicode
 
         public static bool operator ==(UnicodeSequence a, UnicodeSequence b)
         {
-            return a.Equals(b);
+            if (a is null)
+            {
+                return a == b || b.Equals(a);
+            }
+            else
+            {
+                return a.Equals(b);
+            }
         }
 
         public static bool operator !=(UnicodeSequence a, UnicodeSequence b)
