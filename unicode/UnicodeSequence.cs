@@ -158,7 +158,7 @@ namespace NeoSmart.Unicode
                 return true;
             }
 
-            if (other is null || _codepoints.Length != other._codepoints.Length)
+            if (_codepoints.Length != other._codepoints.Length)
             {
                 return false;
             }
@@ -176,7 +176,7 @@ namespace NeoSmart.Unicode
 
         public static bool operator ==(UnicodeSequence a, UnicodeSequence b)
         {
-            return (a is null && b is null) || (!(a is null || b is null) && a.Equals(b));
+            return a.Equals(b);
         }
 
         public static bool operator !=(UnicodeSequence a, UnicodeSequence b)
@@ -191,11 +191,6 @@ namespace NeoSmart.Unicode
                 return Equals((UnicodeSequence)b);
             }
             return base.Equals(b);
-        }
-
-        public bool Equals(UnicodeSequence a, UnicodeSequence b)
-        {
-            return (a is null && b is null) || (!(a is null || b is null) && a.Equals(b));
         }
 
         public override int GetHashCode()
