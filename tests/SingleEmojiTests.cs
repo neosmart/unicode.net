@@ -37,8 +37,6 @@ namespace UnicodeTests
             Assert.IsFalse(Equals(Emoji.AbButtonBloodType, null));
             Assert.IsTrue(Equals(Emoji.AbButtonBloodType, Emoji.AbButtonBloodType));
 
-            Assert.IsFalse(Emoji.AbButtonBloodType.Equals(null, Emoji.Adult));
-            Assert.IsFalse(Emoji.AbButtonBloodType.Equals(Emoji.Adult, null));
             Assert.IsTrue(Emoji.AbButtonBloodType.Equals(Emoji.Adult, Emoji.Adult));
         }
 
