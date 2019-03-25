@@ -9,9 +9,9 @@ namespace NeoSmart.Unicode
     public struct Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>,
         IEquatable<string>, IComparable<string>, IEquatable<char>
     {
-        public readonly uint Value;
+        public readonly UInt32 Value;
 
-        public Codepoint(uint value)
+        public Codepoint(UInt32 value)
         {
             Value = value;
         }
@@ -141,7 +141,7 @@ namespace NeoSmart.Unicode
             return Value.CompareTo(other.Value);
         }
 
-        public int CompareTo(uint other)
+        public int CompareTo(UInt32 other)
         {
             return Value.CompareTo(other);
         }
@@ -195,12 +195,12 @@ namespace NeoSmart.Unicode
             return a.Value <= b.Value;
         }
 
-        public static implicit operator uint(Codepoint codepoint)
+        public static implicit operator UInt32(Codepoint codepoint)
         {
             return codepoint.Value;
         }
 
-        public static implicit operator Codepoint(uint value)
+        public static implicit operator Codepoint(UInt32 value)
         {
             return new Codepoint(value);
         }
