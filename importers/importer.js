@@ -161,6 +161,8 @@ function emojiToCSharp(emoji) {
 public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
         sequence: new UnicodeSequence("${emoji.sequence}"),
         name: "${emoji.name}",
+        group: "${emoji.group}",
+        subgroup: "${emoji.subgroup}",
         searchTerms: new [] { ${makeStringArray(emoji.name)} },
         sortOrder: ${emoji.index},
     );
@@ -219,23 +221,32 @@ function fontSupportsEmoji(font, emoji) {
 function *parse(data) {
     const parser = /(.*?)\s+;.*# (\S+) (.*)/;
     const lines = data.split("\n");
+    const groupRegex = /\bgroup: \s*(\S.+?)\s*$/;
+    const subgroupRegex = /subgroup: \s*(\S.+?)\s*$/;
 
+    let group = "";
+    let subgroup = "";
     for (let i = 0; i < lines.length; ++i) {
         const line = lines[i];
         if (line.startsWith("#") || !line.includes("fully-qualified")) {
+            if (match = line.match(groupRegex)) {
+                group = (match[1]);
+            } else if (match = line.match(subgroupRegex)) {
+                subgroup = (match[1]);
+            }
             continue;
         }
 
         let results = line.match(parser);
 
-        let emoji = {
+        yield {
             "sequence": results[1],
             "symbol": results[2],
             "name": results[3],
             "index": i++,
+            "group": group,
+            "subgroup": subgroup,
         };
-
-        yield emoji;
     }
 }
 
