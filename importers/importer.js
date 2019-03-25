@@ -117,6 +117,45 @@ function CamelCase(string, withSpaces = false) {
     return result.join("");
 }
 
+function getBinary(path) {
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.overrideMimeType("application/octet-stream");
+        xhr.open('GET', path, true);
+        xhr.responseType = 'arraybuffer';
+
+        xhr.onload = function(e) {
+            if (this.status != 200) {
+                reject(e);
+                return;
+            }
+
+            resolve(this.response);
+        }
+
+        xhr.send();
+    });
+}
+
+function getText(path) {
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.overrideMimeType("text/plain");
+        xhr.open('GET', path, true);
+        xhr.responseType = 'text';
+
+        xhr.onload = function(e) {
+            if (this.status != 200) {
+                reject(e);
+            } else {
+                resolve(this.responseText);
+            }
+        };
+
+        xhr.send();
+    });
+}
+
 function makeStringArray(keywords) {
     return keywords
         .split(/[ \-_:]/)
@@ -141,7 +180,7 @@ function makeSortedSet(name, emoji) {
 
 `;
 
-    $("#results").append(document.createTextNode(result))
+    return result;
 }
 
 function isBasicEmoji(emoji) {
@@ -168,27 +207,6 @@ public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
     );
 
 `;
-}
-
-function loadFont(fontPath, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.overrideMimeType("text/plain");
-    xhr.open('GET', fontPath, true);
-    xhr.responseType = 'arraybuffer';
-
-    xhr.onload = function(e) {
-        if (this.status != 200) {
-            console.log("Load font failed!");
-            console.log(e);
-            return;
-        }
-
-        var fkBlob = this.response;
-        var fkBuffer = new Buffer(fkBlob);
-        var font = fontkit.create(fkBuffer);
-        callback(font);
-    }
-    xhr.send();
 }
 
 const menWomenRegex = /\b(men|women)\b/;
@@ -266,30 +284,29 @@ function ungenderedEmoji(emoji) {
             e2.name.toLowerCase() == e.name.replace(manWomanRegexPlus, "").toLowerCase())));
 }
 
-loadFont("./seguiemj.ttf", font => {
-    // emoji-test.txt from http://unicode.org/Public/emoji/5.0/emoji-test.txt
+class CodeGenerator {
+    constructor(font, data) {
+        this.font = font;
+        this.data = data;
+    }
 
-    var xhr = new XMLHttpRequest();
-    xhr.overrideMimeType("text/plain");
-    xhr.open('GET', "emoji-test.txt", true);
-    xhr.responseType = 'text';
+    generate() {
+        // Parse data and generate actual emoji
+        let emoji = Array.from(parseEmoji(this.data));
 
-    xhr.onload = function(e) {
-        if (this.status != 200) {
-            console.log("Load emoji-test.txt failed!");
-            console.log(e);
-            return;
-        }
+        let csharp = {
+            emoji: [],
+            lists: {},
+        };
 
-        let emoji = Array.from(parseEmoji(this.responseText)); // all emoji
-
-        // Dump actual emoji objects. All other operations print only references to these.
+        // Dump actual emoji objects.
+        // All other operations print only references to these.
         for (const e of emoji) {
-            $("#results").append(document.createTextNode(emojiToCSharp(e)))
+            csharp.emoji.push(emojiToCSharp(e));
         }
 
         // Dump all emoji list
-        makeSortedSet("All", emoji);
+        csharp.lists.all = makeSortedSet("All", emoji);
 
         // Some partial lists of emoji filtered by certain criteria
         let basicEmoji = emoji.filter(isBasicEmoji); // removes meta emoji
@@ -298,11 +315,11 @@ loadFont("./seguiemj.ttf", font => {
         // Narrow it down to emoji supported by Segoe UI Emoji
         let supportedEmoji = basicUngenderedEmoji
             .filter(isBasicEmoji)
-            .filter(e => fontSupportsEmoji(font, e));
+            .filter(e => fontSupportsEmoji(this.font, e));
 
         // Dump list of ungendered emoji
-        makeSortedSet("Basic", supportedEmoji);
-    };
+        csharp.lists.basic = makeSortedSet("Basic", supportedEmoji);
 
-    xhr.send();
-});
+        return csharp;
+    }
+}

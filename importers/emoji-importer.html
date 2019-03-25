@@ -5,8 +5,26 @@
 <body>
     <pre id="results"></pre>
 
-    <script type="text/javascript" src="https://unpkg.com/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="./fontkit.js"></script>
     <script type="text/javascript" src="./importer.js"></script>
+
+    <script type="text/javascript">
+
+        (async function() {
+            let fkBuffer = new Buffer(await getBinary("./seguiemj.ttf"));
+            let font = fontkit.create(fkBuffer);
+
+            // This is http://unicode.org/Public/emoji/5.0/emoji-test.txt
+            let data = await getText("./emoji-test.txt");
+
+            let generator = new CodeGenerator(font, data);
+            let code = generator.generate();
+
+            let results = document.getElementById("results");
+            for (const emoji of code.emoji) {
+                results.append(document.createTextNode(emoji));
+            }
+        })();
+    </script>
 </body>
 </html>
