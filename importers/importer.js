@@ -4,6 +4,68 @@ const firstRegex = /\b1st/;
 const secondRegex = /\b2nd/;
 const thirdRegex = /\b3rd/;
 
+// Implementation of Lazy derived from the code at
+// https://dev.to/nestedsoftware/lazy-evaluation-in-javascript-with-generators-map-filter-and-reduce--36h5
+class Lazy {
+    constructor(iterable, callback) {
+        this.iterable = iterable
+        this.callback = callback
+    }
+
+    filter(callback) {
+        return new LazyFilter(this, callback)
+    }
+
+    map(callback) {
+        return new LazyMap(this, callback)
+    }
+
+    [Symbol.iterator]() {
+        return {
+            next: () => {
+                return this.iterable.next();
+            }
+        }
+    }
+
+    next() {
+        return this.iterable.next()
+    }
+
+    take(n) {
+        const values = []
+        for (let i = 0; i < n; i++) {
+            values.push(this.next().value)
+        }
+
+        return values
+    }
+}
+
+class LazyFilter extends Lazy {
+    next() {
+        while (true) {
+            const item = this.iterable.next()
+
+            if (this.callback(item.value)) {
+                return item
+            }
+        }
+    }
+}
+
+class LazyMap extends Lazy {
+    next() {
+        const item = this.iterable.next()
+
+        const mappedValue = this.callback(item.value)
+        return {
+            value: mappedValue,
+            done: item.done
+        }
+    }
+}
+
 function CamelCase(string, withSpaces = false) {
     if (string == null) {
         return "";
@@ -56,24 +118,28 @@ function CamelCase(string, withSpaces = false) {
 }
 
 function makeStringArray(keywords) {
-    return Enumerable
-        .From(keywords.split(" "))
-        .Where(x => x != "")
-        .SelectMany(x => x.split("_"))
-        .SelectMany(x => x.split("-"))
-        .SelectMany(x => x.split(":"))
-        .Select(x => x.trim().toLowerCase())
-        .Where(x => !(["", "of", "with", "without", "and", "or", "&", "on", "the", "in"]
-            .includes(x))).Select(x => sprintf('"%s"', x))
-        .Distinct()
-        .ToArray()
+    return keywords
+        .split(/[ \-_:]/)
+        .map(word => word.replace(skipPunctuation, ""))
+        .map(word => word.replace(spacePunctuation, ""))
+        .filter(word => word.length > 0)
+        .map(word => word.toLowerCase())
+        .filter(word => !/^(of|with|without|and|or|&|on|the|in)$/.test(word))
+        .map(word => `"${word}"`)
         .join(", ");
 }
 
 function makeSortedSet(name, emoji) {
-    result = sprintf('public static readonly SortedSet<SingleEmoji> %s = new SortedSet<SingleEmoji>() {\n', name);
-    emoji.each(e => result += sprintf('\t/* %s */ %s,\n', e.symbol, CamelCase(e.name)));
-    result += '};';
+    result = `public static readonly SortedSet<SingleEmoji> ${name} = new SortedSet<SingleEmoji>() {
+`;
+
+    for (const e of emoji) {
+        result += `\t/* ${e.symbol} */ ${CamelCase(e.name)},
+`;
+    }
+    result += `};
+
+`;
 
     $("#results").append(document.createTextNode(result))
 }
@@ -91,14 +157,15 @@ function isUngenderedEmoji(emoji) {
 }
 
 function emojiToCSharp(emoji) {
-    return sprintf(
-        "public static readonly SingleEmoji %s = new SingleEmoji( \n\
-sequence: new UnicodeSequence(\"%s\"),\n\
-name: \"%s\",\n\
-searchTerms: new [] { %s },\n\
-sortOrder: %d\n\
-);\n\
-", CamelCase(emoji.name), emoji.sequence, emoji.name, makeStringArray(emoji.name), emoji.index);
+    return `/* ${emoji.symbol} */
+public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
+        sequence: new UnicodeSequence("${emoji.sequence}"),
+        name: "${emoji.name}",
+        searchTerms: new [] { ${makeStringArray(emoji.name)} },
+        sortOrder: ${emoji.index},
+    );
+
+`;
 }
 
 function loadFont(fontPath, callback) {
@@ -123,6 +190,7 @@ function loadFont(fontPath, callback) {
 }
 
 const menWomenRegex = /\b(men|women)\b/;
+
 function fontSupportsEmoji(font, emoji) {
     // Hard-coded elimination: glyphs for Men* and Women* are the basic ungendered emoji
     // in Segoe UI Emoji, but with the gender icon tacked on.
@@ -148,32 +216,43 @@ function fontSupportsEmoji(font, emoji) {
     return true;
 }
 
-function parseEmoji(data) {
-    var lines = data.split("\n");
-    var i = 0;
-    return Lazy(lines).filter(l => !l.startsWith("#") && l.includes("fully-qualified")).map(function(l) {
-        var results = l.match(/(.*?)\s+;.*# (\S+) (.*)/);
-        var emoji = {
+function *parse(data) {
+    const parser = /(.*?)\s+;.*# (\S+) (.*)/;
+    const lines = data.split("\n");
+
+    for (let i = 0; i < lines.length; ++i) {
+        const line = lines[i];
+        if (line.startsWith("#") || !line.includes("fully-qualified")) {
+            continue;
+        }
+
+        let results = line.match(parser);
+
+        let emoji = {
             "sequence": results[1],
             "symbol": results[2],
             "name": results[3],
-            "index": i++
+            "index": i++,
         };
-        // console.log(emoji);
-        return emoji;
-    }).uniq(x => CamelCase(x.name));
+
+        yield emoji;
+    }
+}
+
+function parseEmoji(data) {
+    return new Lazy(parse(data), () => true);
 }
 
 const manWomanRegex = /^(man|woman)/i;
 const manWomanRegexPlus = /^(man|woman) */i;
 
+// This should not be passed a generator but rather a full-on Array
 function ungenderedEmoji(emoji) {
     // Yes, this is insanely slow and could be optimized by making a trimmed & sorted
     // second/third list and taking the distinct union, but who cares?
-    return emoji.filter(e => !manWomanRegex.test(e.name)
-        || !emoji.some(e2 => (e2.name.toLowerCase() == e.name.replace(manWomanRegex, "person").toLowerCase()
-            || e2.name.toLowerCase() == e.name.replace(manWomanRegexPlus, "").toLowerCase())
-    ));
+    return emoji.filter(e => !manWomanRegex.test(e.name) ||
+        !emoji.some(e2 => (e2.name.toLowerCase() == e.name.replace(manWomanRegex, "person").toLowerCase() ||
+            e2.name.toLowerCase() == e.name.replace(manWomanRegexPlus, "").toLowerCase())));
 }
 
 loadFont("./seguiemj.ttf", font => {
@@ -191,16 +270,27 @@ loadFont("./seguiemj.ttf", font => {
             return;
         }
 
-        let emoji = parseEmoji(this.responseText); // all emoji
-        let basicEmoji = emoji.filter(isBasicEmoji); // emoji suitable for display
-        let supportedEmoji = basicEmoji.filter(e => fontSupportsEmoji(font, e)); // emoji supported by Segoe UI Emoji
+        let emoji = Array.from(parseEmoji(this.responseText)); // all emoji
 
-        // dump all emoji list
-        // makeSortedSet(emoji);
+        // Dump actual emoji objects. All other operations print only references to these.
+        for (const e of emoji) {
+            $("#results").append(document.createTextNode(emojiToCSharp(e)))
+        }
 
-        // dump basic emoji list
-        let basicUngenderedEmoji = ungenderedEmoji(basicEmoji);
-        makeSortedSet("Basic", basicUngenderedEmoji);
+        // Dump all emoji list
+        makeSortedSet("All", emoji);
+
+        // Some partial lists of emoji filtered by certain criteria
+        let basicEmoji = emoji.filter(isBasicEmoji); // removes meta emoji
+        let basicUngenderedEmoji = ungenderedEmoji(Array.from(basicEmoji));
+
+        // Narrow it down to emoji supported by Segoe UI Emoji
+        let supportedEmoji = basicUngenderedEmoji
+            .filter(isBasicEmoji)
+            .filter(e => fontSupportsEmoji(font, e));
+
+        // Dump list of ungendered emoji
+        makeSortedSet("Basic", supportedEmoji);
     };
 
     xhr.send();
