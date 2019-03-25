@@ -37,7 +37,7 @@ namespace NeoSmart.Unicode
             }
             else if (values.Length == 2)
             {
-                End = uint.Parse(values[1], System.Globalization.NumberStyles.HexNumber);
+                End = UInt32.Parse(values[1], System.Globalization.NumberStyles.HexNumber);
             }
             else
             {
@@ -45,18 +45,18 @@ namespace NeoSmart.Unicode
             }
         }
 
-        public IEnumerable<uint> AsUtf32Sequence
+        public IEnumerable<UInt32> AsUtf32Sequence
         {
             get
             {
-                for (uint i = 0; Begin + i <= End; ++i)
+                for (UInt32 i = 0; Begin + i <= End; ++i)
                 {
                     yield return new Codepoint(Begin + i).AsUtf32();
                 }
             }
         }
 
-        public IEnumerable<ushort> AsUtf16Sequence
+        public IEnumerable<UInt16> AsUtf16Sequence
         {
             get
             {
