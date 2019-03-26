@@ -17644,6 +17644,66 @@ namespace NeoSmart.Unicode
             hasGlyph: true,
             sortOrder: 2380
         );
+        public static readonly SingleEmoji NinjaCat = new SingleEmoji(
+            sequence: new UnicodeSequence("1F431 200D 1F464"),
+            name: "ninja cat",
+            searchTerms: new[] { "ninja", "cat" },
+            skinTones: new[] { SkinTone.NONE },
+            group: Group.ANIMALS_AND_NATURE,
+            subgroup: "windows-ninja-cat",
+            hasGlyph: false,
+            sortOrder: 2381
+        );
+        public static readonly SingleEmoji HipsterCat = new SingleEmoji(
+            sequence: new UnicodeSequence("1F431 200D 1F453"),
+            name: "hipster cat",
+            searchTerms: new[] { "hipster", "cat" },
+            skinTones: new[] { SkinTone.NONE },
+            group: Group.ANIMALS_AND_NATURE,
+            subgroup: "windows-ninja-cat",
+            hasGlyph: false,
+            sortOrder: 2382
+        );
+        public static readonly SingleEmoji HackerCat = new SingleEmoji(
+            sequence: new UnicodeSequence("1F431 200D 1F4BB"),
+            name: "hacker cat",
+            searchTerms: new[] { "hacker", "cat" },
+            skinTones: new[] { SkinTone.NONE },
+            group: Group.ANIMALS_AND_NATURE,
+            subgroup: "windows-ninja-cat",
+            hasGlyph: false,
+            sortOrder: 2383
+        );
+        public static readonly SingleEmoji DinoCat = new SingleEmoji(
+            sequence: new UnicodeSequence("1F431 200D 1F409"),
+            name: "dino cat",
+            searchTerms: new[] { "dino", "cat" },
+            skinTones: new[] { SkinTone.NONE },
+            group: Group.ANIMALS_AND_NATURE,
+            subgroup: "windows-ninja-cat",
+            hasGlyph: false,
+            sortOrder: 2384
+        );
+        public static readonly SingleEmoji StuntCat = new SingleEmoji(
+            sequence: new UnicodeSequence("1F431 200D 1F3CD"),
+            name: "stunt cat",
+            searchTerms: new[] { "stunt", "cat" },
+            skinTones: new[] { SkinTone.NONE },
+            group: Group.ANIMALS_AND_NATURE,
+            subgroup: "windows-ninja-cat",
+            hasGlyph: false,
+            sortOrder: 2385
+        );
+        public static readonly SingleEmoji AstroCat = new SingleEmoji(
+            sequence: new UnicodeSequence("1F431 200D 1F680"),
+            name: "astro cat",
+            searchTerms: new[] { "astro", "cat" },
+            skinTones: new[] { SkinTone.NONE },
+            group: Group.ANIMALS_AND_NATURE,
+            subgroup: "windows-ninja-cat",
+            hasGlyph: false,
+            sortOrder: 2386
+        );
         public static readonly SingleEmoji MonkeyFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F435"),
             name: "monkey face",
@@ -17652,7 +17712,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2381
+            sortOrder: 2387
         );
         public static readonly SingleEmoji Monkey = new SingleEmoji(
             sequence: new UnicodeSequence("1F412"),
@@ -17662,7 +17722,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2382
+            sortOrder: 2388
         );
         public static readonly SingleEmoji Gorilla = new SingleEmoji(
             sequence: new UnicodeSequence("1F98D"),
@@ -17672,7 +17732,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2383
+            sortOrder: 2389
         );
         public static readonly SingleEmoji Orangutan = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A7"),
@@ -17682,7 +17742,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: false,
-            sortOrder: 2384
+            sortOrder: 2390
         );
         public static readonly SingleEmoji DogFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F436"),
@@ -17692,7 +17752,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2385
+            sortOrder: 2391
         );
         public static readonly SingleEmoji Dog = new SingleEmoji(
             sequence: new UnicodeSequence("1F415"),
@@ -17702,7 +17762,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2386
+            sortOrder: 2392
         );
         public static readonly SingleEmoji GuideDog = new SingleEmoji(
             sequence: new UnicodeSequence("1F9AE"),
@@ -17712,7 +17772,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: false,
-            sortOrder: 2387
+            sortOrder: 2393
         );
         public static readonly SingleEmoji ServiceDog = new SingleEmoji(
             sequence: new UnicodeSequence("1F415 200D 1F9BA"),
@@ -17722,7 +17782,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: false,
-            sortOrder: 2388
+            sortOrder: 2394
         );
         public static readonly SingleEmoji Poodle = new SingleEmoji(
             sequence: new UnicodeSequence("1F429"),
@@ -17732,7 +17792,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2389
+            sortOrder: 2395
         );
         public static readonly SingleEmoji Wolf = new SingleEmoji(
             sequence: new UnicodeSequence("1F43A"),
@@ -17742,7 +17802,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2390
+            sortOrder: 2396
         );
         public static readonly SingleEmoji Fox = new SingleEmoji(
             sequence: new UnicodeSequence("1F98A"),
@@ -17752,7 +17812,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2391
+            sortOrder: 2397
         );
         public static readonly SingleEmoji Raccoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F99D"),
@@ -17762,7 +17822,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2392
+            sortOrder: 2398
         );
         public static readonly SingleEmoji CatFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F431"),
@@ -17772,7 +17832,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2393
+            sortOrder: 2399
         );
         public static readonly SingleEmoji Cat = new SingleEmoji(
             sequence: new UnicodeSequence("1F408"),
@@ -17782,7 +17842,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2394
+            sortOrder: 2400
         );
         public static readonly SingleEmoji Lion = new SingleEmoji(
             sequence: new UnicodeSequence("1F981"),
@@ -17792,7 +17852,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2395
+            sortOrder: 2401
         );
         public static readonly SingleEmoji TigerFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F42F"),
@@ -17802,7 +17862,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2396
+            sortOrder: 2402
         );
         public static readonly SingleEmoji Tiger = new SingleEmoji(
             sequence: new UnicodeSequence("1F405"),
@@ -17812,7 +17872,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2397
+            sortOrder: 2403
         );
         public static readonly SingleEmoji Leopard = new SingleEmoji(
             sequence: new UnicodeSequence("1F406"),
@@ -17822,7 +17882,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2398
+            sortOrder: 2404
         );
         public static readonly SingleEmoji HorseFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F434"),
@@ -17832,7 +17892,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2399
+            sortOrder: 2405
         );
         public static readonly SingleEmoji Horse = new SingleEmoji(
             sequence: new UnicodeSequence("1F40E"),
@@ -17842,7 +17902,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2400
+            sortOrder: 2406
         );
         public static readonly SingleEmoji Unicorn = new SingleEmoji(
             sequence: new UnicodeSequence("1F984"),
@@ -17852,7 +17912,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2401
+            sortOrder: 2407
         );
         public static readonly SingleEmoji Zebra = new SingleEmoji(
             sequence: new UnicodeSequence("1F993"),
@@ -17862,7 +17922,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2402
+            sortOrder: 2408
         );
         public static readonly SingleEmoji Deer = new SingleEmoji(
             sequence: new UnicodeSequence("1F98C"),
@@ -17872,7 +17932,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2403
+            sortOrder: 2409
         );
         public static readonly SingleEmoji CowFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F42E"),
@@ -17882,7 +17942,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2404
+            sortOrder: 2410
         );
         public static readonly SingleEmoji Ox = new SingleEmoji(
             sequence: new UnicodeSequence("1F402"),
@@ -17892,7 +17952,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2405
+            sortOrder: 2411
         );
         public static readonly SingleEmoji WaterBuffalo = new SingleEmoji(
             sequence: new UnicodeSequence("1F403"),
@@ -17902,7 +17962,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2406
+            sortOrder: 2412
         );
         public static readonly SingleEmoji Cow = new SingleEmoji(
             sequence: new UnicodeSequence("1F404"),
@@ -17912,7 +17972,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2407
+            sortOrder: 2413
         );
         public static readonly SingleEmoji PigFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F437"),
@@ -17922,7 +17982,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2408
+            sortOrder: 2414
         );
         public static readonly SingleEmoji Pig = new SingleEmoji(
             sequence: new UnicodeSequence("1F416"),
@@ -17932,7 +17992,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2409
+            sortOrder: 2415
         );
         public static readonly SingleEmoji Boar = new SingleEmoji(
             sequence: new UnicodeSequence("1F417"),
@@ -17942,7 +18002,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2410
+            sortOrder: 2416
         );
         public static readonly SingleEmoji PigNose = new SingleEmoji(
             sequence: new UnicodeSequence("1F43D"),
@@ -17952,7 +18012,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2411
+            sortOrder: 2417
         );
         public static readonly SingleEmoji Ram = new SingleEmoji(
             sequence: new UnicodeSequence("1F40F"),
@@ -17962,7 +18022,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2412
+            sortOrder: 2418
         );
         public static readonly SingleEmoji Ewe = new SingleEmoji(
             sequence: new UnicodeSequence("1F411"),
@@ -17972,7 +18032,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2413
+            sortOrder: 2419
         );
         public static readonly SingleEmoji Goat = new SingleEmoji(
             sequence: new UnicodeSequence("1F410"),
@@ -17982,7 +18042,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2414
+            sortOrder: 2420
         );
         public static readonly SingleEmoji Camel = new SingleEmoji(
             sequence: new UnicodeSequence("1F42A"),
@@ -17992,7 +18052,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2415
+            sortOrder: 2421
         );
         public static readonly SingleEmoji TwoHumpCamel = new SingleEmoji(
             sequence: new UnicodeSequence("1F42B"),
@@ -18002,7 +18062,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2416
+            sortOrder: 2422
         );
         public static readonly SingleEmoji Llama = new SingleEmoji(
             sequence: new UnicodeSequence("1F999"),
@@ -18012,7 +18072,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2417
+            sortOrder: 2423
         );
         public static readonly SingleEmoji Giraffe = new SingleEmoji(
             sequence: new UnicodeSequence("1F992"),
@@ -18022,7 +18082,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2418
+            sortOrder: 2424
         );
         public static readonly SingleEmoji Elephant = new SingleEmoji(
             sequence: new UnicodeSequence("1F418"),
@@ -18032,7 +18092,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2419
+            sortOrder: 2425
         );
         public static readonly SingleEmoji Rhinoceros = new SingleEmoji(
             sequence: new UnicodeSequence("1F98F"),
@@ -18042,7 +18102,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2420
+            sortOrder: 2426
         );
         public static readonly SingleEmoji Hippopotamus = new SingleEmoji(
             sequence: new UnicodeSequence("1F99B"),
@@ -18052,7 +18112,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2421
+            sortOrder: 2427
         );
         public static readonly SingleEmoji MouseFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F42D"),
@@ -18062,7 +18122,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2422
+            sortOrder: 2428
         );
         public static readonly SingleEmoji Mouse = new SingleEmoji(
             sequence: new UnicodeSequence("1F401"),
@@ -18072,7 +18132,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2423
+            sortOrder: 2429
         );
         public static readonly SingleEmoji Rat = new SingleEmoji(
             sequence: new UnicodeSequence("1F400"),
@@ -18082,7 +18142,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2424
+            sortOrder: 2430
         );
         public static readonly SingleEmoji Hamster = new SingleEmoji(
             sequence: new UnicodeSequence("1F439"),
@@ -18092,7 +18152,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2425
+            sortOrder: 2431
         );
         public static readonly SingleEmoji RabbitFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F430"),
@@ -18102,7 +18162,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2426
+            sortOrder: 2432
         );
         public static readonly SingleEmoji Rabbit = new SingleEmoji(
             sequence: new UnicodeSequence("1F407"),
@@ -18112,7 +18172,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2427
+            sortOrder: 2433
         );
         public static readonly SingleEmoji Chipmunk = new SingleEmoji(
             sequence: new UnicodeSequence("1F43F FE0F"),
@@ -18122,7 +18182,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: false,
-            sortOrder: 2428
+            sortOrder: 2434
         );
         public static readonly SingleEmoji Hedgehog = new SingleEmoji(
             sequence: new UnicodeSequence("1F994"),
@@ -18132,7 +18192,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2430
+            sortOrder: 2436
         );
         public static readonly SingleEmoji Bat = new SingleEmoji(
             sequence: new UnicodeSequence("1F987"),
@@ -18142,7 +18202,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2431
+            sortOrder: 2437
         );
         public static readonly SingleEmoji Bear = new SingleEmoji(
             sequence: new UnicodeSequence("1F43B"),
@@ -18152,7 +18212,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2432
+            sortOrder: 2438
         );
         public static readonly SingleEmoji Koala = new SingleEmoji(
             sequence: new UnicodeSequence("1F428"),
@@ -18162,7 +18222,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2433
+            sortOrder: 2439
         );
         public static readonly SingleEmoji Panda = new SingleEmoji(
             sequence: new UnicodeSequence("1F43C"),
@@ -18172,7 +18232,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2434
+            sortOrder: 2440
         );
         public static readonly SingleEmoji Sloth = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A5"),
@@ -18182,7 +18242,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: false,
-            sortOrder: 2435
+            sortOrder: 2441
         );
         public static readonly SingleEmoji Otter = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A6"),
@@ -18192,7 +18252,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: false,
-            sortOrder: 2436
+            sortOrder: 2442
         );
         public static readonly SingleEmoji Skunk = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A8"),
@@ -18202,7 +18262,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: false,
-            sortOrder: 2437
+            sortOrder: 2443
         );
         public static readonly SingleEmoji Kangaroo = new SingleEmoji(
             sequence: new UnicodeSequence("1F998"),
@@ -18212,7 +18272,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2438
+            sortOrder: 2444
         );
         public static readonly SingleEmoji Badger = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A1"),
@@ -18222,7 +18282,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2439
+            sortOrder: 2445
         );
         public static readonly SingleEmoji PawPrints = new SingleEmoji(
             sequence: new UnicodeSequence("1F43E"),
@@ -18232,7 +18292,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-mammal",
             hasGlyph: true,
-            sortOrder: 2440
+            sortOrder: 2446
         );
         public static readonly SingleEmoji Turkey = new SingleEmoji(
             sequence: new UnicodeSequence("1F983"),
@@ -18242,7 +18302,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2441
+            sortOrder: 2447
         );
         public static readonly SingleEmoji Chicken = new SingleEmoji(
             sequence: new UnicodeSequence("1F414"),
@@ -18252,7 +18312,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2442
+            sortOrder: 2448
         );
         public static readonly SingleEmoji Rooster = new SingleEmoji(
             sequence: new UnicodeSequence("1F413"),
@@ -18262,7 +18322,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2443
+            sortOrder: 2449
         );
         public static readonly SingleEmoji HatchingChick = new SingleEmoji(
             sequence: new UnicodeSequence("1F423"),
@@ -18272,7 +18332,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2444
+            sortOrder: 2450
         );
         public static readonly SingleEmoji BabyChick = new SingleEmoji(
             sequence: new UnicodeSequence("1F424"),
@@ -18282,7 +18342,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2445
+            sortOrder: 2451
         );
         public static readonly SingleEmoji FrontFacingBabyChick = new SingleEmoji(
             sequence: new UnicodeSequence("1F425"),
@@ -18292,7 +18352,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2446
+            sortOrder: 2452
         );
         public static readonly SingleEmoji Bird = new SingleEmoji(
             sequence: new UnicodeSequence("1F426"),
@@ -18302,7 +18362,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2447
+            sortOrder: 2453
         );
         public static readonly SingleEmoji Penguin = new SingleEmoji(
             sequence: new UnicodeSequence("1F427"),
@@ -18312,7 +18372,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2448
+            sortOrder: 2454
         );
         public static readonly SingleEmoji Dove = new SingleEmoji(
             sequence: new UnicodeSequence("1F54A FE0F"),
@@ -18322,7 +18382,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: false,
-            sortOrder: 2449
+            sortOrder: 2455
         );
         public static readonly SingleEmoji Eagle = new SingleEmoji(
             sequence: new UnicodeSequence("1F985"),
@@ -18332,7 +18392,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2451
+            sortOrder: 2457
         );
         public static readonly SingleEmoji Duck = new SingleEmoji(
             sequence: new UnicodeSequence("1F986"),
@@ -18342,7 +18402,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2452
+            sortOrder: 2458
         );
         public static readonly SingleEmoji Swan = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A2"),
@@ -18352,7 +18412,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2453
+            sortOrder: 2459
         );
         public static readonly SingleEmoji Owl = new SingleEmoji(
             sequence: new UnicodeSequence("1F989"),
@@ -18362,7 +18422,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2454
+            sortOrder: 2460
         );
         public static readonly SingleEmoji Flamingo = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A9"),
@@ -18372,7 +18432,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: false,
-            sortOrder: 2455
+            sortOrder: 2461
         );
         public static readonly SingleEmoji Peacock = new SingleEmoji(
             sequence: new UnicodeSequence("1F99A"),
@@ -18382,7 +18442,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2456
+            sortOrder: 2462
         );
         public static readonly SingleEmoji Parrot = new SingleEmoji(
             sequence: new UnicodeSequence("1F99C"),
@@ -18392,7 +18452,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bird",
             hasGlyph: true,
-            sortOrder: 2457
+            sortOrder: 2463
         );
         public static readonly SingleEmoji Frog = new SingleEmoji(
             sequence: new UnicodeSequence("1F438"),
@@ -18402,7 +18462,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-amphibian",
             hasGlyph: true,
-            sortOrder: 2458
+            sortOrder: 2464
         );
         public static readonly SingleEmoji Crocodile = new SingleEmoji(
             sequence: new UnicodeSequence("1F40A"),
@@ -18412,7 +18472,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2459
+            sortOrder: 2465
         );
         public static readonly SingleEmoji Turtle = new SingleEmoji(
             sequence: new UnicodeSequence("1F422"),
@@ -18422,7 +18482,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2460
+            sortOrder: 2466
         );
         public static readonly SingleEmoji Lizard = new SingleEmoji(
             sequence: new UnicodeSequence("1F98E"),
@@ -18432,7 +18492,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2461
+            sortOrder: 2467
         );
         public static readonly SingleEmoji Snake = new SingleEmoji(
             sequence: new UnicodeSequence("1F40D"),
@@ -18442,7 +18502,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2462
+            sortOrder: 2468
         );
         public static readonly SingleEmoji DragonFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F432"),
@@ -18452,7 +18512,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2463
+            sortOrder: 2469
         );
         public static readonly SingleEmoji Dragon = new SingleEmoji(
             sequence: new UnicodeSequence("1F409"),
@@ -18462,7 +18522,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2464
+            sortOrder: 2470
         );
         public static readonly SingleEmoji Sauropod = new SingleEmoji(
             sequence: new UnicodeSequence("1F995"),
@@ -18472,7 +18532,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2465
+            sortOrder: 2471
         );
         public static readonly SingleEmoji TRex = new SingleEmoji(
             sequence: new UnicodeSequence("1F996"),
@@ -18482,7 +18542,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-reptile",
             hasGlyph: true,
-            sortOrder: 2466
+            sortOrder: 2472
         );
         public static readonly SingleEmoji SpoutingWhale = new SingleEmoji(
             sequence: new UnicodeSequence("1F433"),
@@ -18492,7 +18552,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2467
+            sortOrder: 2473
         );
         public static readonly SingleEmoji Whale = new SingleEmoji(
             sequence: new UnicodeSequence("1F40B"),
@@ -18502,7 +18562,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2468
+            sortOrder: 2474
         );
         public static readonly SingleEmoji Dolphin = new SingleEmoji(
             sequence: new UnicodeSequence("1F42C"),
@@ -18512,7 +18572,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2469
+            sortOrder: 2475
         );
         public static readonly SingleEmoji Fish = new SingleEmoji(
             sequence: new UnicodeSequence("1F41F"),
@@ -18522,7 +18582,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2470
+            sortOrder: 2476
         );
         public static readonly SingleEmoji TropicalFish = new SingleEmoji(
             sequence: new UnicodeSequence("1F420"),
@@ -18532,7 +18592,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2471
+            sortOrder: 2477
         );
         public static readonly SingleEmoji Blowfish = new SingleEmoji(
             sequence: new UnicodeSequence("1F421"),
@@ -18542,7 +18602,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2472
+            sortOrder: 2478
         );
         public static readonly SingleEmoji Shark = new SingleEmoji(
             sequence: new UnicodeSequence("1F988"),
@@ -18552,7 +18612,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2473
+            sortOrder: 2479
         );
         public static readonly SingleEmoji Octopus = new SingleEmoji(
             sequence: new UnicodeSequence("1F419"),
@@ -18562,7 +18622,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2474
+            sortOrder: 2480
         );
         public static readonly SingleEmoji SpiralShell = new SingleEmoji(
             sequence: new UnicodeSequence("1F41A"),
@@ -18572,7 +18632,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-marine",
             hasGlyph: true,
-            sortOrder: 2475
+            sortOrder: 2481
         );
         public static readonly SingleEmoji Snail = new SingleEmoji(
             sequence: new UnicodeSequence("1F40C"),
@@ -18582,7 +18642,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2476
+            sortOrder: 2482
         );
         public static readonly SingleEmoji Butterfly = new SingleEmoji(
             sequence: new UnicodeSequence("1F98B"),
@@ -18592,7 +18652,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2477
+            sortOrder: 2483
         );
         public static readonly SingleEmoji Bug = new SingleEmoji(
             sequence: new UnicodeSequence("1F41B"),
@@ -18602,7 +18662,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2478
+            sortOrder: 2484
         );
         public static readonly SingleEmoji Ant = new SingleEmoji(
             sequence: new UnicodeSequence("1F41C"),
@@ -18612,7 +18672,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2479
+            sortOrder: 2485
         );
         public static readonly SingleEmoji Honeybee = new SingleEmoji(
             sequence: new UnicodeSequence("1F41D"),
@@ -18622,7 +18682,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2480
+            sortOrder: 2486
         );
         public static readonly SingleEmoji LadyBeetle = new SingleEmoji(
             sequence: new UnicodeSequence("1F41E"),
@@ -18632,7 +18692,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2481
+            sortOrder: 2487
         );
         public static readonly SingleEmoji Cricket = new SingleEmoji(
             sequence: new UnicodeSequence("1F997"),
@@ -18642,7 +18702,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2482
+            sortOrder: 2488
         );
         public static readonly SingleEmoji Spider = new SingleEmoji(
             sequence: new UnicodeSequence("1F577 FE0F"),
@@ -18652,7 +18712,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: false,
-            sortOrder: 2483
+            sortOrder: 2489
         );
         public static readonly SingleEmoji SpiderWeb = new SingleEmoji(
             sequence: new UnicodeSequence("1F578 FE0F"),
@@ -18662,7 +18722,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: false,
-            sortOrder: 2485
+            sortOrder: 2491
         );
         public static readonly SingleEmoji Scorpion = new SingleEmoji(
             sequence: new UnicodeSequence("1F982"),
@@ -18672,7 +18732,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2487
+            sortOrder: 2493
         );
         public static readonly SingleEmoji Mosquito = new SingleEmoji(
             sequence: new UnicodeSequence("1F99F"),
@@ -18682,7 +18742,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2488
+            sortOrder: 2494
         );
         public static readonly SingleEmoji Microbe = new SingleEmoji(
             sequence: new UnicodeSequence("1F9A0"),
@@ -18692,7 +18752,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "animal-bug",
             hasGlyph: true,
-            sortOrder: 2489
+            sortOrder: 2495
         );
         public static readonly SingleEmoji Bouquet = new SingleEmoji(
             sequence: new UnicodeSequence("1F490"),
@@ -18702,7 +18762,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2490
+            sortOrder: 2496
         );
         public static readonly SingleEmoji CherryBlossom = new SingleEmoji(
             sequence: new UnicodeSequence("1F338"),
@@ -18712,7 +18772,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2491
+            sortOrder: 2497
         );
         public static readonly SingleEmoji WhiteFlower = new SingleEmoji(
             sequence: new UnicodeSequence("1F4AE"),
@@ -18722,7 +18782,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2492
+            sortOrder: 2498
         );
         public static readonly SingleEmoji Rosette = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F5 FE0F"),
@@ -18732,7 +18792,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: false,
-            sortOrder: 2493
+            sortOrder: 2499
         );
         public static readonly SingleEmoji Rose = new SingleEmoji(
             sequence: new UnicodeSequence("1F339"),
@@ -18742,7 +18802,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2495
+            sortOrder: 2501
         );
         public static readonly SingleEmoji WiltedFlower = new SingleEmoji(
             sequence: new UnicodeSequence("1F940"),
@@ -18752,7 +18812,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2496
+            sortOrder: 2502
         );
         public static readonly SingleEmoji Hibiscus = new SingleEmoji(
             sequence: new UnicodeSequence("1F33A"),
@@ -18762,7 +18822,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2497
+            sortOrder: 2503
         );
         public static readonly SingleEmoji Sunflower = new SingleEmoji(
             sequence: new UnicodeSequence("1F33B"),
@@ -18772,7 +18832,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2498
+            sortOrder: 2504
         );
         public static readonly SingleEmoji Blossom = new SingleEmoji(
             sequence: new UnicodeSequence("1F33C"),
@@ -18782,7 +18842,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2499
+            sortOrder: 2505
         );
         public static readonly SingleEmoji Tulip = new SingleEmoji(
             sequence: new UnicodeSequence("1F337"),
@@ -18792,7 +18852,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-flower",
             hasGlyph: true,
-            sortOrder: 2500
+            sortOrder: 2506
         );
         public static readonly SingleEmoji Seedling = new SingleEmoji(
             sequence: new UnicodeSequence("1F331"),
@@ -18802,7 +18862,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2501
+            sortOrder: 2507
         );
         public static readonly SingleEmoji EvergreenTree = new SingleEmoji(
             sequence: new UnicodeSequence("1F332"),
@@ -18812,7 +18872,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2502
+            sortOrder: 2508
         );
         public static readonly SingleEmoji DeciduousTree = new SingleEmoji(
             sequence: new UnicodeSequence("1F333"),
@@ -18822,7 +18882,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2503
+            sortOrder: 2509
         );
         public static readonly SingleEmoji PalmTree = new SingleEmoji(
             sequence: new UnicodeSequence("1F334"),
@@ -18832,7 +18892,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2504
+            sortOrder: 2510
         );
         public static readonly SingleEmoji Cactus = new SingleEmoji(
             sequence: new UnicodeSequence("1F335"),
@@ -18842,7 +18902,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2505
+            sortOrder: 2511
         );
         public static readonly SingleEmoji SheafRice = new SingleEmoji(
             sequence: new UnicodeSequence("1F33E"),
@@ -18852,7 +18912,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2506
+            sortOrder: 2512
         );
         public static readonly SingleEmoji Herb = new SingleEmoji(
             sequence: new UnicodeSequence("1F33F"),
@@ -18862,7 +18922,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2507
+            sortOrder: 2513
         );
         public static readonly SingleEmoji Shamrock = new SingleEmoji(
             sequence: new UnicodeSequence("2618 FE0F"),
@@ -18872,7 +18932,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: false,
-            sortOrder: 2508
+            sortOrder: 2514
         );
         public static readonly SingleEmoji FourLeafClover = new SingleEmoji(
             sequence: new UnicodeSequence("1F340"),
@@ -18882,7 +18942,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2510
+            sortOrder: 2516
         );
         public static readonly SingleEmoji MapleLeaf = new SingleEmoji(
             sequence: new UnicodeSequence("1F341"),
@@ -18892,7 +18952,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2511
+            sortOrder: 2517
         );
         public static readonly SingleEmoji FallenLeaf = new SingleEmoji(
             sequence: new UnicodeSequence("1F342"),
@@ -18902,7 +18962,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2512
+            sortOrder: 2518
         );
         public static readonly SingleEmoji LeafFlutteringWind = new SingleEmoji(
             sequence: new UnicodeSequence("1F343"),
@@ -18912,7 +18972,7 @@ namespace NeoSmart.Unicode
             group: Group.ANIMALS_AND_NATURE,
             subgroup: "plant-other",
             hasGlyph: true,
-            sortOrder: 2513
+            sortOrder: 2519
         );
         public static readonly SingleEmoji Grapes = new SingleEmoji(
             sequence: new UnicodeSequence("1F347"),
@@ -18922,7 +18982,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2514
+            sortOrder: 2520
         );
         public static readonly SingleEmoji Melon = new SingleEmoji(
             sequence: new UnicodeSequence("1F348"),
@@ -18932,7 +18992,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2515
+            sortOrder: 2521
         );
         public static readonly SingleEmoji Watermelon = new SingleEmoji(
             sequence: new UnicodeSequence("1F349"),
@@ -18942,7 +19002,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2516
+            sortOrder: 2522
         );
         public static readonly SingleEmoji Tangerine = new SingleEmoji(
             sequence: new UnicodeSequence("1F34A"),
@@ -18952,7 +19012,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2517
+            sortOrder: 2523
         );
         public static readonly SingleEmoji Lemon = new SingleEmoji(
             sequence: new UnicodeSequence("1F34B"),
@@ -18962,7 +19022,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2518
+            sortOrder: 2524
         );
         public static readonly SingleEmoji Banana = new SingleEmoji(
             sequence: new UnicodeSequence("1F34C"),
@@ -18972,7 +19032,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2519
+            sortOrder: 2525
         );
         public static readonly SingleEmoji Pineapple = new SingleEmoji(
             sequence: new UnicodeSequence("1F34D"),
@@ -18982,7 +19042,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2520
+            sortOrder: 2526
         );
         public static readonly SingleEmoji Mango = new SingleEmoji(
             sequence: new UnicodeSequence("1F96D"),
@@ -18992,7 +19052,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2521
+            sortOrder: 2527
         );
         public static readonly SingleEmoji RedApple = new SingleEmoji(
             sequence: new UnicodeSequence("1F34E"),
@@ -19002,7 +19062,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2522
+            sortOrder: 2528
         );
         public static readonly SingleEmoji GreenApple = new SingleEmoji(
             sequence: new UnicodeSequence("1F34F"),
@@ -19012,7 +19072,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2523
+            sortOrder: 2529
         );
         public static readonly SingleEmoji Pear = new SingleEmoji(
             sequence: new UnicodeSequence("1F350"),
@@ -19022,7 +19082,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2524
+            sortOrder: 2530
         );
         public static readonly SingleEmoji Peach = new SingleEmoji(
             sequence: new UnicodeSequence("1F351"),
@@ -19032,7 +19092,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2525
+            sortOrder: 2531
         );
         public static readonly SingleEmoji Cherries = new SingleEmoji(
             sequence: new UnicodeSequence("1F352"),
@@ -19042,7 +19102,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2526
+            sortOrder: 2532
         );
         public static readonly SingleEmoji Strawberry = new SingleEmoji(
             sequence: new UnicodeSequence("1F353"),
@@ -19052,7 +19112,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2527
+            sortOrder: 2533
         );
         public static readonly SingleEmoji KiwiFruit = new SingleEmoji(
             sequence: new UnicodeSequence("1F95D"),
@@ -19062,7 +19122,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2528
+            sortOrder: 2534
         );
         public static readonly SingleEmoji Tomato = new SingleEmoji(
             sequence: new UnicodeSequence("1F345"),
@@ -19072,7 +19132,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2529
+            sortOrder: 2535
         );
         public static readonly SingleEmoji Coconut = new SingleEmoji(
             sequence: new UnicodeSequence("1F965"),
@@ -19082,7 +19142,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-fruit",
             hasGlyph: true,
-            sortOrder: 2530
+            sortOrder: 2536
         );
         public static readonly SingleEmoji Avocado = new SingleEmoji(
             sequence: new UnicodeSequence("1F951"),
@@ -19092,7 +19152,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2531
+            sortOrder: 2537
         );
         public static readonly SingleEmoji Eggplant = new SingleEmoji(
             sequence: new UnicodeSequence("1F346"),
@@ -19102,7 +19162,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2532
+            sortOrder: 2538
         );
         public static readonly SingleEmoji Potato = new SingleEmoji(
             sequence: new UnicodeSequence("1F954"),
@@ -19112,7 +19172,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2533
+            sortOrder: 2539
         );
         public static readonly SingleEmoji Carrot = new SingleEmoji(
             sequence: new UnicodeSequence("1F955"),
@@ -19122,7 +19182,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2534
+            sortOrder: 2540
         );
         public static readonly SingleEmoji EarCorn = new SingleEmoji(
             sequence: new UnicodeSequence("1F33D"),
@@ -19132,7 +19192,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2535
+            sortOrder: 2541
         );
         public static readonly SingleEmoji HotPepper = new SingleEmoji(
             sequence: new UnicodeSequence("1F336 FE0F"),
@@ -19142,7 +19202,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: false,
-            sortOrder: 2536
+            sortOrder: 2542
         );
         public static readonly SingleEmoji Cucumber = new SingleEmoji(
             sequence: new UnicodeSequence("1F952"),
@@ -19152,7 +19212,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2538
+            sortOrder: 2544
         );
         public static readonly SingleEmoji LeafyGreen = new SingleEmoji(
             sequence: new UnicodeSequence("1F96C"),
@@ -19162,7 +19222,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2539
+            sortOrder: 2545
         );
         public static readonly SingleEmoji Broccoli = new SingleEmoji(
             sequence: new UnicodeSequence("1F966"),
@@ -19172,7 +19232,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2540
+            sortOrder: 2546
         );
         public static readonly SingleEmoji Garlic = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C4"),
@@ -19182,7 +19242,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: false,
-            sortOrder: 2541
+            sortOrder: 2547
         );
         public static readonly SingleEmoji Onion = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C5"),
@@ -19192,7 +19252,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: false,
-            sortOrder: 2542
+            sortOrder: 2548
         );
         public static readonly SingleEmoji Mushroom = new SingleEmoji(
             sequence: new UnicodeSequence("1F344"),
@@ -19202,7 +19262,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2543
+            sortOrder: 2549
         );
         public static readonly SingleEmoji Peanuts = new SingleEmoji(
             sequence: new UnicodeSequence("1F95C"),
@@ -19212,7 +19272,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2544
+            sortOrder: 2550
         );
         public static readonly SingleEmoji Chestnut = new SingleEmoji(
             sequence: new UnicodeSequence("1F330"),
@@ -19222,7 +19282,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-vegetable",
             hasGlyph: true,
-            sortOrder: 2545
+            sortOrder: 2551
         );
         public static readonly SingleEmoji Bread = new SingleEmoji(
             sequence: new UnicodeSequence("1F35E"),
@@ -19232,7 +19292,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2546
+            sortOrder: 2552
         );
         public static readonly SingleEmoji Croissant = new SingleEmoji(
             sequence: new UnicodeSequence("1F950"),
@@ -19242,7 +19302,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2547
+            sortOrder: 2553
         );
         public static readonly SingleEmoji BaguetteBread = new SingleEmoji(
             sequence: new UnicodeSequence("1F956"),
@@ -19252,7 +19312,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2548
+            sortOrder: 2554
         );
         public static readonly SingleEmoji Pretzel = new SingleEmoji(
             sequence: new UnicodeSequence("1F968"),
@@ -19262,7 +19322,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2549
+            sortOrder: 2555
         );
         public static readonly SingleEmoji Bagel = new SingleEmoji(
             sequence: new UnicodeSequence("1F96F"),
@@ -19272,7 +19332,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2550
+            sortOrder: 2556
         );
         public static readonly SingleEmoji Pancakes = new SingleEmoji(
             sequence: new UnicodeSequence("1F95E"),
@@ -19282,7 +19342,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2551
+            sortOrder: 2557
         );
         public static readonly SingleEmoji Waffle = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C7"),
@@ -19292,7 +19352,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: false,
-            sortOrder: 2552
+            sortOrder: 2558
         );
         public static readonly SingleEmoji CheeseWedge = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C0"),
@@ -19302,7 +19362,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2553
+            sortOrder: 2559
         );
         public static readonly SingleEmoji MeatBone = new SingleEmoji(
             sequence: new UnicodeSequence("1F356"),
@@ -19312,7 +19372,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2554
+            sortOrder: 2560
         );
         public static readonly SingleEmoji PoultryLeg = new SingleEmoji(
             sequence: new UnicodeSequence("1F357"),
@@ -19322,7 +19382,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2555
+            sortOrder: 2561
         );
         public static readonly SingleEmoji CutMeat = new SingleEmoji(
             sequence: new UnicodeSequence("1F969"),
@@ -19332,7 +19392,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2556
+            sortOrder: 2562
         );
         public static readonly SingleEmoji Bacon = new SingleEmoji(
             sequence: new UnicodeSequence("1F953"),
@@ -19342,7 +19402,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2557
+            sortOrder: 2563
         );
         public static readonly SingleEmoji Hamburger = new SingleEmoji(
             sequence: new UnicodeSequence("1F354"),
@@ -19352,7 +19412,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2558
+            sortOrder: 2564
         );
         public static readonly SingleEmoji FrenchFries = new SingleEmoji(
             sequence: new UnicodeSequence("1F35F"),
@@ -19362,7 +19422,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2559
+            sortOrder: 2565
         );
         public static readonly SingleEmoji Pizza = new SingleEmoji(
             sequence: new UnicodeSequence("1F355"),
@@ -19372,7 +19432,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2560
+            sortOrder: 2566
         );
         public static readonly SingleEmoji HotDog = new SingleEmoji(
             sequence: new UnicodeSequence("1F32D"),
@@ -19382,7 +19442,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2561
+            sortOrder: 2567
         );
         public static readonly SingleEmoji Sandwich = new SingleEmoji(
             sequence: new UnicodeSequence("1F96A"),
@@ -19392,7 +19452,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2562
+            sortOrder: 2568
         );
         public static readonly SingleEmoji Taco = new SingleEmoji(
             sequence: new UnicodeSequence("1F32E"),
@@ -19402,7 +19462,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2563
+            sortOrder: 2569
         );
         public static readonly SingleEmoji Burrito = new SingleEmoji(
             sequence: new UnicodeSequence("1F32F"),
@@ -19412,7 +19472,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2564
+            sortOrder: 2570
         );
         public static readonly SingleEmoji StuffedFlatbread = new SingleEmoji(
             sequence: new UnicodeSequence("1F959"),
@@ -19422,7 +19482,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2565
+            sortOrder: 2571
         );
         public static readonly SingleEmoji Falafel = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C6"),
@@ -19432,7 +19492,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: false,
-            sortOrder: 2566
+            sortOrder: 2572
         );
         public static readonly SingleEmoji Egg = new SingleEmoji(
             sequence: new UnicodeSequence("1F95A"),
@@ -19442,7 +19502,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2567
+            sortOrder: 2573
         );
         public static readonly SingleEmoji Cooking = new SingleEmoji(
             sequence: new UnicodeSequence("1F373"),
@@ -19452,7 +19512,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2568
+            sortOrder: 2574
         );
         public static readonly SingleEmoji ShallowPanFood = new SingleEmoji(
             sequence: new UnicodeSequence("1F958"),
@@ -19462,7 +19522,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2569
+            sortOrder: 2575
         );
         public static readonly SingleEmoji PotFood = new SingleEmoji(
             sequence: new UnicodeSequence("1F372"),
@@ -19472,7 +19532,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2570
+            sortOrder: 2576
         );
         public static readonly SingleEmoji BowlSpoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F963"),
@@ -19482,7 +19542,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2571
+            sortOrder: 2577
         );
         public static readonly SingleEmoji GreenSalad = new SingleEmoji(
             sequence: new UnicodeSequence("1F957"),
@@ -19492,7 +19552,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2572
+            sortOrder: 2578
         );
         public static readonly SingleEmoji Popcorn = new SingleEmoji(
             sequence: new UnicodeSequence("1F37F"),
@@ -19502,7 +19562,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2573
+            sortOrder: 2579
         );
         public static readonly SingleEmoji Butter = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C8"),
@@ -19512,7 +19572,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: false,
-            sortOrder: 2574
+            sortOrder: 2580
         );
         public static readonly SingleEmoji Salt = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C2"),
@@ -19522,7 +19582,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2575
+            sortOrder: 2581
         );
         public static readonly SingleEmoji CannedFood = new SingleEmoji(
             sequence: new UnicodeSequence("1F96B"),
@@ -19532,7 +19592,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-prepared",
             hasGlyph: true,
-            sortOrder: 2576
+            sortOrder: 2582
         );
         public static readonly SingleEmoji BentoBox = new SingleEmoji(
             sequence: new UnicodeSequence("1F371"),
@@ -19542,7 +19602,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2577
+            sortOrder: 2583
         );
         public static readonly SingleEmoji RiceCracker = new SingleEmoji(
             sequence: new UnicodeSequence("1F358"),
@@ -19552,7 +19612,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2578
+            sortOrder: 2584
         );
         public static readonly SingleEmoji RiceBall = new SingleEmoji(
             sequence: new UnicodeSequence("1F359"),
@@ -19562,7 +19622,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2579
+            sortOrder: 2585
         );
         public static readonly SingleEmoji CookedRice = new SingleEmoji(
             sequence: new UnicodeSequence("1F35A"),
@@ -19572,7 +19632,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2580
+            sortOrder: 2586
         );
         public static readonly SingleEmoji CurryRice = new SingleEmoji(
             sequence: new UnicodeSequence("1F35B"),
@@ -19582,7 +19642,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2581
+            sortOrder: 2587
         );
         public static readonly SingleEmoji SteamingBowl = new SingleEmoji(
             sequence: new UnicodeSequence("1F35C"),
@@ -19592,7 +19652,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2582
+            sortOrder: 2588
         );
         public static readonly SingleEmoji Spaghetti = new SingleEmoji(
             sequence: new UnicodeSequence("1F35D"),
@@ -19602,7 +19662,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2583
+            sortOrder: 2589
         );
         public static readonly SingleEmoji RoastedSweetPotato = new SingleEmoji(
             sequence: new UnicodeSequence("1F360"),
@@ -19612,7 +19672,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2584
+            sortOrder: 2590
         );
         public static readonly SingleEmoji Oden = new SingleEmoji(
             sequence: new UnicodeSequence("1F362"),
@@ -19622,7 +19682,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2585
+            sortOrder: 2591
         );
         public static readonly SingleEmoji Sushi = new SingleEmoji(
             sequence: new UnicodeSequence("1F363"),
@@ -19632,7 +19692,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2586
+            sortOrder: 2592
         );
         public static readonly SingleEmoji FriedShrimp = new SingleEmoji(
             sequence: new UnicodeSequence("1F364"),
@@ -19642,7 +19702,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2587
+            sortOrder: 2593
         );
         public static readonly SingleEmoji FishCakeSwirl = new SingleEmoji(
             sequence: new UnicodeSequence("1F365"),
@@ -19652,7 +19712,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2588
+            sortOrder: 2594
         );
         public static readonly SingleEmoji MoonCake = new SingleEmoji(
             sequence: new UnicodeSequence("1F96E"),
@@ -19662,7 +19722,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2589
+            sortOrder: 2595
         );
         public static readonly SingleEmoji Dango = new SingleEmoji(
             sequence: new UnicodeSequence("1F361"),
@@ -19672,7 +19732,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2590
+            sortOrder: 2596
         );
         public static readonly SingleEmoji Dumpling = new SingleEmoji(
             sequence: new UnicodeSequence("1F95F"),
@@ -19682,7 +19742,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2591
+            sortOrder: 2597
         );
         public static readonly SingleEmoji FortuneCookie = new SingleEmoji(
             sequence: new UnicodeSequence("1F960"),
@@ -19692,7 +19752,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2592
+            sortOrder: 2598
         );
         public static readonly SingleEmoji TakeoutBox = new SingleEmoji(
             sequence: new UnicodeSequence("1F961"),
@@ -19702,7 +19762,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-asian",
             hasGlyph: true,
-            sortOrder: 2593
+            sortOrder: 2599
         );
         public static readonly SingleEmoji Crab = new SingleEmoji(
             sequence: new UnicodeSequence("1F980"),
@@ -19712,7 +19772,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-marine",
             hasGlyph: true,
-            sortOrder: 2594
+            sortOrder: 2600
         );
         public static readonly SingleEmoji Lobster = new SingleEmoji(
             sequence: new UnicodeSequence("1F99E"),
@@ -19722,7 +19782,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-marine",
             hasGlyph: true,
-            sortOrder: 2595
+            sortOrder: 2601
         );
         public static readonly SingleEmoji Shrimp = new SingleEmoji(
             sequence: new UnicodeSequence("1F990"),
@@ -19732,7 +19792,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-marine",
             hasGlyph: true,
-            sortOrder: 2596
+            sortOrder: 2602
         );
         public static readonly SingleEmoji Squid = new SingleEmoji(
             sequence: new UnicodeSequence("1F991"),
@@ -19742,7 +19802,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-marine",
             hasGlyph: true,
-            sortOrder: 2597
+            sortOrder: 2603
         );
         public static readonly SingleEmoji Oyster = new SingleEmoji(
             sequence: new UnicodeSequence("1F9AA"),
@@ -19752,7 +19812,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-marine",
             hasGlyph: false,
-            sortOrder: 2598
+            sortOrder: 2604
         );
         public static readonly SingleEmoji SoftIceCream = new SingleEmoji(
             sequence: new UnicodeSequence("1F366"),
@@ -19762,7 +19822,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2599
+            sortOrder: 2605
         );
         public static readonly SingleEmoji ShavedIce = new SingleEmoji(
             sequence: new UnicodeSequence("1F367"),
@@ -19772,7 +19832,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2600
+            sortOrder: 2606
         );
         public static readonly SingleEmoji IceCream = new SingleEmoji(
             sequence: new UnicodeSequence("1F368"),
@@ -19782,7 +19842,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2601
+            sortOrder: 2607
         );
         public static readonly SingleEmoji Doughnut = new SingleEmoji(
             sequence: new UnicodeSequence("1F369"),
@@ -19792,7 +19852,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2602
+            sortOrder: 2608
         );
         public static readonly SingleEmoji Cookie = new SingleEmoji(
             sequence: new UnicodeSequence("1F36A"),
@@ -19802,7 +19862,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2603
+            sortOrder: 2609
         );
         public static readonly SingleEmoji BirthdayCake = new SingleEmoji(
             sequence: new UnicodeSequence("1F382"),
@@ -19812,7 +19872,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2604
+            sortOrder: 2610
         );
         public static readonly SingleEmoji Shortcake = new SingleEmoji(
             sequence: new UnicodeSequence("1F370"),
@@ -19822,7 +19882,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2605
+            sortOrder: 2611
         );
         public static readonly SingleEmoji Cupcake = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C1"),
@@ -19832,7 +19892,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2606
+            sortOrder: 2612
         );
         public static readonly SingleEmoji Pie = new SingleEmoji(
             sequence: new UnicodeSequence("1F967"),
@@ -19842,7 +19902,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2607
+            sortOrder: 2613
         );
         public static readonly SingleEmoji ChocolateBar = new SingleEmoji(
             sequence: new UnicodeSequence("1F36B"),
@@ -19852,7 +19912,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2608
+            sortOrder: 2614
         );
         public static readonly SingleEmoji Candy = new SingleEmoji(
             sequence: new UnicodeSequence("1F36C"),
@@ -19862,7 +19922,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2609
+            sortOrder: 2615
         );
         public static readonly SingleEmoji Lollipop = new SingleEmoji(
             sequence: new UnicodeSequence("1F36D"),
@@ -19872,7 +19932,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2610
+            sortOrder: 2616
         );
         public static readonly SingleEmoji Custard = new SingleEmoji(
             sequence: new UnicodeSequence("1F36E"),
@@ -19882,7 +19942,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2611
+            sortOrder: 2617
         );
         public static readonly SingleEmoji HoneyPot = new SingleEmoji(
             sequence: new UnicodeSequence("1F36F"),
@@ -19892,7 +19952,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "food-sweet",
             hasGlyph: true,
-            sortOrder: 2612
+            sortOrder: 2618
         );
         public static readonly SingleEmoji BabyBottle = new SingleEmoji(
             sequence: new UnicodeSequence("1F37C"),
@@ -19902,7 +19962,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2613
+            sortOrder: 2619
         );
         public static readonly SingleEmoji GlassMilk = new SingleEmoji(
             sequence: new UnicodeSequence("1F95B"),
@@ -19912,7 +19972,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2614
+            sortOrder: 2620
         );
         public static readonly SingleEmoji HotBeverage = new SingleEmoji(
             sequence: new UnicodeSequence("2615"),
@@ -19922,7 +19982,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2615
+            sortOrder: 2621
         );
         public static readonly SingleEmoji TeacupHandle = new SingleEmoji(
             sequence: new UnicodeSequence("1F375"),
@@ -19932,7 +19992,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2616
+            sortOrder: 2622
         );
         public static readonly SingleEmoji Sake = new SingleEmoji(
             sequence: new UnicodeSequence("1F376"),
@@ -19942,7 +20002,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2617
+            sortOrder: 2623
         );
         public static readonly SingleEmoji BottlePoppingCork = new SingleEmoji(
             sequence: new UnicodeSequence("1F37E"),
@@ -19952,7 +20012,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2618
+            sortOrder: 2624
         );
         public static readonly SingleEmoji WineGlass = new SingleEmoji(
             sequence: new UnicodeSequence("1F377"),
@@ -19962,7 +20022,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2619
+            sortOrder: 2625
         );
         public static readonly SingleEmoji CocktailGlass = new SingleEmoji(
             sequence: new UnicodeSequence("1F378"),
@@ -19972,7 +20032,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2620
+            sortOrder: 2626
         );
         public static readonly SingleEmoji TropicalDrink = new SingleEmoji(
             sequence: new UnicodeSequence("1F379"),
@@ -19982,7 +20042,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2621
+            sortOrder: 2627
         );
         public static readonly SingleEmoji BeerMug = new SingleEmoji(
             sequence: new UnicodeSequence("1F37A"),
@@ -19992,7 +20052,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2622
+            sortOrder: 2628
         );
         public static readonly SingleEmoji ClinkingBeerMugs = new SingleEmoji(
             sequence: new UnicodeSequence("1F37B"),
@@ -20002,7 +20062,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2623
+            sortOrder: 2629
         );
         public static readonly SingleEmoji ClinkingGlasses = new SingleEmoji(
             sequence: new UnicodeSequence("1F942"),
@@ -20012,7 +20072,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2624
+            sortOrder: 2630
         );
         public static readonly SingleEmoji TumblerGlass = new SingleEmoji(
             sequence: new UnicodeSequence("1F943"),
@@ -20022,7 +20082,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2625
+            sortOrder: 2631
         );
         public static readonly SingleEmoji CupStraw = new SingleEmoji(
             sequence: new UnicodeSequence("1F964"),
@@ -20032,7 +20092,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: true,
-            sortOrder: 2626
+            sortOrder: 2632
         );
         public static readonly SingleEmoji BeverageBox = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C3"),
@@ -20042,7 +20102,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: false,
-            sortOrder: 2627
+            sortOrder: 2633
         );
         public static readonly SingleEmoji Mate = new SingleEmoji(
             sequence: new UnicodeSequence("1F9C9"),
@@ -20052,7 +20112,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: false,
-            sortOrder: 2628
+            sortOrder: 2634
         );
         public static readonly SingleEmoji IceCube = new SingleEmoji(
             sequence: new UnicodeSequence("1F9CA"),
@@ -20062,7 +20122,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "drink",
             hasGlyph: false,
-            sortOrder: 2629
+            sortOrder: 2635
         );
         public static readonly SingleEmoji Chopsticks = new SingleEmoji(
             sequence: new UnicodeSequence("1F962"),
@@ -20072,7 +20132,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "dishware",
             hasGlyph: true,
-            sortOrder: 2630
+            sortOrder: 2636
         );
         public static readonly SingleEmoji ForkKnifePlate = new SingleEmoji(
             sequence: new UnicodeSequence("1F37D FE0F"),
@@ -20082,7 +20142,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "dishware",
             hasGlyph: false,
-            sortOrder: 2631
+            sortOrder: 2637
         );
         public static readonly SingleEmoji ForkKnife = new SingleEmoji(
             sequence: new UnicodeSequence("1F374"),
@@ -20092,7 +20152,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "dishware",
             hasGlyph: true,
-            sortOrder: 2633
+            sortOrder: 2639
         );
         public static readonly SingleEmoji Spoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F944"),
@@ -20102,7 +20162,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "dishware",
             hasGlyph: true,
-            sortOrder: 2634
+            sortOrder: 2640
         );
         public static readonly SingleEmoji KitchenKnife = new SingleEmoji(
             sequence: new UnicodeSequence("1F52A"),
@@ -20112,7 +20172,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "dishware",
             hasGlyph: true,
-            sortOrder: 2635
+            sortOrder: 2641
         );
         public static readonly SingleEmoji Amphora = new SingleEmoji(
             sequence: new UnicodeSequence("1F3FA"),
@@ -20122,7 +20182,7 @@ namespace NeoSmart.Unicode
             group: Group.FOOD_AND_DRINK,
             subgroup: "dishware",
             hasGlyph: true,
-            sortOrder: 2636
+            sortOrder: 2642
         );
         public static readonly SingleEmoji GlobeShowingEuropeAfrica = new SingleEmoji(
             sequence: new UnicodeSequence("1F30D"),
@@ -20132,7 +20192,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-map",
             hasGlyph: true,
-            sortOrder: 2637
+            sortOrder: 2643
         );
         public static readonly SingleEmoji GlobeShowingAmericas = new SingleEmoji(
             sequence: new UnicodeSequence("1F30E"),
@@ -20142,7 +20202,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-map",
             hasGlyph: true,
-            sortOrder: 2638
+            sortOrder: 2644
         );
         public static readonly SingleEmoji GlobeShowingAsiaAustralia = new SingleEmoji(
             sequence: new UnicodeSequence("1F30F"),
@@ -20152,7 +20212,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-map",
             hasGlyph: true,
-            sortOrder: 2639
+            sortOrder: 2645
         );
         public static readonly SingleEmoji GlobeMeridians = new SingleEmoji(
             sequence: new UnicodeSequence("1F310"),
@@ -20162,7 +20222,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-map",
             hasGlyph: true,
-            sortOrder: 2640
+            sortOrder: 2646
         );
         public static readonly SingleEmoji WorldMap = new SingleEmoji(
             sequence: new UnicodeSequence("1F5FA FE0F"),
@@ -20172,7 +20232,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-map",
             hasGlyph: false,
-            sortOrder: 2641
+            sortOrder: 2647
         );
         public static readonly SingleEmoji MapJapan = new SingleEmoji(
             sequence: new UnicodeSequence("1F5FE"),
@@ -20182,7 +20242,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-map",
             hasGlyph: true,
-            sortOrder: 2643
+            sortOrder: 2649
         );
         public static readonly SingleEmoji Compass = new SingleEmoji(
             sequence: new UnicodeSequence("1F9ED"),
@@ -20192,7 +20252,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-map",
             hasGlyph: true,
-            sortOrder: 2644
+            sortOrder: 2650
         );
         public static readonly SingleEmoji SnowCappedMountain = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D4 FE0F"),
@@ -20202,7 +20262,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: false,
-            sortOrder: 2645
+            sortOrder: 2651
         );
         public static readonly SingleEmoji Mountain = new SingleEmoji(
             sequence: new UnicodeSequence("26F0 FE0F"),
@@ -20212,7 +20272,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: false,
-            sortOrder: 2647
+            sortOrder: 2653
         );
         public static readonly SingleEmoji Volcano = new SingleEmoji(
             sequence: new UnicodeSequence("1F30B"),
@@ -20222,7 +20282,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: true,
-            sortOrder: 2649
+            sortOrder: 2655
         );
         public static readonly SingleEmoji MountFuji = new SingleEmoji(
             sequence: new UnicodeSequence("1F5FB"),
@@ -20232,7 +20292,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: true,
-            sortOrder: 2650
+            sortOrder: 2656
         );
         public static readonly SingleEmoji Camping = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D5 FE0F"),
@@ -20242,7 +20302,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: false,
-            sortOrder: 2651
+            sortOrder: 2657
         );
         public static readonly SingleEmoji BeachUmbrella = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D6 FE0F"),
@@ -20252,7 +20312,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: false,
-            sortOrder: 2653
+            sortOrder: 2659
         );
         public static readonly SingleEmoji Desert = new SingleEmoji(
             sequence: new UnicodeSequence("1F3DC FE0F"),
@@ -20262,7 +20322,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: false,
-            sortOrder: 2655
+            sortOrder: 2661
         );
         public static readonly SingleEmoji DesertIsland = new SingleEmoji(
             sequence: new UnicodeSequence("1F3DD FE0F"),
@@ -20272,7 +20332,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: false,
-            sortOrder: 2657
+            sortOrder: 2663
         );
         public static readonly SingleEmoji NationalPark = new SingleEmoji(
             sequence: new UnicodeSequence("1F3DE FE0F"),
@@ -20282,7 +20342,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-geographic",
             hasGlyph: false,
-            sortOrder: 2659
+            sortOrder: 2665
         );
         public static readonly SingleEmoji Stadium = new SingleEmoji(
             sequence: new UnicodeSequence("1F3DF FE0F"),
@@ -20292,7 +20352,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: false,
-            sortOrder: 2661
+            sortOrder: 2667
         );
         public static readonly SingleEmoji ClassicalBuilding = new SingleEmoji(
             sequence: new UnicodeSequence("1F3DB FE0F"),
@@ -20302,7 +20362,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: false,
-            sortOrder: 2663
+            sortOrder: 2669
         );
         public static readonly SingleEmoji BuildingConstruction = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D7 FE0F"),
@@ -20312,7 +20372,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: false,
-            sortOrder: 2665
+            sortOrder: 2671
         );
         public static readonly SingleEmoji Brick = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F1"),
@@ -20322,7 +20382,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2667
+            sortOrder: 2673
         );
         public static readonly SingleEmoji Houses = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D8 FE0F"),
@@ -20332,7 +20392,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: false,
-            sortOrder: 2668
+            sortOrder: 2674
         );
         public static readonly SingleEmoji DerelictHouse = new SingleEmoji(
             sequence: new UnicodeSequence("1F3DA FE0F"),
@@ -20342,7 +20402,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: false,
-            sortOrder: 2670
+            sortOrder: 2676
         );
         public static readonly SingleEmoji House = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E0"),
@@ -20352,7 +20412,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2672
+            sortOrder: 2678
         );
         public static readonly SingleEmoji HouseGarden = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E1"),
@@ -20362,7 +20422,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2673
+            sortOrder: 2679
         );
         public static readonly SingleEmoji OfficeBuilding = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E2"),
@@ -20372,7 +20432,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2674
+            sortOrder: 2680
         );
         public static readonly SingleEmoji JapanesePostOffice = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E3"),
@@ -20382,7 +20442,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2675
+            sortOrder: 2681
         );
         public static readonly SingleEmoji PostOffice = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E4"),
@@ -20392,7 +20452,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2676
+            sortOrder: 2682
         );
         public static readonly SingleEmoji Hospital = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E5"),
@@ -20402,7 +20462,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2677
+            sortOrder: 2683
         );
         public static readonly SingleEmoji Bank = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E6"),
@@ -20412,7 +20472,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2678
+            sortOrder: 2684
         );
         public static readonly SingleEmoji Hotel = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E8"),
@@ -20422,7 +20482,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2679
+            sortOrder: 2685
         );
         public static readonly SingleEmoji LoveHotel = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E9"),
@@ -20432,7 +20492,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2680
+            sortOrder: 2686
         );
         public static readonly SingleEmoji ConvenienceStore = new SingleEmoji(
             sequence: new UnicodeSequence("1F3EA"),
@@ -20442,7 +20502,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2681
+            sortOrder: 2687
         );
         public static readonly SingleEmoji School = new SingleEmoji(
             sequence: new UnicodeSequence("1F3EB"),
@@ -20452,7 +20512,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2682
+            sortOrder: 2688
         );
         public static readonly SingleEmoji DepartmentStore = new SingleEmoji(
             sequence: new UnicodeSequence("1F3EC"),
@@ -20462,7 +20522,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2683
+            sortOrder: 2689
         );
         public static readonly SingleEmoji Factory = new SingleEmoji(
             sequence: new UnicodeSequence("1F3ED"),
@@ -20472,7 +20532,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2684
+            sortOrder: 2690
         );
         public static readonly SingleEmoji JapaneseCastle = new SingleEmoji(
             sequence: new UnicodeSequence("1F3EF"),
@@ -20482,7 +20542,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2685
+            sortOrder: 2691
         );
         public static readonly SingleEmoji Castle = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F0"),
@@ -20492,7 +20552,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2686
+            sortOrder: 2692
         );
         public static readonly SingleEmoji Wedding = new SingleEmoji(
             sequence: new UnicodeSequence("1F492"),
@@ -20502,7 +20562,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2687
+            sortOrder: 2693
         );
         public static readonly SingleEmoji TokyoTower = new SingleEmoji(
             sequence: new UnicodeSequence("1F5FC"),
@@ -20512,7 +20572,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2688
+            sortOrder: 2694
         );
         public static readonly SingleEmoji StatueLiberty = new SingleEmoji(
             sequence: new UnicodeSequence("1F5FD"),
@@ -20522,7 +20582,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-building",
             hasGlyph: true,
-            sortOrder: 2689
+            sortOrder: 2695
         );
         public static readonly SingleEmoji Church = new SingleEmoji(
             sequence: new UnicodeSequence("26EA"),
@@ -20532,7 +20592,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-religious",
             hasGlyph: true,
-            sortOrder: 2690
+            sortOrder: 2696
         );
         public static readonly SingleEmoji Mosque = new SingleEmoji(
             sequence: new UnicodeSequence("1F54C"),
@@ -20542,7 +20602,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-religious",
             hasGlyph: true,
-            sortOrder: 2691
+            sortOrder: 2697
         );
         public static readonly SingleEmoji HinduTemple = new SingleEmoji(
             sequence: new UnicodeSequence("1F6D5"),
@@ -20552,7 +20612,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-religious",
             hasGlyph: false,
-            sortOrder: 2692
+            sortOrder: 2698
         );
         public static readonly SingleEmoji Synagogue = new SingleEmoji(
             sequence: new UnicodeSequence("1F54D"),
@@ -20562,7 +20622,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-religious",
             hasGlyph: true,
-            sortOrder: 2693
+            sortOrder: 2699
         );
         public static readonly SingleEmoji ShintoShrine = new SingleEmoji(
             sequence: new UnicodeSequence("26E9 FE0F"),
@@ -20572,7 +20632,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-religious",
             hasGlyph: false,
-            sortOrder: 2694
+            sortOrder: 2700
         );
         public static readonly SingleEmoji Kaaba = new SingleEmoji(
             sequence: new UnicodeSequence("1F54B"),
@@ -20582,7 +20642,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-religious",
             hasGlyph: true,
-            sortOrder: 2696
+            sortOrder: 2702
         );
         public static readonly SingleEmoji Fountain = new SingleEmoji(
             sequence: new UnicodeSequence("26F2"),
@@ -20592,7 +20652,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2697
+            sortOrder: 2703
         );
         public static readonly SingleEmoji Tent = new SingleEmoji(
             sequence: new UnicodeSequence("26FA"),
@@ -20602,7 +20662,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2698
+            sortOrder: 2704
         );
         public static readonly SingleEmoji Foggy = new SingleEmoji(
             sequence: new UnicodeSequence("1F301"),
@@ -20612,7 +20672,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2699
+            sortOrder: 2705
         );
         public static readonly SingleEmoji NightStars = new SingleEmoji(
             sequence: new UnicodeSequence("1F303"),
@@ -20622,7 +20682,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2700
+            sortOrder: 2706
         );
         public static readonly SingleEmoji Cityscape = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D9 FE0F"),
@@ -20632,7 +20692,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: false,
-            sortOrder: 2701
+            sortOrder: 2707
         );
         public static readonly SingleEmoji SunriseOverMountains = new SingleEmoji(
             sequence: new UnicodeSequence("1F304"),
@@ -20642,7 +20702,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2703
+            sortOrder: 2709
         );
         public static readonly SingleEmoji Sunrise = new SingleEmoji(
             sequence: new UnicodeSequence("1F305"),
@@ -20652,7 +20712,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2704
+            sortOrder: 2710
         );
         public static readonly SingleEmoji CityscapeAtDusk = new SingleEmoji(
             sequence: new UnicodeSequence("1F306"),
@@ -20662,7 +20722,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2705
+            sortOrder: 2711
         );
         public static readonly SingleEmoji Sunset = new SingleEmoji(
             sequence: new UnicodeSequence("1F307"),
@@ -20672,7 +20732,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2706
+            sortOrder: 2712
         );
         public static readonly SingleEmoji BridgeAtNight = new SingleEmoji(
             sequence: new UnicodeSequence("1F309"),
@@ -20682,7 +20742,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2707
+            sortOrder: 2713
         );
         public static readonly SingleEmoji HotSprings = new SingleEmoji(
             sequence: new UnicodeSequence("2668 FE0F"),
@@ -20692,7 +20752,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: false,
-            sortOrder: 2708
+            sortOrder: 2714
         );
         public static readonly SingleEmoji CarouselHorse = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A0"),
@@ -20702,7 +20762,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2710
+            sortOrder: 2716
         );
         public static readonly SingleEmoji FerrisWheel = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A1"),
@@ -20712,7 +20772,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2711
+            sortOrder: 2717
         );
         public static readonly SingleEmoji RollerCoaster = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A2"),
@@ -20722,7 +20782,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2712
+            sortOrder: 2718
         );
         public static readonly SingleEmoji BarberPole = new SingleEmoji(
             sequence: new UnicodeSequence("1F488"),
@@ -20732,7 +20792,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2713
+            sortOrder: 2719
         );
         public static readonly SingleEmoji CircusTent = new SingleEmoji(
             sequence: new UnicodeSequence("1F3AA"),
@@ -20742,7 +20802,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "place-other",
             hasGlyph: true,
-            sortOrder: 2714
+            sortOrder: 2720
         );
         public static readonly SingleEmoji Locomotive = new SingleEmoji(
             sequence: new UnicodeSequence("1F682"),
@@ -20752,7 +20812,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2715
+            sortOrder: 2721
         );
         public static readonly SingleEmoji RailwayCar = new SingleEmoji(
             sequence: new UnicodeSequence("1F683"),
@@ -20762,7 +20822,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2716
+            sortOrder: 2722
         );
         public static readonly SingleEmoji HighSpeedTrain = new SingleEmoji(
             sequence: new UnicodeSequence("1F684"),
@@ -20772,7 +20832,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2717
+            sortOrder: 2723
         );
         public static readonly SingleEmoji BulletTrain = new SingleEmoji(
             sequence: new UnicodeSequence("1F685"),
@@ -20782,7 +20842,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2718
+            sortOrder: 2724
         );
         public static readonly SingleEmoji Train = new SingleEmoji(
             sequence: new UnicodeSequence("1F686"),
@@ -20792,7 +20852,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2719
+            sortOrder: 2725
         );
         public static readonly SingleEmoji Metro = new SingleEmoji(
             sequence: new UnicodeSequence("1F687"),
@@ -20802,7 +20862,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2720
+            sortOrder: 2726
         );
         public static readonly SingleEmoji LightRail = new SingleEmoji(
             sequence: new UnicodeSequence("1F688"),
@@ -20812,7 +20872,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2721
+            sortOrder: 2727
         );
         public static readonly SingleEmoji Station = new SingleEmoji(
             sequence: new UnicodeSequence("1F689"),
@@ -20822,7 +20882,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2722
+            sortOrder: 2728
         );
         public static readonly SingleEmoji Tram = new SingleEmoji(
             sequence: new UnicodeSequence("1F68A"),
@@ -20832,7 +20892,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2723
+            sortOrder: 2729
         );
         public static readonly SingleEmoji Monorail = new SingleEmoji(
             sequence: new UnicodeSequence("1F69D"),
@@ -20842,7 +20902,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2724
+            sortOrder: 2730
         );
         public static readonly SingleEmoji MountainRailway = new SingleEmoji(
             sequence: new UnicodeSequence("1F69E"),
@@ -20852,7 +20912,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2725
+            sortOrder: 2731
         );
         public static readonly SingleEmoji TramCar = new SingleEmoji(
             sequence: new UnicodeSequence("1F68B"),
@@ -20862,7 +20922,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2726
+            sortOrder: 2732
         );
         public static readonly SingleEmoji Bus = new SingleEmoji(
             sequence: new UnicodeSequence("1F68C"),
@@ -20872,7 +20932,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2727
+            sortOrder: 2733
         );
         public static readonly SingleEmoji OncomingBus = new SingleEmoji(
             sequence: new UnicodeSequence("1F68D"),
@@ -20882,7 +20942,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2728
+            sortOrder: 2734
         );
         public static readonly SingleEmoji Trolleybus = new SingleEmoji(
             sequence: new UnicodeSequence("1F68E"),
@@ -20892,7 +20952,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2729
+            sortOrder: 2735
         );
         public static readonly SingleEmoji Minibus = new SingleEmoji(
             sequence: new UnicodeSequence("1F690"),
@@ -20902,7 +20962,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2730
+            sortOrder: 2736
         );
         public static readonly SingleEmoji Ambulance = new SingleEmoji(
             sequence: new UnicodeSequence("1F691"),
@@ -20912,7 +20972,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2731
+            sortOrder: 2737
         );
         public static readonly SingleEmoji FireEngine = new SingleEmoji(
             sequence: new UnicodeSequence("1F692"),
@@ -20922,7 +20982,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2732
+            sortOrder: 2738
         );
         public static readonly SingleEmoji PoliceCar = new SingleEmoji(
             sequence: new UnicodeSequence("1F693"),
@@ -20932,7 +20992,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2733
+            sortOrder: 2739
         );
         public static readonly SingleEmoji OncomingPoliceCar = new SingleEmoji(
             sequence: new UnicodeSequence("1F694"),
@@ -20942,7 +21002,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2734
+            sortOrder: 2740
         );
         public static readonly SingleEmoji Taxi = new SingleEmoji(
             sequence: new UnicodeSequence("1F695"),
@@ -20952,7 +21012,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2735
+            sortOrder: 2741
         );
         public static readonly SingleEmoji OncomingTaxi = new SingleEmoji(
             sequence: new UnicodeSequence("1F696"),
@@ -20962,7 +21022,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2736
+            sortOrder: 2742
         );
         public static readonly SingleEmoji Automobile = new SingleEmoji(
             sequence: new UnicodeSequence("1F697"),
@@ -20972,7 +21032,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2737
+            sortOrder: 2743
         );
         public static readonly SingleEmoji OncomingAutomobile = new SingleEmoji(
             sequence: new UnicodeSequence("1F698"),
@@ -20982,7 +21042,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2738
+            sortOrder: 2744
         );
         public static readonly SingleEmoji SportUtilityVehicle = new SingleEmoji(
             sequence: new UnicodeSequence("1F699"),
@@ -20992,7 +21052,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2739
+            sortOrder: 2745
         );
         public static readonly SingleEmoji DeliveryTruck = new SingleEmoji(
             sequence: new UnicodeSequence("1F69A"),
@@ -21002,7 +21062,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2740
+            sortOrder: 2746
         );
         public static readonly SingleEmoji ArticulatedLorry = new SingleEmoji(
             sequence: new UnicodeSequence("1F69B"),
@@ -21012,7 +21072,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2741
+            sortOrder: 2747
         );
         public static readonly SingleEmoji Tractor = new SingleEmoji(
             sequence: new UnicodeSequence("1F69C"),
@@ -21022,7 +21082,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2742
+            sortOrder: 2748
         );
         public static readonly SingleEmoji RacingCar = new SingleEmoji(
             sequence: new UnicodeSequence("1F3CE FE0F"),
@@ -21032,7 +21092,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2743
+            sortOrder: 2749
         );
         public static readonly SingleEmoji Motorcycle = new SingleEmoji(
             sequence: new UnicodeSequence("1F3CD FE0F"),
@@ -21042,7 +21102,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2745
+            sortOrder: 2751
         );
         public static readonly SingleEmoji MotorScooter = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F5"),
@@ -21052,7 +21112,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2747
+            sortOrder: 2753
         );
         public static readonly SingleEmoji ManualWheelchair = new SingleEmoji(
             sequence: new UnicodeSequence("1F9BD"),
@@ -21062,7 +21122,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2748
+            sortOrder: 2754
         );
         public static readonly SingleEmoji MotorizedWheelchair = new SingleEmoji(
             sequence: new UnicodeSequence("1F9BC"),
@@ -21072,7 +21132,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2749
+            sortOrder: 2755
         );
         public static readonly SingleEmoji AutoRickshaw = new SingleEmoji(
             sequence: new UnicodeSequence("1F6FA"),
@@ -21082,7 +21142,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2750
+            sortOrder: 2756
         );
         public static readonly SingleEmoji Bicycle = new SingleEmoji(
             sequence: new UnicodeSequence("1F6B2"),
@@ -21092,7 +21152,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2751
+            sortOrder: 2757
         );
         public static readonly SingleEmoji KickScooter = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F4"),
@@ -21102,7 +21162,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2752
+            sortOrder: 2758
         );
         public static readonly SingleEmoji Skateboard = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F9"),
@@ -21112,7 +21172,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2753
+            sortOrder: 2759
         );
         public static readonly SingleEmoji BusStop = new SingleEmoji(
             sequence: new UnicodeSequence("1F68F"),
@@ -21122,7 +21182,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2754
+            sortOrder: 2760
         );
         public static readonly SingleEmoji Motorway = new SingleEmoji(
             sequence: new UnicodeSequence("1F6E3 FE0F"),
@@ -21132,7 +21192,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2755
+            sortOrder: 2761
         );
         public static readonly SingleEmoji RailwayTrack = new SingleEmoji(
             sequence: new UnicodeSequence("1F6E4 FE0F"),
@@ -21142,7 +21202,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2757
+            sortOrder: 2763
         );
         public static readonly SingleEmoji OilDrum = new SingleEmoji(
             sequence: new UnicodeSequence("1F6E2 FE0F"),
@@ -21152,7 +21212,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: false,
-            sortOrder: 2759
+            sortOrder: 2765
         );
         public static readonly SingleEmoji FuelPump = new SingleEmoji(
             sequence: new UnicodeSequence("26FD"),
@@ -21162,7 +21222,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2761
+            sortOrder: 2767
         );
         public static readonly SingleEmoji PoliceCarLight = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A8"),
@@ -21172,7 +21232,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2762
+            sortOrder: 2768
         );
         public static readonly SingleEmoji HorizontalTrafficLight = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A5"),
@@ -21182,7 +21242,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2763
+            sortOrder: 2769
         );
         public static readonly SingleEmoji VerticalTrafficLight = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A6"),
@@ -21192,7 +21252,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2764
+            sortOrder: 2770
         );
         public static readonly SingleEmoji StopSign = new SingleEmoji(
             sequence: new UnicodeSequence("1F6D1"),
@@ -21202,7 +21262,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2765
+            sortOrder: 2771
         );
         public static readonly SingleEmoji Construction = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A7"),
@@ -21212,7 +21272,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-ground",
             hasGlyph: true,
-            sortOrder: 2766
+            sortOrder: 2772
         );
         public static readonly SingleEmoji Anchor = new SingleEmoji(
             sequence: new UnicodeSequence("2693"),
@@ -21222,7 +21282,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: true,
-            sortOrder: 2767
+            sortOrder: 2773
         );
         public static readonly SingleEmoji Sailboat = new SingleEmoji(
             sequence: new UnicodeSequence("26F5"),
@@ -21232,7 +21292,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: true,
-            sortOrder: 2768
+            sortOrder: 2774
         );
         public static readonly SingleEmoji Canoe = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F6"),
@@ -21242,7 +21302,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: true,
-            sortOrder: 2769
+            sortOrder: 2775
         );
         public static readonly SingleEmoji Speedboat = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A4"),
@@ -21252,7 +21312,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: true,
-            sortOrder: 2770
+            sortOrder: 2776
         );
         public static readonly SingleEmoji PassengerShip = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F3 FE0F"),
@@ -21262,7 +21322,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: false,
-            sortOrder: 2771
+            sortOrder: 2777
         );
         public static readonly SingleEmoji Ferry = new SingleEmoji(
             sequence: new UnicodeSequence("26F4 FE0F"),
@@ -21272,7 +21332,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: false,
-            sortOrder: 2773
+            sortOrder: 2779
         );
         public static readonly SingleEmoji MotorBoat = new SingleEmoji(
             sequence: new UnicodeSequence("1F6E5 FE0F"),
@@ -21282,7 +21342,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: false,
-            sortOrder: 2775
+            sortOrder: 2781
         );
         public static readonly SingleEmoji Ship = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A2"),
@@ -21292,7 +21352,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-water",
             hasGlyph: true,
-            sortOrder: 2777
+            sortOrder: 2783
         );
         public static readonly SingleEmoji Airplane = new SingleEmoji(
             sequence: new UnicodeSequence("2708 FE0F"),
@@ -21302,7 +21362,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: false,
-            sortOrder: 2778
+            sortOrder: 2784
         );
         public static readonly SingleEmoji SmallAirplane = new SingleEmoji(
             sequence: new UnicodeSequence("1F6E9 FE0F"),
@@ -21312,7 +21372,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: false,
-            sortOrder: 2780
+            sortOrder: 2786
         );
         public static readonly SingleEmoji AirplaneDeparture = new SingleEmoji(
             sequence: new UnicodeSequence("1F6EB"),
@@ -21322,7 +21382,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2782
+            sortOrder: 2788
         );
         public static readonly SingleEmoji AirplaneArrival = new SingleEmoji(
             sequence: new UnicodeSequence("1F6EC"),
@@ -21332,7 +21392,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2783
+            sortOrder: 2789
         );
         public static readonly SingleEmoji Parachute = new SingleEmoji(
             sequence: new UnicodeSequence("1FA82"),
@@ -21342,7 +21402,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: false,
-            sortOrder: 2784
+            sortOrder: 2790
         );
         public static readonly SingleEmoji Seat = new SingleEmoji(
             sequence: new UnicodeSequence("1F4BA"),
@@ -21352,7 +21412,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2785
+            sortOrder: 2791
         );
         public static readonly SingleEmoji Helicopter = new SingleEmoji(
             sequence: new UnicodeSequence("1F681"),
@@ -21362,7 +21422,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2786
+            sortOrder: 2792
         );
         public static readonly SingleEmoji SuspensionRailway = new SingleEmoji(
             sequence: new UnicodeSequence("1F69F"),
@@ -21372,7 +21432,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2787
+            sortOrder: 2793
         );
         public static readonly SingleEmoji MountainCableway = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A0"),
@@ -21382,7 +21442,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2788
+            sortOrder: 2794
         );
         public static readonly SingleEmoji AerialTramway = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A1"),
@@ -21392,7 +21452,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2789
+            sortOrder: 2795
         );
         public static readonly SingleEmoji Satellite = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F0 FE0F"),
@@ -21402,7 +21462,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: false,
-            sortOrder: 2790
+            sortOrder: 2796
         );
         public static readonly SingleEmoji Rocket = new SingleEmoji(
             sequence: new UnicodeSequence("1F680"),
@@ -21412,7 +21472,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2792
+            sortOrder: 2798
         );
         public static readonly SingleEmoji FlyingSaucer = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F8"),
@@ -21422,7 +21482,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "transport-air",
             hasGlyph: true,
-            sortOrder: 2793
+            sortOrder: 2799
         );
         public static readonly SingleEmoji BellhopBell = new SingleEmoji(
             sequence: new UnicodeSequence("1F6CE FE0F"),
@@ -21432,7 +21492,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "hotel",
             hasGlyph: false,
-            sortOrder: 2794
+            sortOrder: 2800
         );
         public static readonly SingleEmoji Luggage = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F3"),
@@ -21442,7 +21502,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "hotel",
             hasGlyph: true,
-            sortOrder: 2796
+            sortOrder: 2802
         );
         public static readonly SingleEmoji HourglassDone = new SingleEmoji(
             sequence: new UnicodeSequence("231B"),
@@ -21452,7 +21512,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2797
+            sortOrder: 2803
         );
         public static readonly SingleEmoji HourglassNotDone = new SingleEmoji(
             sequence: new UnicodeSequence("23F3"),
@@ -21462,7 +21522,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2798
+            sortOrder: 2804
         );
         public static readonly SingleEmoji Watch = new SingleEmoji(
             sequence: new UnicodeSequence("231A"),
@@ -21472,7 +21532,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2799
+            sortOrder: 2805
         );
         public static readonly SingleEmoji AlarmClock = new SingleEmoji(
             sequence: new UnicodeSequence("23F0"),
@@ -21482,7 +21542,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2800
+            sortOrder: 2806
         );
         public static readonly SingleEmoji Stopwatch = new SingleEmoji(
             sequence: new UnicodeSequence("23F1 FE0F"),
@@ -21492,7 +21552,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: false,
-            sortOrder: 2801
+            sortOrder: 2807
         );
         public static readonly SingleEmoji TimerClock = new SingleEmoji(
             sequence: new UnicodeSequence("23F2 FE0F"),
@@ -21502,7 +21562,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: false,
-            sortOrder: 2803
+            sortOrder: 2809
         );
         public static readonly SingleEmoji MantelpieceClock = new SingleEmoji(
             sequence: new UnicodeSequence("1F570 FE0F"),
@@ -21512,7 +21572,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: false,
-            sortOrder: 2805
+            sortOrder: 2811
         );
         public static readonly SingleEmoji TwelveOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F55B"),
@@ -21522,7 +21582,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2807
+            sortOrder: 2813
         );
         public static readonly SingleEmoji TwelveThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F567"),
@@ -21532,7 +21592,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2808
+            sortOrder: 2814
         );
         public static readonly SingleEmoji OneOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F550"),
@@ -21542,7 +21602,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2809
+            sortOrder: 2815
         );
         public static readonly SingleEmoji OneThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F55C"),
@@ -21552,7 +21612,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2810
+            sortOrder: 2816
         );
         public static readonly SingleEmoji TwoOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F551"),
@@ -21562,7 +21622,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2811
+            sortOrder: 2817
         );
         public static readonly SingleEmoji TwoThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F55D"),
@@ -21572,7 +21632,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2812
+            sortOrder: 2818
         );
         public static readonly SingleEmoji ThreeOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F552"),
@@ -21582,7 +21642,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2813
+            sortOrder: 2819
         );
         public static readonly SingleEmoji ThreeThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F55E"),
@@ -21592,7 +21652,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2814
+            sortOrder: 2820
         );
         public static readonly SingleEmoji FourOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F553"),
@@ -21602,7 +21662,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2815
+            sortOrder: 2821
         );
         public static readonly SingleEmoji FourThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F55F"),
@@ -21612,7 +21672,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2816
+            sortOrder: 2822
         );
         public static readonly SingleEmoji FiveOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F554"),
@@ -21622,7 +21682,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2817
+            sortOrder: 2823
         );
         public static readonly SingleEmoji FiveThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F560"),
@@ -21632,7 +21692,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2818
+            sortOrder: 2824
         );
         public static readonly SingleEmoji SixOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F555"),
@@ -21642,7 +21702,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2819
+            sortOrder: 2825
         );
         public static readonly SingleEmoji SixThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F561"),
@@ -21652,7 +21712,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2820
+            sortOrder: 2826
         );
         public static readonly SingleEmoji SevenOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F556"),
@@ -21662,7 +21722,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2821
+            sortOrder: 2827
         );
         public static readonly SingleEmoji SevenThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F562"),
@@ -21672,7 +21732,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2822
+            sortOrder: 2828
         );
         public static readonly SingleEmoji EightOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F557"),
@@ -21682,7 +21742,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2823
+            sortOrder: 2829
         );
         public static readonly SingleEmoji EightThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F563"),
@@ -21692,7 +21752,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2824
+            sortOrder: 2830
         );
         public static readonly SingleEmoji NineOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F558"),
@@ -21702,7 +21762,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2825
+            sortOrder: 2831
         );
         public static readonly SingleEmoji NineThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F564"),
@@ -21712,7 +21772,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2826
+            sortOrder: 2832
         );
         public static readonly SingleEmoji TenOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F559"),
@@ -21722,7 +21782,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2827
+            sortOrder: 2833
         );
         public static readonly SingleEmoji TenThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F565"),
@@ -21732,7 +21792,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2828
+            sortOrder: 2834
         );
         public static readonly SingleEmoji ElevenOclock = new SingleEmoji(
             sequence: new UnicodeSequence("1F55A"),
@@ -21742,7 +21802,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2829
+            sortOrder: 2835
         );
         public static readonly SingleEmoji ElevenThirty = new SingleEmoji(
             sequence: new UnicodeSequence("1F566"),
@@ -21752,7 +21812,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "time",
             hasGlyph: true,
-            sortOrder: 2830
+            sortOrder: 2836
         );
         public static readonly SingleEmoji NewMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F311"),
@@ -21762,7 +21822,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2831
+            sortOrder: 2837
         );
         public static readonly SingleEmoji WaxingCrescentMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F312"),
@@ -21772,7 +21832,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2832
+            sortOrder: 2838
         );
         public static readonly SingleEmoji FirstQuarterMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F313"),
@@ -21782,7 +21842,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2833
+            sortOrder: 2839
         );
         public static readonly SingleEmoji WaxingGibbousMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F314"),
@@ -21792,7 +21852,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2834
+            sortOrder: 2840
         );
         public static readonly SingleEmoji FullMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F315"),
@@ -21802,7 +21862,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2835
+            sortOrder: 2841
         );
         public static readonly SingleEmoji WaningGibbousMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F316"),
@@ -21812,7 +21872,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2836
+            sortOrder: 2842
         );
         public static readonly SingleEmoji LastQuarterMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F317"),
@@ -21822,7 +21882,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2837
+            sortOrder: 2843
         );
         public static readonly SingleEmoji WaningCrescentMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F318"),
@@ -21832,7 +21892,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2838
+            sortOrder: 2844
         );
         public static readonly SingleEmoji CrescentMoon = new SingleEmoji(
             sequence: new UnicodeSequence("1F319"),
@@ -21842,7 +21902,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2839
+            sortOrder: 2845
         );
         public static readonly SingleEmoji NewMoonFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F31A"),
@@ -21852,7 +21912,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2840
+            sortOrder: 2846
         );
         public static readonly SingleEmoji FirstQuarterMoonFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F31B"),
@@ -21862,7 +21922,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2841
+            sortOrder: 2847
         );
         public static readonly SingleEmoji LastQuarterMoonFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F31C"),
@@ -21872,7 +21932,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2842
+            sortOrder: 2848
         );
         public static readonly SingleEmoji Thermometer = new SingleEmoji(
             sequence: new UnicodeSequence("1F321 FE0F"),
@@ -21882,7 +21942,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2843
+            sortOrder: 2849
         );
         public static readonly SingleEmoji Sun = new SingleEmoji(
             sequence: new UnicodeSequence("2600 FE0F"),
@@ -21892,7 +21952,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2845
+            sortOrder: 2851
         );
         public static readonly SingleEmoji FullMoonFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F31D"),
@@ -21902,7 +21962,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2847
+            sortOrder: 2853
         );
         public static readonly SingleEmoji SunFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F31E"),
@@ -21912,7 +21972,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2848
+            sortOrder: 2854
         );
         public static readonly SingleEmoji RingedPlanet = new SingleEmoji(
             sequence: new UnicodeSequence("1FA90"),
@@ -21922,7 +21982,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2849
+            sortOrder: 2855
         );
         public static readonly SingleEmoji Star = new SingleEmoji(
             sequence: new UnicodeSequence("2B50"),
@@ -21932,7 +21992,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2850
+            sortOrder: 2856
         );
         public static readonly SingleEmoji GlowingStar = new SingleEmoji(
             sequence: new UnicodeSequence("1F31F"),
@@ -21942,7 +22002,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2851
+            sortOrder: 2857
         );
         public static readonly SingleEmoji ShootingStar = new SingleEmoji(
             sequence: new UnicodeSequence("1F320"),
@@ -21952,7 +22012,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2852
+            sortOrder: 2858
         );
         public static readonly SingleEmoji MilkyWay = new SingleEmoji(
             sequence: new UnicodeSequence("1F30C"),
@@ -21962,7 +22022,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2853
+            sortOrder: 2859
         );
         public static readonly SingleEmoji Cloud = new SingleEmoji(
             sequence: new UnicodeSequence("2601 FE0F"),
@@ -21972,7 +22032,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2854
+            sortOrder: 2860
         );
         public static readonly SingleEmoji SunBehindCloud = new SingleEmoji(
             sequence: new UnicodeSequence("26C5"),
@@ -21982,7 +22042,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2856
+            sortOrder: 2862
         );
         public static readonly SingleEmoji CloudLightningRain = new SingleEmoji(
             sequence: new UnicodeSequence("26C8 FE0F"),
@@ -21992,7 +22052,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2857
+            sortOrder: 2863
         );
         public static readonly SingleEmoji SunBehindSmallCloud = new SingleEmoji(
             sequence: new UnicodeSequence("1F324 FE0F"),
@@ -22002,7 +22062,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2859
+            sortOrder: 2865
         );
         public static readonly SingleEmoji SunBehindLargeCloud = new SingleEmoji(
             sequence: new UnicodeSequence("1F325 FE0F"),
@@ -22012,7 +22072,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2861
+            sortOrder: 2867
         );
         public static readonly SingleEmoji SunBehindRainCloud = new SingleEmoji(
             sequence: new UnicodeSequence("1F326 FE0F"),
@@ -22022,7 +22082,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2863
+            sortOrder: 2869
         );
         public static readonly SingleEmoji CloudRain = new SingleEmoji(
             sequence: new UnicodeSequence("1F327 FE0F"),
@@ -22032,7 +22092,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2865
+            sortOrder: 2871
         );
         public static readonly SingleEmoji CloudSnow = new SingleEmoji(
             sequence: new UnicodeSequence("1F328 FE0F"),
@@ -22042,7 +22102,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2867
+            sortOrder: 2873
         );
         public static readonly SingleEmoji CloudLightning = new SingleEmoji(
             sequence: new UnicodeSequence("1F329 FE0F"),
@@ -22052,7 +22112,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2869
+            sortOrder: 2875
         );
         public static readonly SingleEmoji Tornado = new SingleEmoji(
             sequence: new UnicodeSequence("1F32A FE0F"),
@@ -22062,7 +22122,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2871
+            sortOrder: 2877
         );
         public static readonly SingleEmoji Fog = new SingleEmoji(
             sequence: new UnicodeSequence("1F32B FE0F"),
@@ -22072,7 +22132,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2873
+            sortOrder: 2879
         );
         public static readonly SingleEmoji WindFace = new SingleEmoji(
             sequence: new UnicodeSequence("1F32C FE0F"),
@@ -22082,7 +22142,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2875
+            sortOrder: 2881
         );
         public static readonly SingleEmoji Cyclone = new SingleEmoji(
             sequence: new UnicodeSequence("1F300"),
@@ -22092,7 +22152,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2877
+            sortOrder: 2883
         );
         public static readonly SingleEmoji Rainbow = new SingleEmoji(
             sequence: new UnicodeSequence("1F308"),
@@ -22102,7 +22162,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2878
+            sortOrder: 2884
         );
         public static readonly SingleEmoji ClosedUmbrella = new SingleEmoji(
             sequence: new UnicodeSequence("1F302"),
@@ -22112,7 +22172,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2879
+            sortOrder: 2885
         );
         public static readonly SingleEmoji Umbrella = new SingleEmoji(
             sequence: new UnicodeSequence("2602 FE0F"),
@@ -22122,7 +22182,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2880
+            sortOrder: 2886
         );
         public static readonly SingleEmoji UmbrellaRainDrops = new SingleEmoji(
             sequence: new UnicodeSequence("2614"),
@@ -22132,7 +22192,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2882
+            sortOrder: 2888
         );
         public static readonly SingleEmoji UmbrellaGround = new SingleEmoji(
             sequence: new UnicodeSequence("26F1 FE0F"),
@@ -22142,7 +22202,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2883
+            sortOrder: 2889
         );
         public static readonly SingleEmoji HighVoltage = new SingleEmoji(
             sequence: new UnicodeSequence("26A1"),
@@ -22152,7 +22212,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2885
+            sortOrder: 2891
         );
         public static readonly SingleEmoji Snowflake = new SingleEmoji(
             sequence: new UnicodeSequence("2744 FE0F"),
@@ -22162,7 +22222,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2886
+            sortOrder: 2892
         );
         public static readonly SingleEmoji Snowman = new SingleEmoji(
             sequence: new UnicodeSequence("2603 FE0F"),
@@ -22172,7 +22232,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2888
+            sortOrder: 2894
         );
         public static readonly SingleEmoji SnowmanSnow = new SingleEmoji(
             sequence: new UnicodeSequence("26C4"),
@@ -22182,7 +22242,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2890
+            sortOrder: 2896
         );
         public static readonly SingleEmoji Comet = new SingleEmoji(
             sequence: new UnicodeSequence("2604 FE0F"),
@@ -22192,7 +22252,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: false,
-            sortOrder: 2891
+            sortOrder: 2897
         );
         public static readonly SingleEmoji Fire = new SingleEmoji(
             sequence: new UnicodeSequence("1F525"),
@@ -22202,7 +22262,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2893
+            sortOrder: 2899
         );
         public static readonly SingleEmoji Droplet = new SingleEmoji(
             sequence: new UnicodeSequence("1F4A7"),
@@ -22212,7 +22272,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2894
+            sortOrder: 2900
         );
         public static readonly SingleEmoji WaterWave = new SingleEmoji(
             sequence: new UnicodeSequence("1F30A"),
@@ -22222,7 +22282,7 @@ namespace NeoSmart.Unicode
             group: Group.TRAVEL_AND_PLACES,
             subgroup: "sky & weather",
             hasGlyph: true,
-            sortOrder: 2895
+            sortOrder: 2901
         );
         public static readonly SingleEmoji JackOLantern = new SingleEmoji(
             sequence: new UnicodeSequence("1F383"),
@@ -22232,7 +22292,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2896
+            sortOrder: 2902
         );
         public static readonly SingleEmoji ChristmasTree = new SingleEmoji(
             sequence: new UnicodeSequence("1F384"),
@@ -22242,7 +22302,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2897
+            sortOrder: 2903
         );
         public static readonly SingleEmoji Fireworks = new SingleEmoji(
             sequence: new UnicodeSequence("1F386"),
@@ -22252,7 +22312,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2898
+            sortOrder: 2904
         );
         public static readonly SingleEmoji Sparkler = new SingleEmoji(
             sequence: new UnicodeSequence("1F387"),
@@ -22262,7 +22322,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2899
+            sortOrder: 2905
         );
         public static readonly SingleEmoji Firecracker = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E8"),
@@ -22272,7 +22332,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2900
+            sortOrder: 2906
         );
         public static readonly SingleEmoji Sparkles = new SingleEmoji(
             sequence: new UnicodeSequence("2728"),
@@ -22282,7 +22342,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2901
+            sortOrder: 2907
         );
         public static readonly SingleEmoji Balloon = new SingleEmoji(
             sequence: new UnicodeSequence("1F388"),
@@ -22292,7 +22352,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2902
+            sortOrder: 2908
         );
         public static readonly SingleEmoji PartyPopper = new SingleEmoji(
             sequence: new UnicodeSequence("1F389"),
@@ -22302,7 +22362,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2903
+            sortOrder: 2909
         );
         public static readonly SingleEmoji ConfettiBall = new SingleEmoji(
             sequence: new UnicodeSequence("1F38A"),
@@ -22312,7 +22372,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2904
+            sortOrder: 2910
         );
         public static readonly SingleEmoji TanabataTree = new SingleEmoji(
             sequence: new UnicodeSequence("1F38B"),
@@ -22322,7 +22382,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2905
+            sortOrder: 2911
         );
         public static readonly SingleEmoji PineDecoration = new SingleEmoji(
             sequence: new UnicodeSequence("1F38D"),
@@ -22332,7 +22392,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2906
+            sortOrder: 2912
         );
         public static readonly SingleEmoji JapaneseDolls = new SingleEmoji(
             sequence: new UnicodeSequence("1F38E"),
@@ -22342,7 +22402,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2907
+            sortOrder: 2913
         );
         public static readonly SingleEmoji CarpStreamer = new SingleEmoji(
             sequence: new UnicodeSequence("1F38F"),
@@ -22352,7 +22412,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2908
+            sortOrder: 2914
         );
         public static readonly SingleEmoji WindChime = new SingleEmoji(
             sequence: new UnicodeSequence("1F390"),
@@ -22362,7 +22422,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2909
+            sortOrder: 2915
         );
         public static readonly SingleEmoji MoonViewingCeremony = new SingleEmoji(
             sequence: new UnicodeSequence("1F391"),
@@ -22372,7 +22432,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2910
+            sortOrder: 2916
         );
         public static readonly SingleEmoji RedEnvelope = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E7"),
@@ -22382,7 +22442,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2911
+            sortOrder: 2917
         );
         public static readonly SingleEmoji Ribbon = new SingleEmoji(
             sequence: new UnicodeSequence("1F380"),
@@ -22392,7 +22452,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2912
+            sortOrder: 2918
         );
         public static readonly SingleEmoji WrappedGift = new SingleEmoji(
             sequence: new UnicodeSequence("1F381"),
@@ -22402,7 +22462,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2913
+            sortOrder: 2919
         );
         public static readonly SingleEmoji ReminderRibbon = new SingleEmoji(
             sequence: new UnicodeSequence("1F397 FE0F"),
@@ -22412,7 +22472,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: false,
-            sortOrder: 2914
+            sortOrder: 2920
         );
         public static readonly SingleEmoji AdmissionTickets = new SingleEmoji(
             sequence: new UnicodeSequence("1F39F FE0F"),
@@ -22422,7 +22482,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: false,
-            sortOrder: 2916
+            sortOrder: 2922
         );
         public static readonly SingleEmoji Ticket = new SingleEmoji(
             sequence: new UnicodeSequence("1F3AB"),
@@ -22432,7 +22492,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "event",
             hasGlyph: true,
-            sortOrder: 2918
+            sortOrder: 2924
         );
         public static readonly SingleEmoji MilitaryMedal = new SingleEmoji(
             sequence: new UnicodeSequence("1F396 FE0F"),
@@ -22442,7 +22502,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "award-medal",
             hasGlyph: false,
-            sortOrder: 2919
+            sortOrder: 2925
         );
         public static readonly SingleEmoji Trophy = new SingleEmoji(
             sequence: new UnicodeSequence("1F3C6"),
@@ -22452,7 +22512,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "award-medal",
             hasGlyph: true,
-            sortOrder: 2921
+            sortOrder: 2927
         );
         public static readonly SingleEmoji SportsMedal = new SingleEmoji(
             sequence: new UnicodeSequence("1F3C5"),
@@ -22462,7 +22522,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "award-medal",
             hasGlyph: true,
-            sortOrder: 2922
+            sortOrder: 2928
         );
         public static readonly SingleEmoji FirstPlaceMedal = new SingleEmoji(
             sequence: new UnicodeSequence("1F947"),
@@ -22472,7 +22532,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "award-medal",
             hasGlyph: true,
-            sortOrder: 2923
+            sortOrder: 2929
         );
         public static readonly SingleEmoji SecondPlaceMedal = new SingleEmoji(
             sequence: new UnicodeSequence("1F948"),
@@ -22482,7 +22542,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "award-medal",
             hasGlyph: true,
-            sortOrder: 2924
+            sortOrder: 2930
         );
         public static readonly SingleEmoji ThirdPlaceMedal = new SingleEmoji(
             sequence: new UnicodeSequence("1F949"),
@@ -22492,7 +22552,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "award-medal",
             hasGlyph: true,
-            sortOrder: 2925
+            sortOrder: 2931
         );
         public static readonly SingleEmoji SoccerBall = new SingleEmoji(
             sequence: new UnicodeSequence("26BD"),
@@ -22502,7 +22562,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2926
+            sortOrder: 2932
         );
         public static readonly SingleEmoji Baseball = new SingleEmoji(
             sequence: new UnicodeSequence("26BE"),
@@ -22512,7 +22572,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2927
+            sortOrder: 2933
         );
         public static readonly SingleEmoji Softball = new SingleEmoji(
             sequence: new UnicodeSequence("1F94E"),
@@ -22522,7 +22582,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2928
+            sortOrder: 2934
         );
         public static readonly SingleEmoji Basketball = new SingleEmoji(
             sequence: new UnicodeSequence("1F3C0"),
@@ -22532,7 +22592,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2929
+            sortOrder: 2935
         );
         public static readonly SingleEmoji Volleyball = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D0"),
@@ -22542,7 +22602,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2930
+            sortOrder: 2936
         );
         public static readonly SingleEmoji AmericanFootball = new SingleEmoji(
             sequence: new UnicodeSequence("1F3C8"),
@@ -22552,7 +22612,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2931
+            sortOrder: 2937
         );
         public static readonly SingleEmoji RugbyFootball = new SingleEmoji(
             sequence: new UnicodeSequence("1F3C9"),
@@ -22562,7 +22622,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2932
+            sortOrder: 2938
         );
         public static readonly SingleEmoji Tennis = new SingleEmoji(
             sequence: new UnicodeSequence("1F3BE"),
@@ -22572,7 +22632,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2933
+            sortOrder: 2939
         );
         public static readonly SingleEmoji FlyingDisc = new SingleEmoji(
             sequence: new UnicodeSequence("1F94F"),
@@ -22582,7 +22642,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2934
+            sortOrder: 2940
         );
         public static readonly SingleEmoji Bowling = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B3"),
@@ -22592,7 +22652,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2935
+            sortOrder: 2941
         );
         public static readonly SingleEmoji CricketGame = new SingleEmoji(
             sequence: new UnicodeSequence("1F3CF"),
@@ -22602,7 +22662,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2936
+            sortOrder: 2942
         );
         public static readonly SingleEmoji FieldHockey = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D1"),
@@ -22612,7 +22672,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2937
+            sortOrder: 2943
         );
         public static readonly SingleEmoji IceHockey = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D2"),
@@ -22622,7 +22682,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2938
+            sortOrder: 2944
         );
         public static readonly SingleEmoji Lacrosse = new SingleEmoji(
             sequence: new UnicodeSequence("1F94D"),
@@ -22632,7 +22692,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2939
+            sortOrder: 2945
         );
         public static readonly SingleEmoji PingPong = new SingleEmoji(
             sequence: new UnicodeSequence("1F3D3"),
@@ -22642,7 +22702,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2940
+            sortOrder: 2946
         );
         public static readonly SingleEmoji Badminton = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F8"),
@@ -22652,7 +22712,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2941
+            sortOrder: 2947
         );
         public static readonly SingleEmoji BoxingGlove = new SingleEmoji(
             sequence: new UnicodeSequence("1F94A"),
@@ -22662,7 +22722,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2942
+            sortOrder: 2948
         );
         public static readonly SingleEmoji MartialArtsUniform = new SingleEmoji(
             sequence: new UnicodeSequence("1F94B"),
@@ -22672,7 +22732,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2943
+            sortOrder: 2949
         );
         public static readonly SingleEmoji GoalNet = new SingleEmoji(
             sequence: new UnicodeSequence("1F945"),
@@ -22682,7 +22742,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2944
+            sortOrder: 2950
         );
         public static readonly SingleEmoji FlagHole = new SingleEmoji(
             sequence: new UnicodeSequence("26F3"),
@@ -22692,7 +22752,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2945
+            sortOrder: 2951
         );
         public static readonly SingleEmoji IceSkate = new SingleEmoji(
             sequence: new UnicodeSequence("26F8 FE0F"),
@@ -22702,7 +22762,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: false,
-            sortOrder: 2946
+            sortOrder: 2952
         );
         public static readonly SingleEmoji FishingPole = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A3"),
@@ -22712,7 +22772,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2948
+            sortOrder: 2954
         );
         public static readonly SingleEmoji DivingMask = new SingleEmoji(
             sequence: new UnicodeSequence("1F93F"),
@@ -22722,7 +22782,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: false,
-            sortOrder: 2949
+            sortOrder: 2955
         );
         public static readonly SingleEmoji RunningShirt = new SingleEmoji(
             sequence: new UnicodeSequence("1F3BD"),
@@ -22732,7 +22792,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2950
+            sortOrder: 2956
         );
         public static readonly SingleEmoji Skis = new SingleEmoji(
             sequence: new UnicodeSequence("1F3BF"),
@@ -22742,7 +22802,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2951
+            sortOrder: 2957
         );
         public static readonly SingleEmoji Sled = new SingleEmoji(
             sequence: new UnicodeSequence("1F6F7"),
@@ -22752,7 +22812,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2952
+            sortOrder: 2958
         );
         public static readonly SingleEmoji CurlingStone = new SingleEmoji(
             sequence: new UnicodeSequence("1F94C"),
@@ -22762,7 +22822,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "sport",
             hasGlyph: true,
-            sortOrder: 2953
+            sortOrder: 2959
         );
         public static readonly SingleEmoji DirectHit = new SingleEmoji(
             sequence: new UnicodeSequence("1F3AF"),
@@ -22772,7 +22832,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2954
+            sortOrder: 2960
         );
         public static readonly SingleEmoji YoYo = new SingleEmoji(
             sequence: new UnicodeSequence("1FA80"),
@@ -22782,7 +22842,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2955
+            sortOrder: 2961
         );
         public static readonly SingleEmoji Kite = new SingleEmoji(
             sequence: new UnicodeSequence("1FA81"),
@@ -22792,7 +22852,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2956
+            sortOrder: 2962
         );
         public static readonly SingleEmoji Pool8Ball = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B1"),
@@ -22802,7 +22862,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2957
+            sortOrder: 2963
         );
         public static readonly SingleEmoji CrystalBall = new SingleEmoji(
             sequence: new UnicodeSequence("1F52E"),
@@ -22812,7 +22872,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2958
+            sortOrder: 2964
         );
         public static readonly SingleEmoji NazarAmulet = new SingleEmoji(
             sequence: new UnicodeSequence("1F9FF"),
@@ -22822,7 +22882,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2959
+            sortOrder: 2965
         );
         public static readonly SingleEmoji VideoGame = new SingleEmoji(
             sequence: new UnicodeSequence("1F3AE"),
@@ -22832,7 +22892,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2960
+            sortOrder: 2966
         );
         public static readonly SingleEmoji Joystick = new SingleEmoji(
             sequence: new UnicodeSequence("1F579 FE0F"),
@@ -22842,7 +22902,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2961
+            sortOrder: 2967
         );
         public static readonly SingleEmoji SlotMachine = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B0"),
@@ -22852,7 +22912,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2963
+            sortOrder: 2969
         );
         public static readonly SingleEmoji GameDie = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B2"),
@@ -22862,7 +22922,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2964
+            sortOrder: 2970
         );
         public static readonly SingleEmoji PuzzlePiece = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E9"),
@@ -22872,7 +22932,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2965
+            sortOrder: 2971
         );
         public static readonly SingleEmoji TeddyBear = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F8"),
@@ -22882,7 +22942,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2966
+            sortOrder: 2972
         );
         public static readonly SingleEmoji SpadeSuit = new SingleEmoji(
             sequence: new UnicodeSequence("2660 FE0F"),
@@ -22892,7 +22952,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2967
+            sortOrder: 2973
         );
         public static readonly SingleEmoji HeartSuit = new SingleEmoji(
             sequence: new UnicodeSequence("2665 FE0F"),
@@ -22902,7 +22962,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2969
+            sortOrder: 2975
         );
         public static readonly SingleEmoji DiamondSuit = new SingleEmoji(
             sequence: new UnicodeSequence("2666 FE0F"),
@@ -22912,7 +22972,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2971
+            sortOrder: 2977
         );
         public static readonly SingleEmoji ClubSuit = new SingleEmoji(
             sequence: new UnicodeSequence("2663 FE0F"),
@@ -22922,7 +22982,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2973
+            sortOrder: 2979
         );
         public static readonly SingleEmoji ChessPawn = new SingleEmoji(
             sequence: new UnicodeSequence("265F FE0F"),
@@ -22932,7 +22992,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: false,
-            sortOrder: 2975
+            sortOrder: 2981
         );
         public static readonly SingleEmoji Joker = new SingleEmoji(
             sequence: new UnicodeSequence("1F0CF"),
@@ -22942,7 +23002,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2977
+            sortOrder: 2983
         );
         public static readonly SingleEmoji MahjongRedDragon = new SingleEmoji(
             sequence: new UnicodeSequence("1F004"),
@@ -22952,7 +23012,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2978
+            sortOrder: 2984
         );
         public static readonly SingleEmoji FlowerPlayingCards = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B4"),
@@ -22962,7 +23022,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "game",
             hasGlyph: true,
-            sortOrder: 2979
+            sortOrder: 2985
         );
         public static readonly SingleEmoji PerformingArts = new SingleEmoji(
             sequence: new UnicodeSequence("1F3AD"),
@@ -22972,7 +23032,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "arts & crafts",
             hasGlyph: true,
-            sortOrder: 2980
+            sortOrder: 2986
         );
         public static readonly SingleEmoji FramedPicture = new SingleEmoji(
             sequence: new UnicodeSequence("1F5BC FE0F"),
@@ -22982,7 +23042,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "arts & crafts",
             hasGlyph: false,
-            sortOrder: 2981
+            sortOrder: 2987
         );
         public static readonly SingleEmoji ArtistPalette = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A8"),
@@ -22992,7 +23052,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "arts & crafts",
             hasGlyph: true,
-            sortOrder: 2983
+            sortOrder: 2989
         );
         public static readonly SingleEmoji Thread = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F5"),
@@ -23002,7 +23062,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "arts & crafts",
             hasGlyph: true,
-            sortOrder: 2984
+            sortOrder: 2990
         );
         public static readonly SingleEmoji Yarn = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F6"),
@@ -23012,7 +23072,7 @@ namespace NeoSmart.Unicode
             group: Group.ACTIVITIES,
             subgroup: "arts & crafts",
             hasGlyph: true,
-            sortOrder: 2985
+            sortOrder: 2991
         );
         public static readonly SingleEmoji Glasses = new SingleEmoji(
             sequence: new UnicodeSequence("1F453"),
@@ -23022,7 +23082,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2986
+            sortOrder: 2992
         );
         public static readonly SingleEmoji Sunglasses = new SingleEmoji(
             sequence: new UnicodeSequence("1F576 FE0F"),
@@ -23032,7 +23092,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 2987
+            sortOrder: 2993
         );
         public static readonly SingleEmoji Goggles = new SingleEmoji(
             sequence: new UnicodeSequence("1F97D"),
@@ -23042,7 +23102,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2989
+            sortOrder: 2995
         );
         public static readonly SingleEmoji LabCoat = new SingleEmoji(
             sequence: new UnicodeSequence("1F97C"),
@@ -23052,7 +23112,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2990
+            sortOrder: 2996
         );
         public static readonly SingleEmoji SafetyVest = new SingleEmoji(
             sequence: new UnicodeSequence("1F9BA"),
@@ -23062,7 +23122,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 2991
+            sortOrder: 2997
         );
         public static readonly SingleEmoji Necktie = new SingleEmoji(
             sequence: new UnicodeSequence("1F454"),
@@ -23072,7 +23132,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2992
+            sortOrder: 2998
         );
         public static readonly SingleEmoji TShirt = new SingleEmoji(
             sequence: new UnicodeSequence("1F455"),
@@ -23082,7 +23142,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2993
+            sortOrder: 2999
         );
         public static readonly SingleEmoji Jeans = new SingleEmoji(
             sequence: new UnicodeSequence("1F456"),
@@ -23092,7 +23152,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2994
+            sortOrder: 3000
         );
         public static readonly SingleEmoji Scarf = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E3"),
@@ -23102,7 +23162,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2995
+            sortOrder: 3001
         );
         public static readonly SingleEmoji Gloves = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E4"),
@@ -23112,7 +23172,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2996
+            sortOrder: 3002
         );
         public static readonly SingleEmoji Coat = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E5"),
@@ -23122,7 +23182,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2997
+            sortOrder: 3003
         );
         public static readonly SingleEmoji Socks = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E6"),
@@ -23132,7 +23192,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2998
+            sortOrder: 3004
         );
         public static readonly SingleEmoji Dress = new SingleEmoji(
             sequence: new UnicodeSequence("1F457"),
@@ -23142,7 +23202,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 2999
+            sortOrder: 3005
         );
         public static readonly SingleEmoji Kimono = new SingleEmoji(
             sequence: new UnicodeSequence("1F458"),
@@ -23152,7 +23212,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3000
+            sortOrder: 3006
         );
         public static readonly SingleEmoji Sari = new SingleEmoji(
             sequence: new UnicodeSequence("1F97B"),
@@ -23162,7 +23222,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 3001
+            sortOrder: 3007
         );
         public static readonly SingleEmoji OnePieceSwimsuit = new SingleEmoji(
             sequence: new UnicodeSequence("1FA71"),
@@ -23172,7 +23232,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 3002
+            sortOrder: 3008
         );
         public static readonly SingleEmoji SwimBrief = new SingleEmoji(
             sequence: new UnicodeSequence("1FA72"),
@@ -23182,7 +23242,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 3003
+            sortOrder: 3009
         );
         public static readonly SingleEmoji Shorts = new SingleEmoji(
             sequence: new UnicodeSequence("1FA73"),
@@ -23192,7 +23252,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 3004
+            sortOrder: 3010
         );
         public static readonly SingleEmoji Bikini = new SingleEmoji(
             sequence: new UnicodeSequence("1F459"),
@@ -23202,7 +23262,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3005
+            sortOrder: 3011
         );
         public static readonly SingleEmoji WomansClothes = new SingleEmoji(
             sequence: new UnicodeSequence("1F45A"),
@@ -23212,7 +23272,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3006
+            sortOrder: 3012
         );
         public static readonly SingleEmoji Purse = new SingleEmoji(
             sequence: new UnicodeSequence("1F45B"),
@@ -23222,7 +23282,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3007
+            sortOrder: 3013
         );
         public static readonly SingleEmoji Handbag = new SingleEmoji(
             sequence: new UnicodeSequence("1F45C"),
@@ -23232,7 +23292,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3008
+            sortOrder: 3014
         );
         public static readonly SingleEmoji ClutchBag = new SingleEmoji(
             sequence: new UnicodeSequence("1F45D"),
@@ -23242,7 +23302,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3009
+            sortOrder: 3015
         );
         public static readonly SingleEmoji ShoppingBags = new SingleEmoji(
             sequence: new UnicodeSequence("1F6CD FE0F"),
@@ -23252,7 +23312,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 3010
+            sortOrder: 3016
         );
         public static readonly SingleEmoji Backpack = new SingleEmoji(
             sequence: new UnicodeSequence("1F392"),
@@ -23262,7 +23322,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3012
+            sortOrder: 3018
         );
         public static readonly SingleEmoji MansShoe = new SingleEmoji(
             sequence: new UnicodeSequence("1F45E"),
@@ -23272,7 +23332,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3013
+            sortOrder: 3019
         );
         public static readonly SingleEmoji RunningShoe = new SingleEmoji(
             sequence: new UnicodeSequence("1F45F"),
@@ -23282,7 +23342,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3014
+            sortOrder: 3020
         );
         public static readonly SingleEmoji HikingBoot = new SingleEmoji(
             sequence: new UnicodeSequence("1F97E"),
@@ -23292,7 +23352,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3015
+            sortOrder: 3021
         );
         public static readonly SingleEmoji FlatShoe = new SingleEmoji(
             sequence: new UnicodeSequence("1F97F"),
@@ -23302,7 +23362,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3016
+            sortOrder: 3022
         );
         public static readonly SingleEmoji HighHeeledShoe = new SingleEmoji(
             sequence: new UnicodeSequence("1F460"),
@@ -23312,7 +23372,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3017
+            sortOrder: 3023
         );
         public static readonly SingleEmoji WomansSandal = new SingleEmoji(
             sequence: new UnicodeSequence("1F461"),
@@ -23322,7 +23382,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3018
+            sortOrder: 3024
         );
         public static readonly SingleEmoji BalletShoes = new SingleEmoji(
             sequence: new UnicodeSequence("1FA70"),
@@ -23332,7 +23392,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 3019
+            sortOrder: 3025
         );
         public static readonly SingleEmoji WomansBoot = new SingleEmoji(
             sequence: new UnicodeSequence("1F462"),
@@ -23342,7 +23402,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3020
+            sortOrder: 3026
         );
         public static readonly SingleEmoji Crown = new SingleEmoji(
             sequence: new UnicodeSequence("1F451"),
@@ -23352,7 +23412,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3021
+            sortOrder: 3027
         );
         public static readonly SingleEmoji WomansHat = new SingleEmoji(
             sequence: new UnicodeSequence("1F452"),
@@ -23362,7 +23422,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3022
+            sortOrder: 3028
         );
         public static readonly SingleEmoji TopHat = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A9"),
@@ -23372,7 +23432,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3023
+            sortOrder: 3029
         );
         public static readonly SingleEmoji GraduationCap = new SingleEmoji(
             sequence: new UnicodeSequence("1F393"),
@@ -23382,7 +23442,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3024
+            sortOrder: 3030
         );
         public static readonly SingleEmoji BilledCap = new SingleEmoji(
             sequence: new UnicodeSequence("1F9E2"),
@@ -23392,7 +23452,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3025
+            sortOrder: 3031
         );
         public static readonly SingleEmoji RescueWorkersHelmet = new SingleEmoji(
             sequence: new UnicodeSequence("26D1 FE0F"),
@@ -23402,7 +23462,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: false,
-            sortOrder: 3026
+            sortOrder: 3032
         );
         public static readonly SingleEmoji PrayerBeads = new SingleEmoji(
             sequence: new UnicodeSequence("1F4FF"),
@@ -23412,7 +23472,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3028
+            sortOrder: 3034
         );
         public static readonly SingleEmoji Lipstick = new SingleEmoji(
             sequence: new UnicodeSequence("1F484"),
@@ -23422,7 +23482,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3029
+            sortOrder: 3035
         );
         public static readonly SingleEmoji Ring = new SingleEmoji(
             sequence: new UnicodeSequence("1F48D"),
@@ -23432,7 +23492,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3030
+            sortOrder: 3036
         );
         public static readonly SingleEmoji GemStone = new SingleEmoji(
             sequence: new UnicodeSequence("1F48E"),
@@ -23442,7 +23502,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "clothing",
             hasGlyph: true,
-            sortOrder: 3031
+            sortOrder: 3037
         );
         public static readonly SingleEmoji MutedSpeaker = new SingleEmoji(
             sequence: new UnicodeSequence("1F507"),
@@ -23452,7 +23512,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3032
+            sortOrder: 3038
         );
         public static readonly SingleEmoji SpeakerLowVolume = new SingleEmoji(
             sequence: new UnicodeSequence("1F508"),
@@ -23462,7 +23522,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3033
+            sortOrder: 3039
         );
         public static readonly SingleEmoji SpeakerMediumVolume = new SingleEmoji(
             sequence: new UnicodeSequence("1F509"),
@@ -23472,7 +23532,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3034
+            sortOrder: 3040
         );
         public static readonly SingleEmoji SpeakerHighVolume = new SingleEmoji(
             sequence: new UnicodeSequence("1F50A"),
@@ -23482,7 +23542,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3035
+            sortOrder: 3041
         );
         public static readonly SingleEmoji Loudspeaker = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E2"),
@@ -23492,7 +23552,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3036
+            sortOrder: 3042
         );
         public static readonly SingleEmoji Megaphone = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E3"),
@@ -23502,7 +23562,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3037
+            sortOrder: 3043
         );
         public static readonly SingleEmoji PostalHorn = new SingleEmoji(
             sequence: new UnicodeSequence("1F4EF"),
@@ -23512,7 +23572,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3038
+            sortOrder: 3044
         );
         public static readonly SingleEmoji Bell = new SingleEmoji(
             sequence: new UnicodeSequence("1F514"),
@@ -23522,7 +23582,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3039
+            sortOrder: 3045
         );
         public static readonly SingleEmoji BellSlash = new SingleEmoji(
             sequence: new UnicodeSequence("1F515"),
@@ -23532,7 +23592,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "sound",
             hasGlyph: true,
-            sortOrder: 3040
+            sortOrder: 3046
         );
         public static readonly SingleEmoji MusicalScore = new SingleEmoji(
             sequence: new UnicodeSequence("1F3BC"),
@@ -23542,7 +23602,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: true,
-            sortOrder: 3041
+            sortOrder: 3047
         );
         public static readonly SingleEmoji MusicalNote = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B5"),
@@ -23552,7 +23612,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: true,
-            sortOrder: 3042
+            sortOrder: 3048
         );
         public static readonly SingleEmoji MusicalNotes = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B6"),
@@ -23562,7 +23622,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: true,
-            sortOrder: 3043
+            sortOrder: 3049
         );
         public static readonly SingleEmoji StudioMicrophone = new SingleEmoji(
             sequence: new UnicodeSequence("1F399 FE0F"),
@@ -23572,7 +23632,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: false,
-            sortOrder: 3044
+            sortOrder: 3050
         );
         public static readonly SingleEmoji LevelSlider = new SingleEmoji(
             sequence: new UnicodeSequence("1F39A FE0F"),
@@ -23582,7 +23642,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: false,
-            sortOrder: 3046
+            sortOrder: 3052
         );
         public static readonly SingleEmoji ControlKnobs = new SingleEmoji(
             sequence: new UnicodeSequence("1F39B FE0F"),
@@ -23592,7 +23652,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: false,
-            sortOrder: 3048
+            sortOrder: 3054
         );
         public static readonly SingleEmoji Microphone = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A4"),
@@ -23602,7 +23662,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: true,
-            sortOrder: 3050
+            sortOrder: 3056
         );
         public static readonly SingleEmoji Headphone = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A7"),
@@ -23612,7 +23672,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: true,
-            sortOrder: 3051
+            sortOrder: 3057
         );
         public static readonly SingleEmoji Radio = new SingleEmoji(
             sequence: new UnicodeSequence("1F4FB"),
@@ -23622,7 +23682,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "music",
             hasGlyph: true,
-            sortOrder: 3052
+            sortOrder: 3058
         );
         public static readonly SingleEmoji Saxophone = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B7"),
@@ -23632,7 +23692,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "musical-instrument",
             hasGlyph: true,
-            sortOrder: 3053
+            sortOrder: 3059
         );
         public static readonly SingleEmoji Guitar = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B8"),
@@ -23642,7 +23702,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "musical-instrument",
             hasGlyph: true,
-            sortOrder: 3054
+            sortOrder: 3060
         );
         public static readonly SingleEmoji MusicalKeyboard = new SingleEmoji(
             sequence: new UnicodeSequence("1F3B9"),
@@ -23652,7 +23712,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "musical-instrument",
             hasGlyph: true,
-            sortOrder: 3055
+            sortOrder: 3061
         );
         public static readonly SingleEmoji Trumpet = new SingleEmoji(
             sequence: new UnicodeSequence("1F3BA"),
@@ -23662,7 +23722,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "musical-instrument",
             hasGlyph: true,
-            sortOrder: 3056
+            sortOrder: 3062
         );
         public static readonly SingleEmoji Violin = new SingleEmoji(
             sequence: new UnicodeSequence("1F3BB"),
@@ -23672,7 +23732,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "musical-instrument",
             hasGlyph: true,
-            sortOrder: 3057
+            sortOrder: 3063
         );
         public static readonly SingleEmoji Banjo = new SingleEmoji(
             sequence: new UnicodeSequence("1FA95"),
@@ -23682,7 +23742,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "musical-instrument",
             hasGlyph: false,
-            sortOrder: 3058
+            sortOrder: 3064
         );
         public static readonly SingleEmoji Drum = new SingleEmoji(
             sequence: new UnicodeSequence("1F941"),
@@ -23692,7 +23752,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "musical-instrument",
             hasGlyph: true,
-            sortOrder: 3059
+            sortOrder: 3065
         );
         public static readonly SingleEmoji MobilePhone = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F1"),
@@ -23702,7 +23762,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "phone",
             hasGlyph: true,
-            sortOrder: 3060
+            sortOrder: 3066
         );
         public static readonly SingleEmoji MobilePhoneArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F2"),
@@ -23712,7 +23772,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "phone",
             hasGlyph: true,
-            sortOrder: 3061
+            sortOrder: 3067
         );
         public static readonly SingleEmoji Telephone = new SingleEmoji(
             sequence: new UnicodeSequence("260E FE0F"),
@@ -23722,7 +23782,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "phone",
             hasGlyph: false,
-            sortOrder: 3062
+            sortOrder: 3068
         );
         public static readonly SingleEmoji TelephoneReceiver = new SingleEmoji(
             sequence: new UnicodeSequence("1F4DE"),
@@ -23732,7 +23792,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "phone",
             hasGlyph: true,
-            sortOrder: 3064
+            sortOrder: 3070
         );
         public static readonly SingleEmoji Pager = new SingleEmoji(
             sequence: new UnicodeSequence("1F4DF"),
@@ -23742,7 +23802,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "phone",
             hasGlyph: true,
-            sortOrder: 3065
+            sortOrder: 3071
         );
         public static readonly SingleEmoji FaxMachine = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E0"),
@@ -23752,7 +23812,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "phone",
             hasGlyph: true,
-            sortOrder: 3066
+            sortOrder: 3072
         );
         public static readonly SingleEmoji Battery = new SingleEmoji(
             sequence: new UnicodeSequence("1F50B"),
@@ -23762,7 +23822,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3067
+            sortOrder: 3073
         );
         public static readonly SingleEmoji ElectricPlug = new SingleEmoji(
             sequence: new UnicodeSequence("1F50C"),
@@ -23772,7 +23832,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3068
+            sortOrder: 3074
         );
         public static readonly SingleEmoji LaptopComputer = new SingleEmoji(
             sequence: new UnicodeSequence("1F4BB"),
@@ -23782,7 +23842,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3069
+            sortOrder: 3075
         );
         public static readonly SingleEmoji DesktopComputer = new SingleEmoji(
             sequence: new UnicodeSequence("1F5A5 FE0F"),
@@ -23792,7 +23852,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: false,
-            sortOrder: 3070
+            sortOrder: 3076
         );
         public static readonly SingleEmoji Printer = new SingleEmoji(
             sequence: new UnicodeSequence("1F5A8 FE0F"),
@@ -23802,7 +23862,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: false,
-            sortOrder: 3072
+            sortOrder: 3078
         );
         public static readonly SingleEmoji Keyboard = new SingleEmoji(
             sequence: new UnicodeSequence("2328 FE0F"),
@@ -23812,7 +23872,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: false,
-            sortOrder: 3074
+            sortOrder: 3080
         );
         public static readonly SingleEmoji ComputerMouse = new SingleEmoji(
             sequence: new UnicodeSequence("1F5B1 FE0F"),
@@ -23822,7 +23882,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: false,
-            sortOrder: 3076
+            sortOrder: 3082
         );
         public static readonly SingleEmoji Trackball = new SingleEmoji(
             sequence: new UnicodeSequence("1F5B2 FE0F"),
@@ -23832,7 +23892,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: false,
-            sortOrder: 3078
+            sortOrder: 3084
         );
         public static readonly SingleEmoji ComputerDisk = new SingleEmoji(
             sequence: new UnicodeSequence("1F4BD"),
@@ -23842,7 +23902,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3080
+            sortOrder: 3086
         );
         public static readonly SingleEmoji FloppyDisk = new SingleEmoji(
             sequence: new UnicodeSequence("1F4BE"),
@@ -23852,7 +23912,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3081
+            sortOrder: 3087
         );
         public static readonly SingleEmoji OpticalDisk = new SingleEmoji(
             sequence: new UnicodeSequence("1F4BF"),
@@ -23862,7 +23922,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3082
+            sortOrder: 3088
         );
         public static readonly SingleEmoji Dvd = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C0"),
@@ -23872,7 +23932,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3083
+            sortOrder: 3089
         );
         public static readonly SingleEmoji Abacus = new SingleEmoji(
             sequence: new UnicodeSequence("1F9EE"),
@@ -23882,7 +23942,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "computer",
             hasGlyph: true,
-            sortOrder: 3084
+            sortOrder: 3090
         );
         public static readonly SingleEmoji MovieCamera = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A5"),
@@ -23892,7 +23952,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3085
+            sortOrder: 3091
         );
         public static readonly SingleEmoji FilmFrames = new SingleEmoji(
             sequence: new UnicodeSequence("1F39E FE0F"),
@@ -23902,7 +23962,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: false,
-            sortOrder: 3086
+            sortOrder: 3092
         );
         public static readonly SingleEmoji FilmProjector = new SingleEmoji(
             sequence: new UnicodeSequence("1F4FD FE0F"),
@@ -23912,7 +23972,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: false,
-            sortOrder: 3088
+            sortOrder: 3094
         );
         public static readonly SingleEmoji ClapperBoard = new SingleEmoji(
             sequence: new UnicodeSequence("1F3AC"),
@@ -23922,7 +23982,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3090
+            sortOrder: 3096
         );
         public static readonly SingleEmoji Television = new SingleEmoji(
             sequence: new UnicodeSequence("1F4FA"),
@@ -23932,7 +23992,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3091
+            sortOrder: 3097
         );
         public static readonly SingleEmoji Camera = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F7"),
@@ -23942,7 +24002,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3092
+            sortOrder: 3098
         );
         public static readonly SingleEmoji CameraFlash = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F8"),
@@ -23952,7 +24012,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3093
+            sortOrder: 3099
         );
         public static readonly SingleEmoji VideoCamera = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F9"),
@@ -23962,7 +24022,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3094
+            sortOrder: 3100
         );
         public static readonly SingleEmoji Videocassette = new SingleEmoji(
             sequence: new UnicodeSequence("1F4FC"),
@@ -23972,7 +24032,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3095
+            sortOrder: 3101
         );
         public static readonly SingleEmoji MagnifyingGlassTiltedLeft = new SingleEmoji(
             sequence: new UnicodeSequence("1F50D"),
@@ -23982,7 +24042,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3096
+            sortOrder: 3102
         );
         public static readonly SingleEmoji MagnifyingGlassTiltedRight = new SingleEmoji(
             sequence: new UnicodeSequence("1F50E"),
@@ -23992,7 +24052,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3097
+            sortOrder: 3103
         );
         public static readonly SingleEmoji Candle = new SingleEmoji(
             sequence: new UnicodeSequence("1F56F FE0F"),
@@ -24002,7 +24062,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: false,
-            sortOrder: 3098
+            sortOrder: 3104
         );
         public static readonly SingleEmoji LightBulb = new SingleEmoji(
             sequence: new UnicodeSequence("1F4A1"),
@@ -24012,7 +24072,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3100
+            sortOrder: 3106
         );
         public static readonly SingleEmoji Flashlight = new SingleEmoji(
             sequence: new UnicodeSequence("1F526"),
@@ -24022,7 +24082,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3101
+            sortOrder: 3107
         );
         public static readonly SingleEmoji RedPaperLantern = new SingleEmoji(
             sequence: new UnicodeSequence("1F3EE"),
@@ -24032,7 +24092,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: true,
-            sortOrder: 3102
+            sortOrder: 3108
         );
         public static readonly SingleEmoji DiyaLamp = new SingleEmoji(
             sequence: new UnicodeSequence("1FA94"),
@@ -24042,7 +24102,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "light & video",
             hasGlyph: false,
-            sortOrder: 3103
+            sortOrder: 3109
         );
         public static readonly SingleEmoji NotebookDecorativeCover = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D4"),
@@ -24052,7 +24112,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3104
+            sortOrder: 3110
         );
         public static readonly SingleEmoji ClosedBook = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D5"),
@@ -24062,7 +24122,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3105
+            sortOrder: 3111
         );
         public static readonly SingleEmoji OpenBook = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D6"),
@@ -24072,7 +24132,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3106
+            sortOrder: 3112
         );
         public static readonly SingleEmoji GreenBook = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D7"),
@@ -24082,7 +24142,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3107
+            sortOrder: 3113
         );
         public static readonly SingleEmoji BlueBook = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D8"),
@@ -24092,7 +24152,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3108
+            sortOrder: 3114
         );
         public static readonly SingleEmoji OrangeBook = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D9"),
@@ -24102,7 +24162,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3109
+            sortOrder: 3115
         );
         public static readonly SingleEmoji Books = new SingleEmoji(
             sequence: new UnicodeSequence("1F4DA"),
@@ -24112,7 +24172,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3110
+            sortOrder: 3116
         );
         public static readonly SingleEmoji Notebook = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D3"),
@@ -24122,7 +24182,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3111
+            sortOrder: 3117
         );
         public static readonly SingleEmoji Ledger = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D2"),
@@ -24132,7 +24192,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3112
+            sortOrder: 3118
         );
         public static readonly SingleEmoji PageCurl = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C3"),
@@ -24142,7 +24202,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3113
+            sortOrder: 3119
         );
         public static readonly SingleEmoji Scroll = new SingleEmoji(
             sequence: new UnicodeSequence("1F4DC"),
@@ -24152,7 +24212,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3114
+            sortOrder: 3120
         );
         public static readonly SingleEmoji PageFacingUp = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C4"),
@@ -24162,7 +24222,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3115
+            sortOrder: 3121
         );
         public static readonly SingleEmoji Newspaper = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F0"),
@@ -24172,7 +24232,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3116
+            sortOrder: 3122
         );
         public static readonly SingleEmoji RolledUpNewspaper = new SingleEmoji(
             sequence: new UnicodeSequence("1F5DE FE0F"),
@@ -24182,7 +24242,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: false,
-            sortOrder: 3117
+            sortOrder: 3123
         );
         public static readonly SingleEmoji BookmarkTabs = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D1"),
@@ -24192,7 +24252,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3119
+            sortOrder: 3125
         );
         public static readonly SingleEmoji Bookmark = new SingleEmoji(
             sequence: new UnicodeSequence("1F516"),
@@ -24202,7 +24262,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: true,
-            sortOrder: 3120
+            sortOrder: 3126
         );
         public static readonly SingleEmoji Label = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F7 FE0F"),
@@ -24212,7 +24272,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "book-paper",
             hasGlyph: false,
-            sortOrder: 3121
+            sortOrder: 3127
         );
         public static readonly SingleEmoji MoneyBag = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B0"),
@@ -24222,7 +24282,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3123
+            sortOrder: 3129
         );
         public static readonly SingleEmoji YenBanknote = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B4"),
@@ -24232,7 +24292,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3124
+            sortOrder: 3130
         );
         public static readonly SingleEmoji DollarBanknote = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B5"),
@@ -24242,7 +24302,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3125
+            sortOrder: 3131
         );
         public static readonly SingleEmoji EuroBanknote = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B6"),
@@ -24252,7 +24312,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3126
+            sortOrder: 3132
         );
         public static readonly SingleEmoji PoundBanknote = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B7"),
@@ -24262,7 +24322,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3127
+            sortOrder: 3133
         );
         public static readonly SingleEmoji MoneyWings = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B8"),
@@ -24272,7 +24332,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3128
+            sortOrder: 3134
         );
         public static readonly SingleEmoji CreditCard = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B3"),
@@ -24282,7 +24342,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3129
+            sortOrder: 3135
         );
         public static readonly SingleEmoji Receipt = new SingleEmoji(
             sequence: new UnicodeSequence("1F9FE"),
@@ -24292,7 +24352,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3130
+            sortOrder: 3136
         );
         public static readonly SingleEmoji ChartIncreasingYen = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B9"),
@@ -24302,7 +24362,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3131
+            sortOrder: 3137
         );
         public static readonly SingleEmoji CurrencyExchange = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B1"),
@@ -24312,7 +24372,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3132
+            sortOrder: 3138
         );
         public static readonly SingleEmoji HeavyDollarSign = new SingleEmoji(
             sequence: new UnicodeSequence("1F4B2"),
@@ -24322,7 +24382,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "money",
             hasGlyph: true,
-            sortOrder: 3133
+            sortOrder: 3139
         );
         public static readonly SingleEmoji Envelope = new SingleEmoji(
             sequence: new UnicodeSequence("2709 FE0F"),
@@ -24332,7 +24392,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: false,
-            sortOrder: 3134
+            sortOrder: 3140
         );
         public static readonly SingleEmoji EMail = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E7"),
@@ -24342,7 +24402,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3136
+            sortOrder: 3142
         );
         public static readonly SingleEmoji IncomingEnvelope = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E8"),
@@ -24352,7 +24412,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3137
+            sortOrder: 3143
         );
         public static readonly SingleEmoji EnvelopeArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E9"),
@@ -24362,7 +24422,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3138
+            sortOrder: 3144
         );
         public static readonly SingleEmoji OutboxTray = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E4"),
@@ -24372,7 +24432,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3139
+            sortOrder: 3145
         );
         public static readonly SingleEmoji InboxTray = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E5"),
@@ -24382,7 +24442,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3140
+            sortOrder: 3146
         );
         public static readonly SingleEmoji Package = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E6"),
@@ -24392,7 +24452,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3141
+            sortOrder: 3147
         );
         public static readonly SingleEmoji ClosedMailboxRaisedFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F4EB"),
@@ -24402,7 +24462,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3142
+            sortOrder: 3148
         );
         public static readonly SingleEmoji ClosedMailboxLoweredFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F4EA"),
@@ -24412,7 +24472,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3143
+            sortOrder: 3149
         );
         public static readonly SingleEmoji OpenMailboxRaisedFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F4EC"),
@@ -24422,7 +24482,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3144
+            sortOrder: 3150
         );
         public static readonly SingleEmoji OpenMailboxLoweredFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F4ED"),
@@ -24432,7 +24492,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3145
+            sortOrder: 3151
         );
         public static readonly SingleEmoji Postbox = new SingleEmoji(
             sequence: new UnicodeSequence("1F4EE"),
@@ -24442,7 +24502,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: true,
-            sortOrder: 3146
+            sortOrder: 3152
         );
         public static readonly SingleEmoji BallotBoxBallot = new SingleEmoji(
             sequence: new UnicodeSequence("1F5F3 FE0F"),
@@ -24452,7 +24512,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "mail",
             hasGlyph: false,
-            sortOrder: 3147
+            sortOrder: 3153
         );
         public static readonly SingleEmoji Pencil = new SingleEmoji(
             sequence: new UnicodeSequence("270F FE0F"),
@@ -24462,7 +24522,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "writing",
             hasGlyph: false,
-            sortOrder: 3149
+            sortOrder: 3155
         );
         public static readonly SingleEmoji BlackNib = new SingleEmoji(
             sequence: new UnicodeSequence("2712 FE0F"),
@@ -24472,7 +24532,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "writing",
             hasGlyph: false,
-            sortOrder: 3151
+            sortOrder: 3157
         );
         public static readonly SingleEmoji FountainPen = new SingleEmoji(
             sequence: new UnicodeSequence("1F58B FE0F"),
@@ -24482,7 +24542,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "writing",
             hasGlyph: false,
-            sortOrder: 3153
+            sortOrder: 3159
         );
         public static readonly SingleEmoji Pen = new SingleEmoji(
             sequence: new UnicodeSequence("1F58A FE0F"),
@@ -24492,7 +24552,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "writing",
             hasGlyph: false,
-            sortOrder: 3155
+            sortOrder: 3161
         );
         public static readonly SingleEmoji Paintbrush = new SingleEmoji(
             sequence: new UnicodeSequence("1F58C FE0F"),
@@ -24502,7 +24562,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "writing",
             hasGlyph: false,
-            sortOrder: 3157
+            sortOrder: 3163
         );
         public static readonly SingleEmoji Crayon = new SingleEmoji(
             sequence: new UnicodeSequence("1F58D FE0F"),
@@ -24512,7 +24572,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "writing",
             hasGlyph: false,
-            sortOrder: 3159
+            sortOrder: 3165
         );
         public static readonly SingleEmoji Memo = new SingleEmoji(
             sequence: new UnicodeSequence("1F4DD"),
@@ -24522,7 +24582,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "writing",
             hasGlyph: true,
-            sortOrder: 3161
+            sortOrder: 3167
         );
         public static readonly SingleEmoji Briefcase = new SingleEmoji(
             sequence: new UnicodeSequence("1F4BC"),
@@ -24532,7 +24592,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3162
+            sortOrder: 3168
         );
         public static readonly SingleEmoji FileFolder = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C1"),
@@ -24542,7 +24602,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3163
+            sortOrder: 3169
         );
         public static readonly SingleEmoji OpenFileFolder = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C2"),
@@ -24552,7 +24612,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3164
+            sortOrder: 3170
         );
         public static readonly SingleEmoji CardIndexDividers = new SingleEmoji(
             sequence: new UnicodeSequence("1F5C2 FE0F"),
@@ -24562,7 +24622,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3165
+            sortOrder: 3171
         );
         public static readonly SingleEmoji Calendar = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C5"),
@@ -24572,7 +24632,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3167
+            sortOrder: 3173
         );
         public static readonly SingleEmoji TearOffCalendar = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C6"),
@@ -24582,7 +24642,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3168
+            sortOrder: 3174
         );
         public static readonly SingleEmoji SpiralNotepad = new SingleEmoji(
             sequence: new UnicodeSequence("1F5D2 FE0F"),
@@ -24592,7 +24652,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3169
+            sortOrder: 3175
         );
         public static readonly SingleEmoji SpiralCalendar = new SingleEmoji(
             sequence: new UnicodeSequence("1F5D3 FE0F"),
@@ -24602,7 +24662,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3171
+            sortOrder: 3177
         );
         public static readonly SingleEmoji CardIndex = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C7"),
@@ -24612,7 +24672,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3173
+            sortOrder: 3179
         );
         public static readonly SingleEmoji ChartIncreasing = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C8"),
@@ -24622,7 +24682,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3174
+            sortOrder: 3180
         );
         public static readonly SingleEmoji ChartDecreasing = new SingleEmoji(
             sequence: new UnicodeSequence("1F4C9"),
@@ -24632,7 +24692,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3175
+            sortOrder: 3181
         );
         public static readonly SingleEmoji BarChart = new SingleEmoji(
             sequence: new UnicodeSequence("1F4CA"),
@@ -24642,7 +24702,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3176
+            sortOrder: 3182
         );
         public static readonly SingleEmoji Clipboard = new SingleEmoji(
             sequence: new UnicodeSequence("1F4CB"),
@@ -24652,7 +24712,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3177
+            sortOrder: 3183
         );
         public static readonly SingleEmoji Pushpin = new SingleEmoji(
             sequence: new UnicodeSequence("1F4CC"),
@@ -24662,7 +24722,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3178
+            sortOrder: 3184
         );
         public static readonly SingleEmoji RoundPushpin = new SingleEmoji(
             sequence: new UnicodeSequence("1F4CD"),
@@ -24672,7 +24732,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3179
+            sortOrder: 3185
         );
         public static readonly SingleEmoji Paperclip = new SingleEmoji(
             sequence: new UnicodeSequence("1F4CE"),
@@ -24682,7 +24742,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3180
+            sortOrder: 3186
         );
         public static readonly SingleEmoji LinkedPaperclips = new SingleEmoji(
             sequence: new UnicodeSequence("1F587 FE0F"),
@@ -24692,7 +24752,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3181
+            sortOrder: 3187
         );
         public static readonly SingleEmoji StraightRuler = new SingleEmoji(
             sequence: new UnicodeSequence("1F4CF"),
@@ -24702,7 +24762,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3183
+            sortOrder: 3189
         );
         public static readonly SingleEmoji TriangularRuler = new SingleEmoji(
             sequence: new UnicodeSequence("1F4D0"),
@@ -24712,7 +24772,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: true,
-            sortOrder: 3184
+            sortOrder: 3190
         );
         public static readonly SingleEmoji Scissors = new SingleEmoji(
             sequence: new UnicodeSequence("2702 FE0F"),
@@ -24722,7 +24782,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3185
+            sortOrder: 3191
         );
         public static readonly SingleEmoji CardFileBox = new SingleEmoji(
             sequence: new UnicodeSequence("1F5C3 FE0F"),
@@ -24732,7 +24792,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3187
+            sortOrder: 3193
         );
         public static readonly SingleEmoji FileCabinet = new SingleEmoji(
             sequence: new UnicodeSequence("1F5C4 FE0F"),
@@ -24742,7 +24802,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3189
+            sortOrder: 3195
         );
         public static readonly SingleEmoji Wastebasket = new SingleEmoji(
             sequence: new UnicodeSequence("1F5D1 FE0F"),
@@ -24752,7 +24812,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "office",
             hasGlyph: false,
-            sortOrder: 3191
+            sortOrder: 3197
         );
         public static readonly SingleEmoji Locked = new SingleEmoji(
             sequence: new UnicodeSequence("1F512"),
@@ -24762,7 +24822,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "lock",
             hasGlyph: true,
-            sortOrder: 3193
+            sortOrder: 3199
         );
         public static readonly SingleEmoji Unlocked = new SingleEmoji(
             sequence: new UnicodeSequence("1F513"),
@@ -24772,7 +24832,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "lock",
             hasGlyph: true,
-            sortOrder: 3194
+            sortOrder: 3200
         );
         public static readonly SingleEmoji LockedPen = new SingleEmoji(
             sequence: new UnicodeSequence("1F50F"),
@@ -24782,7 +24842,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "lock",
             hasGlyph: true,
-            sortOrder: 3195
+            sortOrder: 3201
         );
         public static readonly SingleEmoji LockedKey = new SingleEmoji(
             sequence: new UnicodeSequence("1F510"),
@@ -24792,7 +24852,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "lock",
             hasGlyph: true,
-            sortOrder: 3196
+            sortOrder: 3202
         );
         public static readonly SingleEmoji Key = new SingleEmoji(
             sequence: new UnicodeSequence("1F511"),
@@ -24802,7 +24862,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "lock",
             hasGlyph: true,
-            sortOrder: 3197
+            sortOrder: 3203
         );
         public static readonly SingleEmoji OldKey = new SingleEmoji(
             sequence: new UnicodeSequence("1F5DD FE0F"),
@@ -24812,7 +24872,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "lock",
             hasGlyph: false,
-            sortOrder: 3198
+            sortOrder: 3204
         );
         public static readonly SingleEmoji Hammer = new SingleEmoji(
             sequence: new UnicodeSequence("1F528"),
@@ -24822,7 +24882,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3200
+            sortOrder: 3206
         );
         public static readonly SingleEmoji Axe = new SingleEmoji(
             sequence: new UnicodeSequence("1FA93"),
@@ -24832,7 +24892,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3201
+            sortOrder: 3207
         );
         public static readonly SingleEmoji Pick = new SingleEmoji(
             sequence: new UnicodeSequence("26CF FE0F"),
@@ -24842,7 +24902,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3202
+            sortOrder: 3208
         );
         public static readonly SingleEmoji HammerPick = new SingleEmoji(
             sequence: new UnicodeSequence("2692 FE0F"),
@@ -24852,7 +24912,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3204
+            sortOrder: 3210
         );
         public static readonly SingleEmoji HammerWrench = new SingleEmoji(
             sequence: new UnicodeSequence("1F6E0 FE0F"),
@@ -24862,7 +24922,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3206
+            sortOrder: 3212
         );
         public static readonly SingleEmoji Dagger = new SingleEmoji(
             sequence: new UnicodeSequence("1F5E1 FE0F"),
@@ -24872,7 +24932,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3208
+            sortOrder: 3214
         );
         public static readonly SingleEmoji CrossedSwords = new SingleEmoji(
             sequence: new UnicodeSequence("2694 FE0F"),
@@ -24882,7 +24942,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3210
+            sortOrder: 3216
         );
         public static readonly SingleEmoji Pistol = new SingleEmoji(
             sequence: new UnicodeSequence("1F52B"),
@@ -24892,7 +24952,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3212
+            sortOrder: 3218
         );
         public static readonly SingleEmoji BowArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F9"),
@@ -24902,7 +24962,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3213
+            sortOrder: 3219
         );
         public static readonly SingleEmoji Shield = new SingleEmoji(
             sequence: new UnicodeSequence("1F6E1 FE0F"),
@@ -24912,7 +24972,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3214
+            sortOrder: 3220
         );
         public static readonly SingleEmoji Wrench = new SingleEmoji(
             sequence: new UnicodeSequence("1F527"),
@@ -24922,7 +24982,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3216
+            sortOrder: 3222
         );
         public static readonly SingleEmoji NutBolt = new SingleEmoji(
             sequence: new UnicodeSequence("1F529"),
@@ -24932,7 +24992,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3217
+            sortOrder: 3223
         );
         public static readonly SingleEmoji Gear = new SingleEmoji(
             sequence: new UnicodeSequence("2699 FE0F"),
@@ -24942,7 +25002,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3218
+            sortOrder: 3224
         );
         public static readonly SingleEmoji Clamp = new SingleEmoji(
             sequence: new UnicodeSequence("1F5DC FE0F"),
@@ -24952,7 +25012,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3220
+            sortOrder: 3226
         );
         public static readonly SingleEmoji BalanceScale = new SingleEmoji(
             sequence: new UnicodeSequence("2696 FE0F"),
@@ -24962,7 +25022,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3222
+            sortOrder: 3228
         );
         public static readonly SingleEmoji ProbingCane = new SingleEmoji(
             sequence: new UnicodeSequence("1F9AF"),
@@ -24972,7 +25032,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3224
+            sortOrder: 3230
         );
         public static readonly SingleEmoji Link = new SingleEmoji(
             sequence: new UnicodeSequence("1F517"),
@@ -24982,7 +25042,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3225
+            sortOrder: 3231
         );
         public static readonly SingleEmoji Chains = new SingleEmoji(
             sequence: new UnicodeSequence("26D3 FE0F"),
@@ -24992,7 +25052,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: false,
-            sortOrder: 3226
+            sortOrder: 3232
         );
         public static readonly SingleEmoji Toolbox = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F0"),
@@ -25002,7 +25062,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3228
+            sortOrder: 3234
         );
         public static readonly SingleEmoji Magnet = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F2"),
@@ -25012,7 +25072,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "tool",
             hasGlyph: true,
-            sortOrder: 3229
+            sortOrder: 3235
         );
         public static readonly SingleEmoji Alembic = new SingleEmoji(
             sequence: new UnicodeSequence("2697 FE0F"),
@@ -25022,7 +25082,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "science",
             hasGlyph: false,
-            sortOrder: 3230
+            sortOrder: 3236
         );
         public static readonly SingleEmoji TestTube = new SingleEmoji(
             sequence: new UnicodeSequence("1F9EA"),
@@ -25032,7 +25092,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "science",
             hasGlyph: true,
-            sortOrder: 3232
+            sortOrder: 3238
         );
         public static readonly SingleEmoji PetriDish = new SingleEmoji(
             sequence: new UnicodeSequence("1F9EB"),
@@ -25042,7 +25102,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "science",
             hasGlyph: true,
-            sortOrder: 3233
+            sortOrder: 3239
         );
         public static readonly SingleEmoji Dna = new SingleEmoji(
             sequence: new UnicodeSequence("1F9EC"),
@@ -25052,7 +25112,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "science",
             hasGlyph: true,
-            sortOrder: 3234
+            sortOrder: 3240
         );
         public static readonly SingleEmoji Microscope = new SingleEmoji(
             sequence: new UnicodeSequence("1F52C"),
@@ -25062,7 +25122,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "science",
             hasGlyph: true,
-            sortOrder: 3235
+            sortOrder: 3241
         );
         public static readonly SingleEmoji Telescope = new SingleEmoji(
             sequence: new UnicodeSequence("1F52D"),
@@ -25072,7 +25132,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "science",
             hasGlyph: true,
-            sortOrder: 3236
+            sortOrder: 3242
         );
         public static readonly SingleEmoji SatelliteAntenna = new SingleEmoji(
             sequence: new UnicodeSequence("1F4E1"),
@@ -25082,7 +25142,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "science",
             hasGlyph: true,
-            sortOrder: 3237
+            sortOrder: 3243
         );
         public static readonly SingleEmoji Syringe = new SingleEmoji(
             sequence: new UnicodeSequence("1F489"),
@@ -25092,7 +25152,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "medical",
             hasGlyph: true,
-            sortOrder: 3238
+            sortOrder: 3244
         );
         public static readonly SingleEmoji DropBlood = new SingleEmoji(
             sequence: new UnicodeSequence("1FA78"),
@@ -25102,7 +25162,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "medical",
             hasGlyph: false,
-            sortOrder: 3239
+            sortOrder: 3245
         );
         public static readonly SingleEmoji Pill = new SingleEmoji(
             sequence: new UnicodeSequence("1F48A"),
@@ -25112,7 +25172,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "medical",
             hasGlyph: true,
-            sortOrder: 3240
+            sortOrder: 3246
         );
         public static readonly SingleEmoji AdhesiveBandage = new SingleEmoji(
             sequence: new UnicodeSequence("1FA79"),
@@ -25122,7 +25182,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "medical",
             hasGlyph: false,
-            sortOrder: 3241
+            sortOrder: 3247
         );
         public static readonly SingleEmoji Stethoscope = new SingleEmoji(
             sequence: new UnicodeSequence("1FA7A"),
@@ -25132,7 +25192,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "medical",
             hasGlyph: false,
-            sortOrder: 3242
+            sortOrder: 3248
         );
         public static readonly SingleEmoji Door = new SingleEmoji(
             sequence: new UnicodeSequence("1F6AA"),
@@ -25142,7 +25202,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3243
+            sortOrder: 3249
         );
         public static readonly SingleEmoji Bed = new SingleEmoji(
             sequence: new UnicodeSequence("1F6CF FE0F"),
@@ -25152,7 +25212,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: false,
-            sortOrder: 3244
+            sortOrder: 3250
         );
         public static readonly SingleEmoji CouchLamp = new SingleEmoji(
             sequence: new UnicodeSequence("1F6CB FE0F"),
@@ -25162,7 +25222,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: false,
-            sortOrder: 3246
+            sortOrder: 3252
         );
         public static readonly SingleEmoji Chair = new SingleEmoji(
             sequence: new UnicodeSequence("1FA91"),
@@ -25172,7 +25232,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: false,
-            sortOrder: 3248
+            sortOrder: 3254
         );
         public static readonly SingleEmoji Toilet = new SingleEmoji(
             sequence: new UnicodeSequence("1F6BD"),
@@ -25182,7 +25242,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3249
+            sortOrder: 3255
         );
         public static readonly SingleEmoji Shower = new SingleEmoji(
             sequence: new UnicodeSequence("1F6BF"),
@@ -25192,7 +25252,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3250
+            sortOrder: 3256
         );
         public static readonly SingleEmoji Bathtub = new SingleEmoji(
             sequence: new UnicodeSequence("1F6C1"),
@@ -25202,7 +25262,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3251
+            sortOrder: 3257
         );
         public static readonly SingleEmoji Razor = new SingleEmoji(
             sequence: new UnicodeSequence("1FA92"),
@@ -25212,7 +25272,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: false,
-            sortOrder: 3252
+            sortOrder: 3258
         );
         public static readonly SingleEmoji LotionBottle = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F4"),
@@ -25222,7 +25282,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3253
+            sortOrder: 3259
         );
         public static readonly SingleEmoji SafetyPin = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F7"),
@@ -25232,7 +25292,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3254
+            sortOrder: 3260
         );
         public static readonly SingleEmoji Broom = new SingleEmoji(
             sequence: new UnicodeSequence("1F9F9"),
@@ -25242,7 +25302,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3255
+            sortOrder: 3261
         );
         public static readonly SingleEmoji Basket = new SingleEmoji(
             sequence: new UnicodeSequence("1F9FA"),
@@ -25252,7 +25312,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3256
+            sortOrder: 3262
         );
         public static readonly SingleEmoji RollPaper = new SingleEmoji(
             sequence: new UnicodeSequence("1F9FB"),
@@ -25262,7 +25322,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3257
+            sortOrder: 3263
         );
         public static readonly SingleEmoji Soap = new SingleEmoji(
             sequence: new UnicodeSequence("1F9FC"),
@@ -25272,7 +25332,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3258
+            sortOrder: 3264
         );
         public static readonly SingleEmoji Sponge = new SingleEmoji(
             sequence: new UnicodeSequence("1F9FD"),
@@ -25282,7 +25342,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3259
+            sortOrder: 3265
         );
         public static readonly SingleEmoji FireExtinguisher = new SingleEmoji(
             sequence: new UnicodeSequence("1F9EF"),
@@ -25292,7 +25352,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3260
+            sortOrder: 3266
         );
         public static readonly SingleEmoji ShoppingCart = new SingleEmoji(
             sequence: new UnicodeSequence("1F6D2"),
@@ -25302,7 +25362,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "household",
             hasGlyph: true,
-            sortOrder: 3261
+            sortOrder: 3267
         );
         public static readonly SingleEmoji Cigarette = new SingleEmoji(
             sequence: new UnicodeSequence("1F6AC"),
@@ -25312,7 +25372,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "other-object",
             hasGlyph: true,
-            sortOrder: 3262
+            sortOrder: 3268
         );
         public static readonly SingleEmoji Coffin = new SingleEmoji(
             sequence: new UnicodeSequence("26B0 FE0F"),
@@ -25322,7 +25382,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "other-object",
             hasGlyph: false,
-            sortOrder: 3263
+            sortOrder: 3269
         );
         public static readonly SingleEmoji FuneralUrn = new SingleEmoji(
             sequence: new UnicodeSequence("26B1 FE0F"),
@@ -25332,7 +25392,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "other-object",
             hasGlyph: false,
-            sortOrder: 3265
+            sortOrder: 3271
         );
         public static readonly SingleEmoji Moai = new SingleEmoji(
             sequence: new UnicodeSequence("1F5FF"),
@@ -25342,7 +25402,7 @@ namespace NeoSmart.Unicode
             group: Group.OBJECTS,
             subgroup: "other-object",
             hasGlyph: true,
-            sortOrder: 3267
+            sortOrder: 3273
         );
         public static readonly SingleEmoji AtmSign = new SingleEmoji(
             sequence: new UnicodeSequence("1F3E7"),
@@ -25352,7 +25412,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3268
+            sortOrder: 3274
         );
         public static readonly SingleEmoji LitterBinSign = new SingleEmoji(
             sequence: new UnicodeSequence("1F6AE"),
@@ -25362,7 +25422,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3269
+            sortOrder: 3275
         );
         public static readonly SingleEmoji PotableWater = new SingleEmoji(
             sequence: new UnicodeSequence("1F6B0"),
@@ -25372,7 +25432,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3270
+            sortOrder: 3276
         );
         public static readonly SingleEmoji WheelchairSymbol = new SingleEmoji(
             sequence: new UnicodeSequence("267F"),
@@ -25382,7 +25442,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3271
+            sortOrder: 3277
         );
         public static readonly SingleEmoji MensRoom = new SingleEmoji(
             sequence: new UnicodeSequence("1F6B9"),
@@ -25392,7 +25452,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3272
+            sortOrder: 3278
         );
         public static readonly SingleEmoji WomensRoom = new SingleEmoji(
             sequence: new UnicodeSequence("1F6BA"),
@@ -25402,7 +25462,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3273
+            sortOrder: 3279
         );
         public static readonly SingleEmoji Restroom = new SingleEmoji(
             sequence: new UnicodeSequence("1F6BB"),
@@ -25412,7 +25472,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3274
+            sortOrder: 3280
         );
         public static readonly SingleEmoji BabySymbol = new SingleEmoji(
             sequence: new UnicodeSequence("1F6BC"),
@@ -25422,7 +25482,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3275
+            sortOrder: 3281
         );
         public static readonly SingleEmoji WaterCloset = new SingleEmoji(
             sequence: new UnicodeSequence("1F6BE"),
@@ -25432,7 +25492,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3276
+            sortOrder: 3282
         );
         public static readonly SingleEmoji PassportControl = new SingleEmoji(
             sequence: new UnicodeSequence("1F6C2"),
@@ -25442,7 +25502,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3277
+            sortOrder: 3283
         );
         public static readonly SingleEmoji Customs = new SingleEmoji(
             sequence: new UnicodeSequence("1F6C3"),
@@ -25452,7 +25512,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3278
+            sortOrder: 3284
         );
         public static readonly SingleEmoji BaggageClaim = new SingleEmoji(
             sequence: new UnicodeSequence("1F6C4"),
@@ -25462,7 +25522,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3279
+            sortOrder: 3285
         );
         public static readonly SingleEmoji LeftLuggage = new SingleEmoji(
             sequence: new UnicodeSequence("1F6C5"),
@@ -25472,7 +25532,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "transport-sign",
             hasGlyph: true,
-            sortOrder: 3280
+            sortOrder: 3286
         );
         public static readonly SingleEmoji Warning = new SingleEmoji(
             sequence: new UnicodeSequence("26A0 FE0F"),
@@ -25482,7 +25542,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: false,
-            sortOrder: 3281
+            sortOrder: 3287
         );
         public static readonly SingleEmoji ChildrenCrossing = new SingleEmoji(
             sequence: new UnicodeSequence("1F6B8"),
@@ -25492,7 +25552,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3283
+            sortOrder: 3289
         );
         public static readonly SingleEmoji NoEntry = new SingleEmoji(
             sequence: new UnicodeSequence("26D4"),
@@ -25502,7 +25562,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3284
+            sortOrder: 3290
         );
         public static readonly SingleEmoji Prohibited = new SingleEmoji(
             sequence: new UnicodeSequence("1F6AB"),
@@ -25512,7 +25572,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3285
+            sortOrder: 3291
         );
         public static readonly SingleEmoji NoBicycles = new SingleEmoji(
             sequence: new UnicodeSequence("1F6B3"),
@@ -25522,7 +25582,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3286
+            sortOrder: 3292
         );
         public static readonly SingleEmoji NoSmoking = new SingleEmoji(
             sequence: new UnicodeSequence("1F6AD"),
@@ -25532,7 +25592,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3287
+            sortOrder: 3293
         );
         public static readonly SingleEmoji NoLittering = new SingleEmoji(
             sequence: new UnicodeSequence("1F6AF"),
@@ -25542,7 +25602,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3288
+            sortOrder: 3294
         );
         public static readonly SingleEmoji NonPotableWater = new SingleEmoji(
             sequence: new UnicodeSequence("1F6B1"),
@@ -25552,7 +25612,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3289
+            sortOrder: 3295
         );
         public static readonly SingleEmoji NoPedestrians = new SingleEmoji(
             sequence: new UnicodeSequence("1F6B7"),
@@ -25562,7 +25622,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3290
+            sortOrder: 3296
         );
         public static readonly SingleEmoji NoMobilePhones = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F5"),
@@ -25572,7 +25632,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3291
+            sortOrder: 3297
         );
         public static readonly SingleEmoji NoOneUnderEighteen = new SingleEmoji(
             sequence: new UnicodeSequence("1F51E"),
@@ -25582,7 +25642,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: true,
-            sortOrder: 3292
+            sortOrder: 3298
         );
         public static readonly SingleEmoji Radioactive = new SingleEmoji(
             sequence: new UnicodeSequence("2622 FE0F"),
@@ -25592,7 +25652,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: false,
-            sortOrder: 3293
+            sortOrder: 3299
         );
         public static readonly SingleEmoji Biohazard = new SingleEmoji(
             sequence: new UnicodeSequence("2623 FE0F"),
@@ -25602,7 +25662,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "warning",
             hasGlyph: false,
-            sortOrder: 3295
+            sortOrder: 3301
         );
         public static readonly SingleEmoji UpArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2B06 FE0F"),
@@ -25612,7 +25672,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3297
+            sortOrder: 3303
         );
         public static readonly SingleEmoji UpRightArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2197 FE0F"),
@@ -25622,7 +25682,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3299
+            sortOrder: 3305
         );
         public static readonly SingleEmoji RightArrow = new SingleEmoji(
             sequence: new UnicodeSequence("27A1 FE0F"),
@@ -25632,7 +25692,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3301
+            sortOrder: 3307
         );
         public static readonly SingleEmoji DownRightArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2198 FE0F"),
@@ -25642,7 +25702,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3303
+            sortOrder: 3309
         );
         public static readonly SingleEmoji DownArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2B07 FE0F"),
@@ -25652,7 +25712,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3305
+            sortOrder: 3311
         );
         public static readonly SingleEmoji DownLeftArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2199 FE0F"),
@@ -25662,7 +25722,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3307
+            sortOrder: 3313
         );
         public static readonly SingleEmoji LeftArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2B05 FE0F"),
@@ -25672,7 +25732,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3309
+            sortOrder: 3315
         );
         public static readonly SingleEmoji UpLeftArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2196 FE0F"),
@@ -25682,7 +25742,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3311
+            sortOrder: 3317
         );
         public static readonly SingleEmoji UpDownArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2195 FE0F"),
@@ -25692,7 +25752,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3313
+            sortOrder: 3319
         );
         public static readonly SingleEmoji LeftRightArrow = new SingleEmoji(
             sequence: new UnicodeSequence("2194 FE0F"),
@@ -25702,7 +25762,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3315
+            sortOrder: 3321
         );
         public static readonly SingleEmoji RightArrowCurvingLeft = new SingleEmoji(
             sequence: new UnicodeSequence("21A9 FE0F"),
@@ -25712,7 +25772,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3317
+            sortOrder: 3323
         );
         public static readonly SingleEmoji LeftArrowCurvingRight = new SingleEmoji(
             sequence: new UnicodeSequence("21AA FE0F"),
@@ -25722,7 +25782,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3319
+            sortOrder: 3325
         );
         public static readonly SingleEmoji RightArrowCurvingUp = new SingleEmoji(
             sequence: new UnicodeSequence("2934 FE0F"),
@@ -25732,7 +25792,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3321
+            sortOrder: 3327
         );
         public static readonly SingleEmoji RightArrowCurvingDown = new SingleEmoji(
             sequence: new UnicodeSequence("2935 FE0F"),
@@ -25742,7 +25802,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: false,
-            sortOrder: 3323
+            sortOrder: 3329
         );
         public static readonly SingleEmoji ClockwiseVerticalArrows = new SingleEmoji(
             sequence: new UnicodeSequence("1F503"),
@@ -25752,7 +25812,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: true,
-            sortOrder: 3325
+            sortOrder: 3331
         );
         public static readonly SingleEmoji CounterclockwiseArrowsButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F504"),
@@ -25762,7 +25822,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: true,
-            sortOrder: 3326
+            sortOrder: 3332
         );
         public static readonly SingleEmoji BackArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F519"),
@@ -25772,7 +25832,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: true,
-            sortOrder: 3327
+            sortOrder: 3333
         );
         public static readonly SingleEmoji EndArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F51A"),
@@ -25782,7 +25842,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: true,
-            sortOrder: 3328
+            sortOrder: 3334
         );
         public static readonly SingleEmoji OnArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F51B"),
@@ -25792,7 +25852,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: true,
-            sortOrder: 3329
+            sortOrder: 3335
         );
         public static readonly SingleEmoji SoonArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F51C"),
@@ -25802,7 +25862,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: true,
-            sortOrder: 3330
+            sortOrder: 3336
         );
         public static readonly SingleEmoji TopArrow = new SingleEmoji(
             sequence: new UnicodeSequence("1F51D"),
@@ -25812,7 +25872,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "arrow",
             hasGlyph: true,
-            sortOrder: 3331
+            sortOrder: 3337
         );
         public static readonly SingleEmoji PlaceWorship = new SingleEmoji(
             sequence: new UnicodeSequence("1F6D0"),
@@ -25822,7 +25882,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: true,
-            sortOrder: 3332
+            sortOrder: 3338
         );
         public static readonly SingleEmoji AtomSymbol = new SingleEmoji(
             sequence: new UnicodeSequence("269B FE0F"),
@@ -25832,7 +25892,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3333
+            sortOrder: 3339
         );
         public static readonly SingleEmoji Om = new SingleEmoji(
             sequence: new UnicodeSequence("1F549 FE0F"),
@@ -25842,7 +25902,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3335
+            sortOrder: 3341
         );
         public static readonly SingleEmoji StarDavid = new SingleEmoji(
             sequence: new UnicodeSequence("2721 FE0F"),
@@ -25852,7 +25912,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3337
+            sortOrder: 3343
         );
         public static readonly SingleEmoji WheelDharma = new SingleEmoji(
             sequence: new UnicodeSequence("2638 FE0F"),
@@ -25862,7 +25922,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3339
+            sortOrder: 3345
         );
         public static readonly SingleEmoji YinYang = new SingleEmoji(
             sequence: new UnicodeSequence("262F FE0F"),
@@ -25872,7 +25932,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3341
+            sortOrder: 3347
         );
         public static readonly SingleEmoji LatinCross = new SingleEmoji(
             sequence: new UnicodeSequence("271D FE0F"),
@@ -25882,7 +25942,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3343
+            sortOrder: 3349
         );
         public static readonly SingleEmoji OrthodoxCross = new SingleEmoji(
             sequence: new UnicodeSequence("2626 FE0F"),
@@ -25892,7 +25952,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3345
+            sortOrder: 3351
         );
         public static readonly SingleEmoji StarCrescent = new SingleEmoji(
             sequence: new UnicodeSequence("262A FE0F"),
@@ -25902,7 +25962,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3347
+            sortOrder: 3353
         );
         public static readonly SingleEmoji PeaceSymbol = new SingleEmoji(
             sequence: new UnicodeSequence("262E FE0F"),
@@ -25912,7 +25972,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: false,
-            sortOrder: 3349
+            sortOrder: 3355
         );
         public static readonly SingleEmoji Menorah = new SingleEmoji(
             sequence: new UnicodeSequence("1F54E"),
@@ -25922,7 +25982,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: true,
-            sortOrder: 3351
+            sortOrder: 3357
         );
         public static readonly SingleEmoji DottedSixPointedStar = new SingleEmoji(
             sequence: new UnicodeSequence("1F52F"),
@@ -25932,7 +25992,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "religion",
             hasGlyph: true,
-            sortOrder: 3352
+            sortOrder: 3358
         );
         public static readonly SingleEmoji Aries = new SingleEmoji(
             sequence: new UnicodeSequence("2648"),
@@ -25942,7 +26002,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3353
+            sortOrder: 3359
         );
         public static readonly SingleEmoji Taurus = new SingleEmoji(
             sequence: new UnicodeSequence("2649"),
@@ -25952,7 +26012,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3354
+            sortOrder: 3360
         );
         public static readonly SingleEmoji Gemini = new SingleEmoji(
             sequence: new UnicodeSequence("264A"),
@@ -25962,7 +26022,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3355
+            sortOrder: 3361
         );
         public static readonly SingleEmoji Cancer = new SingleEmoji(
             sequence: new UnicodeSequence("264B"),
@@ -25972,7 +26032,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3356
+            sortOrder: 3362
         );
         public static readonly SingleEmoji Leo = new SingleEmoji(
             sequence: new UnicodeSequence("264C"),
@@ -25982,7 +26042,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3357
+            sortOrder: 3363
         );
         public static readonly SingleEmoji Virgo = new SingleEmoji(
             sequence: new UnicodeSequence("264D"),
@@ -25992,7 +26052,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3358
+            sortOrder: 3364
         );
         public static readonly SingleEmoji Libra = new SingleEmoji(
             sequence: new UnicodeSequence("264E"),
@@ -26002,7 +26062,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3359
+            sortOrder: 3365
         );
         public static readonly SingleEmoji Scorpio = new SingleEmoji(
             sequence: new UnicodeSequence("264F"),
@@ -26012,7 +26072,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3360
+            sortOrder: 3366
         );
         public static readonly SingleEmoji Sagittarius = new SingleEmoji(
             sequence: new UnicodeSequence("2650"),
@@ -26022,7 +26082,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3361
+            sortOrder: 3367
         );
         public static readonly SingleEmoji Capricorn = new SingleEmoji(
             sequence: new UnicodeSequence("2651"),
@@ -26032,7 +26092,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3362
+            sortOrder: 3368
         );
         public static readonly SingleEmoji Aquarius = new SingleEmoji(
             sequence: new UnicodeSequence("2652"),
@@ -26042,7 +26102,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3363
+            sortOrder: 3369
         );
         public static readonly SingleEmoji Pisces = new SingleEmoji(
             sequence: new UnicodeSequence("2653"),
@@ -26052,7 +26112,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3364
+            sortOrder: 3370
         );
         public static readonly SingleEmoji Ophiuchus = new SingleEmoji(
             sequence: new UnicodeSequence("26CE"),
@@ -26062,7 +26122,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "zodiac",
             hasGlyph: true,
-            sortOrder: 3365
+            sortOrder: 3371
         );
         public static readonly SingleEmoji ShuffleTracksButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F500"),
@@ -26072,7 +26132,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3366
+            sortOrder: 3372
         );
         public static readonly SingleEmoji RepeatButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F501"),
@@ -26082,7 +26142,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3367
+            sortOrder: 3373
         );
         public static readonly SingleEmoji RepeatSingleButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F502"),
@@ -26092,7 +26152,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3368
+            sortOrder: 3374
         );
         public static readonly SingleEmoji PlayButton = new SingleEmoji(
             sequence: new UnicodeSequence("25B6 FE0F"),
@@ -26102,7 +26162,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3369
+            sortOrder: 3375
         );
         public static readonly SingleEmoji FastForwardButton = new SingleEmoji(
             sequence: new UnicodeSequence("23E9"),
@@ -26112,7 +26172,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3371
+            sortOrder: 3377
         );
         public static readonly SingleEmoji NextTrackButton = new SingleEmoji(
             sequence: new UnicodeSequence("23ED FE0F"),
@@ -26122,7 +26182,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3372
+            sortOrder: 3378
         );
         public static readonly SingleEmoji PlayPauseButton = new SingleEmoji(
             sequence: new UnicodeSequence("23EF FE0F"),
@@ -26132,7 +26192,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3374
+            sortOrder: 3380
         );
         public static readonly SingleEmoji ReverseButton = new SingleEmoji(
             sequence: new UnicodeSequence("25C0 FE0F"),
@@ -26142,7 +26202,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3376
+            sortOrder: 3382
         );
         public static readonly SingleEmoji FastReverseButton = new SingleEmoji(
             sequence: new UnicodeSequence("23EA"),
@@ -26152,7 +26212,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3378
+            sortOrder: 3384
         );
         public static readonly SingleEmoji LastTrackButton = new SingleEmoji(
             sequence: new UnicodeSequence("23EE FE0F"),
@@ -26162,7 +26222,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3379
+            sortOrder: 3385
         );
         public static readonly SingleEmoji UpwardsButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F53C"),
@@ -26172,7 +26232,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3381
+            sortOrder: 3387
         );
         public static readonly SingleEmoji FastUpButton = new SingleEmoji(
             sequence: new UnicodeSequence("23EB"),
@@ -26182,7 +26242,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3382
+            sortOrder: 3388
         );
         public static readonly SingleEmoji DownwardsButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F53D"),
@@ -26192,7 +26252,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3383
+            sortOrder: 3389
         );
         public static readonly SingleEmoji FastDownButton = new SingleEmoji(
             sequence: new UnicodeSequence("23EC"),
@@ -26202,7 +26262,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3384
+            sortOrder: 3390
         );
         public static readonly SingleEmoji PauseButton = new SingleEmoji(
             sequence: new UnicodeSequence("23F8 FE0F"),
@@ -26212,7 +26272,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3385
+            sortOrder: 3391
         );
         public static readonly SingleEmoji StopButton = new SingleEmoji(
             sequence: new UnicodeSequence("23F9 FE0F"),
@@ -26222,7 +26282,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3387
+            sortOrder: 3393
         );
         public static readonly SingleEmoji RecordButton = new SingleEmoji(
             sequence: new UnicodeSequence("23FA FE0F"),
@@ -26232,7 +26292,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3389
+            sortOrder: 3395
         );
         public static readonly SingleEmoji EjectButton = new SingleEmoji(
             sequence: new UnicodeSequence("23CF FE0F"),
@@ -26242,7 +26302,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: false,
-            sortOrder: 3391
+            sortOrder: 3397
         );
         public static readonly SingleEmoji Cinema = new SingleEmoji(
             sequence: new UnicodeSequence("1F3A6"),
@@ -26252,7 +26312,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3393
+            sortOrder: 3399
         );
         public static readonly SingleEmoji DimButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F505"),
@@ -26262,7 +26322,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3394
+            sortOrder: 3400
         );
         public static readonly SingleEmoji BrightButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F506"),
@@ -26272,7 +26332,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3395
+            sortOrder: 3401
         );
         public static readonly SingleEmoji AntennaBars = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F6"),
@@ -26282,7 +26342,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3396
+            sortOrder: 3402
         );
         public static readonly SingleEmoji VibrationMode = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F3"),
@@ -26292,7 +26352,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3397
+            sortOrder: 3403
         );
         public static readonly SingleEmoji MobilePhoneOff = new SingleEmoji(
             sequence: new UnicodeSequence("1F4F4"),
@@ -26302,7 +26362,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "av-symbol",
             hasGlyph: true,
-            sortOrder: 3398
+            sortOrder: 3404
         );
         public static readonly SingleEmoji FemaleSign = new SingleEmoji(
             sequence: new UnicodeSequence("2640 FE0F"),
@@ -26312,7 +26372,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "gender",
             hasGlyph: false,
-            sortOrder: 3399
+            sortOrder: 3405
         );
         public static readonly SingleEmoji MaleSign = new SingleEmoji(
             sequence: new UnicodeSequence("2642 FE0F"),
@@ -26322,7 +26382,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "gender",
             hasGlyph: false,
-            sortOrder: 3401
+            sortOrder: 3407
         );
         public static readonly SingleEmoji MedicalSymbol = new SingleEmoji(
             sequence: new UnicodeSequence("2695 FE0F"),
@@ -26332,7 +26392,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3403
+            sortOrder: 3409
         );
         public static readonly SingleEmoji Infinity = new SingleEmoji(
             sequence: new UnicodeSequence("267E FE0F"),
@@ -26342,7 +26402,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3405
+            sortOrder: 3411
         );
         public static readonly SingleEmoji RecyclingSymbol = new SingleEmoji(
             sequence: new UnicodeSequence("267B FE0F"),
@@ -26352,7 +26412,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3407
+            sortOrder: 3413
         );
         public static readonly SingleEmoji FleurDeLis = new SingleEmoji(
             sequence: new UnicodeSequence("269C FE0F"),
@@ -26362,7 +26422,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3409
+            sortOrder: 3415
         );
         public static readonly SingleEmoji TridentEmblem = new SingleEmoji(
             sequence: new UnicodeSequence("1F531"),
@@ -26372,7 +26432,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3411
+            sortOrder: 3417
         );
         public static readonly SingleEmoji NameBadge = new SingleEmoji(
             sequence: new UnicodeSequence("1F4DB"),
@@ -26382,7 +26442,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3412
+            sortOrder: 3418
         );
         public static readonly SingleEmoji JapaneseSymbolForBeginner = new SingleEmoji(
             sequence: new UnicodeSequence("1F530"),
@@ -26392,7 +26452,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3413
+            sortOrder: 3419
         );
         public static readonly SingleEmoji HollowRedCircle = new SingleEmoji(
             sequence: new UnicodeSequence("2B55"),
@@ -26402,7 +26462,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3414
+            sortOrder: 3420
         );
         public static readonly SingleEmoji CheckMarkButton = new SingleEmoji(
             sequence: new UnicodeSequence("2705"),
@@ -26412,7 +26472,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3415
+            sortOrder: 3421
         );
         public static readonly SingleEmoji CheckBoxCheck = new SingleEmoji(
             sequence: new UnicodeSequence("2611 FE0F"),
@@ -26422,7 +26482,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3416
+            sortOrder: 3422
         );
         public static readonly SingleEmoji CheckMark = new SingleEmoji(
             sequence: new UnicodeSequence("2714 FE0F"),
@@ -26432,7 +26492,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3418
+            sortOrder: 3424
         );
         public static readonly SingleEmoji MultiplicationSign = new SingleEmoji(
             sequence: new UnicodeSequence("2716 FE0F"),
@@ -26442,7 +26502,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3420
+            sortOrder: 3426
         );
         public static readonly SingleEmoji CrossMark = new SingleEmoji(
             sequence: new UnicodeSequence("274C"),
@@ -26452,7 +26512,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3422
+            sortOrder: 3428
         );
         public static readonly SingleEmoji CrossMarkButton = new SingleEmoji(
             sequence: new UnicodeSequence("274E"),
@@ -26462,7 +26522,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3423
+            sortOrder: 3429
         );
         public static readonly SingleEmoji PlusSign = new SingleEmoji(
             sequence: new UnicodeSequence("2795"),
@@ -26472,7 +26532,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3424
+            sortOrder: 3430
         );
         public static readonly SingleEmoji MinusSign = new SingleEmoji(
             sequence: new UnicodeSequence("2796"),
@@ -26482,7 +26542,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3425
+            sortOrder: 3431
         );
         public static readonly SingleEmoji DivisionSign = new SingleEmoji(
             sequence: new UnicodeSequence("2797"),
@@ -26492,7 +26552,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3426
+            sortOrder: 3432
         );
         public static readonly SingleEmoji CurlyLoop = new SingleEmoji(
             sequence: new UnicodeSequence("27B0"),
@@ -26502,7 +26562,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3427
+            sortOrder: 3433
         );
         public static readonly SingleEmoji DoubleCurlyLoop = new SingleEmoji(
             sequence: new UnicodeSequence("27BF"),
@@ -26512,7 +26572,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3428
+            sortOrder: 3434
         );
         public static readonly SingleEmoji PartAlternationMark = new SingleEmoji(
             sequence: new UnicodeSequence("303D FE0F"),
@@ -26522,7 +26582,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3429
+            sortOrder: 3435
         );
         public static readonly SingleEmoji EightSpokedAsterisk = new SingleEmoji(
             sequence: new UnicodeSequence("2733 FE0F"),
@@ -26532,7 +26592,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3431
+            sortOrder: 3437
         );
         public static readonly SingleEmoji EightPointedStar = new SingleEmoji(
             sequence: new UnicodeSequence("2734 FE0F"),
@@ -26542,7 +26602,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3433
+            sortOrder: 3439
         );
         public static readonly SingleEmoji Sparkle = new SingleEmoji(
             sequence: new UnicodeSequence("2747 FE0F"),
@@ -26552,7 +26612,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3435
+            sortOrder: 3441
         );
         public static readonly SingleEmoji DoubleExclamationMark = new SingleEmoji(
             sequence: new UnicodeSequence("203C FE0F"),
@@ -26562,7 +26622,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3437
+            sortOrder: 3443
         );
         public static readonly SingleEmoji ExclamationQuestionMark = new SingleEmoji(
             sequence: new UnicodeSequence("2049 FE0F"),
@@ -26572,7 +26632,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3439
+            sortOrder: 3445
         );
         public static readonly SingleEmoji QuestionMark = new SingleEmoji(
             sequence: new UnicodeSequence("2753"),
@@ -26582,7 +26642,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3441
+            sortOrder: 3447
         );
         public static readonly SingleEmoji WhiteQuestionMark = new SingleEmoji(
             sequence: new UnicodeSequence("2754"),
@@ -26592,7 +26652,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3442
+            sortOrder: 3448
         );
         public static readonly SingleEmoji WhiteExclamationMark = new SingleEmoji(
             sequence: new UnicodeSequence("2755"),
@@ -26602,7 +26662,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3443
+            sortOrder: 3449
         );
         public static readonly SingleEmoji ExclamationMark = new SingleEmoji(
             sequence: new UnicodeSequence("2757"),
@@ -26612,7 +26672,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: true,
-            sortOrder: 3444
+            sortOrder: 3450
         );
         public static readonly SingleEmoji WavyDash = new SingleEmoji(
             sequence: new UnicodeSequence("3030 FE0F"),
@@ -26622,7 +26682,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3445
+            sortOrder: 3451
         );
         public static readonly SingleEmoji Copyright = new SingleEmoji(
             sequence: new UnicodeSequence("00A9 FE0F"),
@@ -26632,7 +26692,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3447
+            sortOrder: 3453
         );
         public static readonly SingleEmoji Registered = new SingleEmoji(
             sequence: new UnicodeSequence("00AE FE0F"),
@@ -26642,7 +26702,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3449
+            sortOrder: 3455
         );
         public static readonly SingleEmoji TradeMark = new SingleEmoji(
             sequence: new UnicodeSequence("2122 FE0F"),
@@ -26652,7 +26712,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "other-symbol",
             hasGlyph: false,
-            sortOrder: 3451
+            sortOrder: 3457
         );
         public static readonly SingleEmoji KeycapHash = new SingleEmoji(
             sequence: new UnicodeSequence("0023 FE0F 20E3"),
@@ -26662,7 +26722,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3453
+            sortOrder: 3459
         );
         public static readonly SingleEmoji KeycapAsterisk = new SingleEmoji(
             sequence: new UnicodeSequence("002A FE0F 20E3"),
@@ -26672,7 +26732,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3455
+            sortOrder: 3461
         );
         public static readonly SingleEmoji Keycap0 = new SingleEmoji(
             sequence: new UnicodeSequence("0030 FE0F 20E3"),
@@ -26682,7 +26742,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3457
+            sortOrder: 3463
         );
         public static readonly SingleEmoji Keycap1 = new SingleEmoji(
             sequence: new UnicodeSequence("0031 FE0F 20E3"),
@@ -26692,7 +26752,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3459
+            sortOrder: 3465
         );
         public static readonly SingleEmoji Keycap2 = new SingleEmoji(
             sequence: new UnicodeSequence("0032 FE0F 20E3"),
@@ -26702,7 +26762,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3461
+            sortOrder: 3467
         );
         public static readonly SingleEmoji Keycap3 = new SingleEmoji(
             sequence: new UnicodeSequence("0033 FE0F 20E3"),
@@ -26712,7 +26772,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3463
+            sortOrder: 3469
         );
         public static readonly SingleEmoji Keycap4 = new SingleEmoji(
             sequence: new UnicodeSequence("0034 FE0F 20E3"),
@@ -26722,7 +26782,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3465
+            sortOrder: 3471
         );
         public static readonly SingleEmoji Keycap5 = new SingleEmoji(
             sequence: new UnicodeSequence("0035 FE0F 20E3"),
@@ -26732,7 +26792,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3467
+            sortOrder: 3473
         );
         public static readonly SingleEmoji Keycap6 = new SingleEmoji(
             sequence: new UnicodeSequence("0036 FE0F 20E3"),
@@ -26742,7 +26802,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3469
+            sortOrder: 3475
         );
         public static readonly SingleEmoji Keycap7 = new SingleEmoji(
             sequence: new UnicodeSequence("0037 FE0F 20E3"),
@@ -26752,7 +26812,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3471
+            sortOrder: 3477
         );
         public static readonly SingleEmoji Keycap8 = new SingleEmoji(
             sequence: new UnicodeSequence("0038 FE0F 20E3"),
@@ -26762,7 +26822,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3473
+            sortOrder: 3479
         );
         public static readonly SingleEmoji Keycap9 = new SingleEmoji(
             sequence: new UnicodeSequence("0039 FE0F 20E3"),
@@ -26772,7 +26832,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: false,
-            sortOrder: 3475
+            sortOrder: 3481
         );
         public static readonly SingleEmoji Keycap10 = new SingleEmoji(
             sequence: new UnicodeSequence("1F51F"),
@@ -26782,7 +26842,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "keycap",
             hasGlyph: true,
-            sortOrder: 3477
+            sortOrder: 3483
         );
         public static readonly SingleEmoji InputLatinUppercase = new SingleEmoji(
             sequence: new UnicodeSequence("1F520"),
@@ -26792,7 +26852,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3478
+            sortOrder: 3484
         );
         public static readonly SingleEmoji InputLatinLowercase = new SingleEmoji(
             sequence: new UnicodeSequence("1F521"),
@@ -26802,7 +26862,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3479
+            sortOrder: 3485
         );
         public static readonly SingleEmoji InputNumbers = new SingleEmoji(
             sequence: new UnicodeSequence("1F522"),
@@ -26812,7 +26872,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3480
+            sortOrder: 3486
         );
         public static readonly SingleEmoji InputSymbols = new SingleEmoji(
             sequence: new UnicodeSequence("1F523"),
@@ -26822,7 +26882,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3481
+            sortOrder: 3487
         );
         public static readonly SingleEmoji InputLatinLetters = new SingleEmoji(
             sequence: new UnicodeSequence("1F524"),
@@ -26832,7 +26892,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3482
+            sortOrder: 3488
         );
         public static readonly SingleEmoji AButtonBloodType = new SingleEmoji(
             sequence: new UnicodeSequence("1F170 FE0F"),
@@ -26842,7 +26902,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3483
+            sortOrder: 3489
         );
         public static readonly SingleEmoji AbButtonBloodType = new SingleEmoji(
             sequence: new UnicodeSequence("1F18E"),
@@ -26852,7 +26912,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3485
+            sortOrder: 3491
         );
         public static readonly SingleEmoji BButtonBloodType = new SingleEmoji(
             sequence: new UnicodeSequence("1F171 FE0F"),
@@ -26862,7 +26922,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3486
+            sortOrder: 3492
         );
         public static readonly SingleEmoji ClButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F191"),
@@ -26872,7 +26932,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3488
+            sortOrder: 3494
         );
         public static readonly SingleEmoji CoolButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F192"),
@@ -26882,7 +26942,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3489
+            sortOrder: 3495
         );
         public static readonly SingleEmoji FreeButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F193"),
@@ -26892,7 +26952,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3490
+            sortOrder: 3496
         );
         public static readonly SingleEmoji Information = new SingleEmoji(
             sequence: new UnicodeSequence("2139 FE0F"),
@@ -26902,7 +26962,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3491
+            sortOrder: 3497
         );
         public static readonly SingleEmoji IdButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F194"),
@@ -26912,7 +26972,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3493
+            sortOrder: 3499
         );
         public static readonly SingleEmoji CircledM = new SingleEmoji(
             sequence: new UnicodeSequence("24C2 FE0F"),
@@ -26922,7 +26982,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3494
+            sortOrder: 3500
         );
         public static readonly SingleEmoji NewButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F195"),
@@ -26932,7 +26992,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3496
+            sortOrder: 3502
         );
         public static readonly SingleEmoji NgButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F196"),
@@ -26942,7 +27002,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3497
+            sortOrder: 3503
         );
         public static readonly SingleEmoji OButtonBloodType = new SingleEmoji(
             sequence: new UnicodeSequence("1F17E FE0F"),
@@ -26952,7 +27012,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3498
+            sortOrder: 3504
         );
         public static readonly SingleEmoji OkButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F197"),
@@ -26962,7 +27022,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3500
+            sortOrder: 3506
         );
         public static readonly SingleEmoji PButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F17F FE0F"),
@@ -26972,7 +27032,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3501
+            sortOrder: 3507
         );
         public static readonly SingleEmoji SosButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F198"),
@@ -26982,7 +27042,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3503
+            sortOrder: 3509
         );
         public static readonly SingleEmoji UpButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F199"),
@@ -26992,7 +27052,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3504
+            sortOrder: 3510
         );
         public static readonly SingleEmoji VsButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F19A"),
@@ -27002,7 +27062,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3505
+            sortOrder: 3511
         );
         public static readonly SingleEmoji JapaneseHereButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F201"),
@@ -27012,7 +27072,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3506
+            sortOrder: 3512
         );
         public static readonly SingleEmoji JapaneseServiceChargeButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F202 FE0F"),
@@ -27022,7 +27082,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3507
+            sortOrder: 3513
         );
         public static readonly SingleEmoji JapaneseMonthlyAmountButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F237 FE0F"),
@@ -27032,7 +27092,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3509
+            sortOrder: 3515
         );
         public static readonly SingleEmoji JapaneseNotFreeChargeButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F236"),
@@ -27042,7 +27102,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3511
+            sortOrder: 3517
         );
         public static readonly SingleEmoji JapaneseReservedButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F22F"),
@@ -27052,7 +27112,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3512
+            sortOrder: 3518
         );
         public static readonly SingleEmoji JapaneseBargainButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F250"),
@@ -27062,7 +27122,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3513
+            sortOrder: 3519
         );
         public static readonly SingleEmoji JapaneseDiscountButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F239"),
@@ -27072,7 +27132,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3514
+            sortOrder: 3520
         );
         public static readonly SingleEmoji JapaneseFreeChargeButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F21A"),
@@ -27082,7 +27142,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3515
+            sortOrder: 3521
         );
         public static readonly SingleEmoji JapaneseProhibitedButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F232"),
@@ -27092,7 +27152,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3516
+            sortOrder: 3522
         );
         public static readonly SingleEmoji JapaneseAcceptableButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F251"),
@@ -27102,7 +27162,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3517
+            sortOrder: 3523
         );
         public static readonly SingleEmoji JapaneseApplicationButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F238"),
@@ -27112,7 +27172,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3518
+            sortOrder: 3524
         );
         public static readonly SingleEmoji JapanesePassingGradeButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F234"),
@@ -27122,7 +27182,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3519
+            sortOrder: 3525
         );
         public static readonly SingleEmoji JapaneseVacancyButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F233"),
@@ -27132,7 +27192,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3520
+            sortOrder: 3526
         );
         public static readonly SingleEmoji JapaneseCongratulationsButton = new SingleEmoji(
             sequence: new UnicodeSequence("3297 FE0F"),
@@ -27142,7 +27202,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3521
+            sortOrder: 3527
         );
         public static readonly SingleEmoji JapaneseSecretButton = new SingleEmoji(
             sequence: new UnicodeSequence("3299 FE0F"),
@@ -27152,7 +27212,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: false,
-            sortOrder: 3523
+            sortOrder: 3529
         );
         public static readonly SingleEmoji JapaneseOpenForBusinessButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F23A"),
@@ -27162,7 +27222,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3525
+            sortOrder: 3531
         );
         public static readonly SingleEmoji JapaneseNoVacancyButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F235"),
@@ -27172,7 +27232,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "alphanum",
             hasGlyph: true,
-            sortOrder: 3526
+            sortOrder: 3532
         );
         public static readonly SingleEmoji RedCircle = new SingleEmoji(
             sequence: new UnicodeSequence("1F534"),
@@ -27182,7 +27242,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3527
+            sortOrder: 3533
         );
         public static readonly SingleEmoji OrangeCircle = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E0"),
@@ -27192,7 +27252,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3528
+            sortOrder: 3534
         );
         public static readonly SingleEmoji YellowCircle = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E1"),
@@ -27202,7 +27262,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3529
+            sortOrder: 3535
         );
         public static readonly SingleEmoji GreenCircle = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E2"),
@@ -27212,7 +27272,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3530
+            sortOrder: 3536
         );
         public static readonly SingleEmoji BlueCircle = new SingleEmoji(
             sequence: new UnicodeSequence("1F535"),
@@ -27222,7 +27282,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3531
+            sortOrder: 3537
         );
         public static readonly SingleEmoji PurpleCircle = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E3"),
@@ -27232,7 +27292,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3532
+            sortOrder: 3538
         );
         public static readonly SingleEmoji BrownCircle = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E4"),
@@ -27242,7 +27302,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3533
+            sortOrder: 3539
         );
         public static readonly SingleEmoji BlackCircle = new SingleEmoji(
             sequence: new UnicodeSequence("26AB"),
@@ -27252,7 +27312,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3534
+            sortOrder: 3540
         );
         public static readonly SingleEmoji WhiteCircle = new SingleEmoji(
             sequence: new UnicodeSequence("26AA"),
@@ -27262,7 +27322,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3535
+            sortOrder: 3541
         );
         public static readonly SingleEmoji RedSquare = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E5"),
@@ -27272,7 +27332,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3536
+            sortOrder: 3542
         );
         public static readonly SingleEmoji OrangeSquare = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E7"),
@@ -27282,7 +27342,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3537
+            sortOrder: 3543
         );
         public static readonly SingleEmoji YellowSquare = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E8"),
@@ -27292,7 +27352,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3538
+            sortOrder: 3544
         );
         public static readonly SingleEmoji GreenSquare = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E9"),
@@ -27302,7 +27362,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3539
+            sortOrder: 3545
         );
         public static readonly SingleEmoji BlueSquare = new SingleEmoji(
             sequence: new UnicodeSequence("1F7E6"),
@@ -27312,7 +27372,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3540
+            sortOrder: 3546
         );
         public static readonly SingleEmoji PurpleSquare = new SingleEmoji(
             sequence: new UnicodeSequence("1F7EA"),
@@ -27322,7 +27382,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3541
+            sortOrder: 3547
         );
         public static readonly SingleEmoji BrownSquare = new SingleEmoji(
             sequence: new UnicodeSequence("1F7EB"),
@@ -27332,7 +27392,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3542
+            sortOrder: 3548
         );
         public static readonly SingleEmoji BlackLargeSquare = new SingleEmoji(
             sequence: new UnicodeSequence("2B1B"),
@@ -27342,7 +27402,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3543
+            sortOrder: 3549
         );
         public static readonly SingleEmoji WhiteLargeSquare = new SingleEmoji(
             sequence: new UnicodeSequence("2B1C"),
@@ -27352,7 +27412,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3544
+            sortOrder: 3550
         );
         public static readonly SingleEmoji BlackMediumSquare = new SingleEmoji(
             sequence: new UnicodeSequence("25FC FE0F"),
@@ -27362,7 +27422,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3545
+            sortOrder: 3551
         );
         public static readonly SingleEmoji WhiteMediumSquare = new SingleEmoji(
             sequence: new UnicodeSequence("25FB FE0F"),
@@ -27372,7 +27432,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3547
+            sortOrder: 3553
         );
         public static readonly SingleEmoji BlackMediumSmallSquare = new SingleEmoji(
             sequence: new UnicodeSequence("25FE"),
@@ -27382,7 +27442,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3549
+            sortOrder: 3555
         );
         public static readonly SingleEmoji WhiteMediumSmallSquare = new SingleEmoji(
             sequence: new UnicodeSequence("25FD"),
@@ -27392,7 +27452,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3550
+            sortOrder: 3556
         );
         public static readonly SingleEmoji BlackSmallSquare = new SingleEmoji(
             sequence: new UnicodeSequence("25AA FE0F"),
@@ -27402,7 +27462,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3551
+            sortOrder: 3557
         );
         public static readonly SingleEmoji WhiteSmallSquare = new SingleEmoji(
             sequence: new UnicodeSequence("25AB FE0F"),
@@ -27412,7 +27472,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: false,
-            sortOrder: 3553
+            sortOrder: 3559
         );
         public static readonly SingleEmoji LargeOrangeDiamond = new SingleEmoji(
             sequence: new UnicodeSequence("1F536"),
@@ -27422,7 +27482,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3555
+            sortOrder: 3561
         );
         public static readonly SingleEmoji LargeBlueDiamond = new SingleEmoji(
             sequence: new UnicodeSequence("1F537"),
@@ -27432,7 +27492,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3556
+            sortOrder: 3562
         );
         public static readonly SingleEmoji SmallOrangeDiamond = new SingleEmoji(
             sequence: new UnicodeSequence("1F538"),
@@ -27442,7 +27502,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3557
+            sortOrder: 3563
         );
         public static readonly SingleEmoji SmallBlueDiamond = new SingleEmoji(
             sequence: new UnicodeSequence("1F539"),
@@ -27452,7 +27512,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3558
+            sortOrder: 3564
         );
         public static readonly SingleEmoji RedTrianglePointedUp = new SingleEmoji(
             sequence: new UnicodeSequence("1F53A"),
@@ -27462,7 +27522,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3559
+            sortOrder: 3565
         );
         public static readonly SingleEmoji RedTrianglePointedDown = new SingleEmoji(
             sequence: new UnicodeSequence("1F53B"),
@@ -27472,7 +27532,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3560
+            sortOrder: 3566
         );
         public static readonly SingleEmoji DiamondADot = new SingleEmoji(
             sequence: new UnicodeSequence("1F4A0"),
@@ -27482,7 +27542,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3561
+            sortOrder: 3567
         );
         public static readonly SingleEmoji RadioButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F518"),
@@ -27492,7 +27552,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3562
+            sortOrder: 3568
         );
         public static readonly SingleEmoji WhiteSquareButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F533"),
@@ -27502,7 +27562,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3563
+            sortOrder: 3569
         );
         public static readonly SingleEmoji BlackSquareButton = new SingleEmoji(
             sequence: new UnicodeSequence("1F532"),
@@ -27512,7 +27572,7 @@ namespace NeoSmart.Unicode
             group: Group.SYMBOLS,
             subgroup: "geometric",
             hasGlyph: true,
-            sortOrder: 3564
+            sortOrder: 3570
         );
         public static readonly SingleEmoji ChequeredFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F3C1"),
@@ -27522,7 +27582,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "flag",
             hasGlyph: true,
-            sortOrder: 3565
+            sortOrder: 3571
         );
         public static readonly SingleEmoji TriangularFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F6A9"),
@@ -27532,7 +27592,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "flag",
             hasGlyph: true,
-            sortOrder: 3566
+            sortOrder: 3572
         );
         public static readonly SingleEmoji CrossedFlags = new SingleEmoji(
             sequence: new UnicodeSequence("1F38C"),
@@ -27542,7 +27602,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "flag",
             hasGlyph: true,
-            sortOrder: 3567
+            sortOrder: 3573
         );
         public static readonly SingleEmoji BlackFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F4"),
@@ -27552,7 +27612,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "flag",
             hasGlyph: true,
-            sortOrder: 3568
+            sortOrder: 3574
         );
         public static readonly SingleEmoji WhiteFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F3 FE0F"),
@@ -27562,7 +27622,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "flag",
             hasGlyph: false,
-            sortOrder: 3569
+            sortOrder: 3575
         );
         public static readonly SingleEmoji RainbowFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F3 FE0F 200D 1F308"),
@@ -27572,7 +27632,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "flag",
             hasGlyph: false,
-            sortOrder: 3571
+            sortOrder: 3577
         );
         public static readonly SingleEmoji PirateFlag = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F4 200D 2620 FE0F"),
@@ -27582,7 +27642,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "flag",
             hasGlyph: false,
-            sortOrder: 3573
+            sortOrder: 3579
         );
         public static readonly SingleEmoji FlagAscensionIsland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1E8"),
@@ -27592,7 +27652,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3575
+            sortOrder: 3581
         );
         public static readonly SingleEmoji FlagAndorra = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1E9"),
@@ -27602,7 +27662,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3576
+            sortOrder: 3582
         );
         public static readonly SingleEmoji FlagUnitedArabEmirates = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1EA"),
@@ -27612,7 +27672,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3577
+            sortOrder: 3583
         );
         public static readonly SingleEmoji FlagAfghanistan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1EB"),
@@ -27622,7 +27682,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3578
+            sortOrder: 3584
         );
         public static readonly SingleEmoji FlagAntiguaBarbuda = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1EC"),
@@ -27632,7 +27692,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3579
+            sortOrder: 3585
         );
         public static readonly SingleEmoji FlagAnguilla = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1EE"),
@@ -27642,7 +27702,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3580
+            sortOrder: 3586
         );
         public static readonly SingleEmoji FlagAlbania = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1F1"),
@@ -27652,7 +27712,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3581
+            sortOrder: 3587
         );
         public static readonly SingleEmoji FlagArmenia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1F2"),
@@ -27662,7 +27722,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3582
+            sortOrder: 3588
         );
         public static readonly SingleEmoji FlagAngola = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1F4"),
@@ -27672,7 +27732,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3583
+            sortOrder: 3589
         );
         public static readonly SingleEmoji FlagAntarctica = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1F6"),
@@ -27682,7 +27742,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3584
+            sortOrder: 3590
         );
         public static readonly SingleEmoji FlagArgentina = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1F7"),
@@ -27692,7 +27752,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3585
+            sortOrder: 3591
         );
         public static readonly SingleEmoji FlagAmericanSamoa = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1F8"),
@@ -27702,7 +27762,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3586
+            sortOrder: 3592
         );
         public static readonly SingleEmoji FlagAustria = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1F9"),
@@ -27712,7 +27772,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3587
+            sortOrder: 3593
         );
         public static readonly SingleEmoji FlagAustralia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1FA"),
@@ -27722,7 +27782,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3588
+            sortOrder: 3594
         );
         public static readonly SingleEmoji FlagAruba = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1FC"),
@@ -27732,7 +27792,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3589
+            sortOrder: 3595
         );
         public static readonly SingleEmoji FlagÅlandIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1FD"),
@@ -27742,7 +27802,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3590
+            sortOrder: 3596
         );
         public static readonly SingleEmoji FlagAzerbaijan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E6 1F1FF"),
@@ -27752,7 +27812,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3591
+            sortOrder: 3597
         );
         public static readonly SingleEmoji FlagBosniaHerzegovina = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1E6"),
@@ -27762,7 +27822,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3592
+            sortOrder: 3598
         );
         public static readonly SingleEmoji FlagBarbados = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1E7"),
@@ -27772,7 +27832,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3593
+            sortOrder: 3599
         );
         public static readonly SingleEmoji FlagBangladesh = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1E9"),
@@ -27782,7 +27842,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3594
+            sortOrder: 3600
         );
         public static readonly SingleEmoji FlagBelgium = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1EA"),
@@ -27792,7 +27852,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3595
+            sortOrder: 3601
         );
         public static readonly SingleEmoji FlagBurkinaFaso = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1EB"),
@@ -27802,7 +27862,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3596
+            sortOrder: 3602
         );
         public static readonly SingleEmoji FlagBulgaria = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1EC"),
@@ -27812,7 +27872,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3597
+            sortOrder: 3603
         );
         public static readonly SingleEmoji FlagBahrain = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1ED"),
@@ -27822,7 +27882,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3598
+            sortOrder: 3604
         );
         public static readonly SingleEmoji FlagBurundi = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1EE"),
@@ -27832,7 +27892,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3599
+            sortOrder: 3605
         );
         public static readonly SingleEmoji FlagBenin = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1EF"),
@@ -27842,7 +27902,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3600
+            sortOrder: 3606
         );
         public static readonly SingleEmoji FlagStBarthélemy = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F1"),
@@ -27852,7 +27912,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3601
+            sortOrder: 3607
         );
         public static readonly SingleEmoji FlagBermuda = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F2"),
@@ -27862,7 +27922,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3602
+            sortOrder: 3608
         );
         public static readonly SingleEmoji FlagBrunei = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F3"),
@@ -27872,7 +27932,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3603
+            sortOrder: 3609
         );
         public static readonly SingleEmoji FlagBolivia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F4"),
@@ -27882,7 +27942,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3604
+            sortOrder: 3610
         );
         public static readonly SingleEmoji FlagCaribbeanNetherlands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F6"),
@@ -27892,7 +27952,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3605
+            sortOrder: 3611
         );
         public static readonly SingleEmoji FlagBrazil = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F7"),
@@ -27902,7 +27962,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3606
+            sortOrder: 3612
         );
         public static readonly SingleEmoji FlagBahamas = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F8"),
@@ -27912,7 +27972,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3607
+            sortOrder: 3613
         );
         public static readonly SingleEmoji FlagBhutan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1F9"),
@@ -27922,7 +27982,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3608
+            sortOrder: 3614
         );
         public static readonly SingleEmoji FlagBouvetIsland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1FB"),
@@ -27932,7 +27992,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3609
+            sortOrder: 3615
         );
         public static readonly SingleEmoji FlagBotswana = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1FC"),
@@ -27942,7 +28002,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3610
+            sortOrder: 3616
         );
         public static readonly SingleEmoji FlagBelarus = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1FE"),
@@ -27952,7 +28012,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3611
+            sortOrder: 3617
         );
         public static readonly SingleEmoji FlagBelize = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E7 1F1FF"),
@@ -27962,7 +28022,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3612
+            sortOrder: 3618
         );
         public static readonly SingleEmoji FlagCanada = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1E6"),
@@ -27972,7 +28032,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3613
+            sortOrder: 3619
         );
         public static readonly SingleEmoji FlagCocosKeelingIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1E8"),
@@ -27982,7 +28042,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3614
+            sortOrder: 3620
         );
         public static readonly SingleEmoji FlagCongoKinshasa = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1E9"),
@@ -27992,7 +28052,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3615
+            sortOrder: 3621
         );
         public static readonly SingleEmoji FlagCentralAfricanRepublic = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1EB"),
@@ -28002,7 +28062,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3616
+            sortOrder: 3622
         );
         public static readonly SingleEmoji FlagCongoBrazzaville = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1EC"),
@@ -28012,7 +28072,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3617
+            sortOrder: 3623
         );
         public static readonly SingleEmoji FlagSwitzerland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1ED"),
@@ -28022,7 +28082,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3618
+            sortOrder: 3624
         );
         public static readonly SingleEmoji FlagCôteDivoire = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1EE"),
@@ -28032,7 +28092,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3619
+            sortOrder: 3625
         );
         public static readonly SingleEmoji FlagCookIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1F0"),
@@ -28042,7 +28102,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3620
+            sortOrder: 3626
         );
         public static readonly SingleEmoji FlagChile = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1F1"),
@@ -28052,7 +28112,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3621
+            sortOrder: 3627
         );
         public static readonly SingleEmoji FlagCameroon = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1F2"),
@@ -28062,7 +28122,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3622
+            sortOrder: 3628
         );
         public static readonly SingleEmoji FlagChina = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1F3"),
@@ -28072,7 +28132,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3623
+            sortOrder: 3629
         );
         public static readonly SingleEmoji FlagColombia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1F4"),
@@ -28082,7 +28142,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3624
+            sortOrder: 3630
         );
         public static readonly SingleEmoji FlagClippertonIsland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1F5"),
@@ -28092,7 +28152,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3625
+            sortOrder: 3631
         );
         public static readonly SingleEmoji FlagCostaRica = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1F7"),
@@ -28102,7 +28162,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3626
+            sortOrder: 3632
         );
         public static readonly SingleEmoji FlagCuba = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1FA"),
@@ -28112,7 +28172,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3627
+            sortOrder: 3633
         );
         public static readonly SingleEmoji FlagCapeVerde = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1FB"),
@@ -28122,7 +28182,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3628
+            sortOrder: 3634
         );
         public static readonly SingleEmoji FlagCuraçao = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1FC"),
@@ -28132,7 +28192,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3629
+            sortOrder: 3635
         );
         public static readonly SingleEmoji FlagChristmasIsland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1FD"),
@@ -28142,7 +28202,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3630
+            sortOrder: 3636
         );
         public static readonly SingleEmoji FlagCyprus = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1FE"),
@@ -28152,7 +28212,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3631
+            sortOrder: 3637
         );
         public static readonly SingleEmoji FlagCzechia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E8 1F1FF"),
@@ -28162,7 +28222,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3632
+            sortOrder: 3638
         );
         public static readonly SingleEmoji FlagGermany = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E9 1F1EA"),
@@ -28172,7 +28232,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3633
+            sortOrder: 3639
         );
         public static readonly SingleEmoji FlagDiegoGarcia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E9 1F1EC"),
@@ -28182,7 +28242,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3634
+            sortOrder: 3640
         );
         public static readonly SingleEmoji FlagDjibouti = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E9 1F1EF"),
@@ -28192,7 +28252,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3635
+            sortOrder: 3641
         );
         public static readonly SingleEmoji FlagDenmark = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E9 1F1F0"),
@@ -28202,7 +28262,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3636
+            sortOrder: 3642
         );
         public static readonly SingleEmoji FlagDominica = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E9 1F1F2"),
@@ -28212,7 +28272,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3637
+            sortOrder: 3643
         );
         public static readonly SingleEmoji FlagDominicanRepublic = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E9 1F1F4"),
@@ -28222,7 +28282,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3638
+            sortOrder: 3644
         );
         public static readonly SingleEmoji FlagAlgeria = new SingleEmoji(
             sequence: new UnicodeSequence("1F1E9 1F1FF"),
@@ -28232,7 +28292,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3639
+            sortOrder: 3645
         );
         public static readonly SingleEmoji FlagCeutaMelilla = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1E6"),
@@ -28242,7 +28302,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3640
+            sortOrder: 3646
         );
         public static readonly SingleEmoji FlagEcuador = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1E8"),
@@ -28252,7 +28312,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3641
+            sortOrder: 3647
         );
         public static readonly SingleEmoji FlagEstonia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1EA"),
@@ -28262,7 +28322,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3642
+            sortOrder: 3648
         );
         public static readonly SingleEmoji FlagEgypt = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1EC"),
@@ -28272,7 +28332,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3643
+            sortOrder: 3649
         );
         public static readonly SingleEmoji FlagWesternSahara = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1ED"),
@@ -28282,7 +28342,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3644
+            sortOrder: 3650
         );
         public static readonly SingleEmoji FlagEritrea = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1F7"),
@@ -28292,7 +28352,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3645
+            sortOrder: 3651
         );
         public static readonly SingleEmoji FlagSpain = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1F8"),
@@ -28302,7 +28362,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3646
+            sortOrder: 3652
         );
         public static readonly SingleEmoji FlagEthiopia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1F9"),
@@ -28312,7 +28372,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3647
+            sortOrder: 3653
         );
         public static readonly SingleEmoji FlagEuropeanUnion = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EA 1F1FA"),
@@ -28322,7 +28382,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3648
+            sortOrder: 3654
         );
         public static readonly SingleEmoji FlagFinland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EB 1F1EE"),
@@ -28332,7 +28392,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3649
+            sortOrder: 3655
         );
         public static readonly SingleEmoji FlagFiji = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EB 1F1EF"),
@@ -28342,7 +28402,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3650
+            sortOrder: 3656
         );
         public static readonly SingleEmoji FlagFalklandIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EB 1F1F0"),
@@ -28352,7 +28412,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3651
+            sortOrder: 3657
         );
         public static readonly SingleEmoji FlagMicronesia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EB 1F1F2"),
@@ -28362,7 +28422,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3652
+            sortOrder: 3658
         );
         public static readonly SingleEmoji FlagFaroeIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EB 1F1F4"),
@@ -28372,7 +28432,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3653
+            sortOrder: 3659
         );
         public static readonly SingleEmoji FlagFrance = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EB 1F1F7"),
@@ -28382,7 +28442,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3654
+            sortOrder: 3660
         );
         public static readonly SingleEmoji FlagGabon = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1E6"),
@@ -28392,7 +28452,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3655
+            sortOrder: 3661
         );
         public static readonly SingleEmoji FlagUnitedKingdom = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1E7"),
@@ -28402,7 +28462,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3656
+            sortOrder: 3662
         );
         public static readonly SingleEmoji FlagGrenada = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1E9"),
@@ -28412,7 +28472,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3657
+            sortOrder: 3663
         );
         public static readonly SingleEmoji FlagGeorgia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1EA"),
@@ -28422,7 +28482,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3658
+            sortOrder: 3664
         );
         public static readonly SingleEmoji FlagFrenchGuiana = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1EB"),
@@ -28432,7 +28492,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3659
+            sortOrder: 3665
         );
         public static readonly SingleEmoji FlagGuernsey = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1EC"),
@@ -28442,7 +28502,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3660
+            sortOrder: 3666
         );
         public static readonly SingleEmoji FlagGhana = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1ED"),
@@ -28452,7 +28512,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3661
+            sortOrder: 3667
         );
         public static readonly SingleEmoji FlagGibraltar = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1EE"),
@@ -28462,7 +28522,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3662
+            sortOrder: 3668
         );
         public static readonly SingleEmoji FlagGreenland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F1"),
@@ -28472,7 +28532,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3663
+            sortOrder: 3669
         );
         public static readonly SingleEmoji FlagGambia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F2"),
@@ -28482,7 +28542,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3664
+            sortOrder: 3670
         );
         public static readonly SingleEmoji FlagGuinea = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F3"),
@@ -28492,7 +28552,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3665
+            sortOrder: 3671
         );
         public static readonly SingleEmoji FlagGuadeloupe = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F5"),
@@ -28502,7 +28562,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3666
+            sortOrder: 3672
         );
         public static readonly SingleEmoji FlagEquatorialGuinea = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F6"),
@@ -28512,7 +28572,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3667
+            sortOrder: 3673
         );
         public static readonly SingleEmoji FlagGreece = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F7"),
@@ -28522,7 +28582,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3668
+            sortOrder: 3674
         );
         public static readonly SingleEmoji FlagSouthGeorgiaSouthSandwichIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F8"),
@@ -28532,7 +28592,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3669
+            sortOrder: 3675
         );
         public static readonly SingleEmoji FlagGuatemala = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1F9"),
@@ -28542,7 +28602,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3670
+            sortOrder: 3676
         );
         public static readonly SingleEmoji FlagGuam = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1FA"),
@@ -28552,7 +28612,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3671
+            sortOrder: 3677
         );
         public static readonly SingleEmoji FlagGuineaBissau = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1FC"),
@@ -28562,7 +28622,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3672
+            sortOrder: 3678
         );
         public static readonly SingleEmoji FlagGuyana = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EC 1F1FE"),
@@ -28572,7 +28632,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3673
+            sortOrder: 3679
         );
         public static readonly SingleEmoji FlagHongKongSarChina = new SingleEmoji(
             sequence: new UnicodeSequence("1F1ED 1F1F0"),
@@ -28582,7 +28642,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3674
+            sortOrder: 3680
         );
         public static readonly SingleEmoji FlagHeardMcdonaldIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1ED 1F1F2"),
@@ -28592,7 +28652,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3675
+            sortOrder: 3681
         );
         public static readonly SingleEmoji FlagHonduras = new SingleEmoji(
             sequence: new UnicodeSequence("1F1ED 1F1F3"),
@@ -28602,7 +28662,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3676
+            sortOrder: 3682
         );
         public static readonly SingleEmoji FlagCroatia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1ED 1F1F7"),
@@ -28612,7 +28672,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3677
+            sortOrder: 3683
         );
         public static readonly SingleEmoji FlagHaiti = new SingleEmoji(
             sequence: new UnicodeSequence("1F1ED 1F1F9"),
@@ -28622,7 +28682,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3678
+            sortOrder: 3684
         );
         public static readonly SingleEmoji FlagHungary = new SingleEmoji(
             sequence: new UnicodeSequence("1F1ED 1F1FA"),
@@ -28632,7 +28692,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3679
+            sortOrder: 3685
         );
         public static readonly SingleEmoji FlagCanaryIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1E8"),
@@ -28642,7 +28702,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3680
+            sortOrder: 3686
         );
         public static readonly SingleEmoji FlagIndonesia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1E9"),
@@ -28652,7 +28712,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3681
+            sortOrder: 3687
         );
         public static readonly SingleEmoji FlagIreland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1EA"),
@@ -28662,7 +28722,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3682
+            sortOrder: 3688
         );
         public static readonly SingleEmoji FlagIsrael = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F1"),
@@ -28672,7 +28732,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3683
+            sortOrder: 3689
         );
         public static readonly SingleEmoji FlagIsleMan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F2"),
@@ -28682,7 +28742,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3684
+            sortOrder: 3690
         );
         public static readonly SingleEmoji FlagIndia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F3"),
@@ -28692,7 +28752,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3685
+            sortOrder: 3691
         );
         public static readonly SingleEmoji FlagBritishIndianOceanTerritory = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F4"),
@@ -28702,7 +28762,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3686
+            sortOrder: 3692
         );
         public static readonly SingleEmoji FlagIraq = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F6"),
@@ -28712,7 +28772,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3687
+            sortOrder: 3693
         );
         public static readonly SingleEmoji FlagIran = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F7"),
@@ -28722,7 +28782,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3688
+            sortOrder: 3694
         );
         public static readonly SingleEmoji FlagIceland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F8"),
@@ -28732,7 +28792,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3689
+            sortOrder: 3695
         );
         public static readonly SingleEmoji FlagItaly = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EE 1F1F9"),
@@ -28742,7 +28802,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3690
+            sortOrder: 3696
         );
         public static readonly SingleEmoji FlagJersey = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EF 1F1EA"),
@@ -28752,7 +28812,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3691
+            sortOrder: 3697
         );
         public static readonly SingleEmoji FlagJamaica = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EF 1F1F2"),
@@ -28762,7 +28822,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3692
+            sortOrder: 3698
         );
         public static readonly SingleEmoji FlagJordan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EF 1F1F4"),
@@ -28772,7 +28832,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3693
+            sortOrder: 3699
         );
         public static readonly SingleEmoji FlagJapan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1EF 1F1F5"),
@@ -28782,7 +28842,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3694
+            sortOrder: 3700
         );
         public static readonly SingleEmoji FlagKenya = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1EA"),
@@ -28792,7 +28852,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3695
+            sortOrder: 3701
         );
         public static readonly SingleEmoji FlagKyrgyzstan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1EC"),
@@ -28802,7 +28862,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3696
+            sortOrder: 3702
         );
         public static readonly SingleEmoji FlagCambodia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1ED"),
@@ -28812,7 +28872,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3697
+            sortOrder: 3703
         );
         public static readonly SingleEmoji FlagKiribati = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1EE"),
@@ -28822,7 +28882,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3698
+            sortOrder: 3704
         );
         public static readonly SingleEmoji FlagComoros = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1F2"),
@@ -28832,7 +28892,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3699
+            sortOrder: 3705
         );
         public static readonly SingleEmoji FlagStKittsNevis = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1F3"),
@@ -28842,7 +28902,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3700
+            sortOrder: 3706
         );
         public static readonly SingleEmoji FlagNorthKorea = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1F5"),
@@ -28852,7 +28912,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3701
+            sortOrder: 3707
         );
         public static readonly SingleEmoji FlagSouthKorea = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1F7"),
@@ -28862,7 +28922,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3702
+            sortOrder: 3708
         );
         public static readonly SingleEmoji FlagKuwait = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1FC"),
@@ -28872,7 +28932,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3703
+            sortOrder: 3709
         );
         public static readonly SingleEmoji FlagCaymanIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1FE"),
@@ -28882,7 +28942,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3704
+            sortOrder: 3710
         );
         public static readonly SingleEmoji FlagKazakhstan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F0 1F1FF"),
@@ -28892,7 +28952,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3705
+            sortOrder: 3711
         );
         public static readonly SingleEmoji FlagLaos = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1E6"),
@@ -28902,7 +28962,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3706
+            sortOrder: 3712
         );
         public static readonly SingleEmoji FlagLebanon = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1E7"),
@@ -28912,7 +28972,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3707
+            sortOrder: 3713
         );
         public static readonly SingleEmoji FlagStLucia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1E8"),
@@ -28922,7 +28982,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3708
+            sortOrder: 3714
         );
         public static readonly SingleEmoji FlagLiechtenstein = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1EE"),
@@ -28932,7 +28992,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3709
+            sortOrder: 3715
         );
         public static readonly SingleEmoji FlagSriLanka = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1F0"),
@@ -28942,7 +29002,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3710
+            sortOrder: 3716
         );
         public static readonly SingleEmoji FlagLiberia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1F7"),
@@ -28952,7 +29012,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3711
+            sortOrder: 3717
         );
         public static readonly SingleEmoji FlagLesotho = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1F8"),
@@ -28962,7 +29022,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3712
+            sortOrder: 3718
         );
         public static readonly SingleEmoji FlagLithuania = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1F9"),
@@ -28972,7 +29032,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3713
+            sortOrder: 3719
         );
         public static readonly SingleEmoji FlagLuxembourg = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1FA"),
@@ -28982,7 +29042,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3714
+            sortOrder: 3720
         );
         public static readonly SingleEmoji FlagLatvia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1FB"),
@@ -28992,7 +29052,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3715
+            sortOrder: 3721
         );
         public static readonly SingleEmoji FlagLibya = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F1 1F1FE"),
@@ -29002,7 +29062,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3716
+            sortOrder: 3722
         );
         public static readonly SingleEmoji FlagMorocco = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1E6"),
@@ -29012,7 +29072,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3717
+            sortOrder: 3723
         );
         public static readonly SingleEmoji FlagMonaco = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1E8"),
@@ -29022,7 +29082,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3718
+            sortOrder: 3724
         );
         public static readonly SingleEmoji FlagMoldova = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1E9"),
@@ -29032,7 +29092,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3719
+            sortOrder: 3725
         );
         public static readonly SingleEmoji FlagMontenegro = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1EA"),
@@ -29042,7 +29102,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3720
+            sortOrder: 3726
         );
         public static readonly SingleEmoji FlagStMartin = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1EB"),
@@ -29052,7 +29112,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3721
+            sortOrder: 3727
         );
         public static readonly SingleEmoji FlagMadagascar = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1EC"),
@@ -29062,7 +29122,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3722
+            sortOrder: 3728
         );
         public static readonly SingleEmoji FlagMarshallIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1ED"),
@@ -29072,7 +29132,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3723
+            sortOrder: 3729
         );
         public static readonly SingleEmoji FlagMacedonia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F0"),
@@ -29082,7 +29142,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3724
+            sortOrder: 3730
         );
         public static readonly SingleEmoji FlagMali = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F1"),
@@ -29092,7 +29152,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3725
+            sortOrder: 3731
         );
         public static readonly SingleEmoji FlagMyanmarBurma = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F2"),
@@ -29102,7 +29162,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3726
+            sortOrder: 3732
         );
         public static readonly SingleEmoji FlagMongolia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F3"),
@@ -29112,7 +29172,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3727
+            sortOrder: 3733
         );
         public static readonly SingleEmoji FlagMacaoSarChina = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F4"),
@@ -29122,7 +29182,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3728
+            sortOrder: 3734
         );
         public static readonly SingleEmoji FlagNorthernMarianaIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F5"),
@@ -29132,7 +29192,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3729
+            sortOrder: 3735
         );
         public static readonly SingleEmoji FlagMartinique = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F6"),
@@ -29142,7 +29202,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3730
+            sortOrder: 3736
         );
         public static readonly SingleEmoji FlagMauritania = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F7"),
@@ -29152,7 +29212,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3731
+            sortOrder: 3737
         );
         public static readonly SingleEmoji FlagMontserrat = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F8"),
@@ -29162,7 +29222,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3732
+            sortOrder: 3738
         );
         public static readonly SingleEmoji FlagMalta = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1F9"),
@@ -29172,7 +29232,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3733
+            sortOrder: 3739
         );
         public static readonly SingleEmoji FlagMauritius = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1FA"),
@@ -29182,7 +29242,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3734
+            sortOrder: 3740
         );
         public static readonly SingleEmoji FlagMaldives = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1FB"),
@@ -29192,7 +29252,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3735
+            sortOrder: 3741
         );
         public static readonly SingleEmoji FlagMalawi = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1FC"),
@@ -29202,7 +29262,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3736
+            sortOrder: 3742
         );
         public static readonly SingleEmoji FlagMexico = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1FD"),
@@ -29212,7 +29272,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3737
+            sortOrder: 3743
         );
         public static readonly SingleEmoji FlagMalaysia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1FE"),
@@ -29222,7 +29282,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3738
+            sortOrder: 3744
         );
         public static readonly SingleEmoji FlagMozambique = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F2 1F1FF"),
@@ -29232,7 +29292,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3739
+            sortOrder: 3745
         );
         public static readonly SingleEmoji FlagNamibia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1E6"),
@@ -29242,7 +29302,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3740
+            sortOrder: 3746
         );
         public static readonly SingleEmoji FlagNewCaledonia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1E8"),
@@ -29252,7 +29312,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3741
+            sortOrder: 3747
         );
         public static readonly SingleEmoji FlagNiger = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1EA"),
@@ -29262,7 +29322,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3742
+            sortOrder: 3748
         );
         public static readonly SingleEmoji FlagNorfolkIsland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1EB"),
@@ -29272,7 +29332,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3743
+            sortOrder: 3749
         );
         public static readonly SingleEmoji FlagNigeria = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1EC"),
@@ -29282,7 +29342,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3744
+            sortOrder: 3750
         );
         public static readonly SingleEmoji FlagNicaragua = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1EE"),
@@ -29292,7 +29352,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3745
+            sortOrder: 3751
         );
         public static readonly SingleEmoji FlagNetherlands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1F1"),
@@ -29302,7 +29362,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3746
+            sortOrder: 3752
         );
         public static readonly SingleEmoji FlagNorway = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1F4"),
@@ -29312,7 +29372,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3747
+            sortOrder: 3753
         );
         public static readonly SingleEmoji FlagNepal = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1F5"),
@@ -29322,7 +29382,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3748
+            sortOrder: 3754
         );
         public static readonly SingleEmoji FlagNauru = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1F7"),
@@ -29332,7 +29392,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3749
+            sortOrder: 3755
         );
         public static readonly SingleEmoji FlagNiue = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1FA"),
@@ -29342,7 +29402,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3750
+            sortOrder: 3756
         );
         public static readonly SingleEmoji FlagNewZealand = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F3 1F1FF"),
@@ -29352,7 +29412,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3751
+            sortOrder: 3757
         );
         public static readonly SingleEmoji FlagOman = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F4 1F1F2"),
@@ -29362,7 +29422,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3752
+            sortOrder: 3758
         );
         public static readonly SingleEmoji FlagPanama = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1E6"),
@@ -29372,7 +29432,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3753
+            sortOrder: 3759
         );
         public static readonly SingleEmoji FlagPeru = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1EA"),
@@ -29382,7 +29442,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3754
+            sortOrder: 3760
         );
         public static readonly SingleEmoji FlagFrenchPolynesia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1EB"),
@@ -29392,7 +29452,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3755
+            sortOrder: 3761
         );
         public static readonly SingleEmoji FlagPapuaNewGuinea = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1EC"),
@@ -29402,7 +29462,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3756
+            sortOrder: 3762
         );
         public static readonly SingleEmoji FlagPhilippines = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1ED"),
@@ -29412,7 +29472,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3757
+            sortOrder: 3763
         );
         public static readonly SingleEmoji FlagPakistan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1F0"),
@@ -29422,7 +29482,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3758
+            sortOrder: 3764
         );
         public static readonly SingleEmoji FlagPoland = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1F1"),
@@ -29432,7 +29492,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3759
+            sortOrder: 3765
         );
         public static readonly SingleEmoji FlagStPierreMiquelon = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1F2"),
@@ -29442,7 +29502,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3760
+            sortOrder: 3766
         );
         public static readonly SingleEmoji FlagPitcairnIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1F3"),
@@ -29452,7 +29512,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3761
+            sortOrder: 3767
         );
         public static readonly SingleEmoji FlagPuertoRico = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1F7"),
@@ -29462,7 +29522,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3762
+            sortOrder: 3768
         );
         public static readonly SingleEmoji FlagPalestinianTerritories = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1F8"),
@@ -29472,7 +29532,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3763
+            sortOrder: 3769
         );
         public static readonly SingleEmoji FlagPortugal = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1F9"),
@@ -29482,7 +29542,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3764
+            sortOrder: 3770
         );
         public static readonly SingleEmoji FlagPalau = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1FC"),
@@ -29492,7 +29552,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3765
+            sortOrder: 3771
         );
         public static readonly SingleEmoji FlagParaguay = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F5 1F1FE"),
@@ -29502,7 +29562,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3766
+            sortOrder: 3772
         );
         public static readonly SingleEmoji FlagQatar = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F6 1F1E6"),
@@ -29512,7 +29572,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3767
+            sortOrder: 3773
         );
         public static readonly SingleEmoji FlagRéunion = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F7 1F1EA"),
@@ -29522,7 +29582,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3768
+            sortOrder: 3774
         );
         public static readonly SingleEmoji FlagRomania = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F7 1F1F4"),
@@ -29532,7 +29592,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3769
+            sortOrder: 3775
         );
         public static readonly SingleEmoji FlagSerbia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F7 1F1F8"),
@@ -29542,7 +29602,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3770
+            sortOrder: 3776
         );
         public static readonly SingleEmoji FlagRussia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F7 1F1FA"),
@@ -29552,7 +29612,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3771
+            sortOrder: 3777
         );
         public static readonly SingleEmoji FlagRwanda = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F7 1F1FC"),
@@ -29562,7 +29622,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3772
+            sortOrder: 3778
         );
         public static readonly SingleEmoji FlagSaudiArabia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1E6"),
@@ -29572,7 +29632,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3773
+            sortOrder: 3779
         );
         public static readonly SingleEmoji FlagSolomonIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1E7"),
@@ -29582,7 +29642,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3774
+            sortOrder: 3780
         );
         public static readonly SingleEmoji FlagSeychelles = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1E8"),
@@ -29592,7 +29652,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3775
+            sortOrder: 3781
         );
         public static readonly SingleEmoji FlagSudan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1E9"),
@@ -29602,7 +29662,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3776
+            sortOrder: 3782
         );
         public static readonly SingleEmoji FlagSweden = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1EA"),
@@ -29612,7 +29672,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3777
+            sortOrder: 3783
         );
         public static readonly SingleEmoji FlagSingapore = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1EC"),
@@ -29622,7 +29682,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3778
+            sortOrder: 3784
         );
         public static readonly SingleEmoji FlagStHelena = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1ED"),
@@ -29632,7 +29692,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3779
+            sortOrder: 3785
         );
         public static readonly SingleEmoji FlagSlovenia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1EE"),
@@ -29642,7 +29702,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3780
+            sortOrder: 3786
         );
         public static readonly SingleEmoji FlagSvalbardJanMayen = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1EF"),
@@ -29652,7 +29712,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3781
+            sortOrder: 3787
         );
         public static readonly SingleEmoji FlagSlovakia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F0"),
@@ -29662,7 +29722,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3782
+            sortOrder: 3788
         );
         public static readonly SingleEmoji FlagSierraLeone = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F1"),
@@ -29672,7 +29732,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3783
+            sortOrder: 3789
         );
         public static readonly SingleEmoji FlagSanMarino = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F2"),
@@ -29682,7 +29742,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3784
+            sortOrder: 3790
         );
         public static readonly SingleEmoji FlagSenegal = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F3"),
@@ -29692,7 +29752,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3785
+            sortOrder: 3791
         );
         public static readonly SingleEmoji FlagSomalia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F4"),
@@ -29702,7 +29762,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3786
+            sortOrder: 3792
         );
         public static readonly SingleEmoji FlagSuriname = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F7"),
@@ -29712,7 +29772,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3787
+            sortOrder: 3793
         );
         public static readonly SingleEmoji FlagSouthSudan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F8"),
@@ -29722,7 +29782,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3788
+            sortOrder: 3794
         );
         public static readonly SingleEmoji FlagSãoToméPríncipe = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1F9"),
@@ -29732,7 +29792,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3789
+            sortOrder: 3795
         );
         public static readonly SingleEmoji FlagElSalvador = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1FB"),
@@ -29742,7 +29802,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3790
+            sortOrder: 3796
         );
         public static readonly SingleEmoji FlagSintMaarten = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1FD"),
@@ -29752,7 +29812,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3791
+            sortOrder: 3797
         );
         public static readonly SingleEmoji FlagSyria = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1FE"),
@@ -29762,7 +29822,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3792
+            sortOrder: 3798
         );
         public static readonly SingleEmoji FlagEswatini = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F8 1F1FF"),
@@ -29772,7 +29832,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3793
+            sortOrder: 3799
         );
         public static readonly SingleEmoji FlagTristanDaCunha = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1E6"),
@@ -29782,7 +29842,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3794
+            sortOrder: 3800
         );
         public static readonly SingleEmoji FlagTurksCaicosIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1E8"),
@@ -29792,7 +29852,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3795
+            sortOrder: 3801
         );
         public static readonly SingleEmoji FlagChad = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1E9"),
@@ -29802,7 +29862,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3796
+            sortOrder: 3802
         );
         public static readonly SingleEmoji FlagFrenchSouthernTerritories = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1EB"),
@@ -29812,7 +29872,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3797
+            sortOrder: 3803
         );
         public static readonly SingleEmoji FlagTogo = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1EC"),
@@ -29822,7 +29882,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3798
+            sortOrder: 3804
         );
         public static readonly SingleEmoji FlagThailand = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1ED"),
@@ -29832,7 +29892,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3799
+            sortOrder: 3805
         );
         public static readonly SingleEmoji FlagTajikistan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1EF"),
@@ -29842,7 +29902,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3800
+            sortOrder: 3806
         );
         public static readonly SingleEmoji FlagTokelau = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1F0"),
@@ -29852,7 +29912,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3801
+            sortOrder: 3807
         );
         public static readonly SingleEmoji FlagTimorLeste = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1F1"),
@@ -29862,7 +29922,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3802
+            sortOrder: 3808
         );
         public static readonly SingleEmoji FlagTurkmenistan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1F2"),
@@ -29872,7 +29932,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3803
+            sortOrder: 3809
         );
         public static readonly SingleEmoji FlagTunisia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1F3"),
@@ -29882,7 +29942,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3804
+            sortOrder: 3810
         );
         public static readonly SingleEmoji FlagTonga = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1F4"),
@@ -29892,7 +29952,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3805
+            sortOrder: 3811
         );
         public static readonly SingleEmoji FlagTurkey = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1F7"),
@@ -29902,7 +29962,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3806
+            sortOrder: 3812
         );
         public static readonly SingleEmoji FlagTrinidadTobago = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1F9"),
@@ -29912,7 +29972,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3807
+            sortOrder: 3813
         );
         public static readonly SingleEmoji FlagTuvalu = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1FB"),
@@ -29922,7 +29982,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3808
+            sortOrder: 3814
         );
         public static readonly SingleEmoji FlagTaiwan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1FC"),
@@ -29932,7 +29992,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3809
+            sortOrder: 3815
         );
         public static readonly SingleEmoji FlagTanzania = new SingleEmoji(
             sequence: new UnicodeSequence("1F1F9 1F1FF"),
@@ -29942,7 +30002,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3810
+            sortOrder: 3816
         );
         public static readonly SingleEmoji FlagUkraine = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FA 1F1E6"),
@@ -29952,7 +30012,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3811
+            sortOrder: 3817
         );
         public static readonly SingleEmoji FlagUganda = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FA 1F1EC"),
@@ -29962,7 +30022,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3812
+            sortOrder: 3818
         );
         public static readonly SingleEmoji FlagUsOutlyingIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FA 1F1F2"),
@@ -29972,7 +30032,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3813
+            sortOrder: 3819
         );
         public static readonly SingleEmoji FlagUnitedNations = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FA 1F1F3"),
@@ -29982,7 +30042,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3814
+            sortOrder: 3820
         );
         public static readonly SingleEmoji FlagUnitedStates = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FA 1F1F8"),
@@ -29992,7 +30052,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3815
+            sortOrder: 3821
         );
         public static readonly SingleEmoji FlagUruguay = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FA 1F1FE"),
@@ -30002,7 +30062,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3816
+            sortOrder: 3822
         );
         public static readonly SingleEmoji FlagUzbekistan = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FA 1F1FF"),
@@ -30012,7 +30072,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3817
+            sortOrder: 3823
         );
         public static readonly SingleEmoji FlagVaticanCity = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FB 1F1E6"),
@@ -30022,7 +30082,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3818
+            sortOrder: 3824
         );
         public static readonly SingleEmoji FlagStVincentGrenadines = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FB 1F1E8"),
@@ -30032,7 +30092,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3819
+            sortOrder: 3825
         );
         public static readonly SingleEmoji FlagVenezuela = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FB 1F1EA"),
@@ -30042,7 +30102,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3820
+            sortOrder: 3826
         );
         public static readonly SingleEmoji FlagBritishVirginIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FB 1F1EC"),
@@ -30052,7 +30112,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3821
+            sortOrder: 3827
         );
         public static readonly SingleEmoji FlagUsVirginIslands = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FB 1F1EE"),
@@ -30062,7 +30122,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3822
+            sortOrder: 3828
         );
         public static readonly SingleEmoji FlagVietnam = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FB 1F1F3"),
@@ -30072,7 +30132,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3823
+            sortOrder: 3829
         );
         public static readonly SingleEmoji FlagVanuatu = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FB 1F1FA"),
@@ -30082,7 +30142,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3824
+            sortOrder: 3830
         );
         public static readonly SingleEmoji FlagWallisFutuna = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FC 1F1EB"),
@@ -30092,7 +30152,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3825
+            sortOrder: 3831
         );
         public static readonly SingleEmoji FlagSamoa = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FC 1F1F8"),
@@ -30102,7 +30162,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3826
+            sortOrder: 3832
         );
         public static readonly SingleEmoji FlagKosovo = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FD 1F1F0"),
@@ -30112,7 +30172,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3827
+            sortOrder: 3833
         );
         public static readonly SingleEmoji FlagYemen = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FE 1F1EA"),
@@ -30122,7 +30182,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3828
+            sortOrder: 3834
         );
         public static readonly SingleEmoji FlagMayotte = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FE 1F1F9"),
@@ -30132,7 +30192,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3829
+            sortOrder: 3835
         );
         public static readonly SingleEmoji FlagSouthAfrica = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FF 1F1E6"),
@@ -30142,7 +30202,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3830
+            sortOrder: 3836
         );
         public static readonly SingleEmoji FlagZambia = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FF 1F1F2"),
@@ -30152,7 +30212,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3831
+            sortOrder: 3837
         );
         public static readonly SingleEmoji FlagZimbabwe = new SingleEmoji(
             sequence: new UnicodeSequence("1F1FF 1F1FC"),
@@ -30162,7 +30222,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "country-flag",
             hasGlyph: false,
-            sortOrder: 3832
+            sortOrder: 3838
         );
         public static readonly SingleEmoji FlagEngland = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F4 E0067 E0062 E0065 E006E E0067 E007F"),
@@ -30172,7 +30232,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "subdivision-flag",
             hasGlyph: false,
-            sortOrder: 3833
+            sortOrder: 3839
         );
         public static readonly SingleEmoji FlagScotland = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F4 E0067 E0062 E0073 E0063 E0074 E007F"),
@@ -30182,7 +30242,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "subdivision-flag",
             hasGlyph: false,
-            sortOrder: 3834
+            sortOrder: 3840
         );
         public static readonly SingleEmoji FlagWales = new SingleEmoji(
             sequence: new UnicodeSequence("1F3F4 E0067 E0062 E0077 E006C E0073 E007F"),
@@ -30192,7 +30252,7 @@ namespace NeoSmart.Unicode
             group: Group.FLAGS,
             subgroup: "subdivision-flag",
             hasGlyph: false,
-            sortOrder: 3835
+            sortOrder: 3841
         );
     }
 }

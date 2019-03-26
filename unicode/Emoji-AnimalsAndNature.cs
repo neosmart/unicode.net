@@ -15,6 +15,12 @@ namespace NeoSmart.Unicode
 #else
         public static SortedSet<SingleEmoji> AnimalsAndNature => new SortedSet<SingleEmoji>() {
 #endif
+			/* 🐱‍👤 */ NinjaCat,
+			/* 🐱‍👓 */ HipsterCat,
+			/* 🐱‍💻 */ HackerCat,
+			/* 🐱‍🐉 */ DinoCat,
+			/* 🐱‍🏍 */ StuntCat,
+			/* 🐱‍🚀 */ AstroCat,
 			/* 🐵 */ MonkeyFace,
 			/* 🐒 */ Monkey,
 			/* 🦍 */ Gorilla,
