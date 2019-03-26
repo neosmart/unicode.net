@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -9,22 +8,25 @@ namespace NeoSmart.Unicode
     //this class refers to emoji in the singular
     public struct SingleEmoji : IComparable<SingleEmoji>, IEquatable<SingleEmoji>
     {
-        static readonly string[] NoTerms = new string[] { };
+        private static readonly string[] NoTerms = new string[] { };
         public readonly UnicodeSequence Sequence;
         public readonly string Name;
         public readonly string[] SearchTerms;
         public readonly int SortOrder;
-        public readonly string Group;
+        public readonly SkinTone[] SkinTones;
+        public static readonly SkinTone[] NoSkinTones = new SkinTone[] { SkinTone.NONE };
+        public readonly Group Group;
         public readonly string Subgroup;
 
-        public SingleEmoji(UnicodeSequence sequence, string name = "", string[] searchTerms = null, int sortOrder = -1, string group = "", string subgroup = "")
+        public SingleEmoji(UnicodeSequence sequence, string name = "", string[] searchTerms = null, SkinTone[] skinTones = null, Group group = Group.SMILEYS_AND_EMOTION, string subgroup = "", int sortOrder = -1)
         {
             Sequence = sequence;
             Name = name;
-            SearchTerms = searchTerms ?? NoTerms;
-            SortOrder = sortOrder;
+            SearchTerms = searchTerms;
+            SkinTones = skinTones ?? NoSkinTones;
             Group = group;
             Subgroup = subgroup;
+            SortOrder = sortOrder;
         }
 
         public int CompareTo(SingleEmoji other)

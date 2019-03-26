@@ -12,15 +12,19 @@ namespace UnicodeTests
         {
             SingleEmoji FaceWithTearsOfJoy = new SingleEmoji(
                sequence: new UnicodeSequence("1F602"),
-               name: "face with tears of joy",
-               searchTerms: new[] { "face", "tears", "joy" },
-               sortOrder: 2
+                name: "face with tears of joy",
+                searchTerms: new[] { "face", "tears", "joy" },
+                skinTones: new[] { SkinTone.NONE },
+                group: Group.SMILEYS_AND_EMOTION,
+                subgroup: "face-smiling",
+                sortOrder: 7
             );
 
             Assert.IsTrue(FaceWithTearsOfJoy.Sequence.Codepoints.Count() == 1);
             Assert.AreEqual(FaceWithTearsOfJoy.Sequence.Codepoints.First().ToString(), "U+1F602");
             Assert.AreEqual(FaceWithTearsOfJoy.Name, "face with tears of joy");
             Assert.IsTrue(FaceWithTearsOfJoy.SearchTerms.SequenceEqual(new[] { "face", "tears", "joy" }));
+            Assert.IsTrue(FaceWithTearsOfJoy.SkinTones.SequenceEqual(new[] { SkinTone.NONE }));
         }
 
         [TestMethod]
