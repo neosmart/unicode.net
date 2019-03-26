@@ -21,9 +21,7 @@
             let code = generator.generate();
 
             let results = document.getElementById("results");
-            for (const emoji of code.emoji) {
-                results.append(document.createTextNode(emoji));
-            }
+            results.append(document.createTextNode(code.emoji));
         })();
     </script>
 </body>

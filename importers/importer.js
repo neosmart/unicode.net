@@ -4,6 +4,15 @@ const firstRegex = /\b1st/;
 const secondRegex = /\b2nd/;
 const thirdRegex = /\b3rd/;
 
+const intro = `namespace NeoSmart.Unicode
+{
+    // This file is machine-generated from the official Unicode Consortium UTR51 publication
+    // See the \`importers\` folder for the generators.
+`;
+
+const extro = `
+}`;
+
 // Implementation of Lazy derived from the code at
 // https://dev.to/nestedsoftware/lazy-evaluation-in-javascript-with-generators-map-filter-and-reduce--36h5
 class Lazy {
@@ -168,17 +177,30 @@ function makeStringArray(keywords) {
         .join(", ");
 }
 
-function makeSortedSet(name, emoji) {
-    result = `public static readonly SortedSet<SingleEmoji> ${name} = new SortedSet<SingleEmoji>() {
+function makeSortedSet(name, emoji, summary = "") {
+    result = `using System.Collections.Generic;
+
+${intro}
+    public static partial class Emoji
+    {
+        /// <summary>
+        /// ${summary}
+        /// </summary>
+#if NET20 || NET30 || NET35
+        public static readonly List<SingleEmoji> ${name} = new List<SingleEmoji>() {
+#else
+        public static readonly SortedSet<SingleEmoji> ${name} = new SortedSet<SingleEmoji>() {
+#endif
 `;
 
     for (const e of emoji) {
-        result += `\t/* ${e.symbol} */ ${CamelCase(e.name)},
+        result += `            /* ${e.symbol} */ ${CamelCase(e.name)},
 `;
     }
-    result += `};
+    result += `        };
+    }`;
 
-`;
+    result += extro;
 
     return result;
 }
@@ -196,16 +218,16 @@ function isUngenderedEmoji(emoji) {
 }
 
 function emojiToCSharp(emoji) {
-    return `/* ${emoji.symbol} */
-public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
-        sequence: new UnicodeSequence("${emoji.sequence}"),
-        name: "${emoji.name}",
-        group: "${emoji.group}",
-        subgroup: "${emoji.subgroup}",
-        searchTerms: new [] { ${makeStringArray(emoji.name)} },
-        sortOrder: ${emoji.index},
-    );
-
+    return `
+        /* ${emoji.symbol} */
+        public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
+                sequence: new UnicodeSequence("${emoji.sequence}"),
+                name: "${emoji.name}",
+                group: "${emoji.group}",
+                subgroup: "${emoji.subgroup}",
+                searchTerms: new [] { ${makeStringArray(emoji.name)} },
+                sortOrder: ${emoji.index}
+            );
 `;
 }
 
@@ -242,8 +264,10 @@ function *parse(data) {
     const groupRegex = /\bgroup: \s*(\S.+?)\s*$/;
     const subgroupRegex = /subgroup: \s*(\S.+?)\s*$/;
 
+    let deduplicator = new Set();
     let group = "";
     let subgroup = "";
+    let sortIndex = 0;
     for (let i = 0; i < lines.length; ++i) {
         const line = lines[i];
         if (line.startsWith("#") || !line.includes("fully-qualified")) {
@@ -257,19 +281,33 @@ function *parse(data) {
 
         let results = line.match(parser);
 
-        yield {
+        const emoji = {
             "sequence": results[1],
             "symbol": results[2],
             "name": results[3],
-            "index": i++,
+            "index": sortIndex++,
             "group": group,
             "subgroup": subgroup,
         };
+
+        if (deduplicator.has(emoji.name)) {
+            continue;
+        }
+
+        let oldName = emoji.name;
+        let version = 2;
+        while (deduplicator.has(CamelCase(emoji.name))) {
+            emoji.name = oldName + version++;
+        }
+        deduplicator.add(emoji.name);
+        deduplicator.add(CamelCase(emoji.name));
+
+        yield emoji;
     }
 }
 
 function parseEmoji(data) {
-    return new Lazy(parse(data), () => true);
+    return new Lazy(parse(data));
 }
 
 const manWomanRegex = /^(man|woman)/i;
@@ -295,15 +333,22 @@ class CodeGenerator {
         let emoji = Array.from(parseEmoji(this.data));
 
         let csharp = {
-            emoji: [],
+            emoji: "",
             lists: {},
         };
 
         // Dump actual emoji objects.
         // All other operations print only references to these.
+        let code = [];
+        code.push(intro);
+        code.push("    public static partial class Emoji\n");
+        code.push("    {");
         for (const e of emoji) {
-            csharp.emoji.push(emojiToCSharp(e));
+            code.push(emojiToCSharp(e));
         }
+        code.push("    }");
+        code.push(extro);
+        csharp.emoji = code.join("");
 
         // Dump all emoji list
         csharp.lists.all = makeSortedSet("All", emoji);
@@ -315,11 +360,22 @@ class CodeGenerator {
         // Narrow it down to emoji supported by Segoe UI Emoji
         let supportedEmoji = basicUngenderedEmoji
             .filter(isBasicEmoji)
-            .filter(e => fontSupportsEmoji(this.font, e));
+            .filter(e => fontSupportsEmoji(this.font, e))
 
         // Dump list of ungendered emoji
-        csharp.lists.basic = makeSortedSet("Basic", supportedEmoji);
+        csharp.lists.basic = makeSortedSet("Basic", supportedEmoji,
+            "A (sorted) enumeration of all emoji without skin variations and no duplicate " +
+            "gendered vs gender-neutral emoji, ideal for displaying. " +
+            "Emoji without supported glyphs in Segoe UI Emoji are also omitted from this list.");
 
         return csharp;
     }
 }
+
+if (this.module == undefined) {
+    this.module = {};
+}
+
+module.exports = {
+    CodeGenerator: CodeGenerator,
+};

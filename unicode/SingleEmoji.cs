@@ -9,17 +9,22 @@ namespace NeoSmart.Unicode
     //this class refers to emoji in the singular
     public struct SingleEmoji : IEqualityComparer<SingleEmoji>, IComparable<SingleEmoji>, IEquatable<SingleEmoji>
     {
+        static readonly string[] NoTerms = new string[] { };
         public readonly UnicodeSequence Sequence;
         public readonly string Name;
         public readonly string[] SearchTerms;
         public readonly int SortOrder;
+        public readonly string Group;
+        public readonly string Subgroup;
 
-        public SingleEmoji(UnicodeSequence sequence, string name, string[] searchTerms, int sortOrder)
+        public SingleEmoji(UnicodeSequence sequence, string name = "", string[] searchTerms = null, int sortOrder = -1, string group = "", string subgroup = "")
         {
             Sequence = sequence;
             Name = name;
-            SearchTerms = searchTerms;
+            SearchTerms = searchTerms ?? NoTerms;
             SortOrder = sortOrder;
+            Group = group;
+            Subgroup = subgroup;
         }
 
         public int CompareTo(SingleEmoji other)
