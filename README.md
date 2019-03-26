@@ -1,3 +1,7 @@
+# This is a fork of [neosmart/unicode.net](https://github.com/neosmart/unicode.net) from [mqudsi](https://github.com/mqudsi)
+
+It adds more properties to the `SingleEmoji` class and lists for all emoji groups.
+
 ## Unicode.net- an emoji and text-processing library for .NET
 
 `Unicode.net` is an easy-to-use Unicode text-processing library for dot net, designed to complement the BCL and the `System.String` class, useable on both .NET Framework and .NET Core/UWP (.NET Standard) targets. As an added bonus, `Unicode.net` includes an extra helping of emoji awesomeness 🎉 😊 😄.
@@ -86,12 +90,17 @@ The static `Emoji` class is the main entry point for dealing with emoji in `Unic
 
 The `SingleEmoji` class is a representation of a single "emoji," where "emoji" is any unicode sequence comprised of one or more basic emoji sequences that *should* be represented by a single glyph, per the UTR #51 spec. Again, depending on your platform and font and the emoji they support, a `SingleEmoji` *may* either have no representation or be represented as a sequence of one or more individual emoji. 
 
-Important note: this class is called `SingleEmoji` and the "master" emoji class is called `Emoji` because we firmly believe that "emoji" &mdash; as a foreign word derived from the Japanese えもじらんど &mdash; is a *zero plural marker* noun, which is to say, a noun with no plural form distinct from its singular form. **The plural of "emoj" is "emoji" and absolutely never "emojis," which is quite simply not a word at all.**
+Important note: this class is called `SingleEmoji` and the "master" emoji class is called `Emoji` because we firmly believe that "emoji" &mdash; as a foreign word derived from the Japanese えもじらんど &mdash; is a *zero plural marker* noun, which is to say, a noun with no plural form distinct from its singular form. **The plural of "emoji" is "emoji" and absolutely never "emojis," which is quite simply not a word at all.**
 
 That said, the `SingleEmoji` class contains all the information needed to represent a single glyph from the UTR spec, and to interact with its individual Unicode codepoints via the Unicode API described elsewhere in these docs:
 
 * `UnicodeSequence Sequence`: the underlying Unicode codepoints that form the emoji in question, for example, `UnicodeSequence("1F474 1F3FC")`, which form the "Old Man w/ Medium Skin Tone" emoji;
 * `string Name`: the name of the `SingleEmoji` instance, as derived from the official name in the UTR spec. The name of the `SingleEmoji` instance in the `Emoji` class (and the members of the `Emoji.Basic` and `Emoji.All` lists) is derived from this value. For example, the name of the `SingleEmoji` instance `Emoji.OlderAdultMediumDarkSkinTone` is "older adult: medium-dark skin tone".
-* `string[] SearchTerms`: an array of one or more keywords that can be used when implementing a "search for emoji" feature. These keywords will be expanded to include synonyms and visual equivalents over time, but is useable in its present state. 
-  Example: `{ "woman", "health", "worker", "medium", "light", "skin", "tone" }`.
+* `string[] SearchTerms`: an array of one or more keywords that can be used when implementing a "search for emoji" feature. These keywords will be expanded to include synonyms and visual equivalents over time, but is useable in its present state. Example: `{ "woman", "health", "worker", "medium", "light", "skin", "tone" }`.
+* `string[] NoTerms`: If the `string[] SearchTerms` is empty/`null` it points to this.
+* `SkinTone[] SkinTones`: A list of `SkinTone` objects that represent the current emoji. Example: `{ SkinTone.NONE }` for "😀" , `{ SkinTone.DARK }` for "👨🏿‍⚕️" and `{ SkinTone.DARK, SkinTone.MEDIUM }` for "🧑🏿‍🤝‍🧑🏽". They are in the same order like in the definition of the emoji (`Sequence`).
+* `SkinTone[] NoSkinTones`: If the emoji does not has a specific skin tone (aka. yellow) `SkinTones` points to this list.
+* `Group Group`: The [`Group`](unicode/Group.cs) of the emoji. Example: `SMILEYS_AND_EMOTION` for "😀" and `PEOPLE_AND_BODY` for "👨🏿‍⚕️"
+* `string Subgroup`: The subgroup name of the emoji. Example: `"face-smiling"` for "😀" and `"person-role"` for "👨🏿‍⚕️"
+* `bool HasGlyph`: Is there a glyph for the emoji defined in the `Segoe UI Emoji` font.
 * `int SortOrder`: an integer indicating the place of this `SingleEmoji` instance in the recommended emoji order, per the Unicode Consortium. The emoji lists `Emoji.Basic` and `Emoji.All` are ordered by this value.
