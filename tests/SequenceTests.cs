@@ -24,8 +24,6 @@ namespace UnicodeTests
 
             Assert.IsFalse(Equals(_swimmer, null));
             Assert.IsTrue(Equals(_swimmer, _swimmer));
-
-            Assert.IsTrue(_swimmer.Equals(_femaleSwimmer, _femaleSwimmer));
         }
 
         [TestMethod]

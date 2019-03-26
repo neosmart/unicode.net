@@ -7,7 +7,7 @@ namespace NeoSmart.Unicode
 {
     //We hereby declare emoji to be a zero plural marker noun (in short, "emoji" is both the singular and the plural form)
     //this class refers to emoji in the singular
-    public struct SingleEmoji : IEqualityComparer<SingleEmoji>, IComparable<SingleEmoji>, IEquatable<SingleEmoji>
+    public struct SingleEmoji : IComparable<SingleEmoji>, IEquatable<SingleEmoji>
     {
         static readonly string[] NoTerms = new string[] { };
         public readonly UnicodeSequence Sequence;
@@ -32,16 +32,6 @@ namespace NeoSmart.Unicode
             return Sequence.CompareTo(other.Sequence);
         }
 
-        public bool Equals(SingleEmoji a, SingleEmoji b)
-        {
-            return a.Sequence.Equals(b.Sequence);
-        }
-
-        public int GetHashCode(SingleEmoji obj)
-        {
-            return obj.GetHashCode();
-        }
-
         public static bool operator ==(SingleEmoji a, SingleEmoji b)
         {
             return a.Sequence == b.Sequence;
@@ -56,7 +46,7 @@ namespace NeoSmart.Unicode
         {
             if (obj is SingleEmoji emoji)
             {
-                return Equals(this, emoji);
+                return Equals(emoji);
             }
             return base.Equals(obj);
         }
@@ -73,7 +63,7 @@ namespace NeoSmart.Unicode
 
         public bool Equals(SingleEmoji other)
         {
-            return Equals(this, other);
+            return Sequence.Equals(other.Sequence);
         }
     }
 }

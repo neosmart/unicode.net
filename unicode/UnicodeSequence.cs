@@ -8,7 +8,7 @@ namespace NeoSmart.Unicode
     /// <summary>
     /// A UnicodeSequence is a combination of one or more codepoints.
     /// </summary>
-    public struct UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>, IEqualityComparer<UnicodeSequence>
+    public struct UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>
     {
         static readonly Codepoint[] NoCodepoints = new Codepoint[] { };
         private readonly Codepoint[] _codepoints;
@@ -193,11 +193,6 @@ namespace NeoSmart.Unicode
             return base.Equals(b);
         }
 
-        public bool Equals(UnicodeSequence a, UnicodeSequence b)
-        {
-            return a.Equals(b);
-        }
-
         public override int GetHashCode()
         {
             return _codepoints.GetHashCode();
@@ -206,11 +201,6 @@ namespace NeoSmart.Unicode
         public bool Equals(string other)
         {
             return !(other is null) && other.Codepoints().SequenceEqual(_codepoints);
-        }
-
-        public int GetHashCode(UnicodeSequence obj)
-        {
-            return obj.GetHashCode();
         }
     }
 }
