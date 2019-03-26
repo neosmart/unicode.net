@@ -26,15 +26,19 @@ namespace UnicodeTests
         [TestMethod]
         public void TestEmojiCount()
         {
-            Assert.IsTrue(Emoji.All.Count() > 0);
-            Assert.IsTrue(Emoji.Basic.Count() != Emoji.All.Count());
+            Assert.AreNotEqual(0, Emoji.All.Count);
+            Assert.AreNotEqual(Emoji.Basic.Count, Emoji.All.Count);
+            Assert.IsTrue(Emoji.Basic.Count < Emoji.All.Count);
         }
 
         [TestMethod]
         public void VerifyNoEmptyEmoji()
         {
-            Assert.IsTrue(Emoji.All.All(e => !string.IsNullOrEmpty(e.Name)));
-            Assert.IsTrue(Emoji.Basic.All(e => !string.IsNullOrEmpty(e.Name)));
+            foreach (var emoji in Emoji.All)
+            {
+                Assert.AreNotEqual(null, emoji.Name, $@"Emoji with SortOrder {emoji.SortOrder} has invalid name!");
+                Assert.AreNotEqual("", emoji.Name, $@"Emoji with SortOrder {emoji.SortOrder} has invalid name!");
+            }
         }
 
         [TestMethod]

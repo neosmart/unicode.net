@@ -8,12 +8,12 @@ namespace NeoSmart.Unicode
     public static partial class Emoji
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET20 || NET30 || NET35
         public static readonly List<SingleEmoji> All = new List<SingleEmoji>() {
 #else
-        public static readonly SortedSet<SingleEmoji> All = new SortedSet<SingleEmoji>() {
+        public static SortedSet<SingleEmoji> All => new SortedSet<SingleEmoji>() {
 #endif
             /* 😀 */ GrinningFace,
             /* 😁 */ GrinningFaceWithSmilingEyes,

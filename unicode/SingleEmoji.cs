@@ -29,7 +29,7 @@ namespace NeoSmart.Unicode
 
         public int CompareTo(SingleEmoji other)
         {
-            return SortOrder.CompareTo(other.SortOrder);
+            return Sequence.CompareTo(other.Sequence);
         }
 
         public bool Equals(SingleEmoji a, SingleEmoji b)

@@ -19,15 +19,12 @@ namespace UnicodeTests
             Assert.IsTrue(_swimmer.Codepoints.SequenceEqual(_swimmerString.Codepoints()));
             Assert.AreEqual(_femaleSwimmer.AsString, _femaleSwimmerString);
 
-            Assert.IsFalse(_swimmer.Equals((UnicodeSequence)null));
             Assert.IsFalse(_swimmer.Equals((string)null));
             Assert.IsTrue(_swimmer.Equals(_swimmer));
 
             Assert.IsFalse(Equals(_swimmer, null));
             Assert.IsTrue(Equals(_swimmer, _swimmer));
 
-            Assert.IsFalse(_swimmer.Equals(null, _femaleSwimmer));
-            Assert.IsFalse(_swimmer.Equals(_femaleSwimmer, null));
             Assert.IsTrue(_swimmer.Equals(_femaleSwimmer, _femaleSwimmer));
         }
 

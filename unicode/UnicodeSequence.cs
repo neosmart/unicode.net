@@ -8,15 +8,11 @@ namespace NeoSmart.Unicode
     /// <summary>
     /// A UnicodeSequence is a combination of one or more codepoints.
     /// </summary>
-    public class UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>, IEqualityComparer<UnicodeSequence>
+    public struct UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>, IEqualityComparer<UnicodeSequence>
     {
+        static readonly Codepoint[] NoCodepoints = new Codepoint[] { };
         private readonly Codepoint[] _codepoints;
-        public IEnumerable<Codepoint> Codepoints => _codepoints;
-
-        private UnicodeSequence()
-        {
-
-        }
+        public IEnumerable<Codepoint> Codepoints => _codepoints ?? NoCodepoints;
 
         public UnicodeSequence(string sequence)
         {
@@ -48,6 +44,11 @@ namespace NeoSmart.Unicode
                 var values = sequence.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 _codepoints = values.Select(x => new Codepoint(x)).ToArray();
             }
+        }
+
+        public UnicodeSequence(params Codepoint[] codepoints)
+        {
+            _codepoints = codepoints;
         }
 
         public UnicodeSequence(IEnumerable<Codepoint> codepoints)
@@ -116,6 +117,21 @@ namespace NeoSmart.Unicode
 
         public int CompareTo(UnicodeSequence other)
         {
+            if (_codepoints is null && other._codepoints is null)
+            {
+                return 0;
+            }
+
+            if (_codepoints is null)
+            {
+                return -1;
+            }
+
+            if (other._codepoints is null)
+            {
+                return 1;
+            }
+
             for (int i = 0; i < Math.Min(_codepoints.Length, other._codepoints.Length); ++i)
             {
                 if (_codepoints[i] != other._codepoints[i])
@@ -142,7 +158,7 @@ namespace NeoSmart.Unicode
                 return true;
             }
 
-            if (other is null || _codepoints.Length != other._codepoints.Length)
+            if (_codepoints.Length != other._codepoints.Length)
             {
                 return false;
             }
@@ -160,7 +176,7 @@ namespace NeoSmart.Unicode
 
         public static bool operator ==(UnicodeSequence a, UnicodeSequence b)
         {
-            return (a is null && b is null) || (!(a is null || b is null) && a.Equals(b));
+            return a.Equals(b);
         }
 
         public static bool operator !=(UnicodeSequence a, UnicodeSequence b)
@@ -172,14 +188,14 @@ namespace NeoSmart.Unicode
         {
             if (b is UnicodeSequence)
             {
-                return Equals(b as UnicodeSequence);
+                return Equals((UnicodeSequence)b);
             }
             return base.Equals(b);
         }
 
         public bool Equals(UnicodeSequence a, UnicodeSequence b)
         {
-            return (a is null && b is null) || (!(a is null || b is null) && a.Equals(b));
+            return a.Equals(b);
         }
 
         public override int GetHashCode()
