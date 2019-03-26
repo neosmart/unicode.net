@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NeoSmart.Unicode;
 
 namespace UnicodeTests
@@ -42,6 +42,16 @@ namespace UnicodeTests
         public void TestSingleEmojiCompareTo()
         {
             Assert.IsFalse(Emoji.AbButtonBloodType.CompareTo(Emoji.AbButtonBloodType) != 0);
+        }
+
+        [TestMethod]
+        public void UnicodeSortOrder()
+        {
+            // While the unicode sequence for the Thinking Face emoji is U+1F914 and the sequence for
+            // Zipper Mouth Face is U+1F910, the Thinking Face emoji should always come directly before
+            // it in a sorted list.
+            Assert.IsTrue(Emoji.ThinkingFace.Sequence > Emoji.ZipperMouthFace.Sequence);
+            Assert.IsTrue(Emoji.ThinkingFace < Emoji.ZipperMouthFace);
         }
     }
 }

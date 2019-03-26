@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -182,6 +182,16 @@ namespace NeoSmart.Unicode
         public static bool operator !=(UnicodeSequence a, UnicodeSequence b)
         {
             return !(a == b);
+        }
+
+        public static bool operator <(UnicodeSequence a , UnicodeSequence b)
+        {
+            return a.CompareTo(b) < 0;
+        }
+
+        public static bool operator >(UnicodeSequence a , UnicodeSequence b)
+        {
+            return a.CompareTo(b) > 0;
         }
 
         public override bool Equals(object b)

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +29,14 @@ namespace NeoSmart.Unicode
 
         public int CompareTo(SingleEmoji other)
         {
-            return Sequence.CompareTo(other.Sequence);
+            if (SortOrder < 0)
+            {
+                return Sequence.CompareTo(other.Sequence);
+            }
+            else
+            {
+                return SortOrder.CompareTo(other.SortOrder);
+            }
         }
 
         public static bool operator ==(SingleEmoji a, SingleEmoji b)
@@ -40,6 +47,16 @@ namespace NeoSmart.Unicode
         public static bool operator !=(SingleEmoji a, SingleEmoji b)
         {
             return !(a == b);
+        }
+
+        public static bool operator <(SingleEmoji a, SingleEmoji b)
+        {
+            return a.CompareTo(b) < 0;
+        }
+
+        public static bool operator >(SingleEmoji a, SingleEmoji b)
+        {
+            return a.CompareTo(b) > 0;
         }
 
         public override bool Equals(object obj)
