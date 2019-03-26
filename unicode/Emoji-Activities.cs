@@ -10,7 +10,11 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji in group: ACTIVITIES
         /// Only contains fully-qualified and component emoji.
         /// <summary>
-        public static IEnumerable<SingleEmoji> Activities => new[] {
+#if NET20 || NET30 || NET35
+		public static readonly List<SingleEmoji> Activities = new List<SingleEmoji>() {
+#else
+        public static SortedSet<SingleEmoji> Activities => new SortedSet<SingleEmoji>() {
+#endif
 			/* 🎃 */ JackOLantern,
 			/* 🎄 */ ChristmasTree,
 			/* 🎆 */ Fireworks,

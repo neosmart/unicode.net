@@ -10,7 +10,11 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji in group: PEOPLE_AND_BODY
         /// Only contains fully-qualified and component emoji.
         /// <summary>
-        public static IEnumerable<SingleEmoji> PeopleAndBody => new[] {
+#if NET20 || NET30 || NET35
+		public static readonly List<SingleEmoji> PeopleAndBody = new List<SingleEmoji>() {
+#else
+        public static SortedSet<SingleEmoji> PeopleAndBody => new SortedSet<SingleEmoji>() {
+#endif
 			/* 👋 */ WavingHand,
 			/* 👋🏻 */ WavingHandLightSkinTone,
 			/* 👋🏼 */ WavingHandMediumLightSkinTone,

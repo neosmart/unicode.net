@@ -10,7 +10,11 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji in group: TRAVEL_AND_PLACES
         /// Only contains fully-qualified and component emoji.
         /// <summary>
-        public static IEnumerable<SingleEmoji> TravelAndPlaces => new[] {
+#if NET20 || NET30 || NET35
+		public static readonly List<SingleEmoji> TravelAndPlaces = new List<SingleEmoji>() {
+#else
+        public static SortedSet<SingleEmoji> TravelAndPlaces => new SortedSet<SingleEmoji>() {
+#endif
 			/* 🌍 */ GlobeShowingEuropeAfrica,
 			/* 🌎 */ GlobeShowingAmericas,
 			/* 🌏 */ GlobeShowingAsiaAustralia,

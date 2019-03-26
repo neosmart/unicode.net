@@ -10,7 +10,11 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji in group: FLAGS
         /// Only contains fully-qualified and component emoji.
         /// <summary>
-        public static IEnumerable<SingleEmoji> Flags => new[] {
+#if NET20 || NET30 || NET35
+		public static readonly List<SingleEmoji> Flags = new List<SingleEmoji>() {
+#else
+        public static SortedSet<SingleEmoji> Flags => new SortedSet<SingleEmoji>() {
+#endif
 			/* 🏁 */ ChequeredFlag,
 			/* 🚩 */ TriangularFlag,
 			/* 🎌 */ CrossedFlags,

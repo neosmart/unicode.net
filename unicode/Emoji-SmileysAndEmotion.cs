@@ -10,7 +10,11 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji in group: SMILEYS_AND_EMOTION
         /// Only contains fully-qualified and component emoji.
         /// <summary>
-        public static IEnumerable<SingleEmoji> SmileysAndEmotion => new[] {
+#if NET20 || NET30 || NET35
+		public static readonly List<SingleEmoji> SmileysAndEmotion = new List<SingleEmoji>() {
+#else
+        public static SortedSet<SingleEmoji> SmileysAndEmotion => new SortedSet<SingleEmoji>() {
+#endif
 			/* 😀 */ GrinningFace,
 			/* 😃 */ GrinningFaceBigEyes,
 			/* 😄 */ GrinningFaceSmilingEyes,

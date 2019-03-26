@@ -10,7 +10,11 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji in group: ANIMALS_AND_NATURE
         /// Only contains fully-qualified and component emoji.
         /// <summary>
-        public static IEnumerable<SingleEmoji> AnimalsAndNature => new[] {
+#if NET20 || NET30 || NET35
+		public static readonly List<SingleEmoji> AnimalsAndNature = new List<SingleEmoji>() {
+#else
+        public static SortedSet<SingleEmoji> AnimalsAndNature => new SortedSet<SingleEmoji>() {
+#endif
 			/* 🐵 */ MonkeyFace,
 			/* 🐒 */ Monkey,
 			/* 🦍 */ Gorilla,
