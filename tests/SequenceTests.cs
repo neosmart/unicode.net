@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NeoSmart.Unicode;
 using System.Linq;
 
@@ -24,6 +24,24 @@ namespace UnicodeTests
 
             Assert.IsFalse(Equals(_swimmer, null));
             Assert.IsTrue(Equals(_swimmer, _swimmer));
+        }
+
+        [TestMethod]
+        public void TestSequenceConstruction()
+        {
+            var testSequence = new UnicodeSequence(0x1F3CA, 0x200D, 0x2640, 0xFE0F);
+
+            // These should all be equivalent methods of initializing the same value
+            Assert.AreEqual(testSequence, new UnicodeSequence("U+1F3CA U+200D U+2640 U+FE0F"));
+            Assert.AreEqual(testSequence, new UnicodeSequence("1F3CA 200D 2640 FE0F"));
+            Assert.AreEqual(testSequence, new UnicodeSequence("1F3CA,200D,2640,FE0F"));
+            Assert.AreEqual(testSequence, new UnicodeSequence("1F3CA, 200D, 2640 FE0F"));
+        }
+
+        [TestMethod]
+        public void TestRangeConstruction()
+        {
+            Assert.AreEqual(new UnicodeSequence("1F3CA 1F3CB 1F3CC"), new UnicodeSequence("1F3CA-1F3CC"));
         }
 
         [TestMethod]
