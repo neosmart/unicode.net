@@ -46,6 +46,8 @@ namespace NeoSmart.Unicode
             }
         }
 
+        // The usage of `params` here should hopefully allocate on the stack for short lengths,
+        // making this the most optimized version of the routine.
         public UnicodeSequence(params Codepoint[] codepoints)
         {
             _codepoints = codepoints;

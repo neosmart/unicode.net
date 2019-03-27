@@ -155,7 +155,7 @@ function emojiToCSharp(emoji) {
     return `
         /* ${emoji.symbol} */
         public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
-                sequence: new UnicodeSequence("${emoji.sequence}"),
+                sequence: new UnicodeSequence(${emoji.sequence.map(s => `0x${s}`).join(", ")}),
                 name: "${emoji.name}",
                 group: "${emoji.group}",
                 subgroup: "${emoji.subgroup}",
@@ -222,7 +222,7 @@ function* parse(data) {
             continue;
         }
         const emoji = {
-            "sequence": results[1],
+            "sequence": results[1].split(" "),
             "symbol": results[2],
             "name": results[3],
             "index": sortIndex++,
