@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+        "strict": true,
+		"noImplicitAny": true,
+		"noEmitOnError": true,
+		"removeComments": false,
+		"sourceMap": true,
+        "target": "es6",
+        "module": "none",
+        "moduleResolution": "node",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "outFile": "importer.js"
+	},
+	"exclude": [
+		"node_modules",
+		"wwwroot"
+	]
+}

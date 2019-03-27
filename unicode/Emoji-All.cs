@@ -7,11 +7,8 @@ namespace NeoSmart.Unicode
 
     public static partial class Emoji
     {
-        /// <summary>
-        ///
-        /// </summary>
 #if NET20 || NET30 || NET35
-        public static readonly List<SingleEmoji> All = new List<SingleEmoji>() {
+        public static List<SingleEmoji> All => new List<SingleEmoji>() {
 #else
         public static SortedSet<SingleEmoji> All => new SortedSet<SingleEmoji>() {
 #endif
