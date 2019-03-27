@@ -147,12 +147,25 @@ function isBasicEmoji(emoji: Emoji) {
     return !emoji.name.match(/skin tone|keycap/i);
 }
 
-function isGeneredEmoji(emoji: Emoji) {
-    return !emoji.name.startsWith("person");
-}
+// Segoe UI reuses the same symbol when a ungendered version of the emoji is also available.
+// e.g. ConstructionWorker and ManConstructionWorker are the same.
+function isGenderedDuplicate(deduplicator: Set<string>, emoji: Emoji) {
+    const regex = /^(man|woman)\s/i;
 
-function isUngenderedEmoji(emoji: Emoji) {
-    return !emoji.name.startsWith("man") && !emoji.name.startsWith("woman");
+    if (emoji.name.match(regex)) {
+        if (deduplicator.has(emoji.name.replace(regex, ""))) {
+            // e.g. ManPoliceOfficer/WomanPoliceOffer -> PoliceOfficer
+            return true;
+        }
+        if (deduplicator.has(emoji.name.replace(regex, "person "))) {
+            // e.g. ManPouting/WomanPouting -> PersonPouting
+            return true;
+        }
+        return false;
+    }
+
+    deduplicator.add(emoji.name);
+    return false;
 }
 
 function emojiToCSharp(emoji: Emoji) {
@@ -263,19 +276,6 @@ function parseEmoji(data: string) {
     return new Lazy(parse(data));
 }
 
-const manWomanRegex = /^(man|woman)/i;
-const manWomanRegexPlus = /^(man|woman) */i;
-
-// Note: This should not be passed a generator but rather a full-on Array
-function ungenderedEmoji(emoji: Array<Emoji>) {
-    // Yes, this is insanely slow and could be optimized by making a trimmed & sorted
-    // second/third list and taking the distinct union, but who cares?
-
-    return emoji.filter(e => !manWomanRegex.test(e.name) ||
-        !emoji.some(e2 => (e2.name.toLowerCase() == e.name.replace(manWomanRegex, "person").toLowerCase() ||
-            e2.name.toLowerCase() == e.name.replace(manWomanRegexPlus, "").toLowerCase())));
-}
-
 class CodeResult {
     emoji: string = "";
     lists = {
@@ -315,13 +315,12 @@ class CodeGenerator {
         // Dump all emoji list
         csharp.lists.all = makeSortedSet("All", emoji);
 
-        // Some partial lists of emoji filtered by certain criteria
-        let basicEmoji = emoji.filter(isBasicEmoji); // removes meta emoji
-        let basicUngenderedEmoji = ungenderedEmoji(Array.from(basicEmoji));
-
         // Narrow it down to emoji supported by Segoe UI Emoji
-        let supportedEmoji = basicUngenderedEmoji
+        // Segoe UI duplicates symbols when emoji is available as both ungendered and gendered
+        let deduplicator = new Set();
+        let supportedEmoji = emoji
             .filter(isBasicEmoji)
+            .filter(e => !isGenderedDuplicate(deduplicator, e))
             .filter(e => fontSupportsEmoji(this.font, e))
 
         // Dump list of ungendered emoji
