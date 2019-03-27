@@ -1,13 +1,17 @@
 const skipPunctuation = /[,.'’“”!]/g;
 const spacePunctuation = /[()]/g;
 
-const intro = `namespace NeoSmart.Unicode
+let utr: number;
+let unicodeVersion: string;
+
+const intro = () => `namespace NeoSmart.Unicode
 {
-    // This file is machine-generated from the official Unicode Consortium UTR51 publication
+    // This file is machine-generated from the official Unicode Consortium UTR${utr} publication
+    // detailing the emoji found in Unicode ${unicodeVersion}
     // See the \`importers\` folder for the generators.
 `;
 
-const extro = `
+const extro = () => `
 }`;
 
 function CamelCase(input: string, withSpaces = false) {
@@ -118,7 +122,7 @@ function makeStringArray(keywords: string) {
 function makeSortedSet(name: string, emoji: Array<Emoji>, summary = ""): string {
     let result = `using System.Collections.Generic;
 
-${intro}
+${intro()}
     public static partial class Emoji
     {` + (summary.length === 0 ? "" : `
         /// <summary>
@@ -138,7 +142,7 @@ ${intro}
     result += `        };
     }`;
 
-    result += extro;
+    result += extro();
 
     return result;
 }
@@ -223,6 +227,8 @@ function* parse(data: string) /* : IterableIterator<Emoji> */ {
     const lines = data.split("\n");
     const groupRegex = /\bgroup: \s*(\S.+?)\s*$/;
     const subgroupRegex = /subgroup: \s*(\S.+?)\s*$/;
+    const utrRegex = /\/tr(\d+)\b/;
+    const unicodeRegex = /Version: (\d+.\d+)/i;
 
     let deduplicator = new Set();
     let group = "";
@@ -236,6 +242,10 @@ function* parse(data: string) /* : IterableIterator<Emoji> */ {
                 group = (match[1]);
             } else if (match = line.match(subgroupRegex)) {
                 subgroup = (match[1]);
+            } else if (utr === undefined && (match = line.match(utrRegex))) {
+                utr = parseInt(match[1]);
+            } else if (unicodeVersion === undefined && (match = line.match(unicodeRegex))) {
+                unicodeVersion = match[1];
             }
             continue;
         }
@@ -302,14 +312,14 @@ class CodeGenerator {
         // Dump actual emoji objects.
         // All other operations print only references to these.
         let code = [];
-        code.push(intro);
+        code.push(intro());
         code.push("    public static partial class Emoji\n");
         code.push("    {");
         for (const e of emoji) {
             code.push(emojiToCSharp(e));
         }
         code.push("    }");
-        code.push(extro);
+        code.push(extro());
         csharp.emoji = code.join("");
 
         // Dump all emoji list

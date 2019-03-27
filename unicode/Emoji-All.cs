@@ -3,6 +3,7 @@ using System.Collections.Generic;
 namespace NeoSmart.Unicode
 {
     // This file is machine-generated from the official Unicode Consortium UTR51 publication
+    // detailing the emoji found in Unicode 5.0
     // See the `importers` folder for the generators.
 
     public static partial class Emoji
