@@ -13,8 +13,8 @@ namespace UnicodeTests
             SingleEmoji FaceWithTearsOfJoy = new SingleEmoji(
                sequence: new UnicodeSequence("1F602"),
                 name: "face with tears of joy",
-                searchTerms: new[] { "face", "tears", "joy" },
-                skinTones: new[] { SkinTone.NONE },
+                searchTerms: new string[] { "face", "tears", "joy" },
+                skinTones: SingleEmoji.NoSkinTones,
                 group: Group.SMILEYS_AND_EMOTION,
                 subgroup: "face-smiling",
                 sortOrder: 7
@@ -24,25 +24,21 @@ namespace UnicodeTests
             Assert.AreEqual(FaceWithTearsOfJoy.Sequence.Codepoints.First().ToString(), "U+1F602");
             Assert.AreEqual(FaceWithTearsOfJoy.Name, "face with tears of joy");
             Assert.IsTrue(FaceWithTearsOfJoy.SearchTerms.SequenceEqual(new[] { "face", "tears", "joy" }));
-            Assert.IsTrue(FaceWithTearsOfJoy.SkinTones.SequenceEqual(new[] { SkinTone.NONE }));
+            Assert.IsTrue(FaceWithTearsOfJoy.SkinTones == SingleEmoji.NoSkinTones);
         }
 
         [TestMethod]
         public void TestEmojiCount()
         {
-            Assert.AreNotEqual(0, Emoji.All.Count);
-            Assert.AreNotEqual(Emoji.Basic.Count, Emoji.All.Count);
-            Assert.IsTrue(Emoji.Basic.Count < Emoji.All.Count);
+            Assert.IsTrue(Emoji.All.Count() > 0);
+            Assert.IsTrue(Emoji.Basic.Count() != Emoji.All.Count());
         }
 
         [TestMethod]
         public void VerifyNoEmptyEmoji()
         {
-            foreach (var emoji in Emoji.All)
-            {
-                Assert.AreNotEqual(null, emoji.Name, $@"Emoji with SortOrder {emoji.SortOrder} has invalid name!");
-                Assert.AreNotEqual("", emoji.Name, $@"Emoji with SortOrder {emoji.SortOrder} has invalid name!");
-            }
+            Assert.IsTrue(Emoji.All.All(e => !string.IsNullOrEmpty(e.Name)));
+            Assert.IsTrue(Emoji.Basic.All(e => !string.IsNullOrEmpty(e.Name)));
         }
 
         [TestMethod]

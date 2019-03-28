@@ -1,4 +1,7 @@
-﻿namespace UnicodeTests
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NeoSmart.Unicode;
+
+namespace UnicodeTests
 {
     [TestClass]
     public class SingleEmojiTests
