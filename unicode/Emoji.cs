@@ -30,7 +30,7 @@ namespace NeoSmart.Unicode
         public static class SkinTones
         {
             public static readonly Codepoint Light = new Codepoint("U+1F3FB");
-            public static readonly Codepoint Fitzpatrick12 = MediumLight;
+            public static readonly Codepoint Fitzpatrick12 = Light;
             public static readonly Codepoint MediumLight = new Codepoint("U+1F3FC");
             public static readonly Codepoint Fitzpatrick3 = MediumLight;
             public static readonly Codepoint Medium = new Codepoint("U+1F3FD");
