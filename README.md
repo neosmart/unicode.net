@@ -1,6 +1,6 @@
 # This is a fork of [neosmart/unicode.net](https://github.com/neosmart/unicode.net) from [mqudsi](https://github.com/mqudsi)
 
-It adds more properties to the `SingleEmoji` class and lists for all emoji groups.
+It adds more properties to the `SingleEmoji` class (click [here](https://github.com/UWPX/unicode.net#class-singleemoji) for their documentation) and lists for all emoji groups.
 
 ## Unicode.net- an emoji and text-processing library for .NET
 
