@@ -43,7 +43,7 @@ namespace NeoSmart.Unicode
         /// </summary>
         public IEnumerable<byte> AsUtf32Bytes()
         {
-            //from highest to lowest
+            // From highest to lowest
             var utf32 = AsUtf32();
             var b1 = (byte)(utf32 >> 24);
             yield return b1;
@@ -55,18 +55,18 @@ namespace NeoSmart.Unicode
             yield return b4;
         }
 
-        //https://en.wikipedia.org/wiki/UTF-16
+        // Reference: https://en.wikipedia.org/wiki/UTF-16
         public IEnumerable<UInt16> AsUtf16()
         {
-            //U+0000 to U+D7FF and U+E000 to U+FFFF
+            // U+0000 to U+D7FF and U+E000 to U+FFFF
             if (Value <= 0xFFFF)
             {
                 yield return (UInt16)Value;
             }
-            //U+10000 to U+10FFFF
+            // U+10000 to U+10FFFF
             else if (Value >= 0x10000 && Value <= 0x10FFFF)
             {
-                UInt32 newVal = Value - 0x010000; //leaving 20 bits
+                UInt32 newVal = Value - 0x010000; // leaving 20 bits
                 UInt16 high = (UInt16)((newVal >> 10) + 0xD800);
                 System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
                 yield return high;
@@ -96,40 +96,40 @@ namespace NeoSmart.Unicode
             }
         }
 
-        //https://en.wikipedia.org/wiki/UTF-8
+        // https://en.wikipedia.org/wiki/UTF-8
         public IEnumerable<byte> AsUtf8()
         {
-            //up to 7 bits
+            // Up to 7 bits
             if (Value <= 0x007F)
             {
                 yield return (byte)Value;
                 yield break;
             }
 
-            //up to 11 bits
+            // Up to 11 bits
             if (Value <= 0x07FF)
             {
-                yield return (byte)(0b11000000 | (0b00011111 & (Value >> 6))); //tag + upper 5 bits
-                yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + lower 6 bits
+                yield return (byte)(0b11000000 | (0b00011111 & (Value >> 6))); // tag + upper 5 bits
+                yield return (byte)(0b10000000 | (0b00111111 & Value)); // tag + lower 6 bits
                 yield break;
             }
 
-            //up to 16 bits
+            // Up to 16 bits
             if (Value <= 0x0FFFF)
             {
-                yield return (byte)(0b11100000 | (0b00001111 & (Value >> 12))); //tag + upper 4 bits
-                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
-                yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
+                yield return (byte)(0b11100000 | (0b00001111 & (Value >> 12))); // tag + upper 4 bits
+                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); // tag + next 6 bits
+                yield return (byte)(0b10000000 | (0b00111111 & Value)); // tag + last 6 bits
                 yield break;
             }
 
-            //up to 21 bits
+            // Up to 21 bits
             if (Value <= 0x1FFFFF)
             {
-                yield return (byte)(0b11110000 | (0b00000111 & (Value >> 18))); //tag + upper 3 bits
-                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 12))); //tag + next 6 bits
-                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); //tag + next 6 bits
-                yield return (byte)(0b10000000 | (0b00111111 & Value)); //tag + last 6 bits
+                yield return (byte)(0b11110000 | (0b00000111 & (Value >> 18))); // tag + upper 3 bits
+                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 12))); // tag + next 6 bits
+                yield return (byte)(0b10000000 | (0b00111111 & (Value >> 6))); // tag + next 6 bits
+                yield return (byte)(0b10000000 | (0b00111111 & Value)); // tag + last 6 bits
                 yield break;
             }
 

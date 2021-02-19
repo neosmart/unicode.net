@@ -75,7 +75,7 @@ namespace NeoSmart.Unicode
         {
             foreach (var u32 in AsUtf32())
             {
-                //little endian byte order
+                // Little Endian byte order
                 yield return (byte)(u32 & 0xFF);
                 yield return (byte)((u32 >> 8) & 0xFF);
                 yield return (byte)((u32 >> 16) & 0xFF);
@@ -98,7 +98,7 @@ namespace NeoSmart.Unicode
         {
             foreach (var us in AsUtf16())
             {
-                //little endian byte order
+                // Little Endian byte order
                 yield return (byte)(us & 0xFF);
                 yield return (byte)(us >> 8);
             }
@@ -143,7 +143,7 @@ namespace NeoSmart.Unicode
             }
             if (_codepoints.Length == other._codepoints.Length)
             {
-                //same codepoint sequence
+                // The codepoint sequences are the same
                 return 0;
             }
             if (_codepoints.Length < other._codepoints.Length)

@@ -3,14 +3,14 @@ using System.Linq;
 
 namespace NeoSmart.Unicode
 {
-    //We hereby declare emoji to be a zero plural marker noun (in short, "emoji" is both the singular and the plural form)
-    //this class refers to emoji in the plural
+    // We hereby declare emoji to be a zero plural marker noun (in short, "emoji" is both the
+    // singular and the plural form). This class refers to emoji in the plural.
     public static partial class Emoji
     {
         static Emoji()
         {
-            //populate the list of available emoji in the system font
-            //for now, the font is hard-coded to Segoe UI Emoji
+            // Populate the list of available emoji in the system font.
+            // For now, the font is hard-coded to Segoe UI Emoji.
         }
 
         /// <summary>
@@ -88,8 +88,9 @@ namespace NeoSmart.Unicode
             int count = 0;
             foreach (var cp in codepoints)
             {
-                //we used to have message = message.trim() previously. This avoids the extra allocation, hepful in case of long messages.
-                //this was not premature optimization, it came out of necessity.
+                // We used to have `message = message.trim()` previously. This avoids the extra
+                // allocation, hepful in case of long messages. This was not premature optimization,
+                // it came out of necessity.
                 if (cp == "\n" || cp == "\r" || cp == "\t" || cp == " ")
                 {
                     continue;
@@ -100,13 +101,14 @@ namespace NeoSmart.Unicode
                     nextMustBeVS = false;
                     if (cp != variationSelector)
                     {
-                        //a non-emoji codepoint was found and this (the codepoint after it) is not the variation selector
+                        // A non-emoji codepoint was found and this (the codepoint after it) is not
+                        // the variation selector
                         return false;
                     }
                 }
                 if (cp.In(SkinTones.All))
                 {
-                    //don't count as part of the length
+                    // Don't count the skin tone as part of the length
                     continue;
                 }
 
@@ -123,14 +125,14 @@ namespace NeoSmart.Unicode
 
                 if (cp == Codepoints.ObjectReplacementCharacter)
                 {
-                    //this is explicitly blacklisted for UI purposes
+                    // This is explicitly blacklisted for UI purposes
                     return false;
                 }
 
                 if (cp == Keycap)
                 {
-                    //this is not in the UTR, but is used to box symbols in an icon
-                    //do not consider it part of the length
+                    // This is not in the UTR, but is used to box symbols in an icon.
+                    // Do not consider it part of the length.
                     continue;
                 }
 
@@ -141,7 +143,8 @@ namespace NeoSmart.Unicode
                     {
                         return false;
                     }
-                    //by default, the UTR lists numbers, the asterisk, and the number sign as emoji, but we won't consider them as such unless they are followed by a VS
+                    // By default, the UTR lists numbers, the asterisk, and the number sign as
+                    // emoji, but we won't consider them as such unless they are followed by a VS.
                     if (Languages.ArabicNumerals.Contains(cp) || cp == "#" || cp == "*")
                     {
                         nextMustBeVS = true;
@@ -153,7 +156,9 @@ namespace NeoSmart.Unicode
                     }
                     else
                     {
-                        //we've either encountered a non-emoji character OR a non-emoji codepoint that should be treated as an emoji if followed by the variation selector codepoint
+                        // We've either encountered a non-emoji character OR a non-emoji codepoint
+                        // that should be treated as an emoji if followed by the variation selector
+                        // codepoint.
                         nextMustBeVS = true;
                         continue;
                     }

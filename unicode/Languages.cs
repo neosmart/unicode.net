@@ -11,6 +11,7 @@
         /// All the Arabic codepoints
         /// </summary>
         public static MultiRange Arabic = new MultiRange("0600–06FF", "0750–077F", "08A0–08FF", "FB50–FDFF", "FE70–FEFF", "10E60–10E7F", "1EE00—1EEFF");
-        //see Languages-Emoji.cs for the (messy) implementation of the Emoji coderange
+
+        // See Languages-Emoji.cs for the (messy) implementation of the Emoji coderange
     }
 }
