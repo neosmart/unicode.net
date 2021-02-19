@@ -6,7 +6,7 @@ using System.Text;
 
 namespace NeoSmart.Unicode
 {
-    public struct Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>,
+    public readonly struct Codepoint : IComparable<Codepoint>, IComparable<UInt32>, IEquatable<Codepoint>,
         IEquatable<string>, IComparable<string>, IEquatable<char>
     {
         public readonly UInt32 Value;
