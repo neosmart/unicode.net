@@ -53,9 +53,12 @@ namespace NeoSmart.Unicode
         /// <returns></returns>
         public static string Combine(IEnumerable<SingleEmoji> emoji)
         {
-            //does not work on .NET 2.0
-            //return string.Join(ZeroWidthJoiner.AsString(), emoji);
+#if !NET20
+            return string.Join(ZeroWidthJoiner.AsString(), emoji);
+#else
             return string.Join(ZeroWidthJoiner.AsString(), emoji.Select(e => e.ToString()).ToArray());
+#endif
+
         }
 
         /// <summary>
