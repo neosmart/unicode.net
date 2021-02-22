@@ -1,12 +1,11 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace NeoSmart.Unicode
 {
-    //We hereby declare emoji to be a zero plural marker noun (in short, "emoji" is both the singular and the plural form)
-    //this class refers to emoji in the singular
+    // We hereby declare emoji to be a zero plural marker noun (in short, "emoji" is both the
+    // singular and the plural form). This class refers to emoji in the singular.
     public struct SingleEmoji : IComparable<SingleEmoji>, IEquatable<SingleEmoji>
     {
         static readonly string[] NoTerms = new string[] { };

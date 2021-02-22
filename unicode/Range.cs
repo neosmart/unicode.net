@@ -25,10 +25,12 @@ namespace NeoSmart.Unicode
             return codepoint >= Begin && codepoint <= End;
         }
 
-        //either a single hex codepoint or two separated by a hyphen
+        static readonly string[] RangeSplit = new[] { "-", "–", "—", ".." };
+        // Either a single hex codepoint or two separated by a hyphen
         public Range(string range)
         {
-            var values = range.Split(new[] { "-", "–", "—", ".." }, StringSplitOptions.RemoveEmptyEntries); //these are all different hyphens used on Wikipedia and in the UTR
+            // These are all different hyphens used on Wikipedia and in the UTR
+            var values = range.Split(RangeSplit, StringSplitOptions.RemoveEmptyEntries);
             Begin = UInt32.Parse(values[0], System.Globalization.NumberStyles.HexNumber);
 
             if (values.Length == 1)
