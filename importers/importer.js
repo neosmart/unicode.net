@@ -116,10 +116,28 @@ ${intro()}
         /// ${summary}
         /// </summary>`) + `
 #if NET20 || NET30 || NET35
-        public static List<SingleEmoji> ${name} => new List<SingleEmoji>() {
+        public static List<SingleEmoji> ${name}
 #else
-        public static SortedSet<SingleEmoji> ${name} => new SortedSet<SingleEmoji>() {
+        public static SortedSet<SingleEmoji> ${name}
 #endif
+        {
+            get
+            {
+                if (_${name} == null)
+                {
+                    _${name} = Generate${name}();
+                }
+                return _${name};
+            }
+        }
+#if NET20 || NET30 || NET35
+        private static List<SingleEmoji> _${name};
+        private static List<SingleEmoji> Generate${name}() => new List<SingleEmoji>()
+#else
+        private static SortedSet<SingleEmoji> _${name};
+        private static SortedSet<SingleEmoji> Generate${name}() => new SortedSet<SingleEmoji>()
+#endif
+        {
 `;
     for (const e of emoji) {
         result += `            /* ${e.symbol} */ ${CamelCase(e.name)},
@@ -154,7 +172,7 @@ function isGenderedDuplicate(deduplicator, emoji) {
 function emojiToCSharp(emoji) {
     return `
         /* ${emoji.symbol} */
-        public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
+        public static SingleEmoji ${CamelCase(emoji.name)} => new SingleEmoji(
                 sequence: new UnicodeSequence(${emoji.sequence.map(s => `0x${s}`).join(", ")}),
                 name: "${emoji.name}",
                 group: "${emoji.group}",

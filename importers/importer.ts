@@ -129,10 +129,28 @@ ${intro()}
         /// ${summary}
         /// </summary>`) + `
 #if NET20 || NET30 || NET35
-        public static List<SingleEmoji> ${name} => new List<SingleEmoji>() {
+        public static List<SingleEmoji> ${name}
 #else
-        public static SortedSet<SingleEmoji> ${name} => new SortedSet<SingleEmoji>() {
+        public static SortedSet<SingleEmoji> ${name}
 #endif
+        {
+            get
+            {
+                if (_${name} == null)
+                {
+                    _${name} = Generate${name}();
+                }
+                return _${name};
+            }
+        }
+#if NET20 || NET30 || NET35
+        private static List<SingleEmoji> _${name};
+        private static List<SingleEmoji> Generate${name}() => new List<SingleEmoji>()
+#else
+        private static SortedSet<SingleEmoji> _${name};
+        private static SortedSet<SingleEmoji> Generate${name}() => new SortedSet<SingleEmoji>()
+#endif
+        {
 `;
 
     for (const e of emoji) {
@@ -175,7 +193,7 @@ function isGenderedDuplicate(deduplicator: Set<string>, emoji: Emoji) {
 function emojiToCSharp(emoji: Emoji) {
     return `
         /* ${emoji.symbol} */
-        public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
+        public static SingleEmoji ${CamelCase(emoji.name)} => new SingleEmoji(
                 sequence: new UnicodeSequence(${emoji.sequence.map(s => `0x${s}`).join(", ")}),
                 name: "${emoji.name}",
                 group: "${emoji.group}",
@@ -327,7 +345,7 @@ class CodeGenerator {
 
         // Narrow it down to emoji supported by Segoe UI Emoji
         // Segoe UI duplicates symbols when emoji is available as both ungendered and gendered
-        let deduplicator = new Set();
+        let deduplicator = new Set<string>();
         let supportedEmoji = emoji
             .filter(isBasicEmoji)
             .filter(e => !isGenderedDuplicate(deduplicator, e))
