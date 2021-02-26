@@ -1,3 +1,5 @@
+<p align="center"><img src="logo/horizontal.png" alt="unicode.net" height="200px"></p>
+
 ## Unicode.net- an emoji and text-processing library for .NET
 
 `Unicode.net` is an easy-to-use Unicode text-processing library for dot net, designed to complement the BCL and the `System.String` class, useable on both .NET Framework and .NET Core/UWP (.NET Standard) targets. As an added bonus, `Unicode.net` includes an extra helping of emoji awesomeness 🎉 😊 😄.
