@@ -9,10 +9,28 @@ namespace NeoSmart.Unicode
     public static partial class Emoji
     {
 #if NET20 || NET30 || NET35
-        public static List<SingleEmoji> All => new List<SingleEmoji>() {
+        public static List<SingleEmoji> All
 #else
-        public static SortedSet<SingleEmoji> All => new SortedSet<SingleEmoji>() {
+        public static SortedSet<SingleEmoji> All
 #endif
+        {
+            get
+            {
+                if (_All == null)
+                {
+                    _All = GenerateAll();
+                }
+                return _All;
+            }
+        }
+#if NET20 || NET30 || NET35
+        private static List<SingleEmoji> _All;
+        private static List<SingleEmoji> GenerateAll() => new List<SingleEmoji>()
+#else
+        private static SortedSet<SingleEmoji> _All;
+        private static SortedSet<SingleEmoji> GenerateAll() => new SortedSet<SingleEmoji>()
+#endif
+        {
             /* 😀 */ GrinningFace,
             /* 😁 */ GrinningFaceWithSmilingEyes,
             /* 😂 */ FaceWithTearsOfJoy,

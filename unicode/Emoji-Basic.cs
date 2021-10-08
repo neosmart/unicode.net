@@ -12,10 +12,28 @@ namespace NeoSmart.Unicode
         /// A (sorted) enumeration of all emoji without skin variations and no duplicate gendered vs gender-neutral emoji, ideal for displaying. Emoji without supported glyphs in Segoe UI Emoji are also omitted from this list.
         /// </summary>
 #if NET20 || NET30 || NET35
-        public static List<SingleEmoji> Basic => new List<SingleEmoji>() {
+        public static List<SingleEmoji> Basic
 #else
-        public static SortedSet<SingleEmoji> Basic => new SortedSet<SingleEmoji>() {
+        public static SortedSet<SingleEmoji> Basic
 #endif
+        {
+            get
+            {
+                if (_Basic == null)
+                {
+                    _Basic = GenerateBasic();
+                }
+                return _Basic;
+            }
+        }
+#if NET20 || NET30 || NET35
+        private static List<SingleEmoji> _Basic;
+        private static List<SingleEmoji> GenerateBasic() => new List<SingleEmoji>()
+#else
+        private static SortedSet<SingleEmoji> _Basic;
+        private static SortedSet<SingleEmoji> GenerateBasic() => new SortedSet<SingleEmoji>()
+#endif
+        {
             /* 😀 */ GrinningFace,
             /* 😁 */ GrinningFaceWithSmilingEyes,
             /* 😂 */ FaceWithTearsOfJoy,
