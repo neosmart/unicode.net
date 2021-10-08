@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NeoSmart.Unicode;
 using System.Linq;
 
@@ -21,6 +22,28 @@ namespace UnicodeTests
             Assert.AreEqual(FaceWithTearsOfJoy.Sequence.Codepoints.First().ToString(), "U+1F602");
             Assert.AreEqual(FaceWithTearsOfJoy.Name, "face with tears of joy");
             Assert.IsTrue(FaceWithTearsOfJoy.SearchTerms.SequenceEqual(new[] { "face", "tears", "joy" }));
+        }
+
+        [TestMethod]
+        public void EmojiGroupInterning()
+        {
+            var faceWithTearsOfJoy = Emoji.FaceWithTearsOfJoy;
+            var grinningFace = Emoji.GrinningFace;
+
+            Assert.AreEqual(faceWithTearsOfJoy.Group, grinningFace.Group);
+            Assert.AreSame(faceWithTearsOfJoy.Group, grinningFace.Group);
+            Assert.IsTrue(String.IsInterned(faceWithTearsOfJoy.Group) is not null);
+        }
+
+        [TestMethod]
+        public void EmojiSubgroupInterning()
+        {
+            var faceWithTearsOfJoy = Emoji.FaceWithTearsOfJoy;
+            var grinningFace = Emoji.GrinningFace;
+
+            Assert.AreEqual(faceWithTearsOfJoy.Subgroup, grinningFace.Subgroup);
+            Assert.AreSame(faceWithTearsOfJoy.Subgroup, grinningFace.Subgroup);
+            Assert.IsTrue(String.IsInterned(faceWithTearsOfJoy.Subgroup) is not null);
         }
 
         [TestMethod]
