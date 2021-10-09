@@ -11,7 +11,7 @@ namespace UnicodeTests
         {
             Assert.IsFalse(Emoji.AbButtonBloodType == null);
             Assert.IsFalse(null == Emoji.AbButtonBloodType);
-            Assert.IsFalse(Emoji.AbButtonBloodType == Emoji.Adult);
+            Assert.IsFalse(Emoji.AbButtonBloodType == Emoji.Person);
 #pragma warning disable CS1718 // Comparison made to same variable
             Assert.IsTrue(Emoji.AbButtonBloodType == Emoji.AbButtonBloodType);
 #pragma warning restore CS1718 // Comparison made to same variable
@@ -22,7 +22,7 @@ namespace UnicodeTests
         {
             Assert.IsTrue(Emoji.AbButtonBloodType != null);
             Assert.IsTrue(null != Emoji.AbButtonBloodType);
-            Assert.IsTrue(Emoji.AbButtonBloodType != Emoji.Adult);
+            Assert.IsTrue(Emoji.AbButtonBloodType != Emoji.Person);
 #pragma warning disable CS1718 // Comparison made to same variable
             Assert.IsFalse(Emoji.AbButtonBloodType != Emoji.AbButtonBloodType);
 #pragma warning restore CS1718 // Comparison made to same variable
