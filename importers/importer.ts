@@ -6,9 +6,8 @@ let unicodeVersion: string;
 
 const intro = () => `namespace NeoSmart.Unicode
 {
-    // This file is machine-generated from the official Unicode Consortium UTR${utr} publication
-    // detailing the emoji found in Unicode ${unicodeVersion}
-    // See the \`importers\` folder for the generators.
+    // This file is machine-generated from the official Unicode Consortium UTR${utr} emoji
+    // list found in Unicode ${unicodeVersion}. See the \`importers\` folder for the generator.
 `;
 
 const extro = () => `
@@ -204,9 +203,9 @@ function emojiToCSharp(emoji: Emoji) {
 `;
 }
 
-const menWomenRegex = /\b(men|women)\b/;
-
 function fontSupportsEmoji(font: Font, emoji: Emoji) {
+    const menWomenRegex = /\b(men|women)\b/;
+
     // Hard-coded elimination: glyphs for Men* and Women* are rendered as the basic
     // ungendered emoji in Segoe UI Emoji, but with the gender icon tacked on after.
     if (menWomenRegex.test(emoji.name)) {

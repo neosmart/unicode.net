@@ -1,8 +1,7 @@
 namespace NeoSmart.Unicode
 {
-    // This file is machine-generated from the official Unicode Consortium UTR51 publication
-    // detailing the emoji found in Unicode 13.0
-    // See the `importers` folder for the generators.
+    // This file is machine-generated from the official Unicode Consortium UTR51 emoji
+    // list found in Unicode 13.0. See the `importers` folder for the generator.
     public static partial class Emoji
     {
         /* 😀 */
