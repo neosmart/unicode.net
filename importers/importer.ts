@@ -328,6 +328,20 @@ class CodeGenerator {
 
         // Dump actual emoji objects.
         // All other operations print only references to these.
+        csharp.emoji = this.emoji(emoji);
+
+        // Generate a C# list of all emoji
+        csharp.lists.all = makeSortedSet("All", emoji);
+
+        // Generate a subset of emoji that is ungendered and without skintone, further
+        // restricted to only emoji supported by the version of Segoe UI Emoji that we
+        // are targeting.
+        csharp.lists.basic = this.basicEmoji(emoji);
+
+        return csharp;
+    }
+
+    private emoji(emoji: Emoji[]): string {
         let code = [];
         code.push(intro());
         code.push("    public static partial class Emoji\n");
@@ -337,12 +351,11 @@ class CodeGenerator {
         }
         code.push("    }");
         code.push(extro());
-        csharp.emoji = code.join("");
 
-        // Dump all emoji list
-        csharp.lists.all = makeSortedSet("All", emoji);
+        return code.join("");
+    }
 
-        // Narrow it down to emoji supported by Segoe UI Emoji
+    private basicEmoji(emoji: Emoji[]): string {
         // Segoe UI duplicates symbols when emoji is available as both ungendered and gendered
         let deduplicator = new Set<string>();
         let supportedEmoji = emoji
@@ -351,12 +364,10 @@ class CodeGenerator {
             .filter(e => fontSupportsEmoji(this.font, e))
 
         // Dump list of ungendered emoji
-        csharp.lists.basic = makeSortedSet("Basic", supportedEmoji,
+        return makeSortedSet("Basic", supportedEmoji,
             "A (sorted) enumeration of all emoji without skin variations and no duplicate " +
             "gendered vs gender-neutral emoji, ideal for displaying. " +
             "Emoji without supported glyphs in Segoe UI Emoji are also omitted from this list.");
-
-        return csharp;
     }
 }
 
