@@ -1,5 +1,5 @@
 CONFIG = "Debug"
-LIBFX = "netstandard2.0"
+LIBFX = "netstandard2.1"
 TESTFX = "netcoreapp2.2"
 
 all: unicode/Emoji-All.cs unicode/Emoji-Basic.cs unicode/Emoji-Emojis.cs
@@ -15,4 +15,4 @@ unicode/bin/$(CONFIG)/netstandard2.0/NeoSmart.Unicode.dll: unicode/*.cs
 
 .PHONY: test
 test: unicode/bin/$(CONFIG)/netstandard2.0/NeoSmart.Unicode.dll
-	dotnet test -f $(TESTFX) tests/
+	dotnet test -f $(TESTFX) -l "console;verbosity=detailed" tests/

@@ -15,4 +15,5 @@ const codeRoot = "../unicode";
     await fs.writeFile(codeRoot + "/Emoji-Emojis.cs", code.emoji, { encoding: "utf-8" });
     await fs.writeFile(codeRoot + "/Emoji-All.cs", code.lists.all, { encoding: "utf-8" });
     await fs.writeFile(codeRoot + "/Emoji-Basic.cs", code.lists.basic, { encoding: "utf-8" });
+    await fs.writeFile(codeRoot + "/Languages-Emoji.cs", code.range, { encoding: "utf-8" });
 })();

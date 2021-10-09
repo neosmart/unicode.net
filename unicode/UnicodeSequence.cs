@@ -14,6 +14,7 @@ namespace NeoSmart.Unicode
         private readonly Codepoint[] _codepoints;
         public IEnumerable<Codepoint> Codepoints => _codepoints ?? NoCodepoints;
 
+        private readonly static char[] SequenceSplitChars = new[] { ',', ' ' };
         public UnicodeSequence(string sequence)
         {
             if (sequence.Contains("-"))
@@ -41,7 +42,7 @@ namespace NeoSmart.Unicode
             }
             else
             {
-                var values = sequence.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var values = sequence.Split(SequenceSplitChars, StringSplitOptions.RemoveEmptyEntries);
                 _codepoints = values.Select(x => new Codepoint(x)).ToArray();
             }
         }
@@ -183,7 +184,7 @@ namespace NeoSmart.Unicode
 
         public static bool operator !=(UnicodeSequence a, UnicodeSequence b)
         {
-            return !(a == b);
+            return !a.Equals(b);
         }
 
         public static bool operator <(UnicodeSequence a , UnicodeSequence b)

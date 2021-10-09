@@ -6,9 +6,8 @@ let unicodeVersion: string;
 
 const intro = () => `namespace NeoSmart.Unicode
 {
-    // This file is machine-generated from the official Unicode Consortium UTR${utr} publication
-    // detailing the emoji found in Unicode ${unicodeVersion}
-    // See the \`importers\` folder for the generators.
+    // This file is machine-generated from the official Unicode Consortium UTR${utr} emoji
+    // list found in Unicode ${unicodeVersion}. See the \`importers\` folder for the generator.
 `;
 
 const extro = () => `
@@ -129,10 +128,28 @@ ${intro()}
         /// ${summary}
         /// </summary>`) + `
 #if NET20 || NET30 || NET35
-        public static List<SingleEmoji> ${name} => new List<SingleEmoji>() {
+        public static List<SingleEmoji> ${name}
 #else
-        public static SortedSet<SingleEmoji> ${name} => new SortedSet<SingleEmoji>() {
+        public static SortedSet<SingleEmoji> ${name}
 #endif
+        {
+            get
+            {
+                if (_${name} == null)
+                {
+                    _${name} = Generate${name}();
+                }
+                return _${name};
+            }
+        }
+#if NET20 || NET30 || NET35
+        private static List<SingleEmoji> _${name};
+        private static List<SingleEmoji> Generate${name}() => new List<SingleEmoji>()
+#else
+        private static SortedSet<SingleEmoji> _${name};
+        private static SortedSet<SingleEmoji> Generate${name}() => new SortedSet<SingleEmoji>()
+#endif
+        {
 `;
 
     for (const e of emoji) {
@@ -151,8 +168,8 @@ function isBasicEmoji(emoji: Emoji) {
     return !emoji.name.match(/skin tone|keycap/i);
 }
 
-// Segoe UI reuses the same symbol when a ungendered version of the emoji is also available.
-// e.g. ConstructionWorker and ManConstructionWorker are the same.
+// Segoe UI reuses the same symbol when an ungendered version of the emoji is also
+// available. e.g. ConstructionWorker and ManConstructionWorker are the same.
 function isGenderedDuplicate(deduplicator: Set<string>, emoji: Emoji) {
     const regex = /^(man|woman)\s/i;
 
@@ -175,7 +192,7 @@ function isGenderedDuplicate(deduplicator: Set<string>, emoji: Emoji) {
 function emojiToCSharp(emoji: Emoji) {
     return `
         /* ${emoji.symbol} */
-        public static readonly SingleEmoji ${CamelCase(emoji.name)} = new SingleEmoji(
+        public static SingleEmoji ${CamelCase(emoji.name)} => new SingleEmoji(
                 sequence: new UnicodeSequence(${emoji.sequence.map(s => `0x${s}`).join(", ")}),
                 name: "${emoji.name}",
                 group: "${emoji.group}",
@@ -186,9 +203,9 @@ function emojiToCSharp(emoji: Emoji) {
 `;
 }
 
-const menWomenRegex = /\b(men|women)\b/;
-
 function fontSupportsEmoji(font: Font, emoji: Emoji) {
+    const menWomenRegex = /\b(men|women)\b/;
+
     // Hard-coded elimination: glyphs for Men* and Women* are rendered as the basic
     // ungendered emoji in Segoe UI Emoji, but with the gender icon tacked on after.
     if (menWomenRegex.test(emoji.name)) {
@@ -223,7 +240,7 @@ interface Emoji {
 }
 
 function* parse(data: string) /* : IterableIterator<Emoji> */ {
-    const parser = /(.*?)\s+;.*# (\S+) (.*)/;
+    const parser = /(.*?)\s+;.*# (\S+) (?:E[0-9.]+ ?)(.*)/;
     const lines = data.split("\n");
     const groupRegex = /\bgroup: \s*(\S.+?)\s*$/;
     const subgroupRegex = /subgroup: \s*(\S.+?)\s*$/;
@@ -292,6 +309,7 @@ class CodeResult {
         all: "",
         basic: "",
     };
+    range: string = "";
 }
 
 class CodeGenerator {
@@ -309,8 +327,25 @@ class CodeGenerator {
 
         let csharp = new CodeResult();
 
-        // Dump actual emoji objects.
-        // All other operations print only references to these.
+        // Dump actual emoji objects. All other operations print only references to these.
+        csharp.emoji = this.emoji(emoji);
+
+        // Generate a C# list of all emoji.
+        csharp.lists.all = makeSortedSet("All", emoji);
+
+        // Generate a subset of emoji that is ungendered and without skintone, further
+        // restricted to only emoji supported by the version of Segoe UI Emoji that we are
+        // targeting.
+        csharp.lists.basic = this.basicEmoji(emoji);
+
+        // Generate a C# list of ranges that constitute (or can constitute, if used with a
+        // VS codepoint) an emoji.
+        csharp.range = this.range(emoji);
+
+        return csharp;
+    }
+
+    private emoji(emoji: Emoji[]): string {
         let code = [];
         code.push(intro());
         code.push("    public static partial class Emoji\n");
@@ -320,26 +355,97 @@ class CodeGenerator {
         }
         code.push("    }");
         code.push(extro());
-        csharp.emoji = code.join("");
 
-        // Dump all emoji list
-        csharp.lists.all = makeSortedSet("All", emoji);
+        return code.join("");
+    }
 
-        // Narrow it down to emoji supported by Segoe UI Emoji
-        // Segoe UI duplicates symbols when emoji is available as both ungendered and gendered
-        let deduplicator = new Set();
+    private basicEmoji(emoji: Emoji[]): string {
+        // Segoe UI duplicates symbols when emoji is available as both ungendered and
+        // gendered.
+        let deduplicator = new Set<string>();
         let supportedEmoji = emoji
             .filter(isBasicEmoji)
             .filter(e => !isGenderedDuplicate(deduplicator, e))
             .filter(e => fontSupportsEmoji(this.font, e))
 
         // Dump list of ungendered emoji
-        csharp.lists.basic = makeSortedSet("Basic", supportedEmoji,
+        return makeSortedSet("Basic", supportedEmoji,
             "A (sorted) enumeration of all emoji without skin variations and no duplicate " +
             "gendered vs gender-neutral emoji, ideal for displaying. " +
             "Emoji without supported glyphs in Segoe UI Emoji are also omitted from this list.");
+    }
 
-        return csharp;
+    private range(emoji: Emoji[]): string {
+        // First create a deduplicated set of all codepoints found across all the emoji.
+        const codepoints = new Set<number>();
+        for (const e of emoji) {
+            for (const s of e.sequence) {
+                const val = parseInt(s, 16);
+                codepoints.add(val);
+            }
+        }
+
+        // Then export it as a sorted list so we can enumerate in-order
+
+        // let sorted = Array.from(codepoints.values());
+        // sorted = sorted.sort();
+
+        // Javascript is a brain-dead language and I don't know why we are using it here.
+        // The stupid thing defaults to sorting numbers alphabetically rather than
+        // naturally!
+
+        let sorted = new Int32Array(codepoints.values());
+        sorted = sorted.sort();
+
+        const format = function(n: number): string {
+            return n.toString(16).padStart(4, '0').toUpperCase();
+        }
+
+        let ranges: CodepointRange[] = [];
+        let start = 0;
+        let prev = 0;
+        sorted.forEach((cp, i) => {
+            if (cp <= prev) {
+                throw new Error(`enumerating out of order: ${format(cp)} came after ${format(prev)}`);
+            }
+            if (cp != prev + 1 || i == sorted.length - 1) {
+                if (start != 0) {
+                    ranges.push(new CodepointRange(start, prev));
+                }
+                start = cp;
+            }
+            prev = cp;
+        });
+
+        let code = [];
+        code.push(intro());
+        code.push("    public partial class Languages");
+        code.push("    {");
+        code.push("        public static MultiRange Emoji = new MultiRange(");
+        for (const range of ranges) {
+            // code.push(`            Range(${range.begin}, ${range.end}),`);
+            if (range.begin == range.end) {
+                code.push(`            "${format(range.begin)}",`);
+            } else {
+                code.push(`            "${format(range.begin)}..${format(range.end)}",`);
+            }
+        }
+        code[code.length - 1] = code[code.length - 1].replace(',', "");
+        code.push("        );");
+        code.push("    }");
+        code.push(extro());
+
+        return code.join("\n");
+    }
+}
+
+class CodepointRange {
+    begin: number;
+    end: number;
+
+    constructor(begin: number, end: number) {
+        this.begin = begin;
+        this.end = end;
     }
 }
 
