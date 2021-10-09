@@ -169,7 +169,7 @@ function isBasicEmoji(emoji: Emoji) {
     return !emoji.name.match(/skin tone|keycap/i);
 }
 
-// Segoe UI reuses the same symbol when a ungendered version of the emoji is also available.
+// Segoe UI reuses the same symbol when an ungendered version of the emoji is also available.
 // e.g. ConstructionWorker and ManConstructionWorker are the same.
 function isGenderedDuplicate(deduplicator: Set<string>, emoji: Emoji) {
     const regex = /^(man|woman)\s/i;
@@ -241,7 +241,7 @@ interface Emoji {
 }
 
 function* parse(data: string) /* : IterableIterator<Emoji> */ {
-    const parser = /(.*?)\s+;.*# (\S+) (.*)/;
+    const parser = /(.*?)\s+;.*# (\S+) (?:E[0-9.]+ ?)(.*)/;
     const lines = data.split("\n");
     const groupRegex = /\bgroup: \s*(\S.+?)\s*$/;
     const subgroupRegex = /subgroup: \s*(\S.+?)\s*$/;
