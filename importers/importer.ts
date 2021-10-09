@@ -168,8 +168,8 @@ function isBasicEmoji(emoji: Emoji) {
     return !emoji.name.match(/skin tone|keycap/i);
 }
 
-// Segoe UI reuses the same symbol when an ungendered version of the emoji is also available.
-// e.g. ConstructionWorker and ManConstructionWorker are the same.
+// Segoe UI reuses the same symbol when an ungendered version of the emoji is also
+// available. e.g. ConstructionWorker and ManConstructionWorker are the same.
 function isGenderedDuplicate(deduplicator: Set<string>, emoji: Emoji) {
     const regex = /^(man|woman)\s/i;
 
@@ -309,6 +309,7 @@ class CodeResult {
         all: "",
         basic: "",
     };
+    range: string = "";
 }
 
 class CodeGenerator {
@@ -326,17 +327,20 @@ class CodeGenerator {
 
         let csharp = new CodeResult();
 
-        // Dump actual emoji objects.
-        // All other operations print only references to these.
+        // Dump actual emoji objects. All other operations print only references to these.
         csharp.emoji = this.emoji(emoji);
 
-        // Generate a C# list of all emoji
+        // Generate a C# list of all emoji.
         csharp.lists.all = makeSortedSet("All", emoji);
 
         // Generate a subset of emoji that is ungendered and without skintone, further
-        // restricted to only emoji supported by the version of Segoe UI Emoji that we
-        // are targeting.
+        // restricted to only emoji supported by the version of Segoe UI Emoji that we are
+        // targeting.
         csharp.lists.basic = this.basicEmoji(emoji);
+
+        // Generate a C# list of ranges that constitute (or can constitute, if used with a
+        // VS codepoint) an emoji.
+        csharp.range = this.range(emoji);
 
         return csharp;
     }
@@ -356,7 +360,8 @@ class CodeGenerator {
     }
 
     private basicEmoji(emoji: Emoji[]): string {
-        // Segoe UI duplicates symbols when emoji is available as both ungendered and gendered
+        // Segoe UI duplicates symbols when emoji is available as both ungendered and
+        // gendered.
         let deduplicator = new Set<string>();
         let supportedEmoji = emoji
             .filter(isBasicEmoji)
@@ -368,6 +373,79 @@ class CodeGenerator {
             "A (sorted) enumeration of all emoji without skin variations and no duplicate " +
             "gendered vs gender-neutral emoji, ideal for displaying. " +
             "Emoji without supported glyphs in Segoe UI Emoji are also omitted from this list.");
+    }
+
+    private range(emoji: Emoji[]): string {
+        // First create a deduplicated set of all codepoints found across all the emoji.
+        const codepoints = new Set<number>();
+        for (const e of emoji) {
+            for (const s of e.sequence) {
+                const val = parseInt(s, 16);
+                codepoints.add(val);
+            }
+        }
+
+        // Then export it as a sorted list so we can enumerate in-order
+
+        // let sorted = Array.from(codepoints.values());
+        // sorted = sorted.sort();
+
+        // Javascript is a brain-dead language and I don't know why we are using it here.
+        // The stupid thing defaults to sorting numbers alphabetically rather than
+        // naturally!
+
+        let sorted = new Int32Array(codepoints.values());
+        sorted = sorted.sort();
+
+        const format = function(n: number): string {
+            return n.toString(16).padStart(4, '0').toUpperCase();
+        }
+
+        let ranges: CodepointRange[] = [];
+        let start = 0;
+        let prev = 0;
+        sorted.forEach((cp, i) => {
+            if (cp <= prev) {
+                throw new Error(`enumerating out of order: ${format(cp)} came after ${format(prev)}`);
+            }
+            if (cp != prev + 1 || i == sorted.length - 1) {
+                if (start != 0) {
+                    ranges.push(new CodepointRange(start, prev));
+                }
+                start = cp;
+            }
+            prev = cp;
+        });
+
+        let code = [];
+        code.push(intro());
+        code.push("    public partial class Languages");
+        code.push("    {");
+        code.push("        public static MultiRange Emoji = new MultiRange(");
+        for (const range of ranges) {
+            // code.push(`            Range(${range.begin}, ${range.end}),`);
+            if (range.begin == range.end) {
+                code.push(`            "${format(range.begin)}",`);
+            } else {
+                code.push(`            "${format(range.begin)}..${format(range.end)}",`);
+            }
+        }
+        code[code.length - 1] = code[code.length - 1].replace(',', "");
+        code.push("        );");
+        code.push("    }");
+        code.push(extro());
+
+        return code.join("\n");
+    }
+}
+
+class CodepointRange {
+    begin: number;
+    end: number;
+
+    constructor(begin: number, end: number) {
+        this.begin = begin;
+        this.end = end;
     }
 }
 
