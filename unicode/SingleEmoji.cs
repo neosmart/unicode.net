@@ -16,7 +16,7 @@ namespace NeoSmart.Unicode
         public readonly string Group;
         public readonly string Subgroup;
 
-        public SingleEmoji(UnicodeSequence sequence, string name = "", string[] searchTerms = null, int sortOrder = -1, string group = "", string subgroup = "")
+        public SingleEmoji(UnicodeSequence sequence, string name = "", string[]? searchTerms = null, int sortOrder = -1, string group = "", string subgroup = "")
         {
             Sequence = sequence;
             Name = name;
@@ -58,7 +58,7 @@ namespace NeoSmart.Unicode
             return a.CompareTo(b) > 0;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return obj is SingleEmoji emoji && Equals(emoji);
         }

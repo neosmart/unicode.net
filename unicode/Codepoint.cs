@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Runtime.InteropServices;
 
 namespace NeoSmart.Unicode
 {
@@ -24,6 +25,19 @@ namespace NeoSmart.Unicode
         /// Create a unicode codepoint from hexadecimal representation, supporting U+xxxx and 0xYYYY notation.
         /// </summary>
         /// <param name="hexValue"></param>
+#if NETSTANDARD2_1_OR_GREATER
+        public Codepoint(ReadOnlySpan<char> hexValue)
+        {
+            if ((hexValue.StartsWith("0x") || hexValue.StartsWith("U+") || hexValue.StartsWith("u+")))
+            {
+                hexValue = hexValue.Slice(2);
+            }
+            if (!UInt32.TryParse(hexValue, NumberStyles.HexNumber, CultureInfo.CurrentCulture.NumberFormat, out Value))
+            {
+                throw new UnsupportedCodepointException();
+            }
+        }
+#else
         public Codepoint(string hexValue)
         {
             if ((hexValue.StartsWith("0x") || hexValue.StartsWith("U+") || hexValue.StartsWith("u+")))
@@ -35,6 +49,7 @@ namespace NeoSmart.Unicode
                 throw new UnsupportedCodepointException();
             }
         }
+#endif
 
         public UInt32 AsUtf32() => Value;
 
@@ -43,7 +58,6 @@ namespace NeoSmart.Unicode
         /// </summary>
         public IEnumerable<byte> AsUtf32Bytes()
         {
-            // From highest to lowest
             var utf32 = AsUtf32();
             var b1 = (byte)(utf32 >> 24);
             yield return b1;
@@ -53,6 +67,20 @@ namespace NeoSmart.Unicode
             yield return b3;
             var b4 = (byte)utf32;
             yield return b4;
+        }
+
+        public void AsUtf32Bytes(Span<byte> dest)
+        {
+            if (dest.Length < 4)
+            {
+                throw new ArgumentException("dest must be a 4-byte array");
+            }
+
+            var utf32 = Value;
+            dest[0] = (byte)(utf32 >> 24);
+            dest[1] = (byte)((utf32 & 0x00FFFFFF) >> 16);
+            dest[2] = (byte)(((UInt16)utf32) >> 8);
+            dest[3] = (byte)utf32;
         }
 
         // Reference: https://en.wikipedia.org/wiki/UTF-16
@@ -81,6 +109,33 @@ namespace NeoSmart.Unicode
             }
         }
 
+        public int AsUtf16(Span<UInt16> dest)
+        {
+            // U+0000 to U+D7FF and U+E000 to U+FFFF
+            if (Value <= 0xFFFF)
+            {
+                dest[0] = (UInt16) Value;
+                return 1;
+            }
+            // U+10000 to U+10FFFF
+            else if (Value >= 0x10000 && Value <= 0x10FFFF)
+            {
+                UInt32 newVal = Value - 0x010000; // leaving 20 bits
+                UInt16 high = (UInt16)((newVal >> 10) + 0xD800);
+                System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
+                dest[0] = high;
+
+                UInt16 low = (UInt16)((newVal & 0x03FF) + 0xDC00);
+                System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
+                dest[1] = low;
+                return 2;
+            }
+            else
+            {
+                throw new UnsupportedCodepointException();
+            }
+        }
+
         /// <summary>
         /// Returns an iterator that will enumerate over the big endian bytes in the UTF16 encoding of this codepoint.
         /// </summary>
@@ -94,6 +149,38 @@ namespace NeoSmart.Unicode
                 var low = (byte)u16;
                 yield return low;
             }
+        }
+
+        /// <summary>
+        /// Returns an iterator that will enumerate over the big endian bytes in the UTF16 encoding of this codepoint.
+        /// </summary>
+        public int AsUtf16Bytes(Span<byte> dest)
+        {
+            // U+0000 to U+D7FF and U+E000 to U+FFFF
+            if (Value <= 0xFFFF)
+            {
+                dest[0] = (byte) (Value >> 8);
+                dest[1] = (byte) (Value);
+                return 2;
+            }
+
+            // U+10000 to U+10FFFF
+            if (Value >= 0x10000 && Value <= 0x10FFFF)
+            {
+                UInt32 newVal = Value - 0x010000; // leaving 20 bits
+                UInt16 high = (UInt16)((newVal >> 10) + 0xD800);
+                System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
+                dest[0] = (byte) (high >> 8);
+                dest[1] = (byte) (high);
+
+                UInt16 low = (UInt16)((newVal & 0x03FF) + 0xDC00);
+                System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
+                dest[2] = (byte) (low >> 8);
+                dest[3] = (byte) (low);
+                return 4;
+            }
+
+            throw new UnsupportedCodepointException();
         }
 
         // https://en.wikipedia.org/wiki/UTF-8
@@ -136,6 +223,49 @@ namespace NeoSmart.Unicode
             throw new UnsupportedCodepointException();
         }
 
+        public Codepoint FromUtf32(UInt32 value)
+        {
+            return new Codepoint(value);
+        }
+
+        private static readonly Range Utf16SurrogateHigh = new Range(0xD800, 0xDBFF);
+        private static readonly Range Utf16SurrogateLow = new Range(0xDC00, 0xDFFF);
+
+        public int Utf16ByteCount => (Value <= 0xFFFF) ? 2 : 4;
+
+        public Codepoint FromUtf16(UInt16 word1, UInt16 word2 = 0)
+        {
+            if (word1 >= 0xD800 && word1 <= 0xDBFF)
+            {
+                // word1 is a leading surrogate pair
+                if (!(word2 >= 0xDC00 && word2 <= 0xDFFF))
+                {
+                    // word2 is not a trailing surrogate pair
+                    throw new UnsupportedCodepointException("Invalid UTF-16 surrogate pair!");
+                }
+            }
+            else if (word2 != 0)
+            {
+                // word1 is not a surrogate pair, but two words provided
+                throw new UnsupportedCodepointException("word1 is not a leading surrogate pair but word2 also provided");
+            }
+            if ((word1 >= 0xDC00 && word1 <= 0xDFFF))
+            {
+                // word1 is a trailing surrogate pair
+                throw new UnsupportedCodepointException("word1 is a trailing surrogate pair!");
+            }
+
+            // Reference: https://unicode.org/faq/utf_bom.html#utf16-4
+            const Int32 LEAD_OFFSET = 0xD800 - (0x10000 >> 10);
+            const Int32 SURROGATE_OFFSET = (0x10000 - (0xD800 << 10) - 0xDC00);
+
+            Int16 lead = (Int16) (LEAD_OFFSET + (word1 >> 10));
+            Int16 trail = (Int16) (0xDC00 + (word1 & 0x3FF));
+
+            UInt32 codepoint = (UInt32) ((lead << 10) + trail + SURROGATE_OFFSET);
+            return new Codepoint(codepoint);
+        }
+
         public int CompareTo(Codepoint other)
         {
             return Value.CompareTo(other.Value);
@@ -151,13 +281,9 @@ namespace NeoSmart.Unicode
             return Value == other.Value;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
-            if (obj is Codepoint)
-            {
-                return Value == ((Codepoint)obj).Value;
-            }
-            return base.Equals(obj);
+            return obj is Codepoint other && Equals(other);
         }
 
         public override int GetHashCode()
@@ -212,7 +338,15 @@ namespace NeoSmart.Unicode
 
         public string AsString()
         {
-            return Encoding.UTF8.GetString(AsUtf8().ToArray());
+            Span<byte> bytes = stackalloc byte[4];
+            var count = AsUtf16Bytes(bytes);
+            unsafe
+            {
+                fixed (byte *ptr = bytes)
+                {
+                    return Encoding.Unicode.GetString(ptr, count);
+                }
+            }
         }
 
         public bool IsIn(Range range)
@@ -225,20 +359,29 @@ namespace NeoSmart.Unicode
             return multirange.Contains(this);
         }
 
-        public bool Equals(string other)
+        public bool Equals(string? other)
         {
-            return AsString() == other;
+            return other is not null && other == AsString();
         }
 
-        public int CompareTo(string other)
+        public int CompareTo(string? other)
         {
-            return AsString().CompareTo(other);
+            if (other is null)
+            {
+                return 1;
+            }
+
+            Span<UInt16> words = stackalloc UInt16[2];
+            var count = AsUtf16(words);
+            words = words.Slice(0, count);
+            var chars = MemoryMarshal.Cast<UInt16, char>(words);
+            return chars.SequenceCompareTo(other.AsSpan());
         }
 
         public bool Equals(char other)
         {
-            var s = AsString();
-            return s.Count() == 1 && s[0] == other;
+            Span<UInt16> words = stackalloc UInt16[2];
+            return AsUtf16(words) == 1 && words[0] == other;
         }
 
         public static bool operator ==(Codepoint a, string b)

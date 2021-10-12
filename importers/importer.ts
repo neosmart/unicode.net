@@ -143,10 +143,10 @@ ${intro()}
             }
         }
 #if NET20 || NET30 || NET35
-        private static List<SingleEmoji> _${name};
+        private static List<SingleEmoji>? _${name};
         private static List<SingleEmoji> Generate${name}() => new List<SingleEmoji>()
 #else
-        private static SortedSet<SingleEmoji> _${name};
+        private static SortedSet<SingleEmoji>? _${name};
         private static SortedSet<SingleEmoji> Generate${name}() => new SortedSet<SingleEmoji>()
 #endif
         {

@@ -1,6 +1,6 @@
 CONFIG = "Debug"
 LIBFX = "netstandard2.1"
-TESTFX = "netcoreapp2.2"
+TESTFX = "net6"
 
 all: unicode/Emoji-All.cs unicode/Emoji-Basic.cs unicode/Emoji-Emojis.cs
 

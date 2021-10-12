@@ -26,10 +26,10 @@ namespace NeoSmart.Unicode
             }
         }
 #if NET20 || NET30 || NET35
-        private static List<SingleEmoji> _Basic;
+        private static List<SingleEmoji>? _Basic;
         private static List<SingleEmoji> GenerateBasic() => new List<SingleEmoji>()
 #else
-        private static SortedSet<SingleEmoji> _Basic;
+        private static SortedSet<SingleEmoji>? _Basic;
         private static SortedSet<SingleEmoji> GenerateBasic() => new SortedSet<SingleEmoji>()
 #endif
         {

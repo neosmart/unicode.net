@@ -10,11 +10,11 @@ namespace NeoSmart.Unicode
     /// </summary>
     public struct UnicodeSequence : IComparable<UnicodeSequence>, IEquatable<UnicodeSequence>, IEquatable<string>
     {
-        static readonly Codepoint[] NoCodepoints = new Codepoint[] { };
-        private readonly Codepoint[] _codepoints;
-        public IEnumerable<Codepoint> Codepoints => _codepoints ?? NoCodepoints;
+        private static readonly char[] SequenceSplitChars = new[] { ',', ' ' };
 
-        private readonly static char[] SequenceSplitChars = new[] { ',', ' ' };
+        private readonly Codepoint[] _codepoints;
+        public IReadOnlyList<Codepoint> Codepoints => _codepoints;
+
         public UnicodeSequence(string sequence)
         {
             if (sequence.Contains("-"))
@@ -84,25 +84,49 @@ namespace NeoSmart.Unicode
             }
         }
 
-        public IEnumerable<ushort> AsUtf16()
+        public IEnumerable<UInt16> AsUtf16()
         {
+#if NETSTANDARD2_1_OR_GREATER
+            var words = new UInt16[2];
+#endif
             foreach (var cp in _codepoints)
             {
-                foreach (var us in cp.AsUtf16())
+#if NETSTANDARD2_1_OR_GREATER
+                int count = cp.AsUtf16(words);
+                yield return words[0];
+                if (count == 2)
                 {
-                    yield return us;
+                    yield return words[1];
                 }
+#else
+                foreach (var u16 in cp.AsUtf16())
+                {
+                    yield return u16;
+                }
+#endif
             }
         }
 
+        // Little Endian byte order
         public IEnumerable<byte> AsUtf16Bytes()
         {
-            foreach (var us in AsUtf16())
+#if NETSTANDARD2_1_OR_GREATER
+            var bytes = new byte[4];
+            foreach (var cp in _codepoints)
             {
-                // Little Endian byte order
-                yield return (byte)(us & 0xFF);
-                yield return (byte)(us >> 8);
+                var count = cp.AsUtf16Bytes(bytes);
+                for (int i = 0; i < count; ++i)
+                {
+                    yield return bytes[i];
+                }
             }
+#else
+            foreach (var u16 in AsUtf16())
+            {
+                yield return (byte)(u16 & 0xFF);
+                yield return (byte)(u16 >> 8);
+            }
+#endif
         }
 
         public IEnumerable<byte> AsUtf8()
@@ -120,61 +144,12 @@ namespace NeoSmart.Unicode
 
         public int CompareTo(UnicodeSequence other)
         {
-            if (_codepoints is null && other._codepoints is null)
-            {
-                return 0;
-            }
-
-            if (_codepoints is null)
-            {
-                return -1;
-            }
-
-            if (other._codepoints is null)
-            {
-                return 1;
-            }
-
-            for (int i = 0; i < Math.Min(_codepoints.Length, other._codepoints.Length); ++i)
-            {
-                if (_codepoints[i] != other._codepoints[i])
-                {
-                    return _codepoints[i].CompareTo(other._codepoints[i]);
-                }
-            }
-            if (_codepoints.Length == other._codepoints.Length)
-            {
-                // The codepoint sequences are the same
-                return 0;
-            }
-            if (_codepoints.Length < other._codepoints.Length)
-            {
-                return -(int)other._codepoints[_codepoints.Length].AsUtf32();
-            }
-            return (int)_codepoints[other._codepoints.Length].AsUtf32();
+            return MemoryExtensions.SequenceCompareTo<Codepoint>(_codepoints, other._codepoints);
         }
 
         public bool Equals(UnicodeSequence other)
         {
-            if (base.Equals(other))
-            {
-                return true;
-            }
-
-            if (_codepoints.Length != other._codepoints.Length)
-            {
-                return false;
-            }
-
-            for (int i = 0; i < _codepoints.Length; ++i)
-            {
-                if (_codepoints[i] != other._codepoints[i])
-                {
-                    return false;
-                }
-            }
-
-            return true;
+            return MemoryExtensions.SequenceEqual<Codepoint>(_codepoints, other._codepoints);
         }
 
         public static bool operator ==(UnicodeSequence a, UnicodeSequence b)
@@ -197,13 +172,9 @@ namespace NeoSmart.Unicode
             return a.CompareTo(b) > 0;
         }
 
-        public override bool Equals(object b)
+        public override bool Equals(object? b)
         {
-            if (b is UnicodeSequence)
-            {
-                return Equals((UnicodeSequence)b);
-            }
-            return base.Equals(b);
+            return b is UnicodeSequence other && Equals(other);
         }
 
         public override int GetHashCode()
@@ -211,9 +182,9 @@ namespace NeoSmart.Unicode
             return _codepoints.GetHashCode();
         }
 
-        public bool Equals(string other)
+        public bool Equals(string? other)
         {
-            return !(other is null) && other.Codepoints().SequenceEqual(_codepoints);
+            return other is not null && other.Codepoints().SequenceEqual(_codepoints);
         }
     }
 }
