@@ -140,7 +140,10 @@ namespace NeoSmart.Unicode
             }
         }
 
-        public string AsString => Encoding.Unicode.GetString(AsUtf16Bytes().ToArray());
+        public string AsString()
+        {
+            return Encoding.Unicode.GetString(AsUtf16Bytes().ToArray());
+        }
 
         public int CompareTo(UnicodeSequence other)
         {
