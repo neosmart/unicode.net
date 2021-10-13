@@ -26,7 +26,6 @@ namespace NeoSmart.Unicode
 
         public bool Contains(Codepoint codepoint)
         {
-            // Find the range that starts less than the specified codepoint
             var index = _ranges.IndexOf(new Range(codepoint));
             if (index > 0)
             {
@@ -34,11 +33,14 @@ namespace NeoSmart.Unicode
             }
             // No match, value is complement of Count or next greatest index
             index = ~index;
-            if (index == _ranges.Count)
+            if (index == 0)
             {
                 return false;
             }
-            return _ranges[index].Contains(codepoint);
+            // In case of range including this codepoint...
+            return _ranges[index - 1].Contains(codepoint)
+                // and in case of range starting with this codepoint
+                || index < _ranges.Count && _ranges[index].Contains(codepoint);
         }
     }
 }

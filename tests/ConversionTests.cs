@@ -24,7 +24,7 @@ namespace UnicodeTests
             {
                 var codepoints = test.Codepoints();
                 var sequence = new UnicodeSequence(codepoints);
-                Assert.AreEqual(test, sequence.AsString);
+                Assert.AreEqual(test, sequence.AsString());
             }
         }
 

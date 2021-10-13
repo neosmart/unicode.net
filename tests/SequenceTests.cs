@@ -15,9 +15,9 @@ namespace UnicodeTests
         [TestMethod]
         public void TestSequenceEquality()
         {
-            Assert.AreEqual(_swimmer.AsString, _swimmerString);
+            Assert.AreEqual(_swimmer.AsString(), _swimmerString);
             Assert.IsTrue(_swimmer.Codepoints.SequenceEqual(_swimmerString.Codepoints()));
-            Assert.AreEqual(_femaleSwimmer.AsString, _femaleSwimmerString);
+            Assert.AreEqual(_femaleSwimmer.AsString(), _femaleSwimmerString);
 
             Assert.IsFalse(_swimmer.Equals((string)null));
             Assert.IsTrue(_swimmer.Equals(_swimmer));

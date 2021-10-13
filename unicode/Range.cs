@@ -120,14 +120,12 @@ namespace NeoSmart.Unicode
                 return 1;
             }
 
-            if (Begin < other.Begin)
+            int compare = (int)Begin.Value - (int)other.Begin.Value;
+            if (compare != 0)
             {
-                return -1;
+                return compare;
             }
-            if (Begin > other.Begin)
-            {
-                return 1;
-            }
+
             return End.CompareTo(other.End);
         }
 
@@ -161,6 +159,11 @@ namespace NeoSmart.Unicode
         public static bool operator !=(Range? lhs, Range? rhs)
         {
             return !(lhs == rhs);
+        }
+
+        public override string ToString()
+        {
+            return $"{Begin}..{End}";
         }
     }
 }

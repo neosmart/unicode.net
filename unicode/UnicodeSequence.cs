@@ -189,5 +189,10 @@ namespace NeoSmart.Unicode
         {
             return other is not null && other.Codepoints().SequenceEqual(_codepoints);
         }
+
+        public override string ToString()
+        {
+            return string.Join(" ", Codepoints);
+        }
     }
 }

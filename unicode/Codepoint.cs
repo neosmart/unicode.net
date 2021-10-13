@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
@@ -137,7 +136,7 @@ namespace NeoSmart.Unicode
         }
 
         /// <summary>
-        /// Returns an iterator that will enumerate over the big endian bytes in the UTF16 encoding of this codepoint.
+        /// Returns an iterator that will enumerate over the little endian bytes in the UTF16 encoding of this codepoint.
         /// </summary>
         public IEnumerable<byte> AsUtf16Bytes()
         {
@@ -152,15 +151,15 @@ namespace NeoSmart.Unicode
         }
 
         /// <summary>
-        /// Returns an iterator that will enumerate over the big endian bytes in the UTF16 encoding of this codepoint.
+        /// Returns an iterator that will enumerate over the little endian bytes in the UTF16 encoding of this codepoint.
         /// </summary>
         public int AsUtf16Bytes(Span<byte> dest)
         {
             // U+0000 to U+D7FF and U+E000 to U+FFFF
             if (Value <= 0xFFFF)
             {
-                dest[0] = (byte) (Value >> 8);
-                dest[1] = (byte) (Value);
+                dest[0] = (byte) (Value);
+                dest[1] = (byte) (Value >> 8);
                 return 2;
             }
 
@@ -170,13 +169,13 @@ namespace NeoSmart.Unicode
                 UInt32 newVal = Value - 0x010000; // leaving 20 bits
                 UInt16 high = (UInt16)((newVal >> 10) + 0xD800);
                 System.Diagnostics.Debug.Assert(high <= 0xDBFF && high >= 0xD800);
-                dest[0] = (byte) (high >> 8);
-                dest[1] = (byte) (high);
+                dest[0] = (byte) (high);
+                dest[1] = (byte) (high >> 8);
 
                 UInt16 low = (UInt16)((newVal & 0x03FF) + 0xDC00);
                 System.Diagnostics.Debug.Assert(low <= 0xDFFF && low >= 0xDC00);
-                dest[2] = (byte) (low >> 8);
-                dest[3] = (byte) (low);
+                dest[2] = (byte) (low);
+                dest[3] = (byte) (low >> 8);
                 return 4;
             }
 
