@@ -7,7 +7,7 @@ namespace NeoSmart.Unicode
     /// A <c>Range</c> constitutes a range of <see>Codepoint</see> defined by the
     /// <c>Begin</c> and <c>End</c> values, both of which are inclusive.
     /// </summary>
-    public class Range
+    public class Range : IComparable<Range>, IEquatable<Range>
     {
         /// <summary>
         /// The first codepoint in the range, inclusive.
@@ -111,6 +111,56 @@ namespace NeoSmart.Unicode
                     }
                 }
             }
+        }
+
+        public int CompareTo(Range? other)
+        {
+            if (other is null)
+            {
+                return 1;
+            }
+
+            if (Begin < other.Begin)
+            {
+                return -1;
+            }
+            if (Begin > other.Begin)
+            {
+                return 1;
+            }
+            return End.CompareTo(other.End);
+        }
+
+        public bool Equals(Range? other)
+        {
+            return other is Range range
+                && Begin == range.Begin
+                && End == range.End;
+        }
+
+        public override bool Equals(Object? obj)
+        {
+            return obj is Range other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return Begin.GetHashCode() ^ End.GetHashCode();
+        }
+
+        public static bool operator ==(Range? lhs, Range? rhs)
+        {
+            if (lhs is null || rhs is null)
+            {
+                return object.Equals(lhs, rhs);
+            }
+
+            return lhs.Equals(rhs);
+        }
+
+        public static bool operator !=(Range? lhs, Range? rhs)
+        {
+            return !(lhs == rhs);
         }
     }
 }
