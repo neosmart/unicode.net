@@ -1,5 +1,9 @@
 using System.Collections.Generic;
 
+#if NETSTANDARD_1_3_OR_GREATER
+using NeoSmart.Collections;
+#endif
+
 namespace NeoSmart.Unicode
 {
     // This file is machine-generated from the official Unicode Consortium UTR51 emoji
@@ -10,10 +14,10 @@ namespace NeoSmart.Unicode
         /// <summary>
         /// A (sorted) enumeration of all emoji without skin variations and no duplicate gendered vs gender-neutral emoji, ideal for displaying. Emoji without supported glyphs in Segoe UI Emoji are also omitted from this list.
         /// </summary>
-#if NET20 || NET30 || NET35
-        public static List<SingleEmoji> Basic
+#if NETSTANDARD_1_3_OR_GREATER
+        public static SortedList<SingleEmoji> Basic
 #else
-        public static SortedSet<SingleEmoji> Basic
+        public static List<SingleEmoji> Basic
 #endif
         {
             get
@@ -25,12 +29,12 @@ namespace NeoSmart.Unicode
                 return _Basic;
             }
         }
-#if NET20 || NET30 || NET35
-        private static List<SingleEmoji>? _Basic;
-        private static List<SingleEmoji> GenerateBasic() => new List<SingleEmoji>()
+#if NETSTANDARD_1_3_OR_GREATER
+        private static SortedList<SingleEmoji>? _Basic;
+        private static SortedList<SingleEmoji> GenerateBasic() => new ()
 #else
-        private static SortedSet<SingleEmoji>? _Basic;
-        private static SortedSet<SingleEmoji> GenerateBasic() => new SortedSet<SingleEmoji>()
+        private static List<SingleEmoji> _Basic;
+        private static List<SingleEmoji> GenerateBasic() => new ()
 #endif
         {
             /* 😀 */ GrinningFace,

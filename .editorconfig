@@ -1,4 +1,8 @@
-﻿[*.{cs,vb}]
+[*.cs]
 
 # IDE0049: Simplify Names
 dotnet_diagnostic.IDE0049.severity = none
+
+[*.csproj]
+tab_width = 2
+indent_style = space
