@@ -5,7 +5,7 @@ using NeoSmart.Collections;
 namespace NeoSmart.Unicode
 {
     // This file is machine-generated from the official Unicode Consortium UTR51 emoji
-    // list found in Unicode 13.0. See the `importers` folder for the generator.
+    // list found in Unicode 14.0. See the `importers` folder for the generator.
 
     public partial class Languages
     {
@@ -147,24 +147,25 @@ namespace NeoSmart.Unicode
             "1F680..1F6C5",
             "1F6CB..1F6D2",
             "1F6D5..1F6D7",
-            "1F6E0..1F6E5",
+            "1F6DD..1F6E5",
             "1F6E9",
             "1F6EB..1F6EC",
             "1F6F0",
             "1F6F3..1F6FC",
             "1F7E0..1F7EB",
+            "1F7F0",
             "1F90C..1F93A",
             "1F93C..1F945",
-            "1F947..1F978",
-            "1F97A..1F9CB",
-            "1F9CD..1F9FF",
+            "1F947..1F9FF",
             "1FA70..1FA74",
-            "1FA78..1FA7A",
+            "1FA78..1FA7C",
             "1FA80..1FA86",
-            "1FA90..1FAA8",
-            "1FAB0..1FAB6",
-            "1FAC0..1FAC2",
-            "1FAD0..1FAD6",
+            "1FA90..1FAAC",
+            "1FAB0..1FABA",
+            "1FAC0..1FAC5",
+            "1FAD0..1FAD9",
+            "1FAE0..1FAE7",
+            "1FAF0..1FAF6",
             "E0062..E0063",
             "E0065",
             "E0067",
