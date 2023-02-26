@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "fontkit": "^1.8.0"
+    "fontkit": "^2.0.2"
   }
 }
